@@ -6,6 +6,7 @@ import { sounds, categories } from '../sounds.js';
 import { renderSound, waveformPeaks, encodeWav } from '../synth.js';
 import { decodeSampleWav, loadSampleSources } from '../samples.js';
 
+const soundByKey = new Map(sounds.map((sound) => [sound.key, sound]));
 const sampleSources = await loadSampleSources(sounds, async (path) => {
   const bytes = await readFile(new URL(`../${path}`, import.meta.url));
 
@@ -33,6 +34,27 @@ function rms(pcmSamples, startSeconds, endSeconds) {
 
   return Math.sqrt(segment.reduce((sum, value) => sum + value ** 2, 0) / segment.length);
 }
+
+test('display numbers follow category order and keep each drum family together', () => {
+  assert.deepEqual(sounds.map((sound) => sound.id), Array.from({ length: 90 }, (_, index) => index + 1));
+  const expectedCategories = categories.flatMap((category) => sounds
+    .filter((sound) => sound.category === category.id).map(() => category.id));
+  assert.deepEqual(sounds.map((sound) => sound.category), expectedCategories);
+  assert.ok(sounds.every((sound) => Number.isInteger(sound.key) && sound.key > 0));
+  assert.equal(soundByKey.size, sounds.length);
+  assert.deepEqual(sounds.slice(0, 7).map((sound) => sound.key), [1, 2, 3, 4, 71, 86, 87]);
+  assert.deepEqual(sounds.slice(7, 16).map((sound) => sound.key), [5, 6, 7, 8, 79, 80, 81, 88, 89]);
+  assert.equal(soundByKey.get(71).name, 'アコースティックキック');
+  assert.equal(soundByKey.get(71).id, 5);
+});
+
+test('renumbering display IDs preserves the PCM of every sound through its fixed key', () => {
+
+  // 表示番号だけを変えても、ノイズを含む全音色のPCMが同じになることを確認する
+  for (const sound of sounds) {
+    assert.deepEqual(renderCatalogSound(sound), renderCatalogSound({ ...sound, id: sound.id + 1000 }), sound.name);
+  }
+});
 
 test('all 90 sounds produce unique audible finite PCM with safe peaks and silent boundaries', () => {
   assert.equal(sounds.length, 90);
@@ -92,18 +114,18 @@ test('rendering is repeatable and WAV exports contain the same duration and corr
 });
 
 test('kick, snares and toms decay quickly enough to leave space for the next hit', () => {
-  const drumIds = [1, 5, 6, 7, 8, 20, 21, 22, 23, 71, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90];
+  const drumKeys = [1, 5, 6, 7, 8, 20, 21, 22, 23, 71, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90];
 
   // 余韻の後半が打撃の先頭より十分小さくなり、短いバッファーに収まることを確認する
-  for (const id of drumIds) {
-    const sound = sounds[id - 1];
+  for (const key of drumKeys) {
+    const sound = soundByKey.get(key);
     const pcmSamples = renderCatalogSound(sound);
     assert.ok(sound.duration <= .44, sound.name);
     assert.ok(rms(pcmSamples, sound.duration * .75, sound.duration)
       < rms(pcmSamples, 0, sound.duration * .25) * .05, sound.name);
   }
 
-  assert.equal(new Set(sounds.slice(4, 7).map((sound) => sound.sample)).size, 3);
+  assert.equal(new Set([5, 6, 7].map((key) => soundByKey.get(key).sample)).size, 3);
 });
 
 test('reverse samples build toward the end and swells have a delayed attack', () => {
@@ -120,7 +142,7 @@ test('reverse samples build toward the end and swells have a delayed attack', ()
 });
 
 test('wide clap places its strongest attack in the first 10ms and keeps a softer tail', () => {
-  const sound = sounds[9];
+  const sound = soundByKey.get(10);
   const pcmSamples = renderCatalogSound(sound);
   let peakIndex = 0;
 
@@ -144,7 +166,7 @@ test('wide clap places its strongest attack in the first 10ms and keeps a softer
 });
 
 test('sample WAV export uses the processed PCM and preserves its 48kHz duration', () => {
-  const sound = sounds[4];
+  const sound = soundByKey.get(5);
   const pcmSamples = renderCatalogSound(sound);
   const decoded = decodeSampleWav(encodeWav(pcmSamples, 48000));
   assert.equal(decoded.sampleRate, 48000);
@@ -227,7 +249,7 @@ test('electronic toms have a descending pitch and four ordered pitches for fills
 });
 
 test('chip noise snare ends its stepped burst within 80ms at both sample rates', () => {
-  const sound = sounds[7];
+  const sound = soundByKey.get(8);
   assert.equal(sound.type, 'chip-noise');
   assert.ok(sound.duration <= .12);
 
@@ -266,11 +288,11 @@ test('fat snare has a stronger low body than the dry and bright snares', () => {
     return lowEnergy / totalEnergy;
   }
 
-  const fat = renderCatalogSound(sounds[5]);
+  const fat = renderCatalogSound(soundByKey.get(6));
 
-  // 同じピーク音量の5・7番と比較し、低域の厚みと打撃の密度の両方を確認する
-  for (const id of [5, 7]) {
-    const other = renderCatalogSound(sounds[id - 1]);
+  // 同じピーク音量のドライ・ブライトスネアと比較し、低域の厚みと打撃の密度を確認する
+  for (const key of [5, 7]) {
+    const other = renderCatalogSound(soundByKey.get(key));
     assert.ok(lowBodyShare(fat) > lowBodyShare(other) * 1.3);
     assert.ok(rms(fat, 0, .1) > rms(other, 0, .1) * 1.8);
   }
@@ -298,7 +320,7 @@ test('compressed drums increase density at the same peak and export the processe
 });
 
 test('a failed sample request reports the error and a subsequent load can recover', async () => {
-  const sampleSounds = sounds.slice(4, 7);
+  const sampleSounds = [5, 6, 7].map((key) => soundByKey.get(key));
   const requestedPaths = [];
 
   /**

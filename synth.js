@@ -50,7 +50,7 @@ export function renderSound(sound, sampleRate = 48000, source) {
   }
 
   const pcmSamples = new Float32Array(Math.ceil(sound.duration * sampleRate));
-  let seed = sound.id * 2654435761 >>> 0;
+  let seed = sound.key * 2654435761 >>> 0;
   let lowNoise = 0;
   let midNoise = 0;
   let phase = 0;

@@ -30,7 +30,7 @@ const pcmSamplesBySoundId = new Map();
 const audioBuffersBySoundId = new Map();
 const activeVoices = new Set();
 const highlightTimeoutIds = new Set();
-const favoriteSoundIds = readFavorites();
+const favoriteSoundKeys = readFavorites();
 let sampleSourcesByPath = new Map();
 
 let selectedSound = sounds[0];
@@ -47,15 +47,15 @@ let waveformAnimationFrameId;
 let playbackStartTime = 0;
 
 /**
- * 保存済みのお気に入り音色IDを読み込む
+ * 保存済みのお気に入りの固定キーを読み込む（旧番号はそのまま固定キーとして使う）
  *
  * @returns {Set<number>}
  */
 function readFavorites() {
   try {
-    const storedFavoriteIds = JSON.parse(localStorage.getItem('auto-drum-favorites') || '[]');
+    const storedFavoriteKeys = JSON.parse(localStorage.getItem('auto-drum-favorites') || '[]');
 
-    return new Set(Array.isArray(storedFavoriteIds) ? storedFavoriteIds.filter((id) => sounds.some((sound) => sound.id === id)) : []);
+    return new Set(Array.isArray(storedFavoriteKeys) ? storedFavoriteKeys.filter((key) => sounds.some((sound) => sound.key === key)) : []);
   } catch {
 
     return new Set();
@@ -63,13 +63,13 @@ function readFavorites() {
 }
 
 /**
- * お気に入り音色IDをブラウザに保存する
+ * お気に入りの固定キーをブラウザに保存する
  *
  * @returns {void}
  */
 function saveFavorites() {
   try {
-    localStorage.setItem('auto-drum-favorites', JSON.stringify([...favoriteSoundIds]));
+    localStorage.setItem('auto-drum-favorites', JSON.stringify([...favoriteSoundKeys]));
   } catch {
     // 保存できない場合も、この画面ではお気に入りを保持する
   }
@@ -99,7 +99,7 @@ function getVisibleSounds() {
 
   return sounds.filter((sound) => {
     const category = categoryById.get(sound.category);
-    const matchesCategory = categoryFilter === 'all' || categoryFilter === 'favorites' && favoriteSoundIds.has(sound.id) || categoryFilter === sound.category;
+    const matchesCategory = categoryFilter === 'all' || categoryFilter === 'favorites' && favoriteSoundKeys.has(sound.key) || categoryFilter === sound.category;
     const searchable = `${sound.id} ${sound.name} ${sound.english} ${sound.description} ${category.name} ${category.english}`.toLocaleLowerCase();
 
     return matchesCategory && searchable.includes(query);
@@ -124,7 +124,7 @@ function renderNavigation() {
   const renderCategoryButtonHtml = (id, name, count, decoration = '') => `<button class="category-button" data-filter="${id}" aria-pressed="${categoryFilter === id}" type="button">${decoration}<span>${name}</span><span class="nav-count">${count}</span></button>`;
 
   queryElement('#category-nav').innerHTML = renderCategoryButtonHtml('all', 'すべての音色', sounds.length, renderIconHtml('grid', 'nav-icon'))
-    + renderCategoryButtonHtml('favorites', 'お気に入り', favoriteSoundIds.size, renderIconHtml('heart', 'nav-icon'))
+    + renderCategoryButtonHtml('favorites', 'お気に入り', favoriteSoundKeys.size, renderIconHtml('heart', 'nav-icon'))
     + '<hr class="nav-separator" />'
     + categories.map((category) => renderCategoryButtonHtml(category.id, category.name, sounds.filter((sound) => sound.category === category.id).length,
       `<span class="category-dot" style="--category-color:${category.color}"></span>`)).join('');
@@ -173,7 +173,7 @@ function renderGrid() {
   queryElement('#collection-title').textContent = categoryFilter === 'all' ? 'すべての音色' : categoryFilter === 'favorites' ? 'お気に入り' : categoryById.get(categoryFilter).name;
   queryElement('#result-count').textContent = `${visibleSoundEntries.length} sounds`;
   queryElement('#empty-state').hidden = visibleSoundEntries.length > 0;
-  queryElement('#empty-message').textContent = categoryFilter === 'favorites' && favoriteSoundIds.size === 0
+  queryElement('#empty-message').textContent = categoryFilter === 'favorites' && favoriteSoundKeys.size === 0
     ? '気になる音のハートを押して、ここに集めよう。' : '一致する音色が見つかりませんでした。';
   queryElement('#sound-grid').innerHTML = visibleSoundEntries.map((sound) => {
     const category = categoryById.get(sound.category);
@@ -185,7 +185,7 @@ function renderGrid() {
         <strong>${sound.name}</strong><span class="english-name">${sound.english}</span>
         <span class="card-bottom"><span class="color-dot"></span>${category.english}</span>
       </button>
-      <button class="favorite-button" type="button" aria-label="${sound.name}のお気に入り" aria-pressed="${favoriteSoundIds.has(sound.id)}">${renderIconHtml('heart')}</button>
+      <button class="favorite-button" type="button" aria-label="${sound.name}のお気に入り" aria-pressed="${favoriteSoundKeys.has(sound.key)}">${renderIconHtml('heart')}</button>
     </article>`;
   }).join('');
 
@@ -592,10 +592,10 @@ queryElement('#sound-grid').addEventListener('click', (event) => {
   const sound = sounds[Number(card.dataset.id) - 1];
 
   if (event.target.closest('.favorite-button')) {
-    if (favoriteSoundIds.has(sound.id)) {
-      favoriteSoundIds.delete(sound.id);
+    if (favoriteSoundKeys.has(sound.key)) {
+      favoriteSoundKeys.delete(sound.key);
     } else {
-      favoriteSoundIds.add(sound.id);
+      favoriteSoundKeys.add(sound.key);
     }
 
     saveFavorites();
@@ -604,10 +604,10 @@ queryElement('#sound-grid').addEventListener('click', (event) => {
     if (categoryFilter === 'favorites') {
       renderGrid();
     } else {
-      card.querySelector('.favorite-button').setAttribute('aria-pressed', String(favoriteSoundIds.has(sound.id)));
+      card.querySelector('.favorite-button').setAttribute('aria-pressed', String(favoriteSoundKeys.has(sound.key)));
     }
 
-    queryElement('#announcement').textContent = `${sound.name}をお気に入り${favoriteSoundIds.has(sound.id) ? 'に追加しました' : 'から外しました'}`;
+    queryElement('#announcement').textContent = `${sound.name}をお気に入り${favoriteSoundKeys.has(sound.key) ? 'に追加しました' : 'から外しました'}`;
   } else if (event.target.closest('.sound-pad')) auditionSound(sound);
 });
 
