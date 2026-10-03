@@ -12,6 +12,31 @@ const metalRatios = [1, 1.342, 1.789, 2.513, 3.127, 4.073];
 const cymbalRatios = [1, 1.147, 1.414, 1.731, 2.113, 2.571, 3.127, 3.793, 4.613, 5.329, 6.107, 7.139];
 
 /**
+ * PCMのピークを時間応答付きで圧縮し、軽い歪みで打撃の密度を上げる
+ *
+ * @param {Float32Array} pcmSamples その場で加工するPCM
+ * @param {number} sampleRate サンプルレート（Hz）
+ * @param {import("./sounds.js").DrumCompression} settings 圧縮の設定
+ * @returns {void}
+ */
+function applyDrumCompression(pcmSamples, sampleRate, settings) {
+  const attackCoefficient = Math.exp(-1 / (sampleRate * settings.attack));
+  const releaseCoefficient = Math.exp(-1 / (sampleRate * settings.release));
+  const threshold = 10 ** (settings.thresholdDb / 20);
+  const makeupGain = 1 / threshold ** (1 - 1 / settings.ratio);
+  let envelope = 0;
+
+  // 打撃の包絡線を追い、閾値を超えた部分を圧縮してソフトクリップする
+  for (let index = 0; index < pcmSamples.length; index++) {
+    const amplitude = Math.abs(pcmSamples[index]);
+    const coefficient = amplitude > envelope ? attackCoefficient : releaseCoefficient;
+    envelope = coefficient * envelope + (1 - coefficient) * amplitude;
+    const gain = envelope > threshold ? (envelope / threshold) ** (1 / settings.ratio - 1) : 1;
+    pcmSamples[index] = Math.tanh(pcmSamples[index] * gain * makeupGain * settings.saturation);
+  }
+}
+
+/**
  * 音色の定義と実音素材から、試聴・波形表示・WAV保存に共用するPCMを生成する
  *
  * @param {import("./sounds.js").SoundDefinition} sound 音色の定義
@@ -30,10 +55,14 @@ export function renderSound(sound, sampleRate = 48000, source) {
   let midNoise = 0;
   let phase = 0;
   let heldSample = 0;
+  let sampleLowpass = 0;
+  let noiseRegister = 1;
+  let noiseClock = 0;
   const frequency = sound.frequency || 1000;
   const decay = sound.decay;
   const lowCoefficient = 1 - Math.exp(-TAU * 900 / sampleRate);
   const midCoefficient = 1 - Math.exp(-TAU * 4200 / sampleRate);
+  const sampleLowpassCoefficient = sound.lowpass ? 1 - Math.exp(-TAU * sound.lowpass / sampleRate) : 1;
 
   /**
    * 減衰速度の異なる倍音を加算する
@@ -73,7 +102,16 @@ export function renderSound(sound, sampleRate = 48000, source) {
         const envelope = Math.exp(-sourceTime / decay);
         const rise = sound.reverse ? (timeSeconds / sound.duration) ** .8
           : sound.swell ? Math.min(1, timeSeconds / sound.swell) ** 2 : 1;
-        sampleValue = (firstSample + (secondSample - firstSample) * fraction) * envelope * rise;
+        const interpolatedSample = firstSample + (secondSample - firstSample) * fraction;
+        sampleLowpass += sampleLowpassCoefficient * (interpolatedSample - sampleLowpass);
+        sampleValue = sampleLowpass * envelope * rise;
+
+        if (sound.body) {
+          const body = sound.body;
+          const bodyPhase = body.frequency * timeSeconds + (body.start - body.frequency) * .008 * (1 - Math.exp(-timeSeconds / .008));
+          sampleValue += sin(bodyPhase) * Math.exp(-timeSeconds / body.decay) * body.level;
+        }
+
         break;
       }
 
@@ -94,10 +132,21 @@ export function renderSound(sound, sampleRate = 48000, source) {
         break;
       }
 
-      case 'snare':
-        sampleValue = (sin(frequency * timeSeconds) * .55 + sin(frequency * 1.57 * timeSeconds) * .24) * Math.exp(-timeSeconds / (decay * .7))
-          + (sound.bright ? highNoise : bandNoise) * sound.noise * decayEnvelope * (sound.rattle ? .65 + .35 * sin(87 * timeSeconds) ** 2 : 1);
+      case 'chip-noise': {
+        const clockPeriod = timeSeconds < .012 ? 96 : timeSeconds < .03 ? 160 : 254;
+        noiseClock += 1789773 / clockPeriod / sampleRate;
+
+        // NESの長周期ノイズを参考に、15bitレジスターをクロックごとに更新する
+        while (noiseClock >= 1) {
+          const feedback = (noiseRegister ^ (noiseRegister >>> 1)) & 1;
+          noiseRegister = (noiseRegister >>> 1) | (feedback << 14);
+          noiseClock -= 1;
+        }
+
+        const volume = Math.max(0, 15 - Math.floor(timeSeconds / sound.envelopeStep)) / 15;
+        sampleValue = ((noiseRegister & 1) ? -1 : 1) * volume;
         break;
+      }
       case 'snap-snare': {
         const instantaneousFrequency = frequency + (sound.start - frequency) * Math.exp(-timeSeconds / .008);
         phase += instantaneousFrequency / sampleRate;
@@ -109,14 +158,16 @@ export function renderSound(sound, sampleRate = 48000, source) {
       }
 
       case 'clap': {
-        let clapEnvelope = 0;
+        let clapEnvelope = sound.frontLoaded ? .35 * decayEnvelope : 0;
 
         // 時間をずらしたノイズの包絡線を重ねてクラップを作る
         for (let hit = 0; hit < 4; hit++) {
           const elapsed = timeSeconds - hit * sound.spread;
 
           if (elapsed >= 0) {
-            clapEnvelope += Math.exp(-elapsed / (hit === 3 ? decay : .004));
+            const hitLevel = sound.frontLoaded ? [1, .45, .3, .2][hit] : 1;
+            const hitDecay = !sound.frontLoaded && hit === 3 ? decay : .004;
+            clapEnvelope += hitLevel * Math.exp(-elapsed / hitDecay);
           }
         }
 
@@ -309,6 +360,10 @@ export function renderSound(sound, sampleRate = 48000, source) {
     pcmSamples[index] = sampleValue * attack * Math.max(0, release);
   }
 
+  if (sound.compression) {
+    applyDrumCompression(pcmSamples, sampleRate, sound.compression);
+  }
+
   // DCオフセットを抑え、各音のピークをフルスケール未満に揃える
   const dcOffset = pcmSamples.reduce((sum, sampleValue) => sum + sampleValue, 0) / pcmSamples.length;
   let peak = 0;
@@ -316,7 +371,8 @@ export function renderSound(sound, sampleRate = 48000, source) {
   // 境界のフェードを保ちながらDCオフセットと最大振幅を求める
   for (let index = 0; index < pcmSamples.length; index++) {
     const boundaryEnvelope = Math.min(1, index / (sampleRate * .001), (pcmSamples.length - 1 - index) / (sampleRate * .012));
-    pcmSamples[index] -= dcOffset * Math.max(0, boundaryEnvelope);
+    const activeEnvelope = sound.type === 'chip-noise' ? Math.max(0, 15 - Math.floor(index / sampleRate / sound.envelopeStep)) / 15 : 1;
+    pcmSamples[index] -= dcOffset * Math.max(0, boundaryEnvelope) * activeEnvelope;
     peak = Math.max(peak, Math.abs(pcmSamples[index]));
   }
 

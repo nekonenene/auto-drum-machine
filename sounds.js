@@ -13,8 +13,24 @@
  * @property {boolean} [reverse] 実音を逆再生するかどうか
  * @property {number} [swell] 実音のフェードイン時間（秒）
  * @property {number} [pitchDecay] 電子タムの音程が下がる時定数（秒）
+ * @property {number} [lowpass] 実音の高域を抑える周波数（Hz）
+ * @property {{frequency: number, start: number, decay: number, level: number}} [body] 実音に重ねる低い胴鳴り
+ * @property {number} [envelopeStep] チップノイズの音量が一段下がる間隔（秒）
+ * @property {boolean} [frontLoaded] クラップの主音を先頭に置き、後続の打撃を弱めるかどうか
+ * @property {DrumCompression} [compression] 音色ごとのコンプレッサー設定
  * @property {number} decay 減衰の時定数（秒）
  * @property {number} duration サンプルの長さ（秒）
+ */
+
+/**
+ * 打撃のピークを抑えて音の密度を上げる設定
+ *
+ * @typedef {object} DrumCompression
+ * @property {number} thresholdDb 圧縮を始める振幅（dBFS）
+ * @property {number} ratio 圧縮比
+ * @property {number} attack アタック時間（秒）
+ * @property {number} release リリース時間（秒）
+ * @property {number} saturation 圧縮後のソフトクリップの強さ
  */
 
 export const categories = [
@@ -49,11 +65,11 @@ export const sounds = [
   createSoundDefinition('パンチキック', 'Punch kick', 'アタックが強い、硬い音', 'drums', 'kick', { frequency: 55, start: 320, decay: .13, duration: .75, click: .42, drive: 1.9 }),
   createSoundDefinition('ダーティキック', 'Dirty kick', '歪んだ、ざらつく低音', 'drums', 'kick', { frequency: 41, start: 130, decay: .21, duration: 1.2, click: .3, drive: 6 }),
   createSoundDefinition('ドライスネア', 'Dry snare', '手でミュートした実音の、カラッと短い「パッ」', 'drums', 'sample', { sample: 'assets/drums/snare-muted.wav', decay: .065, duration: .25 }),
-  createSoundDefinition('ファットスネア', 'Fat snare', '中央打ちの実音を低く加工した、太い「ドパン」', 'drums', 'sample', { sample: 'assets/drums/snare-center.wav', playbackRate: .82, decay: .11, duration: .38 }),
+  createSoundDefinition('ファットスネア', 'Fat snare', '低くした実音に太い胴鳴りを重ねた、短い「ドパン」', 'drums', 'sample', { sample: 'assets/drums/snare-center.wav', playbackRate: .7, lowpass: 2800, body: { frequency: 145, start: 220, decay: .05, level: .65 }, decay: .085, duration: .38 }),
   createSoundDefinition('ブライトスネア', 'Bright snare', '実音のリムショットによる、硬く鋭い「パシッ」', 'drums', 'sample', { sample: 'assets/drums/snare-rimshot.wav', playbackRate: 1.08, decay: .07, duration: .28 }),
-  createSoundDefinition('ノイズスネア', 'Noise snare', '砂嵐のような余韻', 'drums', 'snare', { frequency: 180, decay: .23, duration: 1.5, noise: 1.2, rattle: true }),
+  createSoundDefinition('チップノイズスネア', 'Chip noise snare', 'ファミコン風の粗いノイズが短く切れる「ザッ」', 'drums', 'chip-noise', { envelopeStep: .005, decay: .02, duration: .12 }),
   createSoundDefinition('ドライクラップ', 'Dry clap', '短く乾いた手拍子', 'hats', 'clap', { decay: .045, duration: .4, spread: .009 }),
-  createSoundDefinition('ワイドクラップ', 'Wide clap', '重なりと広がりのある手拍子', 'hats', 'clap', { decay: .15, duration: 1, spread: .023 }),
+  createSoundDefinition('ワイドクラップ', 'Wide clap', '先頭でパッと鳴り、薄い重なりと余韻が広がる手拍子', 'hats', 'clap', { decay: .12, duration: .7, spread: .006, frontLoaded: true }),
   createSoundDefinition('マシンクラップ', 'Machine clap', '細かな破裂が重なる音', 'hats', 'clap', { decay: .065, duration: .5, spread: .015, metallic: true }),
   createSoundDefinition('タイトハット', 'Tight hat', '高く短い「チッ」', 'hats', 'hat', { frequency: 1900, decay: .025, duration: .2, noise: .55 }),
   createSoundDefinition('ソフトハット', 'Soft hat', '柔らかな「スッ」', 'hats', 'hat', { frequency: 2600, decay: .045, duration: .3, noise: .95, soft: true }),
@@ -129,4 +145,9 @@ export const sounds = [
   createSoundDefinition('エレクトロミッドタム', 'Electro mid tom', '中音域で丸く弾む、短い「プン」', 'cymbals', 'electronic-tom', { frequency: 170, start: 320, pitchDecay: .014, decay: .046, duration: .26 }),
   createSoundDefinition('エレクトロロータム', 'Electro low tom', '低い音程へ落ちて止まる「プン」', 'cymbals', 'electronic-tom', { frequency: 115, start: 225, pitchDecay: .016, decay: .055, duration: .3 }),
   createSoundDefinition('エレクトロフロアタム', 'Electro floor tom', '深い低音へ落ち、短く収まる「プウン」', 'cymbals', 'electronic-tom', { frequency: 78, start: 155, pitchDecay: .018, decay: .065, duration: .34 }),
+  createSoundDefinition('スラムキック', 'Slam kick', '強いコンプと軽い歪みで押し出す、硬い「ドッ」', 'drums', 'kick', { frequency: 52, start: 280, decay: .045, duration: .32, click: .4, drive: 1.6, compression: { thresholdDb: -24, ratio: 8, attack: .0005, release: .014, saturation: 1 } }),
+  createSoundDefinition('コンプキック', 'Compressed kick', '実音の打撃と低音をコンプで密にした、重い「ドン」', 'drums', 'sample', { sample: 'assets/drums/kick-acoustic.wav', decay: .065, duration: .4, compression: { thresholdDb: -24, ratio: 8, attack: .0005, release: .018, saturation: 1 } }),
+  createSoundDefinition('スラムスネア', 'Slam snare', '強打の実音をコンプで押し固めた、鋭い「バシッ」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-crack.wav', decay: .055, duration: .32, compression: { thresholdDb: -24, ratio: 8, attack: .0004, release: .012, saturation: 1 } }),
+  createSoundDefinition('コンプファットスネア', 'Compressed fat snare', '低い胴鳴りと実音をコンプで太くした「バパン」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-rock.wav', playbackRate: .85, body: { frequency: 155, start: 240, decay: .035, level: .4 }, decay: .055, duration: .34, compression: { thresholdDb: -24, ratio: 8, attack: .0005, release: .014, saturation: 1 } }),
+  createSoundDefinition('スラムタム', 'Slam tom', '低い実音タムをコンプで密にした、力強い「ドム」', 'cymbals', 'sample', { sample: 'assets/drums/tom-low.wav', decay: .06, duration: .38, compression: { thresholdDb: -24, ratio: 8, attack: .0006, release: .018, saturation: 1 } }),
 ].map((entry, index) => ({ id: index + 1, ...entry }));
