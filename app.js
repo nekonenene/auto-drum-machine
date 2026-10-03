@@ -1,5 +1,6 @@
 import { sounds, categories } from './sounds.js';
 import { renderSound, waveformPeaks, encodeWav } from './synth.js';
+import { loadSampleSources } from './samples.js';
 
 /**
  * セレクターに一致する画面要素を取得する
@@ -30,6 +31,7 @@ const audioBuffersBySoundId = new Map();
 const activeVoices = new Set();
 const highlightTimeoutIds = new Set();
 const favoriteSoundIds = readFavorites();
+let sampleSourcesByPath = new Map();
 
 let selectedSound = sounds[0];
 let categoryFilter = 'all';
@@ -81,7 +83,7 @@ function saveFavorites() {
  */
 function getPcmSamples(sound) {
   if (!pcmSamplesBySoundId.has(sound.id)) {
-    pcmSamplesBySoundId.set(sound.id, renderSound(sound, SAMPLE_RATE));
+    pcmSamplesBySoundId.set(sound.id, renderSound(sound, SAMPLE_RATE, sampleSourcesByPath.get(sound.sample)));
   }
 
   return pcmSamplesBySoundId.get(sound.id);
@@ -538,8 +540,38 @@ function changeCategoryFilter(newCategoryFilter) {
 
   categoryFilter = newCategoryFilter;
   renderNavigation();
-  renderGrid();
+
+  if (!queryElement('#play-selected').disabled) {
+    renderGrid();
+  }
 }
+
+/**
+ * 同梱した実音を読み込み、試聴とWAV保存を利用可能にする
+ *
+ * @returns {Promise<void>}
+ */
+async function initializeLibrary() {
+  const playbackButtons = ['#play-selected', '#repeat', '#tour', '#download'];
+  playbackButtons.forEach((selector) => { queryElement(selector).disabled = true; });
+  queryElement('#retry-loading').hidden = true;
+  queryElement('#loading-state').hidden = false;
+  queryElement('#loading-message').textContent = '実音サンプルを読み込み中…';
+
+  try {
+    sampleSourcesByPath = await loadSampleSources(sounds);
+    renderGrid();
+    selectSound(selectedSound, false);
+    queryElement('#loading-state').hidden = true;
+    playbackButtons.forEach((selector) => { queryElement(selector).disabled = false; });
+  } catch (error) {
+    queryElement('#loading-message').textContent = '音色を読み込めませんでした。もう一度お試しください';
+    queryElement('#retry-loading').hidden = false;
+    console.error(error);
+  }
+}
+
+queryElement('#retry-loading').addEventListener('click', initializeLibrary);
 
 queryElement('#category-nav').addEventListener('click', (event) => {
   const button = event.target.closest('[data-filter]');
@@ -584,7 +616,9 @@ queryElement('#search').addEventListener('input', () => {
     stopPlayback();
   }
 
-  renderGrid();
+  if (!queryElement('#play-selected').disabled) {
+    renderGrid();
+  }
 });
 queryElement('#reset-filter').addEventListener('click', () => {
   queryElement('#search').value = '';
@@ -628,9 +662,13 @@ document.addEventListener('keydown', (event) => {
   }
 
   event.preventDefault();
-  auditionSound(selectedSound);
+
+  if (!queryElement('#play-selected').disabled) {
+    auditionSound(selectedSound);
+  }
 });
 
+queryElement('#total-count').textContent = sounds.length;
+queryElement('#sidebar-count').textContent = `${sounds.length} SOUNDS · IN YOUR BROWSER`;
 renderNavigation();
-renderGrid();
-selectSound(selectedSound, false);
+initializeLibrary();

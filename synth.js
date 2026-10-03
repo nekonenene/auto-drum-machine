@@ -16,9 +16,14 @@ const cymbalRatios = [1, 1.147, 1.414, 1.731, 2.113, 2.571, 3.127, 3.793, 4.613,
  *
  * @param {import("./sounds.js").SoundDefinition} sound 音色の定義
  * @param {number} [sampleRate=48000] サンプルレート（Hz）
+ * @param {{pcmSamples: Float32Array, sampleRate: number}} [source] 同梱した実音のPCM
  * @returns {Float32Array}
  */
-export function renderSound(sound, sampleRate = 48000) {
+export function renderSound(sound, sampleRate = 48000, source) {
+  if (sound.type === 'sample' && !source) {
+    throw new Error(`実音素材が読み込まれていません: ${sound.name}`);
+  }
+
   const pcmSamples = new Float32Array(Math.ceil(sound.duration * sampleRate));
   let seed = sound.id * 2654435761 >>> 0;
   let lowNoise = 0;
@@ -58,6 +63,29 @@ export function renderSound(sound, sampleRate = 48000) {
     let sampleValue = 0;
 
     switch (sound.type) {
+      case 'sample': {
+        const sourceTime = sound.reverse ? sound.duration - timeSeconds : timeSeconds;
+        const sourcePosition = sourceTime * source.sampleRate * (sound.playbackRate || 1);
+        const sourceIndex = Math.floor(sourcePosition);
+        const fraction = sourcePosition - sourceIndex;
+        const firstSample = source.pcmSamples[sourceIndex] || 0;
+        const secondSample = source.pcmSamples[sourceIndex + 1] || 0;
+        const envelope = Math.exp(-sourceTime / decay);
+        const rise = sound.reverse ? (timeSeconds / sound.duration) ** .8
+          : sound.swell ? Math.min(1, timeSeconds / sound.swell) ** 2 : 1;
+        sampleValue = (firstSample + (secondSample - firstSample) * fraction) * envelope * rise;
+        break;
+      }
+
+      case 'swell': {
+        const envelope = Math.sin(Math.PI * timeSeconds / sound.duration) ** 2;
+        const texture = sound.flavor === 'metal'
+          ? sumPartials(timeSeconds, metalRatios, frequency, .1) * .35 + highNoise * .08
+          : bandNoise * .35 + highNoise * (timeSeconds / sound.duration) * .7;
+        sampleValue = texture * envelope;
+        break;
+      }
+
       case 'kick': {
         const instantaneousFrequency = frequency + (sound.start - frequency) * Math.exp(-timeSeconds / .022);
         phase += instantaneousFrequency / sampleRate;

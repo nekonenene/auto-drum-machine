@@ -1,0 +1,130 @@
+{
+  "revision": "9f04cf9a734527edfbb0a4eee1f674e45bbf71bc",
+  "entries": [
+    {
+      "name": "snare-muted",
+      "sourcePath": "Samples/snaremic/snare/snaremic_snare_muted_vl9.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/snaremic/snare/snaremic_snare_muted_vl9.flac",
+      "file": "snare-muted.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 136,
+      "frameCount": 24000,
+      "sourceSha256": "ade808645cbe5120aa3ff43fb19383be41e1b9298d2b893cb23fc44bedbbe84b",
+      "sha256": "c2d4f944b1edec90d89f93d56bb6822bde366b2da9d04c9f81730ac6d3203ae2"
+    },
+    {
+      "name": "snare-center",
+      "sourcePath": "Samples/snaremic/snare/snaremic_snare_center_vl35.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/snaremic/snare/snaremic_snare_center_vl35.flac",
+      "file": "snare-center.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 185,
+      "frameCount": 26400,
+      "sourceSha256": "154de8388fbf0e07aec6080911bcb516325b2386134998e5a622b740cea88fcc",
+      "sha256": "efb2a26bf6c9e205d76dade695322b1d318d2bcbaca5f52532ebd805ec4ca3b4"
+    },
+    {
+      "name": "snare-rimshot",
+      "sourcePath": "Samples/snaremic/snare/snaremic_snare_rimshot_vl8.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/snaremic/snare/snaremic_snare_rimshot_vl8.flac",
+      "file": "snare-rimshot.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 109,
+      "frameCount": 19200,
+      "sourceSha256": "8bccd2092a2108f2af89a993af8555ac35d8de5cf39cc2f1803e42220eb44eab",
+      "sha256": "11e02233ab6b3cf8df33f4c1c0a8a887a7f812d8cb8864128048ba54db073d6d"
+    },
+    {
+      "name": "crash",
+      "sourcePath": "Samples/mid/crash/mid_crash_crash_vl3_rr1.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/mid/crash/mid_crash_crash_vl3_rr1.flac",
+      "file": "crash.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 263,
+      "frameCount": 172800,
+      "sourceSha256": "0469cb31e5228e084d839e425f76efaea093bc18b23fa3fe405d26705182024d",
+      "sha256": "eb3c4b1920c3a23b0dbfefc8542c37ef74f76ff39aa2462abcf3d130b635a0fe"
+    },
+    {
+      "name": "ride",
+      "sourcePath": "Samples/mid/ride/mid_ride_ride_vl3_rr1.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/mid/ride/mid_ride_ride_vl3_rr1.flac",
+      "file": "ride.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 220,
+      "frameCount": 115200,
+      "sourceSha256": "3ba4ca0d97b7a4298d345af6855d4713db73ec4b748209e3857b77dc69fa641a",
+      "sha256": "7fe6fa744918d7fdd71ce84059b4aebdab8b0a401c4dbafc5fd415f125957e4d"
+    },
+    {
+      "name": "ride-bell",
+      "sourcePath": "Samples/mid/ride/mid_ride_bell_vl3_rr1.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/mid/ride/mid_ride_bell_vl3_rr1.flac",
+      "file": "ride-bell.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 231,
+      "frameCount": 86400,
+      "sourceSha256": "6311a95441142bca55a2e97c0670e72ebf16a25e4b17706362ea4f00de33aac1",
+      "sha256": "6acd628764d44f028699e19191fcab9334baf3bb81e530a60ff6c1020a754abd"
+    },
+    {
+      "name": "cowbell",
+      "sourcePath": "Samples/perc/close/cowbell/Cowbell1_Normal_v3_rr1_Close.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/perc/close/cowbell/Cowbell1_Normal_v3_rr1_Close.wav",
+      "file": "cowbell.wav",
+      "sampleRate": 44100,
+      "trimStartFrame": 0,
+      "frameCount": 35280,
+      "sourceSha256": "da608770ee5ef4dc17e9527b7b69254024e601bfa7745a7f97c33001dd163e47",
+      "sha256": "7ffc49c3cea48c354217b94a600102c0cd0ffcad85af94290e501031150cbdb2"
+    },
+    {
+      "name": "kick-acoustic",
+      "sourcePath": "Samples/kickmic/kick/kickmic_kick_snoff_vl3_rr3.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/kickmic/kick/kickmic_kick_snoff_vl3_rr3.flac",
+      "file": "kick-acoustic.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 115,
+      "frameCount": 28800,
+      "sourceSha256": "c39b4c3263f7e096336aff33acac5087534af7ed9f613aaec007ae733af03d57",
+      "sha256": "b5a85bc68444582797afb7a0c7966b98aadb2f1b65b2c401c19fcfdc24e0c43c"
+    },
+    {
+      "name": "tom-high",
+      "sourcePath": "Samples/mid/htom/mid_htom_center_vl14.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/mid/htom/mid_htom_center_vl14.flac",
+      "file": "tom-high.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 269,
+      "frameCount": 28800,
+      "sourceSha256": "601e9e952fc42b84d584927bc2b5b1cac0352b53108becad556167f18765c195",
+      "sha256": "262eae2bde0b2161493d09fc21e6c67cdf0f858d945ed2295cf55fee3670ec94"
+    },
+    {
+      "name": "tom-low",
+      "sourcePath": "Samples/mid/ltom/mid_ltom_center_vl14.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/mid/ltom/mid_ltom_center_vl14.flac",
+      "file": "tom-low.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 324,
+      "frameCount": 36000,
+      "sourceSha256": "2ab8978ecfa614f6daba09d55e259375f60f0716f5827f4e40c9cc23a95c40a3",
+      "sha256": "25390a7238a7fa987708e2832903f827944b036318b34c6541d892bb410a68c2"
+    },
+    {
+      "name": "hat-open",
+      "sourcePath": "Samples/mid/hh/mid_hh_open_vl3_rr1.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/mid/hh/mid_hh_open_vl3_rr1.flac",
+      "file": "hat-open.wav",
+      "sampleRate": 48000,
+      "trimStartFrame": 325,
+      "frameCount": 52800,
+      "sourceSha256": "58302f8eabd04050ddb00d0f6ba907edb7996a7d36ce437e98494eec3ae9da69",
+      "sha256": "26a24f0b00850ecf3e47de7fd6763d862f5ff1c94555e16267eaeb35fe6a98bc"
+    }
+  ],
+  "library": "Virtuosity Drums",
+  "license": "CC0-1.0",
+  "source": "https://github.com/sfzinstruments/virtuosity_drums",
+  "processing": "Mono mix; trim from first 2%-of-peak crossing minus 2ms; crop to frameCount; remove DC; normalize to 0.9; 0.5ms attack and 15ms release fades; quantize PCM16. Runtime shaping is defined in sounds.js."
+}
