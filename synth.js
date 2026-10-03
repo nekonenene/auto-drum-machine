@@ -1,26 +1,51 @@
 const TAU = Math.PI * 2;
+
+/**
+ * 周期数から正弦波の振幅を求める
+ *
+ * @param {number} cycles 位相を周期数で表した値
+ * @returns {number}
+ */
 const sin = (cycles) => Math.sin(TAU * cycles);
+
 const metalRatios = [1, 1.342, 1.789, 2.513, 3.127, 4.073];
 const cymbalRatios = [1, 1.147, 1.414, 1.731, 2.113, 2.571, 3.127, 3.793, 4.613, 5.329, 6.107, 7.139];
 
-/** Deterministic PCM synthesis, shared by playback, waveform display and WAV export. */
+/**
+ * 音色の定義から、試聴・波形表示・WAV保存に共用するPCMを合成する
+ *
+ * @param {import("./sounds.js").SoundDefinition} sound 音色の定義
+ * @param {number} [sampleRate=48000] サンプルレート（Hz）
+ * @returns {Float32Array}
+ */
 export function renderSound(sound, sampleRate = 48000) {
-  const samples = new Float32Array(Math.ceil(sound.duration * sampleRate));
+  const pcmSamples = new Float32Array(Math.ceil(sound.duration * sampleRate));
   let seed = sound.id * 2654435761 >>> 0;
   let lowNoise = 0;
   let midNoise = 0;
   let phase = 0;
-  let held = 0;
+  let heldSample = 0;
   const frequency = sound.frequency || 1000;
   const decay = sound.decay;
   const lowCoefficient = 1 - Math.exp(-TAU * 900 / sampleRate);
   const midCoefficient = 1 - Math.exp(-TAU * 4200 / sampleRate);
-  const partials = (time, ratios, base, damp) => ratios.reduce((sum, ratio, index) => (
-    sum + sin(base * ratio * time) * Math.exp(-time * index * damp) / (index + 1)
+
+  /**
+   * 減衰速度の異なる倍音を加算する
+   *
+   * @param {number} time 経過時間（秒）
+   * @param {number[]} ratios 基音に対する周波数比
+   * @param {number} baseFrequency 基音の周波数（Hz）
+   * @param {number} dampingRate 倍音ごとの追加減衰率
+   * @returns {number}
+   */
+  const sumPartials = (time, ratios, baseFrequency, dampingRate) => ratios.reduce((sum, ratio, index) => (
+    sum + sin(baseFrequency * ratio * time) * Math.exp(-time * index * dampingRate) / (index + 1)
   ), 0);
 
-  for (let index = 0; index < samples.length; index++) {
-    const t = index / sampleRate;
+  // 音色ごとの合成方式で各時刻の振幅を生成する
+  for (let index = 0; index < pcmSamples.length; index++) {
+    const timeSeconds = index / sampleRate;
     seed ^= seed << 13;
     seed ^= seed >>> 17;
     seed ^= seed << 5;
@@ -29,223 +54,301 @@ export function renderSound(sound, sampleRate = 48000) {
     midNoise += midCoefficient * (noise - midNoise);
     const highNoise = noise - lowNoise;
     const bandNoise = midNoise - lowNoise;
-    const env = Math.exp(-t / decay);
-    let value = 0;
+    const decayEnvelope = Math.exp(-timeSeconds / decay);
+    let sampleValue = 0;
 
     switch (sound.type) {
       case 'kick': {
-        const f = frequency + (sound.start - frequency) * Math.exp(-t / .022);
-        phase += f / sampleRate;
-        const body = sin(phase) + .14 * sin(phase * 2) * Math.exp(-t / .04);
-        value = Math.tanh(body * (sound.drive || 1)) * env + highNoise * sound.click * Math.exp(-t / .003);
+        const instantaneousFrequency = frequency + (sound.start - frequency) * Math.exp(-timeSeconds / .022);
+        phase += instantaneousFrequency / sampleRate;
+        const body = sin(phase) + .14 * sin(phase * 2) * Math.exp(-timeSeconds / .04);
+        sampleValue = Math.tanh(body * (sound.drive || 1)) * decayEnvelope + highNoise * sound.click * Math.exp(-timeSeconds / .003);
         break;
       }
+
       case 'snare':
-        value = (sin(frequency * t) * .55 + sin(frequency * 1.57 * t) * .24) * Math.exp(-t / (decay * .7))
-          + (sound.bright ? highNoise : bandNoise) * sound.noise * env * (sound.rattle ? .65 + .35 * sin(87 * t) ** 2 : 1);
+        sampleValue = (sin(frequency * timeSeconds) * .55 + sin(frequency * 1.57 * timeSeconds) * .24) * Math.exp(-timeSeconds / (decay * .7))
+          + (sound.bright ? highNoise : bandNoise) * sound.noise * decayEnvelope * (sound.rattle ? .65 + .35 * sin(87 * timeSeconds) ** 2 : 1);
         break;
       case 'clap': {
         let clapEnvelope = 0;
+
+        // 時間をずらしたノイズの包絡線を重ねてクラップを作る
         for (let hit = 0; hit < 4; hit++) {
-          const elapsed = t - hit * sound.spread;
-          if (elapsed >= 0) clapEnvelope += Math.exp(-elapsed / (hit === 3 ? decay : .004));
+          const elapsed = timeSeconds - hit * sound.spread;
+
+          if (elapsed >= 0) {
+            clapEnvelope += Math.exp(-elapsed / (hit === 3 ? decay : .004));
+          }
         }
-        value = bandNoise * clapEnvelope + (sound.metallic ? sin(1710 * t) * .09 * clapEnvelope : 0);
+
+        sampleValue = bandNoise * clapEnvelope + (sound.metallic ? sin(1710 * timeSeconds) * .09 * clapEnvelope : 0);
         break;
       }
+
       case 'hat':
-        value = (partials(t, metalRatios, frequency, 4) * (sound.soft ? .03 : .16) + highNoise * sound.noise) * env;
+        sampleValue = (sumPartials(timeSeconds, metalRatios, frequency, 4) * (sound.soft ? .03 : .16) + highNoise * sound.noise) * decayEnvelope;
         break;
       case 'cymbal':
-        value = (partials(t, cymbalRatios, frequency, 1.3) * .22 + highNoise * sound.noise) * env;
+        sampleValue = (sumPartials(timeSeconds, cymbalRatios, frequency, 1.3) * .22 + highNoise * sound.noise) * decayEnvelope;
         break;
       case 'tom':
-        phase += frequency * (1 + .45 * Math.exp(-t / .023)) / sampleRate;
-        value = (sin(phase) + .32 * sin(phase * 1.59) * Math.exp(-t / .06)) * env
-          + bandNoise * .13 * Math.exp(-t / .01);
+        phase += frequency * (1 + .45 * Math.exp(-timeSeconds / .023)) / sampleRate;
+        sampleValue = (sin(phase) + .32 * sin(phase * 1.59) * Math.exp(-timeSeconds / .06)) * decayEnvelope
+          + bandNoise * .13 * Math.exp(-timeSeconds / .01);
         break;
       case 'wood':
-        value = (sin(frequency * t) + .45 * sin(frequency * sound.ratio * t)) * env
-          + highNoise * (sound.noise || .07) * Math.exp(-t / .002);
+        sampleValue = (sin(frequency * timeSeconds) + .45 * sin(frequency * sound.ratio * timeSeconds)) * decayEnvelope
+          + highNoise * (sound.noise || .07) * Math.exp(-timeSeconds / .002);
         break;
       case 'cowbell':
-        value = (Math.tanh(3 * sin(frequency * t)) + .7 * Math.tanh(3 * sin(frequency * 1.48 * t))) * env;
+        sampleValue = (Math.tanh(3 * sin(frequency * timeSeconds)) + .7 * Math.tanh(3 * sin(frequency * 1.48 * timeSeconds))) * decayEnvelope;
         break;
       case 'shaker':
-        value = highNoise * (.2 + .8 * Math.abs(sin(sound.grain * t))) * env * (1 - Math.exp(-t / .004));
+        sampleValue = highNoise * (.2 + .8 * Math.abs(sin(sound.grain * timeSeconds))) * decayEnvelope * (1 - Math.exp(-timeSeconds / .004));
         break;
       case 'tambourine':
-        value = (partials(t, metalRatios, frequency, 5) * .2 + highNoise * .5) * env;
+        sampleValue = (sumPartials(timeSeconds, metalRatios, frequency, 5) * .2 + highNoise * .5) * decayEnvelope;
         break;
       case 'hand':
-        phase += frequency * (1 + .12 * Math.exp(-t / .015)) / sampleRate;
-        value = (sin(phase) + .4 * sin(phase * sound.ratio) * Math.exp(-t / .045)
-          + .12 * sin(phase * 3.3) * Math.exp(-t / .018)) * env + bandNoise * .14 * Math.exp(-t / .008);
+        phase += frequency * (1 + .12 * Math.exp(-timeSeconds / .015)) / sampleRate;
+        sampleValue = (sin(phase) + .4 * sin(phase * sound.ratio) * Math.exp(-timeSeconds / .045)
+          + .12 * sin(phase * 3.3) * Math.exp(-timeSeconds / .018)) * decayEnvelope + bandNoise * .14 * Math.exp(-timeSeconds / .008);
         break;
       case 'bass': {
-        phase += frequency * (sound.flavor === 'rubber' ? 1 + 1.2 * Math.exp(-t / .035) : 1) / sampleRate;
+        phase += frequency * (sound.flavor === 'rubber' ? 1 + 1.2 * Math.exp(-timeSeconds / .035) : 1) / sampleRate;
         const body = sin(phase);
         const harmonics = sin(phase * 2) * .45 + sin(phase * 3) * .2;
-        value = (sound.flavor === 'sub' ? body : sound.flavor === 'buzz' ? Math.tanh(5 * (body + harmonics))
-          : body + harmonics * Math.exp(-t / .04)) * env * (1 - Math.exp(-t / .003));
+        sampleValue = (sound.flavor === 'sub' ? body : sound.flavor === 'buzz' ? Math.tanh(5 * (body + harmonics))
+          : body + harmonics * Math.exp(-timeSeconds / .04)) * decayEnvelope * (1 - Math.exp(-timeSeconds / .003));
         break;
       }
+
       case 'mallet':
-        value = (sin(frequency * t) + .34 * sin(frequency * 3.99 * t) * Math.exp(-t / .05)) * env;
+        sampleValue = (sin(frequency * timeSeconds) + .34 * sin(frequency * 3.99 * timeSeconds) * Math.exp(-timeSeconds / .05)) * decayEnvelope;
         break;
       case 'pluck':
+
         for (let harmonic = 1; harmonic <= 8; harmonic++) {
-          value += sin(frequency * harmonic * t) / harmonic * Math.exp(-t * harmonic / decay);
+          sampleValue += sin(frequency * harmonic * timeSeconds) / harmonic * Math.exp(-timeSeconds * harmonic / decay);
         }
+
         break;
       case 'chord':
+
         for (const ratio of [1, 2 ** (3 / 12), 2 ** (7 / 12), 2]) {
-          value += (sin(frequency * ratio * t) + .25 * sin(frequency * ratio * 2 * t)) * env * .3;
+          sampleValue += (sin(frequency * ratio * timeSeconds) + .25 * sin(frequency * ratio * 2 * timeSeconds)) * decayEnvelope * .3;
         }
+
         break;
       case 'vowel': {
-        const center = 420 + 700 * Math.exp(-t / .065);
-        value = (sin(frequency * t) * .2 + sin(center * t) * .7 + sin(center * 1.8 * t) * .3)
-          * (.65 + .35 * sin(frequency * t)) * env;
+        const center = 420 + 700 * Math.exp(-timeSeconds / .065);
+        sampleValue = (sin(frequency * timeSeconds) * .2 + sin(center * timeSeconds) * .7 + sin(center * 1.8 * timeSeconds) * .3)
+          * (.65 + .35 * sin(frequency * timeSeconds)) * decayEnvelope;
         break;
       }
+
       case 'metal':
-        value = Math.sin(TAU * frequency * t + sound.index * Math.exp(-t / (decay * .8)) * sin(frequency * sound.ratio * t)) * env;
+        sampleValue = Math.sin(TAU * frequency * timeSeconds + sound.index * Math.exp(-timeSeconds / (decay * .8)) * sin(frequency * sound.ratio * timeSeconds)) * decayEnvelope;
         break;
       case 'spring':
-        phase += frequency * (1 + .35 * sin(19 * t) * Math.exp(-t / .18)) / sampleRate;
-        value = (sin(phase) + .35 * sin(phase * 3.14)) * env;
+        phase += frequency * (1 + .35 * sin(19 * timeSeconds) * Math.exp(-timeSeconds / .18)) / sampleRate;
+        sampleValue = (sin(phase) + .35 * sin(phase * 3.14)) * decayEnvelope;
         break;
       case 'chime':
-        value = partials(t, [1, 1.414, 2.713, 3.927, 5.11], frequency, 1.1) * env;
+        sampleValue = sumPartials(timeSeconds, [1, 1.414, 2.713, 3.927, 5.11], frequency, 1.1) * decayEnvelope;
         break;
       case 'click':
-        value = (highNoise * .7 + sin(frequency * t) * .3) * env;
+        sampleValue = (highNoise * .7 + sin(frequency * timeSeconds) * .3) * decayEnvelope;
         break;
       case 'pop':
-        phase += frequency * Math.exp(-t / .01) / sampleRate;
-        value = sin(phase) * env;
+        phase += frequency * Math.exp(-timeSeconds / .01) / sampleRate;
+        sampleValue = sin(phase) * decayEnvelope;
         break;
       case 'drop':
-        phase += frequency * (1 - .65 * Math.exp(-t / .022)) / sampleRate;
-        value = sin(phase) * env;
+        phase += frequency * (1 - .65 * Math.exp(-timeSeconds / .022)) / sampleRate;
+        sampleValue = sin(phase) * decayEnvelope;
         break;
       case 'grain': {
-        const grain = Math.floor(t / .018);
-        const localTime = t % .018;
-        value = (sin((frequency + sin(grain * .712) * 850) * localTime) * .5 + bandNoise * .3)
-          * Math.sin(Math.PI * localTime / .018) ** 2 * env;
+        const grain = Math.floor(timeSeconds / .018);
+        const localTime = timeSeconds % .018;
+        sampleValue = (sin((frequency + sin(grain * .712) * 850) * localTime) * .5 + bandNoise * .3)
+          * Math.sin(Math.PI * localTime / .018) ** 2 * decayEnvelope;
         break;
       }
+
       case 'noise':
-        if (sound.flavor === 'air') value = lowNoise * env * (1 - Math.exp(-t / .009));
-        if (sound.flavor === 'crack') value = Math.tanh(highNoise * 4) * env;
-        if (sound.flavor === 'sand') value = bandNoise * env * (.3 + .7 * Math.abs(sin(47 * t)));
-        if (sound.flavor === 'whistle') value = (bandNoise * .45 + sin(frequency * t) * .45) * env;
+
+        if (sound.flavor === 'air') {
+          sampleValue = lowNoise * decayEnvelope * (1 - Math.exp(-timeSeconds / .009));
+        }
+
+        if (sound.flavor === 'crack') {
+          sampleValue = Math.tanh(highNoise * 4) * decayEnvelope;
+        }
+
+        if (sound.flavor === 'sand') {
+          sampleValue = bandNoise * decayEnvelope * (.3 + .7 * Math.abs(sin(47 * timeSeconds)));
+        }
+
+        if (sound.flavor === 'whistle') {
+          sampleValue = (bandNoise * .45 + sin(frequency * timeSeconds) * .45) * decayEnvelope;
+        }
         break;
       case 'sweep': {
-        const f = sound.flavor === 'rise' ? sound.start + (frequency - sound.start) * (1 - Math.exp(-t / .055))
-          : frequency + (sound.start - frequency) * Math.exp(-t / (sound.flavor === 'laser' ? .03 : .07));
-        phase += f / sampleRate;
-        value = (sound.flavor === 'laser' ? Math.tanh(2.7 * sin(phase)) : sin(phase)) * env;
+        const instantaneousFrequency = sound.flavor === 'rise' ? sound.start + (frequency - sound.start) * (1 - Math.exp(-timeSeconds / .055))
+          : frequency + (sound.start - frequency) * Math.exp(-timeSeconds / (sound.flavor === 'laser' ? .03 : .07));
+        phase += instantaneousFrequency / sampleRate;
+        sampleValue = (sound.flavor === 'laser' ? Math.tanh(2.7 * sin(phase)) : sin(phase)) * decayEnvelope;
         break;
       }
+
       case 'wobble':
-        phase += frequency * (1 + .28 * sin(13 * t)) / sampleRate;
-        value = Math.sin(TAU * phase + 2 * sin(phase * 2) * (.5 + .5 * sin(7 * t))) * env;
+        phase += frequency * (1 + .28 * sin(13 * timeSeconds)) / sampleRate;
+        sampleValue = Math.sin(TAU * phase + 2 * sin(phase * 2) * (.5 + .5 * sin(7 * timeSeconds))) * decayEnvelope;
         break;
       case 'glitch':
+
         if (sound.flavor === 'step') {
-          const step = Math.min(2, Math.floor(t / .12));
+          const step = Math.min(2, Math.floor(timeSeconds / .12));
           phase += frequency * [1, 1.5, .75][step] / sampleRate;
-          value = sin(phase) * Math.exp(-(t % .12) / .065) * Math.min(1, (t % .12) / .002);
+          sampleValue = sin(phase) * Math.exp(-(timeSeconds % .12) / .065) * Math.min(1, (timeSeconds % .12) / .002);
         } else if (sound.flavor === 'stutter') {
-          const localTime = t % .075;
+          const localTime = timeSeconds % .075;
           const gate = localTime < .046 ? Math.min(1, localTime / .002, (.046 - localTime) / .003) : 0;
-          value = (Math.tanh(3 * sin(frequency * t)) + bandNoise * .3) * gate * Math.exp(-t / .4);
+          sampleValue = (Math.tanh(3 * sin(frequency * timeSeconds)) + bandNoise * .3) * gate * Math.exp(-timeSeconds / .4);
         } else if (sound.flavor === 'bit') {
           if (index % Math.max(1, Math.round(sampleRate / 3500)) === 0) {
-            held = Math.round((sin(frequency * t) * .6 + noise * .4) * 7) / 7;
+            heldSample = Math.round((sin(frequency * timeSeconds) * .6 + noise * .4) * 7) / 7;
           }
-          value = held * env;
+
+          sampleValue = heldSample * decayEnvelope;
         } else {
-          value = Math.tanh(7 * (sin(frequency * t) + .4 * sin(frequency * 1.51 * t) + bandNoise * .3)) * env;
+          sampleValue = Math.tanh(7 * (sin(frequency * timeSeconds) + .4 * sin(frequency * 1.51 * timeSeconds) + bandNoise * .3)) * decayEnvelope;
         }
         break;
       case 'reverse': {
-        const rise = (t / sound.duration) ** 2.6;
-        value = (bandNoise * .6 + sin(frequency * t) * .22 + sin(frequency * 2.04 * t) * .12) * rise;
+        const rise = (timeSeconds / sound.duration) ** 2.6;
+        sampleValue = (bandNoise * .6 + sin(frequency * timeSeconds) * .22 + sin(frequency * 2.04 * timeSeconds) * .12) * rise;
         break;
       }
+
       case 'echo':
+
+        // 減衰させた打撃音を一定間隔で重ねて反響を作る
         for (let repeat = 0; repeat < 5; repeat++) {
-          const elapsed = t - repeat * .215;
-          if (elapsed >= 0) value += sin(frequency * elapsed) * Math.exp(-elapsed / decay) * .56 ** repeat;
+          const elapsed = timeSeconds - repeat * .215;
+
+          if (elapsed >= 0) {
+            sampleValue += sin(frequency * elapsed) * Math.exp(-elapsed / decay) * .56 ** repeat;
+          }
         }
+
         break;
       case 'tube':
-        value = (sin(frequency * t) + .45 * sin(frequency * 3 * t) * Math.exp(-t / .1)
-          + .2 * sin(frequency * 5 * t) * Math.exp(-t / .055)) * env;
+        sampleValue = (sin(frequency * timeSeconds) + .45 * sin(frequency * 3 * timeSeconds) * Math.exp(-timeSeconds / .1)
+          + .2 * sin(frequency * 5 * timeSeconds) * Math.exp(-timeSeconds / .055)) * decayEnvelope;
         break;
       case 'shimmer':
-        value = (partials(t, [1, 1.5, 2.003, 3, 4.01, 6], frequency, .6) * .3 + highNoise * .12)
-          * env * (.55 + .45 * Math.min(1, t / .04));
+        sampleValue = (sumPartials(timeSeconds, [1, 1.5, 2.003, 3, 4.01, 6], frequency, .6) * .3 + highNoise * .12)
+          * decayEnvelope * (.55 + .45 * Math.min(1, timeSeconds / .04));
         break;
       default:
         throw new Error(`Unknown sound type: ${sound.type}`);
     }
 
-    // Short fades prevent clicks at the beginning and end of each buffer.
-    const attack = Math.min(1, t / (sound.type === 'click' ? .00012 : .0006));
-    const release = Math.min(1, (samples.length - 1 - index) / (sampleRate * .012));
-    samples[index] = value * attack * Math.max(0, release);
+    // バッファーの始端と終端を短くフェードし、クリックノイズを抑える
+    const attack = Math.min(1, timeSeconds / (sound.type === 'click' ? .00012 : .0006));
+    const release = Math.min(1, (pcmSamples.length - 1 - index) / (sampleRate * .012));
+    pcmSamples[index] = sampleValue * attack * Math.max(0, release);
   }
 
-  // Remove DC offset, keep individual sounds below full scale, and equalize peaks.
-  const mean = samples.reduce((sum, value) => sum + value, 0) / samples.length;
+  // DCオフセットを抑え、各音のピークをフルスケール未満に揃える
+  const dcOffset = pcmSamples.reduce((sum, sampleValue) => sum + sampleValue, 0) / pcmSamples.length;
   let peak = 0;
-  for (let index = 0; index < samples.length; index++) {
-    const boundary = Math.min(1, index / (sampleRate * .001), (samples.length - 1 - index) / (sampleRate * .012));
-    samples[index] -= mean * Math.max(0, boundary);
-    peak = Math.max(peak, Math.abs(samples[index]));
+
+  // 境界のフェードを保ちながらDCオフセットと最大振幅を求める
+  for (let index = 0; index < pcmSamples.length; index++) {
+    const boundaryEnvelope = Math.min(1, index / (sampleRate * .001), (pcmSamples.length - 1 - index) / (sampleRate * .012));
+    pcmSamples[index] -= dcOffset * Math.max(0, boundaryEnvelope);
+    peak = Math.max(peak, Math.abs(pcmSamples[index]));
   }
-  const scale = peak > 0 ? .78 / peak : 0;
-  for (let index = 0; index < samples.length; index++) samples[index] *= scale;
-  return samples;
+
+  const normalizationGain = peak > 0 ? .78 / peak : 0;
+
+  // 全サンプルに同じ倍率を適用してピークを揃える
+  for (let index = 0; index < pcmSamples.length; index++) {
+    pcmSamples[index] *= normalizationGain;
+  }
+
+  return pcmSamples;
 }
 
-export function waveformPeaks(samples, count = 72) {
+/**
+ * PCMを一定数の区間に分け、波形表示用のピークを取得する
+ *
+ * @param {Float32Array} pcmSamples PCMサンプル
+ * @param {number} [columnCount=72] 表示する区間数
+ * @returns {number[]}
+ */
+export function waveformPeaks(pcmSamples, columnCount = 72) {
   const peaks = [];
-  for (let column = 0; column < count; column++) {
-    const start = Math.floor(column * samples.length / count);
-    const end = Math.floor((column + 1) * samples.length / count);
+
+  // 波形の各表示区間から最大振幅を求める
+  for (let column = 0; column < columnCount; column++) {
+    const startIndex = Math.floor(column * pcmSamples.length / columnCount);
+    const endIndex = Math.floor((column + 1) * pcmSamples.length / columnCount);
     let peak = 0;
-    for (let index = start; index < end; index++) peak = Math.max(peak, Math.abs(samples[index]));
+
+    for (let index = startIndex; index < endIndex; index++) {
+      peak = Math.max(peak, Math.abs(pcmSamples[index]));
+    }
+
     peaks.push(peak);
   }
+
   return peaks;
 }
 
-export function encodeWav(samples, sampleRate) {
-  const bytes = new ArrayBuffer(44 + samples.length * 2);
-  const view = new DataView(bytes);
-  const writeText = (offset, text) => [...text].forEach((character, index) => view.setUint8(offset + index, character.charCodeAt(0)));
+/**
+ * PCMを16bitモノラルのWAVデータに変換する
+ *
+ * @param {Float32Array} pcmSamples PCMサンプル
+ * @param {number} sampleRate サンプルレート（Hz）
+ * @returns {ArrayBuffer}
+ */
+export function encodeWav(pcmSamples, sampleRate) {
+  const wavBytes = new ArrayBuffer(44 + pcmSamples.length * 2);
+  const wavView = new DataView(wavBytes);
+
+  /**
+   * WAVヘッダーの指定位置にASCII文字列を書き込む
+   *
+   * @param {number} offset 書き込み位置（バイト）
+   * @param {string} text ASCII文字列
+   * @returns {void}
+   */
+  const writeText = (offset, text) => [...text].forEach((character, index) => wavView.setUint8(offset + index, character.charCodeAt(0)));
+
   writeText(0, 'RIFF');
-  view.setUint32(4, bytes.byteLength - 8, true);
+  wavView.setUint32(4, wavBytes.byteLength - 8, true);
   writeText(8, 'WAVE');
   writeText(12, 'fmt ');
-  view.setUint32(16, 16, true);
-  view.setUint16(20, 1, true);
-  view.setUint16(22, 1, true);
-  view.setUint32(24, sampleRate, true);
-  view.setUint32(28, sampleRate * 2, true);
-  view.setUint16(32, 2, true);
-  view.setUint16(34, 16, true);
+  wavView.setUint32(16, 16, true);
+  wavView.setUint16(20, 1, true);
+  wavView.setUint16(22, 1, true);
+  wavView.setUint32(24, sampleRate, true);
+  wavView.setUint32(28, sampleRate * 2, true);
+  wavView.setUint16(32, 2, true);
+  wavView.setUint16(34, 16, true);
   writeText(36, 'data');
-  view.setUint32(40, samples.length * 2, true);
-  for (let index = 0; index < samples.length; index++) {
-    const sample = Math.max(-1, Math.min(1, samples[index]));
-    view.setInt16(44 + index * 2, Math.round(sample * (sample < 0 ? 32768 : 32767)), true);
+  wavView.setUint32(40, pcmSamples.length * 2, true);
+
+  // 各サンプルを16bit整数に変換して音声データを書き込む
+  for (let index = 0; index < pcmSamples.length; index++) {
+    const sample = Math.max(-1, Math.min(1, pcmSamples[index]));
+    wavView.setInt16(44 + index * 2, Math.round(sample * (sample < 0 ? 32768 : 32767)), true);
   }
-  return bytes;
+
+  return wavBytes;
 }
