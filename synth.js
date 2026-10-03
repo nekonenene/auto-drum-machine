@@ -12,7 +12,7 @@ const metalRatios = [1, 1.342, 1.789, 2.513, 3.127, 4.073];
 const cymbalRatios = [1, 1.147, 1.414, 1.731, 2.113, 2.571, 3.127, 3.793, 4.613, 5.329, 6.107, 7.139];
 
 /**
- * 音色の定義から、試聴・波形表示・WAV保存に共用するPCMを合成する
+ * 音色の定義と実音素材から、試聴・波形表示・WAV保存に共用するPCMを生成する
  *
  * @param {import("./sounds.js").SoundDefinition} sound 音色の定義
  * @param {number} [sampleRate=48000] サンプルレート（Hz）
@@ -98,6 +98,16 @@ export function renderSound(sound, sampleRate = 48000, source) {
         sampleValue = (sin(frequency * timeSeconds) * .55 + sin(frequency * 1.57 * timeSeconds) * .24) * Math.exp(-timeSeconds / (decay * .7))
           + (sound.bright ? highNoise : bandNoise) * sound.noise * decayEnvelope * (sound.rattle ? .65 + .35 * sin(87 * timeSeconds) ** 2 : 1);
         break;
+      case 'snap-snare': {
+        const instantaneousFrequency = frequency + (sound.start - frequency) * Math.exp(-timeSeconds / .008);
+        phase += instantaneousFrequency / sampleRate;
+        const body = (sin(phase) + .22 * sin(phase * 2.42)) * Math.exp(-timeSeconds / .025);
+        const wires = (highNoise * .78 + bandNoise * .35)
+          * (.7 * decayEnvelope + .5 * Math.exp(-timeSeconds / .006));
+        sampleValue = Math.tanh((body * .48 + wires) * 1.4);
+        break;
+      }
+
       case 'clap': {
         let clapEnvelope = 0;
 
@@ -125,6 +135,14 @@ export function renderSound(sound, sampleRate = 48000, source) {
         sampleValue = (sin(phase) + .32 * sin(phase * 1.59) * Math.exp(-timeSeconds / .06)) * decayEnvelope
           + bandNoise * .13 * Math.exp(-timeSeconds / .01);
         break;
+      case 'electronic-tom': {
+        const instantaneousFrequency = frequency + (sound.start - frequency) * Math.exp(-timeSeconds / sound.pitchDecay);
+        phase += instantaneousFrequency / sampleRate;
+        const body = sin(phase) + .12 * sin(phase * 2) * Math.exp(-timeSeconds / .015);
+        sampleValue = body * decayEnvelope + highNoise * .025 * Math.exp(-timeSeconds / .002);
+        break;
+      }
+
       case 'wood':
         sampleValue = (sin(frequency * timeSeconds) + .45 * sin(frequency * sound.ratio * timeSeconds)) * decayEnvelope
           + highNoise * (sound.noise || .07) * Math.exp(-timeSeconds / .002);

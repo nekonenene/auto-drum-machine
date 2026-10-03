@@ -12,6 +12,7 @@
  * @property {number} [playbackRate] 実音の再生速度とピッチの倍率
  * @property {boolean} [reverse] 実音を逆再生するかどうか
  * @property {number} [swell] 実音のフェードイン時間（秒）
+ * @property {number} [pitchDecay] 電子タムの音程が下がる時定数（秒）
  * @property {number} decay 減衰の時定数（秒）
  * @property {number} duration サンプルの長さ（秒）
  */
@@ -121,4 +122,11 @@ export const sounds = [
   createSoundDefinition('ハットスウェル', 'Hat swell', '実音のハットが柔らかく立ち上がり、薄く消える', 'transition', 'sample', { sample: 'assets/drums/hat-open.wav', swell: .28, decay: .32, duration: .85 }),
   createSoundDefinition('ノイズスウェル', 'Noise swell', '空気の粒が膨らみ、高域を開きながら消える', 'transition', 'swell', { frequency: 1000, decay: .2, duration: .95, flavor: 'air' }),
   createSoundDefinition('メタルスウェル', 'Metal swell', '金属をこするような響きがゆっくり立ち上がる', 'transition', 'swell', { frequency: 540, decay: .3, duration: 1.15, flavor: 'metal' }),
+  createSoundDefinition('ドライロックスネア', 'Dry rock snare', '強打の実音に明るいスナッピーを重ねた、乾いた「パン」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-rock.wav', decay: .075, duration: .32 }),
+  createSoundDefinition('クラックスネア', 'Crack snare', '強い実音リムショットを短く切った、硬い「カッ」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-crack.wav', decay: .055, duration: .26 }),
+  createSoundDefinition('スナップスネア', 'Snap snare', '短い胴鳴りと鋭いノイズが弾ける、電子的な「パシッ」', 'drums', 'snap-snare', { frequency: 185, start: 330, decay: .036, duration: .24 }),
+  createSoundDefinition('エレクトロハイタム', 'Electro high tom', '高い音程が素早く落ちる、短い「プン」', 'cymbals', 'electronic-tom', { frequency: 230, start: 440, pitchDecay: .012, decay: .038, duration: .22 }),
+  createSoundDefinition('エレクトロミッドタム', 'Electro mid tom', '中音域で丸く弾む、短い「プン」', 'cymbals', 'electronic-tom', { frequency: 170, start: 320, pitchDecay: .014, decay: .046, duration: .26 }),
+  createSoundDefinition('エレクトロロータム', 'Electro low tom', '低い音程へ落ちて止まる「プン」', 'cymbals', 'electronic-tom', { frequency: 115, start: 225, pitchDecay: .016, decay: .055, duration: .3 }),
+  createSoundDefinition('エレクトロフロアタム', 'Electro floor tom', '深い低音へ落ち、短く収まる「プウン」', 'cymbals', 'electronic-tom', { frequency: 78, start: 155, pitchDecay: .018, decay: .065, duration: .34 }),
 ].map((entry, index) => ({ id: index + 1, ...entry }));

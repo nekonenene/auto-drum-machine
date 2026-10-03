@@ -34,8 +34,8 @@ function rms(pcmSamples, startSeconds, endSeconds) {
   return Math.sqrt(segment.reduce((sum, value) => sum + value ** 2, 0) / segment.length);
 }
 
-test('all 78 sounds produce unique audible finite PCM with safe peaks and silent boundaries', () => {
-  assert.equal(sounds.length, 78);
+test('all 85 sounds produce unique audible finite PCM with safe peaks and silent boundaries', () => {
+  assert.equal(sounds.length, 85);
   const fingerprints = new Set();
 
   // 全音色のPCMを生成し、波形と音声出力の条件を確認する
@@ -62,7 +62,7 @@ test('all 78 sounds produce unique audible finite PCM with safe peaks and silent
     assert.equal(waveformPeaks(pcmSamples).length, 72);
   }
 
-  assert.equal(fingerprints.size, 78);
+  assert.equal(fingerprints.size, 85);
 });
 
 test('rendering is repeatable and WAV exports contain the same duration and correct PCM header', () => {
@@ -92,7 +92,7 @@ test('rendering is repeatable and WAV exports contain the same duration and corr
 });
 
 test('kick, snares and toms decay quickly enough to leave space for the next hit', () => {
-  const drumIds = [1, 5, 6, 7, 20, 21, 22, 23, 71];
+  const drumIds = [1, 5, 6, 7, 20, 21, 22, 23, 71, 79, 80, 81, 82, 83, 84, 85];
 
   // 余韻の後半が打撃の先頭より十分小さくなり、短いバッファーに収まることを確認する
   for (const id of drumIds) {
@@ -135,19 +135,71 @@ test('sample WAV export uses the processed PCM and preserves its 48kHz duration'
 });
 
 test('all bundled CC0 samples have verified provenance and file hashes', async () => {
-  const manifest = JSON.parse(await readFile(new URL('../assets/drums/sources.json', import.meta.url), 'utf8'));
-  assert.equal(manifest.license, 'CC0-1.0');
-  assert.equal(sampleSources.size, 11);
+  const sampleFolders = ['assets/drums', 'assets/rusty-drums'];
+  const verifiedPaths = new Set();
 
-  // 同梱素材の全件を出典一覧と照合し、ファイルの欠落や取り違えを確認する
-  for (const entry of manifest.entries) {
-    const path = `assets/drums/${entry.file}`;
-    assert.ok(sampleSources.has(path), path);
-    const bytes = await readFile(new URL(`../${path}`, import.meta.url));
-    assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.sha256);
-    assert.ok(entry.url.includes(manifest.revision));
-    assert.equal(sampleSources.get(path).pcmSamples.length, entry.frameCount);
+  // 各ライブラリの出典一覧と素材全件を照合し、欠落や取り違えを確認する
+  for (const folder of sampleFolders) {
+    const manifest = JSON.parse(await readFile(new URL(`../${folder}/sources.json`, import.meta.url), 'utf8'));
+    assert.equal(manifest.license, 'CC0-1.0');
+
+    // 加工後のハッシュと固定リビジョンを確認し、使用する素材のパスを集める
+    for (const entry of manifest.entries) {
+      const path = `${folder}/${entry.file}`;
+      assert.ok(sampleSources.has(path), path);
+      const bytes = await readFile(new URL(`../${path}`, import.meta.url));
+      assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.sha256);
+      assert.ok(entry.url.includes(manifest.revision));
+      assert.ok((entry.layers || []).every((layer) => layer.url.includes(manifest.revision)));
+      assert.equal(sampleSources.get(path).pcmSamples.length, entry.frameCount);
+      verifiedPaths.add(path);
+    }
+
   }
+
+  assert.equal(verifiedPaths.size, 13);
+  assert.deepEqual(verifiedPaths, new Set(sampleSources.keys()));
+});
+
+test('electronic toms have a descending pitch and four ordered pitches for fills', () => {
+  const electronicToms = sounds.filter((sound) => sound.type === 'electronic-tom');
+  assert.equal(electronicToms.length, 4);
+  const settledPitches = [];
+
+  /**
+   * 正方向のゼロ交差間隔から、ノイズの少ないタムの音程を推定する
+   *
+   * @param {Float32Array} pcmSamples 音声サンプル
+   * @param {number} startSeconds 区間の始点（秒）
+   * @param {number} endSeconds 区間の終点（秒）
+   * @returns {number}
+   */
+  function estimatePitch(pcmSamples, startSeconds, endSeconds) {
+    const crossings = [];
+
+    // 打撃の瞬間を避け、音の周期を示す正方向のゼロ交差を集める
+    for (let index = Math.round(startSeconds * 48000); index < Math.round(endSeconds * 48000); index++) {
+      if (pcmSamples[index - 1] <= 0 && pcmSamples[index] > 0) {
+        crossings.push(index);
+      }
+    }
+
+    assert.ok(crossings.length >= 2);
+
+    return (crossings.length - 1) * 48000 / (crossings.at(-1) - crossings[0]);
+  }
+
+  // 各タムの音程が先頭から下がり、フィルに使う高低差があることを確認する
+  for (const sound of electronicToms) {
+    assert.equal(sound.sample, undefined);
+    const pcmSamples = renderCatalogSound(sound);
+    const initialPitch = estimatePitch(pcmSamples, .005, .045);
+    const settledPitch = estimatePitch(pcmSamples, .065, .16);
+    assert.ok(initialPitch > settledPitch * 1.1, sound.name);
+    settledPitches.push(settledPitch);
+  }
+
+  assert.ok(settledPitches.every((pitch, index) => index === 0 || settledPitches[index - 1] > pitch * 1.2));
 });
 
 test('a failed sample request reports the error and a subsequent load can recover', async () => {

@@ -1,0 +1,51 @@
+{
+  "library": "Big Rusty Drums",
+  "license": "CC0-1.0",
+  "source": "https://github.com/sfzinstruments/karoryfer.big-rusty-drums",
+  "revision": "f07ce00df34a46b6b08375be56fe116cf15782bc",
+  "processing": "Original aligned mono top and bottom microphone recordings. Subtract one-pole LP140Hz from top, LP1200Hz from bottom; mix top + wireGain * bottom; add 0.55 * highpass2500Hz. Trim from first 2%-peak crossing minus 1ms; crop 0.45s; remove DC; peak normalize 0.9; fade first 0.3ms and last 15ms; PCM16. Original sample rate 44100Hz. Runtime decay is defined in sounds.js.",
+  "entries": [
+    {
+      "file": "snare-rock.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/snare_14/center/top/sn_center_vl10_rr1.flac",
+      "layers": [
+        {
+          "sourcePath": "Samples/snare_14/center/top/sn_center_vl10_rr1.flac",
+          "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/snare_14/center/top/sn_center_vl10_rr1.flac",
+          "sourceSha256": "9b13c55f8804ec5d14a6a84c4f9fb47aaee2a83a546ae5b1914a8fdd858e05f5"
+        },
+        {
+          "sourcePath": "Samples/snare_14/center/btm/sn_center_vl10_rr1.flac",
+          "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/snare_14/center/btm/sn_center_vl10_rr1.flac",
+          "sourceSha256": "d6e9b2276a5c06513fccfc22f8584c910979077792edd191ef467c6ae1ef41f5"
+        }
+      ],
+      "wireGain": 0.24,
+      "sampleRate": 44100,
+      "trimStartFrame": 0,
+      "frameCount": 19845,
+      "sha256": "f1c62f0e13bb334f90b282b27ec5b3655017bd591eae1042bb566553f8365a52"
+    },
+    {
+      "file": "snare-crack.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/snare_14/rimshot/top/sn_rims_vl6_rr1.flac",
+      "layers": [
+        {
+          "sourcePath": "Samples/snare_14/rimshot/top/sn_rims_vl6_rr1.flac",
+          "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/snare_14/rimshot/top/sn_rims_vl6_rr1.flac",
+          "sourceSha256": "8e6bc770239c31e4c0545ae6147abf2cf396923283ff5ebeecaf02318cf3c1c8"
+        },
+        {
+          "sourcePath": "Samples/snare_14/rimshot/btm/sn_rims_vl6_rr1.flac",
+          "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/snare_14/rimshot/btm/sn_rims_vl6_rr1.flac",
+          "sourceSha256": "9117129d56a6e7b0746f282faf47fe97fe516c0cde1093a67d571f703a1c7bdb"
+        }
+      ],
+      "wireGain": 0.28,
+      "sampleRate": 44100,
+      "trimStartFrame": 0,
+      "frameCount": 19845,
+      "sha256": "abe691890a3d8d6f568b9e9c03a89d078fcc359875c3584e858bff632b3975c5"
+    }
+  ]
+}

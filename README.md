@@ -1,10 +1,10 @@
 # Auto Drum — Sound Lab
 
-78音色の実音と電子音をブラウザで聴き比べる、ドラムマシンの音色試作版です。
+85音色の実音と電子音をブラウザで聴き比べる、ドラムマシンの音色試作版です。
 
 ## 起動
 
-Node.jsで `npm run dev` を実行し、`http://localhost:5173` を開きます。外部ライブラリは不要です。実音素材はリポジトリに同梱しており、起動時にローカルサーバーから約1.25MBを読み込みます。試聴中の外部通信はありません。
+Node.jsで `npm run dev` を実行し、`http://localhost:5173` を開きます。外部ライブラリは不要です。実音素材はリポジトリに同梱しており、起動時にローカルサーバーから約1.33MBを読み込みます。試聴中の外部通信はありません。
 
 ## 音色の調整
 
@@ -12,8 +12,13 @@ Node.jsで `npm run dev` を実行し、`http://localhost:5173` を開きます�
 - 5〜7番のスネアは、ミュート打ち・中央打ち・リムショットの異なる実録素材を使っています。
 - クラッシュ・ライド・ライドベル・カウベル・タムも実音を使います。スプラッシュはクラッシュの実音を高く短く加工した音、タムの中音と最低音、カウベルの高低もピッチ加工です。
 - 71番に実音のアコースティックキック、72〜78番にリバース4種類とスウェル3種類を追加しています。既存の音色番号は維持しています。
+- 79〜80番はBig Rusty Drumsの中央強打・リムショットにスナッピーの近接録音を混ぜ、高域を強調して短く減衰させたスネアです。81番は短い胴鳴りと鋭いノイズを合成したスナップスネアです。
+- 82〜85番は高・中・低・最低音の電子タムです。正弦波を中心に音程を素早く下げ、0.22〜0.34秒で収まる「プン」という音にしています。20〜23番の実音タムと聴き比べられます。
 
-同梱した11個の素材は、[Virtuosity Drums](https://github.com/sfzinstruments/virtuosity_drums)（Versilian Studios / Karoryfer Samples）のCC0 1.0音源です。[出典と加工内容](assets/drums/README.md)、[ファイルごとの出典・ハッシュ](assets/drums/sources.json)、[ライセンス全文](assets/drums/LICENSE-CC0.txt)を記録しています。
+同梱した13個のWAVは、CC0 1.0音源を加工したものです。
+
+- [Virtuosity Drums](https://github.com/sfzinstruments/virtuosity_drums)（Versilian Studios / Karoryfer Samples）: 11素材。[出典と加工内容](assets/drums/README.md)、[ファイルごとの出典・ハッシュ](assets/drums/sources.json)、[ライセンス全文](assets/drums/LICENSE-CC0.txt)
+- [Big Rusty Drums](https://github.com/sfzinstruments/karoryfer.big-rusty-drums)（Karoryfer Samples）: 4つの近接マイク録音から加工した2素材。[出典と加工内容](assets/rusty-drums/README.md)、[ファイルごとの出典・ハッシュ](assets/rusty-drums/sources.json)、[ライセンス全文](assets/rusty-drums/LICENSE-CC0.txt)
 
 ## 操作
 
@@ -31,8 +36,9 @@ Node.jsで `npm run dev` を実行し、`http://localhost:5173` を開きます�
 - `synth.js`: PCM合成、波形抽出、WAVエンコード
 - `samples.js`: 同梱WAVの読み込みとPCMデコード
 - `assets/drums/`: CC0実音素材と出典記録
+- `assets/rusty-drums/`: 強打スネアのCC0実音素材と出典記録
 - `app.js`: 試聴・フィルター・保存・音声スケジューリング
 - `styles.css`: レスポンシブな画面
 - `server.mjs`: ローカルプレビュー用サーバー
 
-`npm test` で全音色の生成、音量の上限、サンプル境界、短い減衰、リバースとスウェルの立ち上がり、実音素材のハッシュ、読み込み失敗からの復帰、WAV出力を確認できます。
+`npm test` で全音色の生成、音量の上限、サンプル境界、短い減衰、リバースとスウェルの立ち上がり、電子タムの音程下降と高低差、実音素材のハッシュ、読み込み失敗からの復帰、WAV出力を確認できます。
