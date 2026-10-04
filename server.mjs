@@ -5,7 +5,7 @@ import { dirname, extname, resolve, sep } from 'node:path';
 
 const publicRootDir = resolve(dirname(fileURLToPath(import.meta.url)), 'dist');
 const port = Number(process.env.PORT || 5173);
-const mimeTypes = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.wav': 'audio/wav' };
+const mimeTypes = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml', '.wav': 'audio/wav' };
 
 createServer(async (request, response) => {
   try {
