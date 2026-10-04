@@ -1,0 +1,240 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { patterns } from '../patterns-data.js';
+import { buildPatterns } from '../tools/create-patterns.mjs';
+import { TICKS_PER_BEAT, analyzePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from '../pattern-model.js';
+import { PatternTransport, auditionSequence } from '../pattern-player.js';
+
+test('saved library has exactly 20 of each 4/4 purpose, stable performances, and no trivial variants', () => {
+  assert.equal(patterns.length, 60);
+  validatePatterns(patterns);
+  assert.deepEqual(buildPatterns(), patterns);
+
+  // 音色の差し替えや強弱だけで数を水増しせず、用途ごとの保存件数を確認する
+  for (const purpose of ['basic', 'intro', 'fill']) {
+    assert.equal(patterns.filter((pattern) => pattern.purpose === purpose).length, 20);
+    assert.ok(patterns.filter((pattern) => pattern.purpose === purpose).every((pattern) => pattern.meter === 4 && pattern.bars === (purpose === 'intro' ? 1 : 2)));
+  }
+
+  const base = patterns[8];
+  const replacement = { ...base, events: base.events.map((event) => ({ ...event, soundKey: event.soundKey === 20 ? 22 : 20 })) };
+  const quiet = { ...base, events: base.events.map((event) => ({ ...event, velocity: event.velocity * .5 })) };
+  const tinyChange = { ...base, events: base.events.map((event, index) => ({ ...event, velocity: event.velocity * (index % 2 ? 1.01 : .99) })) };
+  assert.equal(rhythmFingerprint(base), rhythmFingerprint(replacement));
+  assert.equal(rhythmFingerprint(base), rhythmFingerprint(quiet));
+  assert.ok(trivialVariant(base, tinyChange));
+  assert.throws(() => validatePatterns([base, { ...tinyChange, id: 'duplicate' }]), /重複|強弱/);
+});
+
+test('two-bar bases develop the second bar and the electronic groove keeps a clear backbeat across the loop', () => {
+  const barTicks = 4 * TICKS_PER_BEAT;
+
+  // 音色や全体音量だけでなく、2小節目の発音位置・発音数が変わっていることを確認する
+  for (const base of patterns.filter((pattern) => pattern.purpose === 'basic')) {
+    const firstBar = base.events.filter((event) => event.tick < barTicks).map((event) => event.tick);
+    const secondBar = base.events.filter((event) => event.tick >= barTicks).map((event) => event.tick - barTicks);
+    assert.notDeepEqual(firstBar, secondBar, base.id);
+    assert.ok(base.tags.includes('two-bar'));
+  }
+
+  const electronic = patterns.find((pattern) => pattern.id === 'p4-b-017');
+  assert.deepEqual(electronic.events.filter((event) => event.soundKey === 8).map((event) => event.tick / TICKS_PER_BEAT), [1, 3, 5, 7]);
+  assert.ok([0, barTicks].every((tick) => electronic.events.some((event) => event.soundKey === 2 && event.tick === tick)));
+  assert.ok(electronic.events.filter((event) => event.soundKey === 59).length <= 1);
+  const fixture = transportFixture();
+  fixture.transport.setBpm(120);
+  fixture.transport.start([electronic], true);
+
+  // 2周分の演奏で、2小節目の4拍目から次の1拍目への間隔が崩れないことを確認する
+  for (let tick = 0; tick < 820; tick++) {
+    fixture.setTime(tick * .01);
+    fixture.transport.pump();
+  }
+
+  const kicks = fixture.hits.filter((hit) => hit.event.soundKey === 2 && hit.event.tick === 0);
+  assert.deepEqual(kicks.map((hit) => Number(hit.start.toFixed(2))), [.06, 4.06, 8.06]);
+  const finalSnare = fixture.hits.find((hit) => hit.event.soundKey === 8 && hit.event.tick === 7 * TICKS_PER_BEAT);
+  assert.ok(Math.abs(kicks[1].start - finalSnare.start - .5) < 1e-9);
+});
+
+test('intros enter from silence; transition fills keep the pulse and push into the next downbeat', () => {
+
+  // 出だしの無音と展開フィルの最終拍の勢いを、演奏イベントから確認する
+  for (const pattern of patterns.filter((pattern) => pattern.purpose !== 'basic')) {
+    const totalTicks = pattern.bars * pattern.meter * TICKS_PER_BEAT;
+    assert.ok(patterns.some((base) => base.id === pattern.derivedFrom && base.purpose === 'basic'));
+
+    if (pattern.purpose === 'intro') {
+      assert.equal(totalTicks, 384);
+      assert.equal(pattern.fillRange.endTick, totalTicks);
+      assert.ok(!pattern.tags.includes('two-bar'));
+      assert.ok(pattern.events[0].tick >= 48);
+      assert.ok(pattern.events.every((event) => event.tick >= pattern.fillRange.startTick));
+      const early = pattern.events.filter((event) => event.tick < totalTicks / 2);
+      const late = pattern.events.filter((event) => event.tick >= totalTicks / 2);
+      assert.ok(late.length >= early.length, pattern.id);
+      assert.ok(Math.max(...late.map((event) => event.velocity)) >= Math.max(0, ...early.map((event) => event.velocity)), pattern.id);
+    } else {
+      const base = patterns.find((item) => item.id === pattern.derivedFrom);
+      assert.deepEqual(pattern.events.filter((event) => event.tick < pattern.fillRange.startTick), base.events.filter((event) => event.tick < pattern.fillRange.startTick));
+      assert.ok(pattern.events.at(-1).tick >= totalTicks - 32, pattern.id);
+      const finalEvents = pattern.events.filter((event) => event.tick >= pattern.fillRange.startTick);
+      assert.ok(Math.max(...finalEvents.filter((event) => event.tick >= totalTicks - 32).map((event) => event.velocity)) >= .85, pattern.id);
+      assert.notEqual(rhythmFingerprint(pattern), rhythmFingerprint(base));
+      assert.ok(pattern.tags.includes('build-up'));
+    }
+  }
+});
+
+test('scores stay independent of loudness and phrase length; metallic and electronic are distinct', () => {
+  const base = { ...patterns[0], bars: 1, events: patterns[0].events.filter((event) => event.tick < 384) };
+  const twice = { ...base, bars: 2, events: [...base.events, ...base.events.map((event) => ({ ...event, tick: event.tick + 384 }))] };
+  const quiet = { ...base, events: base.events.map((event) => ({ ...event, velocity: event.velocity * .3 })) };
+  const firstScore = analyzePattern(base);
+  const twiceScore = analyzePattern(twice);
+  assert.equal(firstScore.intensity, twiceScore.intensity);
+  assert.equal(firstScore.metallic, twiceScore.metallic);
+  Object.keys(firstScore.metrics).forEach((key) => assert.ok(Math.abs(firstScore.metrics[key] - twiceScore.metrics[key]) < 1e-12, key));
+  assert.equal(analyzePattern(base).intensity, analyzePattern(quiet).intensity);
+  assert.equal(analyzePattern(base).metallic, analyzePattern(quiet).metallic);
+  assert.ok(patterns.some((pattern) => pattern.intensity === 1 && pattern.metallic === 5));
+  assert.ok(patterns.some((pattern) => pattern.intensity === 5 && pattern.metallic === 1));
+  assert.equal(patterns.find((pattern) => pattern.id === 'p4-b-017').metallic, 1);
+  assert.equal(patterns.find((pattern) => pattern.id === 'p4-b-020').groove, 'straight');
+  assert.ok(patterns.find((pattern) => pattern.id === 'p4-b-020').tags.includes('triplet-fill'));
+  assert.ok(patterns.some((pattern) => pattern.events.some((event) => event.tick % 24 !== 0)));
+});
+
+test('similarity exposes shared rhythm and automatic variants save reproducible changes', () => {
+  const base = patterns[0];
+  assert.equal(rhythmSimilarity(base, base), 1);
+  assert.equal(rhythmSimilarity(base, { ...base, meter: 3 }), 0);
+  const generated = createVariation(base, 1);
+  assert.deepEqual(generated, createVariation(base, 1));
+  assert.notEqual(rhythmFingerprint(base), rhythmFingerprint(generated));
+  assert.ok(!trivialVariant(base, generated));
+  assert.equal(generated.derivedFrom, base.id);
+  assert.ok(rhythmSimilarity(base, generated) > .3);
+});
+
+/**
+ * 偽の音声時刻で、予約・停止を観測できるトランスポートを用意する
+ *
+ * @returns {object}
+ */
+function transportFixture() {
+  let time = 0;
+  const hits = [];
+  const cancellations = [];
+  const audio = { now: () => time, schedule: (event, start, bpm) => hits.push({ event, start, bpm }),
+    cancel: (now, futureOnly) => cancellations.push({ now, futureOnly }), tail: () => .1 };
+
+  return { transport: new PatternTransport(audio), hits, cancellations, setTime: (next) => { time = next; } };
+}
+
+const tinyPattern = { id: 'tiny', meter: 4, bars: 1, events: [
+  { tick: 0, soundKey: 1, velocity: .8, gateTicks: 24 },
+  { tick: 32, soundKey: 5, velocity: .6, gateTicks: 24 },
+  { tick: 96, soundKey: 12, velocity: .4, gateTicks: 24 },
+] };
+
+test('one-shot and loop schedule exact triplets with no missing or doubled boundary hits', () => {
+  const fixture = transportFixture();
+  fixture.transport.setBpm(120);
+  fixture.transport.start([tinyPattern]);
+
+  // 4小節分を細かく進め、単発が次の周回を予約しないことを確認する
+  for (let tick = 0; tick < 410; tick++) {
+    fixture.setTime(tick * .01);
+    fixture.transport.pump();
+  }
+
+  assert.equal(fixture.hits.length, 3);
+  assert.ok(Math.abs(fixture.hits[1].start - fixture.hits[0].start - 1 / 6) < 1e-9);
+  assert.equal(fixture.transport.playing, false);
+  const loop = transportFixture();
+  loop.transport.setBpm(120);
+  loop.transport.start([tinyPattern], true);
+
+  // 次の小節の1拍目はちょうど1回だけ予約される
+  for (let tick = 0; tick < 220; tick++) {
+    loop.setTime(tick * .01);
+    loop.transport.pump();
+  }
+
+  const starts = loop.hits.filter((hit) => hit.event.tick === 0).map((hit) => hit.start);
+  assert.deepEqual(starts.map((start) => Number(start.toFixed(2))), [.06, 2.06]);
+  loop.transport.stop();
+  assert.equal(loop.cancellations.at(-1).futureOnly, false);
+});
+
+test('live BPM changes preserve musical position, cancel future hits, and keep stop effective', () => {
+  const fixture = transportFixture();
+  fixture.transport.setBpm(120);
+  fixture.transport.start([tinyPattern], true);
+  fixture.setTime(.3);
+  fixture.transport.pump();
+  const before = fixture.transport.beatAt();
+  fixture.transport.setBpm(60);
+  assert.equal(fixture.transport.beatAt(), before);
+  assert.equal(fixture.cancellations.at(-1).futureOnly, true);
+  fixture.setTime(.75);
+  fixture.transport.pump();
+  assert.ok(fixture.hits.some((hit) => hit.bpm === 60 && hit.event.tick === 96));
+  fixture.transport.stop();
+  const count = fixture.hits.length;
+  fixture.setTime(8);
+  fixture.transport.pump();
+  assert.equal(fixture.hits.length, count);
+});
+
+test('connection audition returns to the base after a transition fill; automatic changes land on the boundary', () => {
+  const intro = patterns.find((pattern) => pattern.purpose === 'intro');
+  const fill = patterns.find((pattern) => pattern.purpose === 'fill');
+  assert.deepEqual(auditionSequence(intro, patterns, true).map((pattern) => pattern.id), [intro.id, intro.derivedFrom]);
+  const opening = transportFixture();
+  opening.transport.setBpm(120);
+  opening.transport.start(auditionSequence(intro, patterns, true), true);
+
+  // 出だし1小節→基本2小節を繰り返し、基本の頭が3小節周期で正確につながることを確認する
+  for (let tick = 0; tick < 830; tick++) {
+    opening.setTime(tick * .01);
+    opening.transport.pump();
+  }
+
+  const openingBaseStarts = opening.hits.filter((hit) => hit.event.patternId === intro.derivedFrom && hit.event.tick === 0 && hit.event.soundKey === 101);
+  assert.deepEqual(openingBaseStarts.map((hit) => Number(hit.start.toFixed(2))), [2.06, 8.06]);
+  opening.setTime(1.9);
+  assert.equal(opening.transport.position().pattern.id, intro.id);
+  opening.setTime(2.1);
+  assert.equal(opening.transport.position().pattern.id, intro.derivedFrom);
+  assert.deepEqual(auditionSequence(fill, patterns, true).map((pattern) => pattern.id), [fill.derivedFrom, fill.id, fill.derivedFrom]);
+  assert.deepEqual(auditionSequence(fill, patterns, false), [fill]);
+  const connected = transportFixture();
+  connected.transport.setBpm(120);
+  connected.transport.start(auditionSequence(fill, patterns, true));
+
+  // 基本→フィル→次の基本の1拍目を、休止も重複もなく予約する
+  for (let tick = 0; tick < 1210; tick++) {
+    connected.setTime(tick * .01);
+    connected.transport.pump();
+  }
+
+  const baseStarts = connected.hits.filter((hit) => hit.event.patternId === fill.derivedFrom && hit.event.tick === 0 && hit.event.soundKey === 101);
+  assert.deepEqual(baseStarts.map((hit) => Number(hit.start.toFixed(2))), [.06, 8.06]);
+  const fixture = transportFixture();
+  const second = { ...tinyPattern, id: 'next' };
+  fixture.transport.setBpm(120);
+  fixture.transport.onNext = () => second;
+  fixture.transport.start([tinyPattern], true);
+
+  // 4周目の境界で新案へ移り、時刻を詰めたり重複したりしないことを確認する
+  for (let tick = 0; tick < 830; tick++) {
+    fixture.setTime(tick * .01);
+    fixture.transport.pump();
+  }
+
+  const starts = fixture.hits.filter((hit) => hit.event.tick === 0);
+  assert.deepEqual(starts.map((hit) => Number(hit.start.toFixed(2))), [.06, 2.06, 4.06, 6.06, 8.06]);
+  assert.equal(starts.at(-1).event.patternId, 'next');
+});

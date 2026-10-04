@@ -1,0 +1,205 @@
+import { TICKS_PER_BEAT } from './pattern-model.js';
+
+/**
+ * 拍を基準に先読み予約し、停止とテンポ変更時に未来の予約を取り消す
+ */
+export class PatternTransport {
+  /**
+   * 音声実装と独立した予約機構を作る
+   *
+   * @param {{now: Function, schedule: Function, cancel: Function, tail: Function}} audio 音声操作
+   * @returns {PatternTransport}
+   */
+  constructor(audio) {
+    this.audio = audio;
+    this.bpm = 110;
+    this.playing = false;
+    this.loop = false;
+    this.nextIndex = 0;
+    this.anchorBeat = 0;
+    this.anchorTime = 0;
+    this.sequence = [];
+    this.events = [];
+    this.onNext = null;
+  }
+
+  /**
+   * 再生位置を拍で返す
+   *
+   * @param {number} [time] 音声時刻
+   * @returns {number}
+   */
+  beatAt(time = this.audio.now()) {
+
+    return this.anchorBeat + (time - this.anchorTime) * this.bpm / 60;
+  }
+
+  /**
+   * 単発またはループするフレーズ列を開始する
+   *
+   * @param {object[]} sequence 再生する保存パターン
+   * @param {boolean} [loop=false] ループするか
+   * @returns {void}
+   */
+  start(sequence, loop = false) {
+    this.stop();
+    this.sequence = sequence;
+    this.loop = loop;
+    this.anchorBeat = 0;
+    this.anchorTime = this.audio.now() + .06;
+    this.nextIndex = 0;
+    this.events = [];
+    this.lengthBeats = 0;
+
+    // パターン列を連続した拍位置へ変換し、境界で1拍目が重複しないようにする
+    for (const pattern of sequence) {
+      const offset = this.lengthBeats;
+      this.events.push(...pattern.events.map((event) => ({ ...event, beat: offset + event.tick / TICKS_PER_BEAT, patternId: pattern.id })));
+      this.lengthBeats += pattern.meter * pattern.bars;
+    }
+
+    this.events.sort((first, second) => first.beat - second.beat);
+    this.playing = true;
+    this.pump();
+  }
+
+  /**
+   * 現在の拍を保ったままBPMを変更し、未来の打撃を再予約する
+   *
+   * @param {number} bpm 40〜240のテンポ
+   * @returns {void}
+   */
+  setBpm(bpm) {
+    const time = this.audio.now();
+    const currentBeat = this.playing ? this.beatAt(time) : 0;
+    this.anchorBeat = currentBeat;
+    this.anchorTime = time;
+    this.bpm = Math.max(40, Math.min(240, bpm));
+
+    if (this.playing) {
+      this.audio.cancel(time, true);
+      const cycle = Math.max(0, Math.floor(currentBeat / this.lengthBeats));
+      const localBeat = currentBeat - cycle * this.lengthBeats;
+      const index = this.events.findIndex((event) => event.beat > localBeat + 1e-7);
+      this.nextIndex = cycle * this.events.length + (index < 0 ? this.events.length : index);
+      this.pump();
+    }
+  }
+
+  /**
+   * 120ms先まで予約し、単発では余韻が消えてから終了する
+   *
+   * @returns {void}
+   */
+  pump() {
+    if (!this.playing) {
+
+      return;
+    }
+
+    const now = this.audio.now();
+
+    // 同時打ち・三連符・細かな連打をAudioContextの時刻で予約する
+    while (this.loop || this.nextIndex < this.events.length) {
+      const cycle = Math.floor(this.nextIndex / this.events.length);
+
+      if (this.onNext && cycle >= 4) {
+        const boundary = this.anchorTime + (4 * this.lengthBeats - this.anchorBeat) * 60 / this.bpm;
+
+        if (boundary > now + .12) {
+          break;
+        }
+
+        const next = this.onNext();
+        this.sequence = [next];
+        this.lengthBeats = next.meter * next.bars;
+        this.events = next.events.map((event) => ({ ...event, beat: event.tick / TICKS_PER_BEAT, patternId: next.id }));
+        this.nextIndex = 0;
+        this.anchorTime = boundary;
+        this.anchorBeat = 0;
+        continue;
+      }
+
+      const event = this.events[this.nextIndex % this.events.length];
+      const beat = event.beat + cycle * this.lengthBeats;
+      const time = this.anchorTime + (beat - this.anchorBeat) * 60 / this.bpm;
+
+      if (time > now + .12) {
+        break;
+      }
+
+      if (time >= now - .04) {
+        this.audio.schedule(event, Math.max(now, time), this.bpm);
+      }
+
+      this.nextIndex++;
+    }
+
+    const endingBeat = this.beatAt(now);
+    const finalTime = Math.max(this.anchorTime + (this.lengthBeats - this.anchorBeat) * 60 / this.bpm,
+      ...this.events.map((event) => this.anchorTime + (event.beat - this.anchorBeat) * 60 / this.bpm + this.audio.tail(event, this.bpm)));
+
+    if (!this.loop && endingBeat >= this.lengthBeats && now >= finalTime) {
+      this.playing = false;
+    }
+  }
+
+  /**
+   * 未来の予約も現在の余韻も停止する
+   *
+   * @returns {void}
+   */
+  stop() {
+    this.audio.cancel(this.audio.now(), false);
+    this.playing = false;
+  }
+
+  /**
+   * 再生中のフレーズと、その中の拍位置を返す
+   *
+   * @returns {{pattern: object, beat: number, cycle: number} | null}
+   */
+  position() {
+    if (!this.sequence.length) {
+
+      return null;
+    }
+
+    const absoluteBeat = Math.max(0, this.beatAt());
+    const cycle = Math.floor(absoluteBeat / this.lengthBeats);
+    let beat = this.loop ? absoluteBeat % this.lengthBeats : Math.min(absoluteBeat, this.lengthBeats - 1e-6);
+
+    // 接続試聴でも、今鳴っているフレーズの位置を表示する
+    for (const pattern of this.sequence) {
+      const length = pattern.meter * pattern.bars;
+
+      if (beat < length) {
+
+        return { pattern, beat, cycle };
+      }
+
+      beat -= length;
+    }
+
+    return null;
+  }
+}
+
+/**
+ * 出だし→基本、基本→展開フィル→基本の接続列を作る
+ *
+ * @param {object} selected 選択したパターン
+ * @param {object[]} library 保存ライブラリ
+ * @param {boolean} connected 接続試聴するか
+ * @returns {object[]}
+ */
+export function auditionSequence(selected, library, connected) {
+  if (!connected || selected.purpose === 'basic') {
+
+    return [selected];
+  }
+
+  const base = library.find((pattern) => pattern.id === selected.derivedFrom);
+
+  return selected.purpose === 'intro' ? [selected, base] : [base, selected, base];
+}

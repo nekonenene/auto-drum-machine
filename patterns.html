@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto Drum — Pattern Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="patterns.css">
+  <script type="module" src="patterns-app.js"></script>
+</head>
+<body class="patterns-page">
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M3 14h4l3-8 4 16 4-12 3 4h4" /></svg></span><span>AUTO DRUM<span class="brand-sub">a playground for rhythm</span></span></a>
+    <nav class="page-links" aria-label="画面切替"><a href="./">音色ライブラリ</a><a href="patterns.html" aria-current="page">パターン</a></nav>
+  </header>
+  <main class="pattern-main">
+    <section class="pattern-intro">
+      <div><p class="eyebrow"><span></span> THE RHYTHM PLAYGROUND / VOL. 01</p><h1>リズムの、その先へ<span>。</span></h1><p>クリックですぐ試聴。前・次で聴き比べ。<br>基本のグルーヴ、出だし、次へ盛り上げるフィル。</p></div>
+      <div class="phrase-count"><strong>60<span> / 600</span></strong><small>4拍子 · 試作ライブラリ<br>出だし1小節／基本・フィル2小節</small></div>
+    </section>
+    <div class="audio-status" id="audio-status" role="status">実音素材を読み込んでいます…</div>
+    <div class="pattern-workspace">
+      <section class="pattern-library" aria-label="パターンライブラリ">
+        <div class="library-controls">
+        <div class="purpose-tabs" role="group" aria-label="用途で絞り込み">
+          <button type="button" data-purpose="all" aria-pressed="true">すべて <b>60</b></button>
+          <button type="button" data-purpose="basic" aria-pressed="false">基本 <b>20</b></button>
+          <button type="button" data-purpose="intro" aria-pressed="false">出だし <b>20</b></button>
+          <button type="button" data-purpose="fill" aria-pressed="false">展開フィル <b>20</b></button>
+        </div>
+        <label class="pattern-search"><span aria-hidden="true">⌕</span><input id="pattern-search" type="search" aria-label="パターンを検索" placeholder="名前・ID・音色・タグで検索"></label>
+        <details class="filter-details"><summary>スコア・ノリで絞り込む <span id="filter-indicator"></span></summary>
+          <div class="filter-grid">
+            <label>激しさ<select id="filter-intensity"><option value="all">すべて</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+            <label>メタリックさ<select id="filter-metallic"><option value="all">すべて</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></label>
+            <label>音色の中心<select id="filter-center"><option value="all">すべて</option></select></label>
+            <label>ノリ<select id="filter-groove"><option value="all">すべて</option></select></label>
+            <button id="reset-filters" type="button">絞り込みをリセット</button>
+          </div>
+        </details>
+        </div>
+        <div class="list-caption"><span id="pattern-count">60 phrases</span><span>クリックで試聴 · ← → で前・次</span></div>
+        <div id="pattern-list" class="pattern-list"></div>
+        <p id="empty-patterns" hidden>条件に合うパターンがありません</p>
+      </section>
+    </div>
+    <dialog id="pattern-details" aria-labelledby="pattern-name">
+      <div class="dialog-toolbar"><span>フレーズの詳細と比較</span><button id="detail-stop" type="button">■ 停止</button><button id="close-details" type="button" aria-label="詳細を閉じる">閉じる ×</button></div>
+      <section class="pattern-detail" aria-label="選択したパターン">
+        <div class="selected-heading"><p class="eyebrow" id="pattern-label"></p><h2 id="pattern-name"></h2><p class="pattern-id" id="pattern-id"></p></div>
+        <div class="pattern-badges" id="pattern-badges"></div>
+        <p class="pattern-intent" id="pattern-intent"></p>
+        <p id="sequence-label" class="sequence-label"></p>
+        <div class="score-strip"><div><span>激しさ</span><strong id="intensity-score"></strong><small>/ 5</small></div><div><span>メタリックさ</span><strong id="metallic-score"></strong><small>/ 5</small></div><p id="center-label"></p></div>
+        <div class="timeline-heading"><h3>フレーズの見取り図</h3><span>濃い点ほど強く · 線は余韻 · 網掛けはフィル</span></div>
+        <div class="timeline-scroll"><div id="timeline" class="timeline"></div></div>
+        <p class="timeline-caption" id="fill-caption"></p>
+        <div id="derived-links" class="derived-links"></div>
+        <details class="metadata-details" open><summary>音色・タグ・評価理由</summary><div id="pattern-metadata"></div></details>
+        <section class="similar-section"><div class="section-title"><h3>近いリズムを聴き比べる</h3><span>音色を除いた拍位置・強弱の共有率</span></div><div id="similar-patterns"></div><p class="fine-print">共有率は比較候補を探す目安です。派生フレーズは似ていて自然ですが、聴き分けられる違いを耳でも確認してください。</p></section>
+        <section class="auto-section"><p class="eyebrow">KEEP THE RHYTHM GOING</p><h3>次のひとつを、自動で。</h3><p>選んだ基本パターンを土台に位置・休符・アクセントを変え、4回ごとに新しい案を生成して再生します。案の演奏内容はこのブラウザに保存します。</p><div class="auto-actions"><button id="export-generated" type="button">生成した案を保存</button></div><details><summary id="generated-summary">生成した案 0件（試作60種類とは別）</summary><div id="generated-list"></div></details><p id="storage-status" class="fine-print"></p></section>
+        <details class="criteria-details"><summary>共通の分類基準とスコア分布</summary><div id="criteria"></div><p class="fine-print">今回は60種類を試聴する段階です。残り540種類はフィードバック後に作成します。</p></details>
+        <div class="data-actions"><button id="export-pattern" type="button">この演奏データを保存</button><button id="export-library" type="button">60種類のデータを保存</button></div>
+      </section>
+    </dialog>
+    <footer class="pattern-footer">AUTO DRUM / PATTERN LAB <span>60 SAVED PHRASES · CLASSIFICATION V1</span></footer>
+  </main>
+  <section class="transport-panel" aria-label="パターン再生操作">
+    <div class="dock-heading"><div><strong id="dock-pattern-name"></strong><span id="dock-pattern-info"></span></div><span id="play-state" role="status">停止中</span><button id="open-details" type="button">詳細・比較</button></div>
+    <div class="dock-controls">
+      <div class="play-controls"><button id="previous-pattern" type="button" aria-label="前のパターンを試聴">← 前</button><button id="pattern-play" class="primary-play" type="button" disabled>▶ 再生</button><button id="pattern-stop" type="button">■ 停止</button><button id="next-pattern" type="button" aria-label="次のパターンを試聴">次 →</button><label class="loop-control"><input id="pattern-loop" type="checkbox" checked>リピート</label><button id="auto-generate" type="button" disabled aria-pressed="false">自動連続生成</button></div>
+      <div class="mix-controls"><label>BPM <input id="pattern-bpm" type="number" min="40" max="240" step="1" value="110"></label><label>音量 <input id="pattern-volume" type="range" min="0" max="100" value="65"><output id="pattern-volume-value">65%</output></label><button id="reset-mix" type="button" title="BPM 110・音量65%に戻す">共通値に戻す</button><label class="connect-control"><input id="connect-pattern" type="checkbox">基本との接続</label></div>
+    </div>
+    <p class="dock-position" id="now-playing">一覧から選ぶと再生します</p>
+  </section>
+  <div id="pattern-toast" class="pattern-toast" role="status" hidden></div>
+</body>
+</html>
