@@ -6,6 +6,7 @@ import { loadSampleSources } from './samples.js';
 import { TICKS_PER_BEAT, CLASSIFICATION_VERSION, purposes, centers, grooves, tagLabels, scoreCriteria,
   soundByKey, finalizePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from './pattern-model.js';
 import { PatternTransport, auditionSequence, voiceTiming } from './pattern-player.js';
+import { AutomaticPerformance } from './pattern-performance.js';
 
 /**
  * この画面の要素を取得する
@@ -37,6 +38,7 @@ let playbackToken = 0;
 let pumpInterval;
 let animationFrame;
 let autoMode = false;
+let performance = null;
 let ready = false;
 let toastTimer;
 let generationSerial = readGenerationSerial();
@@ -168,6 +170,15 @@ function updateSelection() {
   const index = visible.findIndex((pattern) => pattern.id === selectedPattern.id);
   query('#previous-pattern').disabled = !ready || visible.length === 0 || index === 0;
   query('#next-pattern').disabled = !ready || visible.length === 0 || index === visible.length - 1;
+  const meter = selectedPattern.meter;
+  Array.from(query('#auto-intensity').options).forEach((option) => {
+    option.disabled = option.value !== 'all' && !patterns.some((pattern) => pattern.purpose === 'basic'
+      && pattern.meter === meter && pattern.intensity === Number(option.value));
+  });
+
+  if (query('#auto-intensity').selectedOptions[0].disabled) {
+    query('#auto-intensity').value = 'all';
+  }
 }
 
 /**
@@ -287,6 +298,12 @@ function renderDetail(pattern = selectedPattern) {
  * @returns {void}
  */
 function updateSequenceLabel() {
+  if (performance) {
+    query('#sequence-label').textContent = '出だし → 基本6小節 → 展開フィル → 次の基本（激しさが下がるときは次の出だしを挟む）';
+
+    return;
+  }
+
   if (autoMode) {
     query('#sequence-label').textContent = `${selectedPattern.name} / 4回ごとに生成した次の案へ`;
 
@@ -429,11 +446,14 @@ function stopPlayback() {
   cancelAnimationFrame(animationFrame);
   transport?.stop();
   autoMode = false;
+  performance = null;
+  query('#auto-play').textContent = '▶ 自動演奏';
+  query('#auto-play').setAttribute('aria-pressed', 'false');
   query('#pattern-loop').disabled = false;
   query('#connect-pattern').disabled = false;
   query('#play-state').textContent = '停止中';
   query('#now-playing').textContent = 'クリックで試聴・再生中は次に予約 · ダブルクリックで即再生 · ← → で前・次';
-  query('#pattern-play').textContent = '▶ 再生';
+  query('#pattern-play').textContent = '▶ 試聴';
   document.querySelectorAll('.pattern-card').forEach((card) => card.classList.remove('is-playing', 'is-queued'));
   query('#auto-generate').textContent = '自動連続生成';
   query('#auto-generate').setAttribute('aria-pressed', 'false');
@@ -457,12 +477,20 @@ function animate() {
   const position = transport.position();
 
   if (position) {
+    if (performance && selectedPattern.id !== position.pattern.id) {
+      selectPattern(position.pattern);
+    }
+
     const x = 160 + position.beat / (position.pattern.bars * position.pattern.meter) * 640;
     const playhead = query('#playhead');
     playhead?.setAttribute('x1', String(x));
     playhead?.setAttribute('x2', String(x));
     playhead?.setAttribute('visibility', position.pattern.id === selectedPattern.id ? 'visible' : 'hidden');
-    query('#play-state').textContent = `${autoMode ? '生成中 · ' : ''}${Math.floor(position.beat / position.pattern.meter) + 1}小節 ${Math.floor(position.beat % position.pattern.meter) + 1}拍`;
+    const phraseBar = Math.floor(position.beat / position.pattern.meter) + 1;
+    const basicOffset = transport.sequence[0].purpose === 'intro' ? 1 : 0;
+    const basicBar = (position.sequenceIndex - basicOffset) * 2 + phraseBar;
+    query('#play-state').textContent = `${performance ? '自動 · ' : autoMode ? '生成中 · ' : ''}`
+      + `${performance && position.pattern.purpose === 'basic' ? `${basicBar}/6` : phraseBar}小節 ${Math.floor(position.beat % position.pattern.meter) + 1}拍`;
     const pending = transport.pending?.sequence[0];
     query('#now-playing').textContent = `${purposes[position.pattern.purpose]}：${position.pattern.name}`
       + (pending ? ` → 次：${pending.name}` : '');
@@ -485,6 +513,9 @@ async function playPattern(immediate = false) {
   if (transport?.playing && !immediate) {
     transport.queue(auditionSequence(selectedPattern, patterns, query('#connect-pattern').checked), query('#pattern-loop').checked);
     autoMode = false;
+    performance = null;
+    query('#auto-play').textContent = '▶ 自動演奏';
+    query('#auto-play').setAttribute('aria-pressed', 'false');
     query('#pattern-loop').disabled = false;
     query('#connect-pattern').disabled = false;
     query('#auto-generate').textContent = '自動連続生成';
@@ -512,6 +543,56 @@ async function playPattern(immediate = false) {
     query('#pattern-play').textContent = '▶ 次に再生';
     document.querySelectorAll('.pattern-card').forEach((card) => card.classList.toggle('is-playing', card.dataset.audition === selectedPattern.id));
     pumpInterval = setInterval(() => transport.pump(), 25);
+    animate();
+  } catch (error) {
+    stopPlayback();
+    notify(error.message);
+  }
+}
+
+/**
+ * 出だしから基本6小節とフィルをつなぎ、保存パターンを自動で巡る
+ *
+ * @returns {Promise<void>}
+ */
+async function startAutomaticPerformance() {
+  if (performance) {
+    stopPlayback();
+
+    return;
+  }
+
+  const selected = selectedPattern;
+  stopPlayback();
+  const token = playbackToken;
+
+  try {
+    const arrangement = new AutomaticPerformance(patterns);
+    const sequence = arrangement.start(selected);
+    await initializeAudio();
+
+    if (token !== playbackToken) {
+
+      return;
+    }
+
+    performance = arrangement;
+    query('#pattern-loop').disabled = true;
+    query('#connect-pattern').disabled = true;
+    query('#auto-play').textContent = '■ 自動演奏を停止';
+    query('#auto-play').setAttribute('aria-pressed', 'true');
+    transport.onNext = null;
+    transport.setBpm(Number(query('#pattern-bpm').value));
+    transport.start(sequence, false, () => arrangement.next(query('#auto-intensity').value));
+    updateSequenceLabel();
+    pumpInterval = setInterval(() => {
+      try {
+        transport.pump();
+      } catch (error) {
+        stopPlayback();
+        notify(error.message);
+      }
+    }, 25);
     animate();
   } catch (error) {
     stopPlayback();
@@ -672,6 +753,7 @@ function exportData(data, filename) {
 async function loadLibrary() {
   ready = false;
   query('#pattern-play').disabled = true;
+  query('#auto-play').disabled = true;
   query('#auto-generate').disabled = true;
   query('#audio-status').hidden = false;
   query('#audio-status').textContent = '実音素材を読み込んでいます…';
@@ -683,6 +765,7 @@ async function loadLibrary() {
     query('#audio-status').textContent = '';
     query('#audio-status').hidden = true;
     query('#pattern-play').disabled = false;
+    query('#auto-play').disabled = false;
     query('#auto-generate').disabled = false;
     renderList();
   } catch (error) {
@@ -740,6 +823,7 @@ query('#next-pattern').addEventListener('click', () => auditionAdjacent(1));
 query('#open-details').addEventListener('click', () => query('#pattern-details').showModal());
 query('#close-details').addEventListener('click', () => query('#pattern-details').close());
 query('#auto-generate').addEventListener('click', startAutoGeneration);
+query('#auto-play').addEventListener('click', startAutomaticPerformance);
 query('#pattern-search').addEventListener('input', renderList);
 ['intensity', 'metallic', 'center', 'groove'].forEach((field) => query(`#filter-${field}`).addEventListener('change', renderList));
 query('#reset-filters').addEventListener('click', () => {

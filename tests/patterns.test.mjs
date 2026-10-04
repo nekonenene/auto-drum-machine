@@ -4,6 +4,7 @@ import { patterns } from '../patterns-data.js';
 import { buildPatterns } from '../tools/create-patterns.mjs';
 import { TICKS_PER_BEAT, soundByKey, analyzePattern, finalizePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from '../pattern-model.js';
 import { PatternTransport, auditionSequence, voiceTiming } from '../pattern-player.js';
+import { AutomaticPerformance } from '../pattern-performance.js';
 
 test('saved library has exactly 100 of each 4/4 purpose, stable performances, and no trivial variants', () => {
   assert.equal(patterns.length, 300);
@@ -522,4 +523,157 @@ test('connection audition returns to the base after a transition fill; automatic
   const starts = fixture.hits.filter((hit) => hit.event.tick === 0);
   assert.deepEqual(starts.map((hit) => Number(hit.start.toFixed(2))), [.06, 2.06, 4.06, 6.06, 8.06]);
   assert.equal(starts.at(-1).event.patternId, 'next');
+});
+
+/**
+ * 入口と末尾の休符を持つ、自動演奏の小さな関連ライブラリを用意する
+ *
+ * @returns {object[]} 4拍子の強・弱2組と、3拍子の1組
+ */
+function performanceLibrary() {
+  return [['strong', 5, 4], ['soft', 2, 4], ['waltz', 2, 3]].flatMap(([id, intensity, meter]) => {
+    const basic = { ...tinyPattern, id, purpose: 'basic', bars: 2, intensity, meter };
+
+    return [basic,
+      { ...basic, id: `${id}-intro`, purpose: 'intro', derivedFrom: id, bars: 1, events: tinyPattern.events.slice(2) },
+      { ...basic, id: `${id}-fill`, purpose: 'fill', derivedFrom: id, events: tinyPattern.events.slice(0, 1) }];
+  });
+}
+
+test('automatic performance uses related intros, six basic bars, and related fills for every saved family', () => {
+  // 基本・出だし・フィルのどれを選んでも、同じ関連する基本6小節へつなぐ
+  for (const selected of patterns) {
+    const performance = new AutomaticPerformance(patterns, () => 0);
+    const sequence = performance.start(selected);
+    const base = sequence[1];
+    assert.equal(base.id, selected.derivedFrom || selected.id);
+    assert.equal(sequence[0].purpose, 'intro');
+    assert.equal(sequence[0].derivedFrom, base.id);
+    assert.deepEqual(sequence.slice(1, 4), [base, base, base]);
+    assert.equal(sequence.slice(1, 4).reduce((bars, pattern) => bars + pattern.bars, 0), 6);
+    assert.equal(sequence[4].purpose, 'fill');
+    assert.equal(sequence[4].derivedFrom, base.id);
+  }
+
+  const performance = new AutomaticPerformance(patterns);
+  assert.equal(performance.start(createVariation(patterns[0], 1))[1].id, patterns[0].id);
+  assert.throws(() => new AutomaticPerformance([patterns[0]]).start(patterns[0]), /関連する/);
+});
+
+test('random next basics keep the meter, avoid immediate repeats, and add an intro only when intensity falls', () => {
+  const library = performanceLibrary();
+  const performance = new AutomaticPerformance(library, () => 0);
+  performance.start(library[0]);
+  assert.deepEqual(performance.next().map((pattern) => pattern.id), ['soft-intro', 'soft', 'soft', 'soft', 'soft-fill']);
+  assert.deepEqual(performance.next('2').map((pattern) => pattern.id), ['soft', 'soft', 'soft', 'soft-fill']);
+  assert.deepEqual(performance.next('5').map((pattern) => pattern.id), ['strong', 'strong', 'strong', 'strong-fill']);
+  assert.throws(() => performance.next('1'), /指定した激しさ/);
+  assert.equal(performance.currentBase.id, 'strong');
+
+  const saved = new AutomaticPerformance(patterns, () => .999999);
+  saved.start(patterns[0]);
+
+  // 同じ段階の複数候補でも前と別の基本を選び、段階差は基本同士で判断する
+  for (const intensity of ['2', '2', '3', '5', 'all']) {
+    const previous = saved.currentBase;
+    const sequence = saved.next(intensity);
+    assert.notEqual(saved.currentBase.id, previous.id);
+    assert.equal(saved.currentBase.meter, previous.meter);
+    assert.equal(sequence[0].purpose === 'intro', saved.currentBase.intensity < previous.intensity);
+    assert.ok(sequence.every((pattern) => pattern.meter === previous.meter));
+
+    if (intensity !== 'all') {
+      assert.equal(saved.currentBase.intensity, Number(intensity));
+    }
+  }
+});
+
+test('continuous performance preserves pickup and trailing rests and schedules each boundary once', () => {
+  const library = performanceLibrary();
+  const performance = new AutomaticPerformance(library, () => 0);
+  const fixture = transportFixture();
+  fixture.transport.setBpm(120);
+  fixture.transport.start(performance.start(library[0]), false, () => performance.next());
+
+  // 出だし1小節、基本6小節、フィル2小節から弱い基本の出だしを経て、再び強い基本へ進む
+  for (let tick = 0; tick <= 3650; tick++) {
+    fixture.setTime(tick * .01);
+    fixture.transport.pump();
+  }
+
+  const starts = fixture.hits.filter((hit) => hit.event.tick === 0).map((hit) => [hit.event.patternId, Number(hit.start.toFixed(2))]);
+  assert.deepEqual(starts, [['strong', 2.06], ['strong', 6.06], ['strong', 10.06], ['strong-fill', 14.06],
+    ['soft', 20.06], ['soft', 24.06], ['soft', 28.06], ['soft-fill', 32.06], ['strong', 36.06]]);
+  assert.deepEqual(fixture.hits.filter((hit) => hit.event.patternId.endsWith('-intro'))
+    .map((hit) => Number(hit.start.toFixed(2))), [.56, 18.56]);
+  assert.equal(fixture.transport.playing, true);
+  assert.equal(fixture.transport.position().pattern.id, 'strong');
+  const triplets = fixture.hits.filter((hit) => hit.event.patternId === 'soft' && hit.event.tick === 32);
+  assert.ok(Math.abs(triplets[0].start - 20.06 - 1 / 6) < 1e-9);
+});
+
+test('automatic boundary lookahead keeps the audible phrase visible and retains the chosen next sequence after BPM changes', () => {
+  const library = performanceLibrary();
+  const performance = new AutomaticPerformance(library, () => 0);
+  const fixture = transportFixture();
+  let choices = 0;
+  fixture.transport.setBpm(120);
+  fixture.transport.start(performance.start(library[0]), false, () => {
+    choices++;
+
+    return performance.next();
+  });
+
+  // フィル末尾の休符でも次を先読みし、テンポ変更前に選んだ次の基本を保つ
+  for (let tick = 0; tick <= 1800; tick++) {
+    fixture.setTime(tick * .01);
+    fixture.transport.pump();
+  }
+
+  assert.equal(choices, 1);
+  assert.equal(fixture.transport.position().pattern.id, 'strong-fill');
+  assert.equal(fixture.transport.pending.sequence[0].id, 'soft-intro');
+  fixture.transport.setBpm(60);
+
+  // 新しいテンポで出だし1小節と基本の頭を予約し、境界に重複がないことを確認する
+  for (let tick = 1801; tick <= 2230; tick++) {
+    fixture.setTime(tick * .01);
+    fixture.transport.pump();
+  }
+
+  assert.equal(choices, 1);
+  const basicStart = fixture.hits.filter((hit) => !hit.cancelled && hit.event.patternId === 'soft' && hit.event.tick === 0);
+  assert.equal(basicStart.length, 1);
+  assert.ok(Math.abs(basicStart[0].start - 22.12) < 1e-9);
+  assert.equal(basicStart[0].bpm, 60);
+  fixture.transport.stop();
+  const count = fixture.hits.length;
+  fixture.setTime(100);
+  fixture.transport.pump();
+  assert.equal(fixture.hits.length, count);
+  assert.equal(fixture.transport.onSequenceEnd, null);
+});
+
+test('manual audition or immediate restart leaves the automatic sequence cleanly', () => {
+  const fixture = transportFixture();
+  const library = performanceLibrary();
+  const performance = new AutomaticPerformance(library, () => 0);
+  fixture.transport.setBpm(120);
+  fixture.transport.start(performance.start(library[0]), false, () => performance.next());
+  fixture.setTime(.3);
+  fixture.transport.queue([tinyPattern], true);
+  assert.equal(fixture.transport.onSequenceEnd, null);
+
+  // 出だしの終わりから手動試聴へ移り、自動演奏の基本は予約しない
+  for (let tick = 30; tick <= 430; tick++) {
+    fixture.setTime(tick * .01);
+    fixture.transport.pump();
+  }
+
+  assert.equal(fixture.transport.position().pattern.id, 'tiny');
+  assert.ok(!fixture.hits.some((hit) => !hit.cancelled && hit.event.patternId === 'strong'));
+  fixture.transport.start(performance.start(library[0]), false, () => performance.next());
+  fixture.transport.start([tinyPattern]);
+  assert.equal(fixture.transport.onSequenceEnd, null);
+  assert.equal(fixture.transport.pending, null);
 });

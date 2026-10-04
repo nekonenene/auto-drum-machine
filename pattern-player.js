@@ -59,6 +59,7 @@ export class PatternTransport {
     this.sequence = [];
     this.events = [];
     this.onNext = null;
+    this.onSequenceEnd = null;
     this.pending = null;
   }
 
@@ -78,10 +79,12 @@ export class PatternTransport {
    *
    * @param {object[]} sequence 再生する保存パターン
    * @param {boolean} [loop=false] ループするか
+   * @param {Function | null} [onSequenceEnd=null] 終端で次の演奏列を返す関数
    * @returns {void}
    */
-  start(sequence, loop = false) {
+  start(sequence, loop = false, onSequenceEnd = null) {
     this.stop();
+    this.onSequenceEnd = onSequenceEnd;
     this.sequence = sequence;
     this.loop = loop;
     this.anchorBeat = 0;
@@ -101,6 +104,7 @@ export class PatternTransport {
    */
   queue(sequence, loop = false) {
     this.onNext = null;
+    this.onSequenceEnd = null;
     this.pump();
 
     if (!this.playing) {
@@ -170,13 +174,21 @@ export class PatternTransport {
     }
 
     const now = this.audio.now();
-    const pendingTime = this.pending
+    let pendingTime = this.pending
       ? this.anchorTime + (this.pending.boundaryBeat - this.anchorBeat) * 60 / this.bpm : null;
 
     if (this.pending && now >= pendingTime) {
       const { sequence, loop, events, lengthBeats, nextIndex } = this.pending;
       Object.assign(this, { sequence, loop, events, lengthBeats, nextIndex, anchorTime: pendingTime, anchorBeat: 0 });
       this.pending = null;
+    }
+
+    const boundaryTime = this.anchorTime + (this.lengthBeats - this.anchorBeat) * 60 / this.bpm;
+
+    if (this.onSequenceEnd && !this.pending && boundaryTime <= now + .12) {
+      const sequence = this.onSequenceEnd();
+      this.pending = { sequence, loop: false, boundaryBeat: this.lengthBeats, nextIndex: 0, ...sequenceTimeline(sequence) };
+      pendingTime = boundaryTime;
     }
 
     // 同時打ち・三連符・細かな連打をAudioContextの時刻で予約する
@@ -256,12 +268,13 @@ export class PatternTransport {
     this.audio.cancel(this.audio.now(), false);
     this.playing = false;
     this.pending = null;
+    this.onSequenceEnd = null;
   }
 
   /**
    * 再生中のフレーズと、その中の拍位置を返す
    *
-   * @returns {{pattern: object, beat: number, cycle: number} | null}
+   * @returns {{pattern: object, beat: number, cycle: number, sequenceIndex: number} | null}
    */
   position() {
     if (!this.sequence.length) {
@@ -274,12 +287,12 @@ export class PatternTransport {
     let beat = this.loop ? absoluteBeat % this.lengthBeats : Math.min(absoluteBeat, this.lengthBeats - 1e-6);
 
     // 接続試聴でも、今鳴っているフレーズの位置を表示する
-    for (const pattern of this.sequence) {
+    for (const [sequenceIndex, pattern] of this.sequence.entries()) {
       const length = pattern.meter * pattern.bars;
 
       if (beat < length) {
 
-        return { pattern, beat, cycle };
+        return { pattern, beat, cycle, sequenceIndex };
       }
 
       beat -= length;
