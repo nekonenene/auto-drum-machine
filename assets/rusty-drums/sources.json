@@ -3,7 +3,7 @@
   "license": "CC0-1.0",
   "source": "https://github.com/sfzinstruments/karoryfer.big-rusty-drums",
   "revision": "f07ce00df34a46b6b08375be56fe116cf15782bc",
-  "processing": "Original aligned mono top and bottom microphone recordings. Subtract one-pole LP140Hz from top, LP1200Hz from bottom; mix top + wireGain * bottom; add 0.55 * highpass2500Hz. Trim from first 2%-peak crossing minus 1ms; crop 0.45s; remove DC; peak normalize 0.9; fade first 0.3ms and last 15ms; PCM16. Original sample rate 44100Hz. Runtime decay is defined in sounds.js.",
+  "processing": "Snare entries use the original aligned top/bottom microphone mix described below; the crash and kick entries have their own processing fields. Snare processing: subtract one-pole LP140Hz from top, LP1200Hz from bottom; mix top + wireGain * bottom; add 0.55 * highpass2500Hz. Trim from first 2%-peak crossing minus 1ms; crop 0.45s; remove DC; peak normalize 0.9; fade first 0.3ms and last 15ms; PCM16. Original sample rate 44100Hz. Runtime decay is defined in sounds.js.",
   "entries": [
     {
       "file": "snare-rock.wav",
@@ -46,6 +46,39 @@
       "trimStartFrame": 0,
       "frameCount": 19845,
       "sha256": "abe691890a3d8d6f568b9e9c03a89d078fcc359875c3584e858bff632b3975c5"
+    },
+    {
+      "file": "crash-attack.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/crash_17/cr/oh/cr_vl5_rr1.flac",
+      "layers": [
+        {
+          "sourcePath": "Samples/crash_17/cr/oh/cr_vl5_rr1.flac",
+          "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/crash_17/cr/oh/cr_vl5_rr1.flac",
+          "sourceSha256": "511907df68befff63a39df0693868ca8026f46bbd5d0c8e4d1b9cdfedea65504"
+        },
+        {
+          "sourcePath": "Samples/crash_17/cr/cl/cr_vl5_rr1.flac",
+          "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/crash_17/cr/cl/cr_vl5_rr1.flac",
+          "sourceSha256": "b9205bc10e508eec7c38f031b666bda00268ea7b68fcbc5b8a584de44ec3a1d3"
+        }
+      ],
+      "processing": "Preserve original alignment; mix overhead + 0.25 * close; trim from first 2%-peak crossing minus 1ms; crop 3s; transient gain 1 + 0.9 * exp(-t / 0.012); remove DC; fade first 0.3ms and last 20ms; soft clip tanh(2 * signal / peak); peak normalize 0.9; PCM16 mono at original 44100Hz.",
+      "closeGain": 0.25,
+      "sampleRate": 44100,
+      "trimStartFrame": 0,
+      "frameCount": 132300,
+      "sha256": "5c90dc814ae6d96d111900dff9384741950763d2cb7a38ea59a83e6ade524f26"
+    },
+    {
+      "file": "kick-rock.wav",
+      "sourcePath": "Samples/kick_24/kick/kick/k_vl14_rr1.flac",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/karoryfer.big-rusty-drums/f07ce00df34a46b6b08375be56fe116cf15782bc/Samples/kick_24/kick/kick/k_vl14_rr1.flac",
+      "sourceSha256": "3b2a6a82ab1faa9ef97f87fbc4f9dcbace81ea18149f6d7c1438da8b64f20ec3",
+      "processing": "Damped 24-inch kick, strongest velocity layer 14, dedicated kick mic. Subtract one-pole LP30Hz; add 0.6 * highpass1500Hz. Trim from first 2%-peak crossing minus 1ms; crop 0.45s; remove DC; fade first 0.3ms and last 15ms; peak normalize 0.9; PCM16 at original 44100Hz. Runtime decay in sounds.js.",
+      "sampleRate": 44100,
+      "trimStartFrame": 0,
+      "frameCount": 19845,
+      "sha256": "64e972440090b2b9518b9d117b7d8b6acc84deda72913956d51537794bbe3c0e"
     }
   ]
 }

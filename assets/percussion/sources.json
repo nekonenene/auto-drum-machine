@@ -1,0 +1,93 @@
+{
+  "library": "Virtuosity Drums auxiliary percussion",
+  "license": "CC0-1.0",
+  "source": "https://github.com/sfzinstruments/virtuosity_drums",
+  "revision": "9f04cf9a734527edfbb0a4eee1f674e45bbf71bc",
+  "processing": "Use close-mic recordings; average channels to mono. Onset detection differs by entry: align shaker/tambourine strokes by short-window RMS, drums by amplitude. Crop to frameCount; remove DC; fade first 0.5ms and last 15ms; peak normalize 0.9; PCM16 at original 44100Hz. Pitch, decay and level are defined in sounds.js.",
+  "entries": [
+    {
+      "name": "shaker-down",
+      "sourcePath": "Samples/perc/close/shaker/LShaker_Shake1D_rr1_Close.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/perc/close/shaker/LShaker_Shake1D_rr1_Close.wav",
+      "file": "shaker-down.wav",
+      "sampleRate": 44100,
+      "trimStartFrame": 3560,
+      "frameCount": 17640,
+      "onsetDetection": "First 5ms RMS window at 70% of the maximum in the first 200ms, minus 1ms",
+      "sourceSha256": "b3aa3914ef344f3f4fffedb1aa7ccaae20db2d43a8386848c7944fadfed73e63",
+      "sha256": "b296fcb3f1dd00fb47f6d70fc01b3d247ccf9e3e63681437569b34c391ca8e82"
+    },
+    {
+      "name": "shaker-up",
+      "sourcePath": "Samples/perc/close/shaker/LShaker_Shake1U_rr1_Close.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/perc/close/shaker/LShaker_Shake1U_rr1_Close.wav",
+      "file": "shaker-up.wav",
+      "sampleRate": 44100,
+      "trimStartFrame": 3310,
+      "frameCount": 28665,
+      "onsetDetection": "First 5ms RMS window at 70% of the maximum in the first 200ms, minus 1ms",
+      "sourceSha256": "4ae8e16412617c5d2c9fdb0fb9479cdef188462bc841c357e6521a6b732ed2c4",
+      "sha256": "5ae76a067fa0b8107aae492a413ca6c9018ef239ec680265c13c1555d1099db3"
+    },
+    {
+      "name": "tambourine",
+      "sourcePath": "Samples/perc/close/tambourine/Tamb1_Shake_rr1_Close.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/perc/close/tambourine/Tamb1_Shake_rr1_Close.wav",
+      "file": "tambourine.wav",
+      "sampleRate": 44100,
+      "trimStartFrame": 1416,
+      "frameCount": 37485,
+      "onsetDetection": "First 5ms RMS window at 70% of the maximum in the first 200ms, minus 1ms",
+      "sourceSha256": "14f76ae3873d766b9f0632e8bca5ce106f94515d070def4d7c1bf24836ddd83d",
+      "sha256": "0fbcd389d96f95db63e4f22d653e65165a6f9d747834fae1257ece7b3724bfcb"
+    },
+    {
+      "name": "bongo-high",
+      "sourcePath": "Samples/perc/close/bongoh/BongoH_Hit1_v3_rr1_Close.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/perc/close/bongoh/BongoH_Hit1_v3_rr1_Close.wav",
+      "file": "bongo-high.wav",
+      "sampleRate": 44100,
+      "trimStartFrame": 0,
+      "frameCount": 19845,
+      "onsetDetection": "First 2%-peak crossing, minus 1ms",
+      "sourceSha256": "880e607f7e2c62c9f0bd362259c990114165791ff08b99185c6d68acc54713d2",
+      "sha256": "232640b9d216ebf910285e42be53c3232d3cb788108e77947f110bc7166bbe97"
+    },
+    {
+      "name": "bongo-low",
+      "sourcePath": "Samples/perc/close/bongol/BongoL_Hit1_v3_rr1_Close.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/perc/close/bongol/BongoL_Hit1_v3_rr1_Close.wav",
+      "file": "bongo-low.wav",
+      "sampleRate": 44100,
+      "trimStartFrame": 15,
+      "frameCount": 24255,
+      "onsetDetection": "First 2%-peak crossing, minus 1ms",
+      "sourceSha256": "072faea5329fddcad716b627f8a416a64e9462a647287505cf428a0dd560ed4b",
+      "sha256": "3ee3e69e9a7f2739b20ab30a5f5e227828a754279c6de89ca0d275e4ada146cc"
+    },
+    {
+      "name": "conga-open",
+      "sourcePath": "Samples/perc/close/conga/Conga_22_HitN_101_127_rr1_Close.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/perc/close/conga/Conga_22_HitN_101_127_rr1_Close.wav",
+      "file": "conga-open.wav",
+      "sampleRate": 44100,
+      "trimStartFrame": 0,
+      "frameCount": 28665,
+      "onsetDetection": "First 2%-peak crossing, minus 1ms",
+      "sourceSha256": "eb64d3feb973a8d704b4d7c5a19898807bd0754239edbec0ba1fddeb8f60e158",
+      "sha256": "8125940c176a18839555031368bb7f77557003958a664a00cea380444ac6e24c"
+    },
+    {
+      "name": "conga-muted",
+      "sourcePath": "Samples/perc/close/conga/Conga_17_HitHM1_71_127_rr1_Close.wav",
+      "url": "https://raw.githubusercontent.com/sfzinstruments/virtuosity_drums/9f04cf9a734527edfbb0a4eee1f674e45bbf71bc/Samples/perc/close/conga/Conga_17_HitHM1_71_127_rr1_Close.wav",
+      "file": "conga-muted.wav",
+      "sampleRate": 44100,
+      "trimStartFrame": 0,
+      "frameCount": 15435,
+      "onsetDetection": "First 2%-peak crossing, minus 1ms",
+      "sourceSha256": "e936a9927c326f39ad6e50672758d27df436df1e736d5a0095543906ff780c46",
+      "sha256": "fe5f7f58068c6cec93b58cba9c02f2e5e60c8118fb90d3d51fd19d8ab3b6882c"
+    }
+  ]
+}

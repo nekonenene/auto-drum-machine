@@ -36,14 +36,14 @@ function rms(pcmSamples, startSeconds, endSeconds) {
 }
 
 test('display numbers follow category order and keep each drum family together', () => {
-  assert.deepEqual(sounds.map((sound) => sound.id), Array.from({ length: 90 }, (_, index) => index + 1));
+  assert.deepEqual(sounds.map((sound) => sound.id), Array.from({ length: 101 }, (_, index) => index + 1));
   const expectedCategories = categories.flatMap((category) => sounds
     .filter((sound) => sound.category === category.id).map(() => category.id));
   assert.deepEqual(sounds.map((sound) => sound.category), expectedCategories);
   assert.ok(sounds.every((sound) => Number.isInteger(sound.key) && sound.key > 0));
   assert.equal(soundByKey.size, sounds.length);
-  assert.deepEqual(sounds.slice(0, 7).map((sound) => sound.key), [1, 2, 3, 4, 71, 86, 87]);
-  assert.deepEqual(sounds.slice(7, 16).map((sound) => sound.key), [5, 6, 7, 8, 79, 80, 81, 88, 89]);
+  assert.deepEqual(sounds.slice(0, 8).map((sound) => sound.key), [1, 2, 3, 4, 71, 101, 86, 87]);
+  assert.deepEqual(sounds.slice(8, 17).map((sound) => sound.key), [5, 6, 7, 8, 79, 80, 81, 88, 89]);
   assert.equal(soundByKey.get(71).name, 'アコースティックキック');
   assert.equal(soundByKey.get(71).id, 5);
 });
@@ -56,8 +56,8 @@ test('renumbering display IDs preserves the PCM of every sound through its fixed
   }
 });
 
-test('all 90 sounds produce unique audible finite PCM with safe peaks and silent boundaries', () => {
-  assert.equal(sounds.length, 90);
+test('all 101 sounds produce unique audible finite PCM with safe peaks and silent boundaries', () => {
+  assert.equal(sounds.length, 101);
   const fingerprints = new Set();
 
   // 全音色のPCMを生成し、波形と音声出力の条件を確認する
@@ -76,7 +76,12 @@ test('all 90 sounds produce unique audible finite PCM with safe peaks and silent
       energy += sample ** 2;
     }
 
-    assert.ok(peak <= .781 && peak >= .77, `${sound.name}: ${peak}`);
+    assert.ok(peak <= .951, `${sound.name}: ${peak}`);
+
+    if (!sound.gainDb) {
+      assert.ok(peak <= .781 && peak >= .77, `${sound.name}: ${peak}`);
+    }
+
     assert.ok(energy > 1, `${sound.name} is silent`);
     assert.equal(Math.abs(pcmSamples[0]), 0);
     assert.equal(Math.abs(pcmSamples.at(-1)), 0);
@@ -84,7 +89,7 @@ test('all 90 sounds produce unique audible finite PCM with safe peaks and silent
     assert.equal(waveformPeaks(pcmSamples).length, 72);
   }
 
-  assert.equal(fingerprints.size, 90);
+  assert.equal(fingerprints.size, 101);
 });
 
 test('rendering is repeatable and WAV exports contain the same duration and correct PCM header', () => {
@@ -128,6 +133,17 @@ test('kick, snares and toms decay quickly enough to leave space for the next hit
   assert.equal(new Set([5, 6, 7].map((key) => soundByKey.get(key).sample)).size, 3);
 });
 
+test('rock kick has a prompt hit and a tighter tail than the acoustic kick', () => {
+  const rock = renderCatalogSound(soundByKey.get(101));
+  const acoustic = renderCatalogSound(soundByKey.get(71));
+  const peakIndex = rock.reduce((peakIndex, sample, index) => Math.abs(sample) > Math.abs(rock[peakIndex]) ? index : peakIndex, 0);
+  assert.ok(peakIndex / 48000 < .01);
+  const rockTail = rms(rock, .1, .2) / rms(rock, 0, .02);
+  const acousticTail = rms(acoustic, .1, .2) / rms(acoustic, 0, .02);
+  assert.ok(rockTail < acousticTail * .2);
+  assert.ok(rms(rock, .24, .32) < rms(rock, 0, .02) * .001);
+});
+
 test('reverse samples build toward the end and swells have a delayed attack', () => {
 
   // リバース実音は先頭より終端側の音量が大きく、スウェルは中央で膨らむことを確認する
@@ -165,6 +181,43 @@ test('wide clap places its strongest attack in the first 10ms and keeps a softer
   assert.ok(rms(pcmSamples, sound.duration * .75, sound.duration) < initialRms * .01);
 });
 
+test('attack crash starts with its strongest hit and keeps a softer metallic tail', () => {
+  const sound = soundByKey.get(91);
+  const originalCrash = soundByKey.get(16);
+  assert.equal(sound.id, originalCrash.id + 1);
+  assert.notEqual(sound.sample, originalCrash.sample);
+
+  // 元素材の44.1kHzと試聴の48kHzで、先頭の打撃が後続の響きより強いことを確認する
+  for (const sampleRate of [44100, 48000]) {
+    const pcmSamples = renderSound(sound, sampleRate, sampleSources.get(sound.sample));
+    const peakIndex = pcmSamples.reduce((peakIndex, sample, index) => Math.abs(sample) > Math.abs(pcmSamples[peakIndex]) ? index : peakIndex, 0);
+    assert.ok(peakIndex / sampleRate < .01);
+
+    /**
+     * 現在のサンプルレートに合わせて区間の実効振幅を求める
+     *
+     * @param {number} startSeconds 区間の始点（秒）
+     * @param {number} endSeconds 区間の終点（秒）
+     * @returns {number}
+     */
+    const segmentRms = (startSeconds, endSeconds) => {
+      const segment = pcmSamples.subarray(Math.round(startSeconds * sampleRate), Math.round(endSeconds * sampleRate));
+
+      return Math.sqrt(segment.reduce((sum, sample) => sum + sample ** 2, 0) / segment.length);
+    };
+
+    const attackRms = segmentRms(0, .02);
+
+    // 各20ms区間を比較し、後から主音が膨らまないことを確認する
+    for (let start = .02; start < sound.duration - .02; start += .02) {
+      assert.ok(segmentRms(start, start + .02) < attackRms * .9, `${sampleRate}Hz at ${start}s`);
+    }
+
+    assert.ok(segmentRms(.2, .4) > attackRms * .1);
+    assert.ok(segmentRms(sound.duration * .85, sound.duration) < attackRms * .01);
+  }
+});
+
 test('sample WAV export uses the processed PCM and preserves its 48kHz duration', () => {
   const sound = soundByKey.get(5);
   const pcmSamples = renderCatalogSound(sound);
@@ -181,7 +234,7 @@ test('sample WAV export uses the processed PCM and preserves its 48kHz duration'
 });
 
 test('all bundled CC0 samples have verified provenance and file hashes', async () => {
-  const sampleFolders = ['assets/drums', 'assets/rusty-drums'];
+  const sampleFolders = ['assets/drums', 'assets/rusty-drums', 'assets/percussion'];
   const verifiedPaths = new Set();
 
   // 各ライブラリの出典一覧と素材全件を照合し、欠落や取り違えを確認する
@@ -203,7 +256,7 @@ test('all bundled CC0 samples have verified provenance and file hashes', async (
 
   }
 
-  assert.equal(verifiedPaths.size, 13);
+  assert.equal(verifiedPaths.size, 22);
   assert.deepEqual(verifiedPaths, new Set(sampleSources.keys()));
 });
 
@@ -316,6 +369,60 @@ test('compressed drums increase density at the same peak and export the processe
     for (let index = 0; index < processed.length; index++) {
       assert.ok(Math.abs(decoded.pcmSamples[index] - processed[index]) < 2 / 32768);
     }
+  }
+});
+
+test('snare level trims balance the quiet samples and carry through to WAV output', () => {
+  const drySnareRms = rms(renderCatalogSound(soundByKey.get(5)), 0, .1);
+
+  // 音量補正で実音スネアを持ち上げ、チップノイズを少し下げたことを確認する
+  for (const key of [6, 8, 79, 80]) {
+    const sound = soundByKey.get(key);
+    const adjusted = renderCatalogSound(sound);
+    const original = renderCatalogSound({ ...sound, gainDb: 0 });
+    const adjustedRms = rms(adjusted, 0, .1);
+    const originalRms = rms(original, 0, .1);
+
+    if (key === 8) {
+      assert.ok(adjustedRms > originalRms * .7 && adjustedRms < originalRms * .85);
+    } else if (key === 6) {
+      assert.ok(adjustedRms > originalRms * 1.05 && adjustedRms < originalRms * 1.2);
+    } else {
+      assert.ok(adjustedRms > originalRms * 1.3, sound.name);
+      assert.ok(adjustedRms > drySnareRms * .9 && adjustedRms < drySnareRms * 1.2, sound.name);
+    }
+
+    const decoded = decodeSampleWav(encodeWav(adjusted, 48000));
+
+    // WAVにも音量補正とピーク抑制がそのまま反映されることを確認する
+    for (let index = 0; index < adjusted.length; index++) {
+      assert.ok(Math.abs(decoded.pcmSamples[index] - adjusted[index]) < 2 / 32768);
+    }
+  }
+});
+
+test('real percussion has prompt attacks, distinct short and long tails, and retains the synth choices', () => {
+  const handSounds = sounds.filter((sound) => sound.category === 'hand');
+  const realPercussion = handSounds.filter((sound) => sound.type === 'sample');
+  assert.equal(realPercussion.length, 9);
+  assert.equal(handSounds.filter((sound) => sound.type !== 'sample').length, 8);
+
+  // 実音の主な打撃が早く鳴り、余韻の終わりが次の一打を妨げないことを確認する
+  for (const sound of realPercussion) {
+    const pcmSamples = renderCatalogSound(sound);
+    const peakIndex = pcmSamples.reduce((peakIndex, sample, index) => Math.abs(sample) > Math.abs(pcmSamples[peakIndex]) ? index : peakIndex, 0);
+    assert.ok(peakIndex / 48000 < .035, sound.name);
+    assert.ok(rms(pcmSamples, sound.duration * .75, sound.duration)
+      < rms(pcmSamples, 0, sound.duration * .25) * .05, sound.name);
+  }
+
+  // シェイカー・タンバリン・コンガの短い音は、長い音より余韻が明確に短いことを確認する
+  for (const [shortKey, longKey] of [[92, 93], [95, 94], [100, 99]]) {
+    const short = renderCatalogSound(soundByKey.get(shortKey));
+    const long = renderCatalogSound(soundByKey.get(longKey));
+    const shortTail = rms(short, .1, .2) / rms(short, 0, .05);
+    const longTail = rms(long, .1, .2) / rms(long, 0, .05);
+    assert.ok(shortTail < longTail * .5, `${shortKey} / ${longKey}`);
   }
 });
 

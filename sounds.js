@@ -19,6 +19,7 @@
  * @property {number} [envelopeStep] チップノイズの音量が一段下がる間隔（秒）
  * @property {boolean} [frontLoaded] クラップの主音を先頭に置き、後続の打撃を弱めるかどうか
  * @property {DrumCompression} [compression] 音色ごとのコンプレッサー設定
+ * @property {number} [gainDb] 基本のピークを揃えた後に適用する音量補正（dB）
  * @property {number} decay 減衰の時定数（秒）
  * @property {number} duration サンプルの長さ（秒）
  */
@@ -67,14 +68,15 @@ const soundDefinitions = [
   createSoundDefinition(3, 'パンチキック', 'Punch kick', 'アタックが強い、硬い音', 'drums', 'kick', { frequency: 55, start: 320, decay: .13, duration: .75, click: .42, drive: 1.9 }),
   createSoundDefinition(4, 'ダーティキック', 'Dirty kick', '歪んだ、ざらつく低音', 'drums', 'kick', { frequency: 41, start: 130, decay: .21, duration: 1.2, click: .3, drive: 6 }),
   createSoundDefinition(71, 'アコースティックキック', 'Acoustic kick', '実音の打撃感と重さを残した、短いバスドラム', 'drums', 'sample', { sample: 'assets/drums/kick-acoustic.wav', decay: .09, duration: .4 }),
+  createSoundDefinition(101, 'ロックキック', 'Rock kick', '大きなバスドラムの強打を短く締めた、硬く太い「ドッ」', 'drums', 'sample', { sample: 'assets/rusty-drums/kick-rock.wav', gainDb: 1, decay: .085, duration: .32 }),
   createSoundDefinition(86, 'スラムキック', 'Slam kick', '強いコンプと軽い歪みで押し出す、硬い「ドッ」', 'drums', 'kick', { frequency: 52, start: 280, decay: .045, duration: .32, click: .4, drive: 1.6, compression: { thresholdDb: -24, ratio: 8, attack: .0005, release: .014, saturation: 1 } }),
   createSoundDefinition(87, 'コンプキック', 'Compressed kick', '実音の打撃と低音をコンプで密にした、重い「ドン」', 'drums', 'sample', { sample: 'assets/drums/kick-acoustic.wav', decay: .065, duration: .4, compression: { thresholdDb: -24, ratio: 8, attack: .0005, release: .018, saturation: 1 } }),
   createSoundDefinition(5, 'ドライスネア', 'Dry snare', '手でミュートした実音の、カラッと短い「パッ」', 'drums', 'sample', { sample: 'assets/drums/snare-muted.wav', decay: .065, duration: .25 }),
-  createSoundDefinition(6, 'ファットスネア', 'Fat snare', '低くした実音に太い胴鳴りを重ねた、短い「ドパン」', 'drums', 'sample', { sample: 'assets/drums/snare-center.wav', playbackRate: .7, lowpass: 2800, body: { frequency: 145, start: 220, decay: .05, level: .65 }, decay: .085, duration: .38 }),
+  createSoundDefinition(6, 'ファットスネア', 'Fat snare', '低くした実音に太い胴鳴りを重ねた、短い「ドパン」', 'drums', 'sample', { sample: 'assets/drums/snare-center.wav', playbackRate: .7, lowpass: 2800, body: { frequency: 145, start: 220, decay: .05, level: .65 }, gainDb: 1, decay: .085, duration: .38 }),
   createSoundDefinition(7, 'ブライトスネア', 'Bright snare', '実音のリムショットによる、硬く鋭い「パシッ」', 'drums', 'sample', { sample: 'assets/drums/snare-rimshot.wav', playbackRate: 1.08, decay: .07, duration: .28 }),
-  createSoundDefinition(8, 'チップノイズスネア', 'Chip noise snare', 'ファミコン風の粗いノイズが短く切れる「ザッ」', 'drums', 'chip-noise', { envelopeStep: .005, decay: .02, duration: .12 }),
-  createSoundDefinition(79, 'ドライロックスネア', 'Dry rock snare', '強打の実音に明るいスナッピーを重ねた、乾いた「パン」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-rock.wav', decay: .075, duration: .32 }),
-  createSoundDefinition(80, 'クラックスネア', 'Crack snare', '強い実音リムショットを短く切った、硬い「カッ」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-crack.wav', decay: .055, duration: .26 }),
+  createSoundDefinition(8, 'チップノイズスネア', 'Chip noise snare', 'ファミコン風の粗いノイズが短く切れる「ザッ」', 'drums', 'chip-noise', { envelopeStep: .005, gainDb: -2, decay: .02, duration: .12 }),
+  createSoundDefinition(79, 'ドライロックスネア', 'Dry rock snare', '強打の実音に明るいスナッピーを重ねた、乾いた「パン」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-rock.wav', gainDb: 3, decay: .075, duration: .32 }),
+  createSoundDefinition(80, 'クラックスネア', 'Crack snare', '強い実音リムショットを短く切った、硬い「カッ」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-crack.wav', gainDb: 4, decay: .055, duration: .26 }),
   createSoundDefinition(81, 'スナップスネア', 'Snap snare', '短い胴鳴りと鋭いノイズが弾ける、電子的な「パシッ」', 'drums', 'snap-snare', { frequency: 185, start: 330, decay: .036, duration: .24 }),
   createSoundDefinition(88, 'スラムスネア', 'Slam snare', '強打の実音をコンプで押し固めた、鋭い「バシッ」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-crack.wav', decay: .055, duration: .32, compression: { thresholdDb: -24, ratio: 8, attack: .0004, release: .012, saturation: 1 } }),
   createSoundDefinition(89, 'コンプファットスネア', 'Compressed fat snare', '低い胴鳴りと実音をコンプで太くした「バパン」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-rock.wav', playbackRate: .85, body: { frequency: 155, start: 240, decay: .035, level: .4 }, decay: .055, duration: .34, compression: { thresholdDb: -24, ratio: 8, attack: .0005, release: .014, saturation: 1 } }),
@@ -88,6 +90,7 @@ const soundDefinitions = [
   createSoundDefinition(15, 'メタリックハット', 'Metallic hat', '硬い金属感のある「チン」', 'hats', 'hat', { frequency: 2300, decay: .075, duration: .5, noise: .06 }),
 
   createSoundDefinition(16, 'クラッシュ', 'Crash', '実音の金属が広がる「ジャーン」', 'cymbals', 'sample', { sample: 'assets/drums/crash.wav', decay: 1.5, duration: 2.8 }),
+  createSoundDefinition(91, 'アタッククラッシュ', 'Attack crash', '出だしで強く弾け、金属の余韻が広がる「ジャーン」', 'cymbals', 'sample', { sample: 'assets/rusty-drums/crash-attack.wav', decay: 1.2, duration: 2.6 }),
   createSoundDefinition(17, 'ライド', 'Ride', '実音の粒立つ「チン」と、薄い金属の余韻', 'cymbals', 'sample', { sample: 'assets/drums/ride.wav', decay: 1.1, duration: 2.2 }),
   createSoundDefinition(18, 'ライドベル', 'Ride bell', '実音のカップを叩いた、硬く澄んだ「キン」', 'cymbals', 'sample', { sample: 'assets/drums/ride-bell.wav', decay: .7, duration: 1.6 }),
   createSoundDefinition(19, 'スプラッシュ', 'Splash', '実音クラッシュを高く短く加工した「パシャッ」', 'cymbals', 'sample', { sample: 'assets/drums/crash.wav', playbackRate: 1.65, decay: .16, duration: .65 }),
@@ -111,12 +114,21 @@ const soundDefinitions = [
 
   createSoundDefinition(31, 'ショートシェイカー', 'Short shaker', '短く切れる「シャッ」', 'hand', 'shaker', { decay: .022, duration: .2, grain: 43 }),
   createSoundDefinition(32, 'ロングシェイカー', 'Long shaker', '粒が流れる「シャー」', 'hand', 'shaker', { decay: .12, duration: .8, grain: 21 }),
+  createSoundDefinition(92, 'リアルショートシェイカー', 'Real short shaker', '実音の振り下ろしを短く切った、粒のある「シャッ」', 'hand', 'sample', { sample: 'assets/percussion/shaker-down.wav', decay: .05, duration: .28 }),
+  createSoundDefinition(93, 'リアルロングシェイカー', 'Real long shaker', '実音の振り上げで粒が流れる、長めの「シャー」', 'hand', 'sample', { sample: 'assets/percussion/shaker-up.wav', decay: .14, duration: .65 }),
   createSoundDefinition(33, 'ブライトタンバリン', 'Bright tambourine', '金属の響きが広がる「チャリン」', 'hand', 'tambourine', { frequency: 1900, decay: .14, duration: .9 }),
   createSoundDefinition(34, 'タイトタンバリン', 'Tight tambourine', '短く締まった「チャッ」', 'hand', 'tambourine', { frequency: 2600, decay: .025, duration: .24 }),
+  createSoundDefinition(94, 'リアルブライトタンバリン', 'Real bright tambourine', '実音のジングルが細かく重なる、明るい「チャリン」', 'hand', 'sample', { sample: 'assets/percussion/tambourine.wav', decay: .22, duration: .85 }),
+  createSoundDefinition(95, 'リアルタイトタンバリン', 'Real tight tambourine', '実音の余韻を短く止めた、歯切れのよい「チャッ」', 'hand', 'sample', { sample: 'assets/percussion/tambourine.wav', decay: .04, duration: .25 }),
   createSoundDefinition(35, 'ハイボンゴ', 'High bongo', '高く張りのある「ポン」', 'hand', 'hand', { frequency: 430, decay: .065, duration: .45, ratio: 1.55 }),
   createSoundDefinition(36, 'ローボンゴ', 'Low bongo', '低く丸い「ポコ」', 'hand', 'hand', { frequency: 280, decay: .085, duration: .6, ratio: 1.55 }),
+  createSoundDefinition(96, 'リアルハイボンゴ', 'Real high bongo', '小さいボンゴの実音を短く締めた、張りのある「ポン」', 'hand', 'sample', { sample: 'assets/percussion/bongo-high.wav', decay: .07, duration: .32 }),
+  createSoundDefinition(97, 'リアルローボンゴ', 'Real low bongo', '大きいボンゴの実音による、丸く低い「ポコ」', 'hand', 'sample', { sample: 'assets/percussion/bongo-low.wav', decay: .08, duration: .38 }),
   createSoundDefinition(37, 'ハイコンガ', 'High conga', '明るく弾む「コン」', 'hand', 'hand', { frequency: 240, decay: .13, duration: .85, ratio: 2.37 }),
   createSoundDefinition(38, 'ローコンガ', 'Low conga', '太く響く「クン」', 'hand', 'hand', { frequency: 155, decay: .19, duration: 1.2, ratio: 2.37 }),
+  createSoundDefinition(98, 'リアルハイコンガ', 'Real high conga', 'オープン打ちの実音を高く加工した、張りのある「コン」', 'hand', 'sample', { sample: 'assets/percussion/conga-open.wav', playbackRate: 1.15, decay: .09, duration: .42 }),
+  createSoundDefinition(99, 'リアルローコンガ', 'Real low conga', 'オープン打ちの実音を低く加工した、太い「クン」', 'hand', 'sample', { sample: 'assets/percussion/conga-open.wav', playbackRate: .85, decay: .1, duration: .48 }),
+  createSoundDefinition(100, 'リアルミュートコンガ', 'Real muted conga', '実際にミュートして叩いた、短く硬い「パッ」', 'hand', 'sample', { sample: 'assets/percussion/conga-muted.wav', decay: .045, duration: .25 }),
 
   createSoundDefinition(39, 'サブパルス', 'Sub pulse', '短く深い低音', 'tonal', 'bass', { frequency: 39, decay: .18, duration: 1.1, flavor: 'sub' }),
   createSoundDefinition(40, 'ラウンドベース', 'Round bass', '丸く減衰する「ブーン」', 'tonal', 'bass', { frequency: 65.4, decay: .17, duration: 1.1, flavor: 'round' }),

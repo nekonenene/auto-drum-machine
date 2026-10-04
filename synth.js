@@ -377,10 +377,15 @@ export function renderSound(sound, sampleRate = 48000, source) {
   }
 
   const normalizationGain = peak > 0 ? .78 / peak : 0;
+  const levelGain = 10 ** ((sound.gainDb || 0) / 20);
 
-  // 全サンプルに同じ倍率を適用してピークを揃える
+  // 音色ごとの音量を補正し、0.78を超える瞬間だけ滑らかに抑えて0.95未満に収める
   for (let index = 0; index < pcmSamples.length; index++) {
-    pcmSamples[index] *= normalizationGain;
+    const adjustedSample = pcmSamples[index] * normalizationGain * levelGain;
+    const amplitude = Math.abs(adjustedSample);
+    pcmSamples[index] = amplitude > .78
+      ? Math.sign(adjustedSample) * (.78 + .17 * Math.tanh((amplitude - .78) / .17))
+      : adjustedSample;
   }
 
   return pcmSamples;
