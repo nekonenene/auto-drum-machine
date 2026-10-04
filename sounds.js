@@ -1,3 +1,5 @@
+import { classifySound } from './sound-tags.js';
+
 /**
  * 表示情報と合成パラメーターを持つ音色の定義
  *
@@ -22,6 +24,7 @@
  * @property {number} [gainDb] 基本のピークを揃えた後に適用する音量補正（dB）
  * @property {number} decay 減衰の時定数（秒）
  * @property {number} duration サンプルの長さ（秒）
+ * @property {import("./sound-tags.js").SoundTags} tags パターン作成に使う共通の音色タグ
  */
 
 /**
@@ -58,7 +61,7 @@ export const categories = [
  * @param {string} category カテゴリーID
  * @param {string} type 合成方式
  * @param {object} options 合成方式に応じたパラメーター（decay、durationを含む）
- * @returns {Omit<SoundDefinition, "id">}
+ * @returns {Omit<SoundDefinition, "id" | "tags">}
  */
 const createSoundDefinition = (key, name, english, description, category, type, options) => ({ key, name, english, description, category, type, ...options });
 
@@ -74,7 +77,7 @@ const soundDefinitions = [
   createSoundDefinition(5, 'ドライスネア', 'Dry snare', '手でミュートした実音の、カラッと短い「パッ」', 'drums', 'sample', { sample: 'assets/drums/snare-muted.wav', decay: .065, duration: .25 }),
   createSoundDefinition(6, 'ファットスネア', 'Fat snare', '低くした実音に太い胴鳴りを重ねた、短い「ドパン」', 'drums', 'sample', { sample: 'assets/drums/snare-center.wav', playbackRate: .7, lowpass: 2800, body: { frequency: 145, start: 220, decay: .05, level: .65 }, gainDb: 1, decay: .085, duration: .38 }),
   createSoundDefinition(7, 'ブライトスネア', 'Bright snare', '実音のリムショットによる、硬く鋭い「パシッ」', 'drums', 'sample', { sample: 'assets/drums/snare-rimshot.wav', playbackRate: 1.08, decay: .07, duration: .28 }),
-  createSoundDefinition(8, 'チップノイズスネア', 'Chip noise snare', 'ファミコン風の粗いノイズが短く切れる「ザッ」', 'drums', 'chip-noise', { envelopeStep: .005, gainDb: -2, decay: .02, duration: .12 }),
+  createSoundDefinition(8, 'チップノイズスネア', 'Chip noise snare', 'ファミコン風の粗いノイズが短く切れる「ザッ」', 'drums', 'chip-noise', { envelopeStep: .005, gainDb: -4.5, decay: .02, duration: .12 }),
   createSoundDefinition(79, 'ドライロックスネア', 'Dry rock snare', '強打の実音に明るいスナッピーを重ねた、乾いた「パン」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-rock.wav', gainDb: 3, decay: .075, duration: .32 }),
   createSoundDefinition(80, 'クラックスネア', 'Crack snare', '強い実音リムショットを短く切った、硬い「カッ」', 'drums', 'sample', { sample: 'assets/rusty-drums/snare-crack.wav', gainDb: 4, decay: .055, duration: .26 }),
   createSoundDefinition(81, 'スナップスネア', 'Snap snare', '短い胴鳴りと鋭いノイズが弾ける、電子的な「パシッ」', 'drums', 'snap-snare', { frequency: 185, start: 330, decay: .036, duration: .24 }),
@@ -139,10 +142,10 @@ const soundDefinitions = [
   createSoundDefinition(45, 'コードスタブ', 'Chord stab', '和音が一瞬だけ鳴る', 'tonal', 'chord', { frequency: 261.63, decay: .13, duration: .9 }),
   createSoundDefinition(46, 'ボイスヒット', 'Voice hit', '「ワ」「オ」のような母音感', 'tonal', 'vowel', { frequency: 130.81, decay: .13, duration: .85 }),
 
-  createSoundDefinition(47, 'FMベル', 'FM bell', '電子的な、澄んだ鐘', 'particles', 'metal', { frequency: 740, ratio: 2, index: 2.4, decay: .35, duration: 2.2 }),
+  createSoundDefinition(47, 'FMベル', 'FM bell', '短い金属の打撃に丸い芯が残る、電子的な「キッ」', 'particles', 'metal', { frequency: 620, ratio: 2.71, index: 1.6, decay: .036, duration: .2 }),
   createSoundDefinition(48, 'メタルクランク', 'Metal clank', '金属がぶつかる「ガキン」', 'particles', 'metal', { frequency: 330, ratio: 1.414, index: 5.5, decay: .15, duration: 1.1 }),
   createSoundDefinition(49, 'スプリング', 'Spring', 'ばねのような「ビョン」', 'particles', 'spring', { frequency: 190, decay: .22, duration: 1.5 }),
-  createSoundDefinition(50, '不協和チャイム', 'Odd chime', '濁った倍音の「キララン」', 'particles', 'chime', { frequency: 540, decay: .31, duration: 2 }),
+  createSoundDefinition(50, '不協和チャイム', 'Odd chime', '濁った倍音が一瞬で弾ける、乾いた「カリン」', 'particles', 'chime', { frequency: 430, decay: .045, duration: .24 }),
   createSoundDefinition(51, 'マイクロクリック', 'Micro click', '針先のように短い「チッ」', 'particles', 'click', { frequency: 4800, decay: .002, duration: .06 }),
   createSoundDefinition(52, 'デジタルポップ', 'Digital pop', '丸く小さな「プッ」', 'particles', 'pop', { frequency: 660, decay: .018, duration: .18 }),
   createSoundDefinition(53, 'ウォータードロップ', 'Water drop', '水滴のような「プリン」', 'particles', 'drop', { frequency: 1150, decay: .08, duration: .65 }),
@@ -177,4 +180,4 @@ const soundDefinitions = [
 
 export const sounds = categories
   .flatMap((category) => soundDefinitions.filter((sound) => sound.category === category.id))
-  .map((entry, index) => ({ id: index + 1, ...entry }));
+  .map((entry, index) => ({ id: index + 1, ...entry, tags: classifySound(entry) }));

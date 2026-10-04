@@ -37,6 +37,19 @@
             <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 4 4" /></svg><input id="search" type="search" placeholder="音色を探す" aria-label="音色を検索" /></label>
           </div>
           <div class="library-caption"><span><span class="small-key">↵</span> パッドをクリックして試聴</span><span>♡ 気になる音を保存</span></div>
+          <details class="sound-filter-details">
+            <summary id="tag-filter-summary">音色のタグで絞り込む</summary>
+            <div class="sound-tag-filters">
+              <label>高さ<select data-tag-filter="register" aria-label="高さ"></select></label>
+              <label>響きの長さ<select data-tag-filter="length" aria-label="響きの長さ"></select></label>
+              <label>音の種類<select data-tag-filter="source" aria-label="音の種類"></select></label>
+              <label>立ち上がり<select data-tag-filter="attack" aria-label="立ち上がり"></select></label>
+              <label>楽器の役割<select data-tag-filter="role" aria-label="楽器の役割"></select></label>
+              <label>用途<select data-tag-filter="uses" aria-label="用途"></select></label>
+            </div>
+            <p class="tag-filter-note">高さは楽器内の高低も含む目安です。響きの長さは余韻を含む音の長さ、用途はおすすめの使い方です。</p>
+            <button id="clear-tag-filters" type="button">絞り込みをリセット</button>
+          </details>
           <div id="loading-state" class="loading-state" role="status"><span id="loading-message">実音サンプルを読み込み中…</span><button id="retry-loading" type="button" hidden>再読み込み</button></div>
           <div id="sound-grid" class="sound-grid"></div>
           <div id="empty-state" class="empty-state" hidden><span>♪</span><p id="empty-message"></p><button id="reset-filter" type="button">すべての音色に戻る</button></div>

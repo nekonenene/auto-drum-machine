@@ -1,5 +1,6 @@
 import { patterns } from './patterns-data.js';
 import { sounds } from './sounds.js';
+import { soundTagLabels } from './sound-tags.js';
 import { renderSound } from './synth.js';
 import { loadSampleSources } from './samples.js';
 import { TICKS_PER_BEAT, CLASSIFICATION_VERSION, purposes, centers, grooves, tagLabels, scoreCriteria,
@@ -109,14 +110,18 @@ function notify(message) {
  * @returns {object[]}
  */
 function visiblePatterns() {
-  const search = query('#pattern-search').value.trim().toLocaleLowerCase();
+  const searchTerms = query('#pattern-search').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
 
   return patterns.filter((pattern) => {
-    const searchable = `${pattern.id} ${pattern.name} ${pattern.intent} ${grooves[pattern.groove]} ${pattern.tags.map((tag) => tagLabels[tag]).join(' ')} ${pattern.usedSoundKeys.map((key) => soundByKey.get(key).name).join(' ')}`.toLocaleLowerCase();
+    const searchable = `${pattern.id} ${pattern.name} ${pattern.intent} ${grooves[pattern.groove]} ${pattern.tags.map((tag) => tagLabels[tag]).join(' ')} ${pattern.usedSoundKeys.map((key) => {
+      const sound = soundByKey.get(key);
+
+      return `${sound.name} ${soundTagLabels(sound).join(' ')}`;
+    }).join(' ')}`.toLocaleLowerCase();
 
     return (purposeFilter === 'all' || pattern.purpose === purposeFilter)
       && ['intensity', 'metallic', 'center', 'groove'].every((field) => query(`#filter-${field}`).value === 'all' || String(pattern[field]) === query(`#filter-${field}`).value)
-      && searchable.includes(search);
+      && searchTerms.every((term) => searchable.includes(term));
   });
 }
 
@@ -260,7 +265,11 @@ function renderDetail(pattern = selectedPattern) {
   query('#intensity-score').textContent = pattern.intensity;
   query('#metallic-score').textContent = pattern.metallic;
   query('#center-label').textContent = `音色の中心：${centers[pattern.center]}`;
-  query('#pattern-metadata').innerHTML = `<p>${pattern.usedSoundKeys.map((key) => `<span class="sound-chip">${soundByKey.get(key).id} ${escapeHtml(soundByKey.get(key).name)}</span>`).join('')}</p><p><b>スコアの理由</b><br>${escapeHtml(pattern.scoreReason)}</p><p><b>タグの理由</b><br>${escapeHtml(pattern.tagReason)}</p>`;
+  query('#pattern-metadata').innerHTML = `<div class="pattern-sound-list">${pattern.usedSoundKeys.map((key) => {
+    const sound = soundByKey.get(key);
+
+    return `<div class="pattern-sound"><b>${sound.id} ${escapeHtml(sound.name)}</b><span>${soundTagLabels(sound).map(escapeHtml).join(' / ')}</span></div>`;
+  }).join('')}</div><p><b>スコアの理由</b><br>${escapeHtml(pattern.scoreReason)}</p><p><b>タグの理由</b><br>${escapeHtml(pattern.tagReason)}</p>`;
   const baseId = pattern.purpose === 'basic' ? pattern.derivedFrom || pattern.id : pattern.derivedFrom;
   const relatives = patterns.filter((other) => other.id === baseId || other.derivedFrom === baseId);
   query('#derived-links').innerHTML = relatives.filter((other) => other.id !== pattern.id).map((other) => `<button type="button" data-audition="${other.id}">${purposes[other.purpose]}を聴く</button>`).join('');

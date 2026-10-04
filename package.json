@@ -7,6 +7,7 @@
     "dev": "node server.mjs",
     "start": "node server.mjs",
     "test": "node --test tests/*.test.mjs",
-    "patterns:build": "node tools/create-patterns.mjs"
+    "patterns:build": "node tools/create-patterns.mjs",
+    "sounds:measure": "node tools/measure-sound-lengths.mjs"
   }
 }

@@ -1,6 +1,7 @@
 import { sounds, categories } from './sounds.js';
 import { renderSound, waveformPeaks, encodeWav } from './synth.js';
 import { loadSampleSources } from './samples.js';
+import { soundTagChoices, soundTagLabels, matchesSoundTags } from './sound-tags.js';
 
 /**
  * セレクターに一致する画面要素を取得する
@@ -90,19 +91,20 @@ function getPcmSamples(sound) {
 }
 
 /**
- * カテゴリーと検索文字列に一致する音色を取得する
+ * カテゴリー・音色タグ・検索文字列に一致する音色を取得する
  *
  * @returns {import("./sounds.js").SoundDefinition[]}
  */
 function getVisibleSounds() {
-  const query = queryElement('#search').value.trim().toLocaleLowerCase();
+  const terms = queryElement('#search').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+  const tagFilters = Object.fromEntries([...document.querySelectorAll('[data-tag-filter]')].map((select) => [select.dataset.tagFilter, select.value]));
 
   return sounds.filter((sound) => {
     const category = categoryById.get(sound.category);
     const matchesCategory = categoryFilter === 'all' || categoryFilter === 'favorites' && favoriteSoundKeys.has(sound.key) || categoryFilter === sound.category;
-    const searchable = `${sound.id} ${sound.name} ${sound.english} ${sound.description} ${category.name} ${category.english}`.toLocaleLowerCase();
+    const searchable = `${sound.id} ${sound.name} ${sound.english} ${sound.description} ${category.name} ${category.english} ${soundTagLabels(sound).join(' ')}`.toLocaleLowerCase();
 
-    return matchesCategory && searchable.includes(query);
+    return matchesCategory && matchesSoundTags(sound, tagFilters) && terms.every((term) => searchable.includes(term));
   });
 }
 
@@ -183,8 +185,10 @@ function renderGrid() {
         <span class="card-number">${String(sound.id).padStart(2, '0')}</span>
         <canvas class="card-wave" width="300" height="60" aria-hidden="true"></canvas>
         <strong>${sound.name}</strong><span class="english-name">${sound.english}</span>
+        <span class="card-tags">${['register', 'length', 'source'].map((field) => `<span>${soundTagChoices[field][sound.tags[field]]}</span>`).join('')}</span>
         <span class="card-bottom"><span class="color-dot"></span>${category.english}</span>
       </button>
+      <details class="card-tag-details"><summary>役割・用途</summary><p>${soundTagChoices.role[sound.tags.role]} · ${soundTagChoices.attack[sound.tags.attack]}</p><p>${sound.tags.uses.map((use) => soundTagChoices.uses[use]).join(' / ')}</p></details>
       <button class="favorite-button" type="button" aria-label="${sound.name}のお気に入り" aria-pressed="${favoriteSoundKeys.has(sound.key)}">${renderIconHtml('heart')}</button>
     </article>`;
   }).join('');
@@ -611,7 +615,12 @@ queryElement('#sound-grid').addEventListener('click', (event) => {
   } else if (event.target.closest('.sound-pad')) auditionSound(sound);
 });
 
-queryElement('#search').addEventListener('input', () => {
+/**
+ * 検索・タグ変更後の候補を更新し、巡回試聴を停止する
+ *
+ * @returns {void}
+ */
+function refreshSoundFilters() {
   if (playbackMode === 'tour') {
     stopPlayback();
   }
@@ -619,11 +628,31 @@ queryElement('#search').addEventListener('input', () => {
   if (!queryElement('#play-selected').disabled) {
     renderGrid();
   }
-});
-queryElement('#reset-filter').addEventListener('click', () => {
+
+  const activeCount = [...document.querySelectorAll('[data-tag-filter]')].filter((select) => select.value !== 'all').length;
+  queryElement('#tag-filter-summary').textContent = `音色のタグで絞り込む${activeCount ? ` · ${activeCount}条件` : ''}`;
+}
+
+/**
+ * 音色の絞り込みを初期状態に戻す
+ *
+ * @returns {void}
+ */
+function resetSoundFilters() {
   queryElement('#search').value = '';
+  document.querySelectorAll('[data-tag-filter]').forEach((select) => { select.value = 'all'; });
+  queryElement('#tag-filter-summary').textContent = '音色のタグで絞り込む';
   changeCategoryFilter('all');
+}
+
+queryElement('#search').addEventListener('input', refreshSoundFilters);
+document.querySelectorAll('[data-tag-filter]').forEach((select) => {
+  select.innerHTML = '<option value="all">すべて</option>' + Object.entries(soundTagChoices[select.dataset.tagFilter])
+    .map(([value, label]) => `<option value="${value}">${label}</option>`).join('');
+  select.addEventListener('change', refreshSoundFilters);
 });
+queryElement('#reset-filter').addEventListener('click', resetSoundFilters);
+queryElement('#clear-tag-filters').addEventListener('click', resetSoundFilters);
 queryElement('#play-selected').addEventListener('click', () => auditionSound(selectedSound));
 queryElement('#repeat').addEventListener('click', () => setPlaybackMode('repeat'));
 queryElement('#tour').addEventListener('click', () => setPlaybackMode('tour'));
@@ -656,7 +685,7 @@ document.addEventListener('keydown', (event) => {
     return;
   }
 
-  if (event.code !== 'Space' || event.repeat || event.target.closest('input, textarea, button, a, [contenteditable]')) {
+  if (event.code !== 'Space' || event.repeat || event.target.closest('input, select, summary, textarea, button, a, [contenteditable]')) {
 
     return;
   }

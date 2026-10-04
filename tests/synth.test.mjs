@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { sounds, categories } from '../sounds.js';
 import { renderSound, waveformPeaks, encodeWav } from '../synth.js';
 import { decodeSampleWav, loadSampleSources } from '../samples.js';
+import { soundLengths } from '../sound-lengths.js';
 
 const soundByKey = new Map(sounds.map((sound) => [sound.key, sound]));
 const sampleSources = await loadSampleSources(sounds, async (path) => {
@@ -83,6 +84,12 @@ test('all 101 sounds produce unique audible finite PCM with safe peaks and silen
     }
 
     assert.ok(energy > 1, `${sound.name} is silent`);
+    const measuredTime = soundLengths[sound.key];
+    const before = pcmSamples.subarray(0, Math.max(0, Math.floor((measuredTime - .0001) * 48000)))
+      .reduce((sum, sample) => sum + sample ** 2, 0);
+    const after = pcmSamples.subarray(0, Math.ceil((measuredTime + .0001) * 48000))
+      .reduce((sum, sample) => sum + sample ** 2, 0);
+    assert.ok(before < energy * .99 && after >= energy * .99, `${sound.name}: stale length ${measuredTime}`);
     assert.equal(Math.abs(pcmSamples[0]), 0);
     assert.equal(Math.abs(pcmSamples.at(-1)), 0);
     fingerprints.add(createHash('sha256').update(new Uint8Array(pcmSamples.buffer)).digest('hex'));
@@ -384,7 +391,7 @@ test('snare level trims balance the quiet samples and carry through to WAV outpu
     const originalRms = rms(original, 0, .1);
 
     if (key === 8) {
-      assert.ok(adjustedRms > originalRms * .7 && adjustedRms < originalRms * .85);
+      assert.ok(adjustedRms > originalRms * .58 && adjustedRms < originalRms * .61);
     } else if (key === 6) {
       assert.ok(adjustedRms > originalRms * 1.05 && adjustedRms < originalRms * 1.2);
     } else {
@@ -398,6 +405,21 @@ test('snare level trims balance the quiet samples and carry through to WAV outpu
     for (let index = 0; index < adjusted.length; index++) {
       assert.ok(Math.abs(decoded.pcmSamples[index] - adjusted[index]) < 2 / 32768);
     }
+  }
+});
+
+test('FM bell and odd chime start promptly and end as distinct short percussion hits', () => {
+
+  // 両音色がすぐ鳴り、110BPMの16分音符が来るころには十分に減衰することを確認する
+  for (const key of [47, 50]) {
+    const sound = soundByKey.get(key);
+    const pcm = renderCatalogSound(sound);
+    const peakIndex = pcm.reduce((peakIndex, sample, index) => Math.abs(sample) > Math.abs(pcm[peakIndex]) ? index : peakIndex, 0);
+    assert.ok(peakIndex / 48000 < .01, sound.name);
+    assert.ok(sound.duration <= .24, sound.name);
+    assert.ok(rms(pcm, .14, sound.duration) < rms(pcm, 0, .04) * .06, sound.name);
+    assert.equal(sound.tags.length, 'short');
+    assert.equal(sound.tags.attack, 'hit');
   }
 });
 

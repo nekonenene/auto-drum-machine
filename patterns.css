@@ -92,7 +92,10 @@ h3 { font-size: 13px; margin: 0; font-weight: 600; }
 .derived-links button, .similar-item button, .data-actions button, .auto-actions button { background: #f8f9f1; border: 1px solid #cdd6bc; color: #647651; border-radius: 5px; padding: 8px 11px; font-size: 10px; }
 .metadata-details { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .metadata-details p { font-size: 11px; line-height: 1.9; color: #7d8a71; margin: 5px 0 14px; }
-.sound-chip { display: inline-block; padding: 4px 7px; background: #e9ecdf; border-radius: 4px; margin: 0 5px 5px 0; font-size: 9px; color: #728062; }
+.pattern-sound-list { display: grid; gap: 8px; }
+.pattern-sound { display: flex; flex-direction: column; gap: 4px; padding: 8px 10px; background: #e9ecdf; border-radius: 5px; }
+.pattern-sound b { font-size: 12px; }
+.pattern-sound span { font-size: 11px; color: #52614a; line-height: 1.6; }
 .similar-section { padding: 23px 0; }
 .section-title { display: flex; gap: 12px; justify-content: space-between; align-items: center; margin-bottom: 12px; }
 .section-title span { font-size: 9px; color: #8c987f; }
