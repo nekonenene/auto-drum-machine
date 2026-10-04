@@ -26,5 +26,5 @@ createServer(async (request, response) => {
   }
 
 }).listen(port, '127.0.0.1', () => {
-  console.log(`Sound Lab: http://localhost:${port}`);
+  console.log(`Auto Drum Machine: http://localhost:${port}`);
 });
