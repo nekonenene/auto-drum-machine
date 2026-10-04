@@ -37,6 +37,7 @@ summary { cursor: pointer; font-size: 11px; color: #526842; padding: 12px 0; lin
 .pattern-card strong { font-size: 13px; font-weight: 600; display: flex; gap: 8px; align-items: center; line-height: 1.6; margin: 9px 0; }
 .card-play { color: #74885b; font-size: 10px; }
 .is-playing .card-play { color: #ab6346; }
+.pattern-card.is-queued { border-style: dashed; }
 .card-meta { color: #718060; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px; font-size: 9px; }
 .card-scores { font-size: 10px; display: flex; gap: 14px; color: #53683f; margin-top: 8px; }
 .card-groove { font-size: 10px; color: #69775f; }

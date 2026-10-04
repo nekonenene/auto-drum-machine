@@ -269,7 +269,10 @@ function transportFixture() {
   const hits = [];
   const cancellations = [];
   const audio = { now: () => time, schedule: (event, start, bpm) => hits.push({ event, start, bpm }),
-    cancel: (now, futureOnly) => cancellations.push({ now, futureOnly }), tail: () => .1 };
+    cancel: (now, futureOnly) => {
+      cancellations.push({ now, futureOnly });
+      hits.filter((hit) => !futureOnly || hit.start >= now).forEach((hit) => { hit.cancelled = true; });
+    }, tail: () => .1 };
 
   return { transport: new PatternTransport(audio), hits, cancellations, setTime: (next) => { time = next; } };
 }
@@ -279,6 +282,124 @@ const tinyPattern = { id: 'tiny', meter: 4, bars: 1, events: [
   { tick: 32, soundKey: 5, velocity: .6, gateTicks: 24 },
   { tick: 96, soundKey: 12, velocity: .4, gateTicks: 24 },
 ] };
+
+test('queued playback follows the current phrase seamlessly in loops, one-shots, and connected sequences', () => {
+  const next = { ...tinyPattern, id: 'queued' };
+
+  // 単発・リピート・接続列のいずれも、現在のフレーズの直後へ切り替える
+  for (const [sequence, loop] of [[[tinyPattern], false], [[tinyPattern], true], [[tinyPattern, tinyPattern], true]]) {
+    const fixture = transportFixture();
+    fixture.transport.setBpm(120);
+    fixture.transport.start(sequence, loop);
+    fixture.setTime(.3);
+    fixture.transport.queue([next], true);
+    assert.equal(fixture.transport.position().pattern.id, 'tiny');
+
+    // 境界の音を先読みしても、表示は実際の切り替え時刻まで前のままにする
+    for (let tick = 30; tick <= 198; tick++) {
+      fixture.setTime(tick * .01);
+      fixture.transport.pump();
+    }
+
+    assert.equal(fixture.transport.position().pattern.id, 'tiny');
+    assert.equal(fixture.hits.find((hit) => hit.event.patternId === 'queued').start, 2.06);
+
+    // 切り替えた後の周回でも、1拍目の発音を重複させない
+    for (let tick = 199; tick <= 420; tick++) {
+      fixture.setTime(tick * .01);
+      fixture.transport.pump();
+    }
+
+    assert.equal(fixture.transport.position().pattern.id, 'queued');
+    assert.equal(fixture.transport.pending, null);
+    assert.deepEqual(fixture.hits.filter((hit) => !hit.cancelled && hit.event.tick === 0)
+      .map((hit) => [hit.event.patternId, Number(hit.start.toFixed(2))]), [['tiny', .06], ['queued', 2.06], ['queued', 4.06]]);
+  }
+});
+
+test('replacing a queue cancels pre-scheduled boundary hits and keeps only the latest choice', () => {
+  const fixture = transportFixture();
+  fixture.transport.setBpm(120);
+  fixture.transport.start([tinyPattern], true);
+  fixture.setTime(1.96);
+  fixture.transport.pump();
+  assert.ok(fixture.hits.some((hit) => hit.start === 2.06));
+  fixture.transport.queue([{ ...tinyPattern, id: 'discarded' }]);
+  fixture.setTime(1.98);
+  fixture.transport.queue([{ ...tinyPattern, id: 'latest' }]);
+  fixture.setTime(2.06);
+  fixture.transport.pump();
+  assert.equal(fixture.transport.position().pattern.id, 'latest');
+  assert.deepEqual(fixture.hits.filter((hit) => !hit.cancelled && hit.start === 2.06)
+    .map((hit) => hit.event.patternId), ['latest']);
+});
+
+test('queues use the end of a later connected phrase or loop and retain a pre-scheduled boundary after BPM changes', () => {
+  const longer = { ...tinyPattern, id: 'longer', bars: 2 };
+
+  // 接続列の2番目とループの2周目でも、今のフレーズの終端を使う
+  for (const [sequence, boundary] of [[[tinyPattern, longer], 6.06], [[tinyPattern], 4.06]]) {
+    const fixture = transportFixture();
+    fixture.transport.setBpm(120);
+    fixture.transport.start(sequence, true);
+    fixture.setTime(2.3);
+    fixture.transport.queue([{ ...tinyPattern, id: 'next' }]);
+
+    // 次のフレーズの頭まで時刻を進め、発音の境界を確認する
+    for (let tick = 230; tick <= boundary * 100 + 10; tick++) {
+      fixture.setTime(tick * .01);
+      fixture.transport.pump();
+    }
+
+    const first = fixture.hits.find((hit) => !hit.cancelled && hit.event.patternId === 'next');
+    assert.ok(Math.abs(first.start - boundary) < 1e-9);
+  }
+
+  const fixture = transportFixture();
+  fixture.transport.setBpm(120);
+  fixture.transport.start([tinyPattern], true);
+  fixture.setTime(1.98);
+  fixture.transport.queue([{ ...tinyPattern, id: 'next' }]);
+  fixture.transport.setBpm(60);
+  fixture.setTime(2.14);
+  fixture.transport.pump();
+  const starts = fixture.hits.filter((hit) => !hit.cancelled && hit.event.patternId === 'next' && hit.event.tick === 0);
+  assert.equal(starts.length, 1);
+  assert.ok(Math.abs(starts[0].start - 2.14) < 1e-9);
+});
+
+test('queued transitions follow BPM changes, preserve intro rests, and are cleared by stop or immediate start', () => {
+  const fixture = transportFixture();
+  const intro = { ...tinyPattern, id: 'pickup', events: tinyPattern.events.slice(1) };
+  fixture.transport.setBpm(120);
+  fixture.transport.start([tinyPattern], true);
+  fixture.setTime(.3);
+  fixture.transport.queue([intro]);
+  fixture.transport.setBpm(60);
+
+  // テンポ変更後の終端へつなぎ、出だしの休符を詰めない
+  for (let tick = 30; tick <= 500; tick++) {
+    fixture.setTime(tick * .01);
+    fixture.transport.pump();
+  }
+
+  const first = fixture.hits.find((hit) => !hit.cancelled && hit.event.patternId === 'pickup');
+  assert.ok(Math.abs(first.start - (3.82 + 1 / 3)) < 1e-9);
+  assert.equal(first.bpm, 60);
+  fixture.transport.queue([tinyPattern], true);
+  fixture.transport.stop();
+  assert.equal(fixture.transport.pending, null);
+  const hitCount = fixture.hits.length;
+  fixture.setTime(10);
+  fixture.transport.pump();
+  assert.equal(fixture.hits.length, hitCount);
+  fixture.transport.start([tinyPattern], true);
+  fixture.transport.queue([intro]);
+  fixture.transport.start([{ ...tinyPattern, id: 'immediate' }]);
+  assert.equal(fixture.transport.pending, null);
+  assert.equal(fixture.transport.position().pattern.id, 'immediate');
+  assert.ok(Math.abs(fixture.hits.at(-1).start - 10.06) < 1e-9);
+});
 
 test('one-shot and loop schedule exact triplets with no missing or doubled boundary hits', () => {
   const fixture = transportFixture();

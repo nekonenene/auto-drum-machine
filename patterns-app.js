@@ -28,6 +28,7 @@ const buffersByKey = new Map();
 const activeVoices = new Set();
 let sampleSources = new Map();
 let selectedPattern = patterns[0];
+let lastAuditionPattern;
 let purposeFilter = 'all';
 let context;
 let masterGain;
@@ -298,13 +299,12 @@ function updateSequenceLabel() {
 }
 
 /**
- * パターンを選択し、前の演奏予約を止める
+ * 演奏を保ったままパターンを選択する
  *
  * @param {object} pattern 選択するパターン
  * @returns {void}
  */
 function selectPattern(pattern) {
-  stopPlayback();
   selectedPattern = pattern;
   updateSelection();
   renderDetail();
@@ -373,6 +373,11 @@ function cancelVoices(time, futureOnly) {
       continue;
     }
 
+    if (futureOnly) {
+      voice.source.stop(time);
+      continue;
+    }
+
     voice.gain.gain.cancelScheduledValues(time);
     voice.gain.gain.setTargetAtTime(0, time, .003);
     voice.source.stop(time + .015);
@@ -427,9 +432,9 @@ function stopPlayback() {
   query('#pattern-loop').disabled = false;
   query('#connect-pattern').disabled = false;
   query('#play-state').textContent = '停止中';
-  query('#now-playing').textContent = '一覧をクリックして試聴 · ← → で前・次';
+  query('#now-playing').textContent = 'クリックで試聴・再生中は次に予約 · ダブルクリックで即再生 · ← → で前・次';
   query('#pattern-play').textContent = '▶ 再生';
-  document.querySelectorAll('.pattern-card').forEach((card) => card.classList.remove('is-playing'));
+  document.querySelectorAll('.pattern-card').forEach((card) => card.classList.remove('is-playing', 'is-queued'));
   query('#auto-generate').textContent = '自動連続生成';
   query('#auto-generate').setAttribute('aria-pressed', 'false');
   updateSequenceLabel();
@@ -458,18 +463,38 @@ function animate() {
     playhead?.setAttribute('x2', String(x));
     playhead?.setAttribute('visibility', position.pattern.id === selectedPattern.id ? 'visible' : 'hidden');
     query('#play-state').textContent = `${autoMode ? '生成中 · ' : ''}${Math.floor(position.beat / position.pattern.meter) + 1}小節 ${Math.floor(position.beat % position.pattern.meter) + 1}拍`;
-    query('#now-playing').textContent = `${purposes[position.pattern.purpose]}：${position.pattern.name}`;
+    const pending = transport.pending?.sequence[0];
+    query('#now-playing').textContent = `${purposes[position.pattern.purpose]}：${position.pattern.name}`
+      + (pending ? ` → 次：${pending.name}` : '');
+    document.querySelectorAll('.pattern-card').forEach((card) => {
+      card.classList.toggle('is-playing', card.dataset.audition === position.pattern.id);
+      card.classList.toggle('is-queued', card.dataset.audition === pending?.id);
+    });
   }
 
   animationFrame = requestAnimationFrame(animate);
 }
 
 /**
- * 選択したパターンまたは接続列の試聴を開始する
+ * 選択したパターンを次のフレーズに予約し、即再生なら割り込む
  *
+ * @param {boolean} [immediate=false] 現在の演奏を止めてすぐ再生するか
  * @returns {Promise<void>}
  */
-async function playPattern() {
+async function playPattern(immediate = false) {
+  if (transport?.playing && !immediate) {
+    transport.queue(auditionSequence(selectedPattern, patterns, query('#connect-pattern').checked), query('#pattern-loop').checked);
+    autoMode = false;
+    query('#pattern-loop').disabled = false;
+    query('#connect-pattern').disabled = false;
+    query('#auto-generate').textContent = '自動連続生成';
+    query('#auto-generate').setAttribute('aria-pressed', 'false');
+    query('#pattern-play').textContent = '▶ 次に再生';
+    updateSequenceLabel();
+
+    return;
+  }
+
   stopPlayback();
   const token = playbackToken;
 
@@ -484,7 +509,7 @@ async function playPattern() {
     transport.onNext = null;
     transport.setBpm(Number(query('#pattern-bpm').value));
     transport.start(auditionSequence(selectedPattern, patterns, query('#connect-pattern').checked), query('#pattern-loop').checked);
-    query('#pattern-play').textContent = '↻ 最初から';
+    query('#pattern-play').textContent = '▶ 次に再生';
     document.querySelectorAll('.pattern-card').forEach((card) => card.classList.toggle('is-playing', card.dataset.audition === selectedPattern.id));
     pumpInterval = setInterval(() => transport.pump(), 25);
     animate();
@@ -672,11 +697,14 @@ document.addEventListener('click', (event) => {
 
   if (selection) {
     const id = selection.dataset.audition;
-    const pattern = libraryById.get(id) || generated.find((item) => item.id === id);
+    // 詳細の比較ボタンが描き直されても、ダブルクリックは最初に押したパターンを再生する
+    const pattern = event.detail >= 2 && lastAuditionPattern ? lastAuditionPattern
+      : libraryById.get(id) || generated.find((item) => item.id === id);
+    lastAuditionPattern = pattern;
     selectPattern(pattern);
 
     if (ready) {
-      playPattern();
+      playPattern(event.detail >= 2);
     }
   }
 
@@ -702,7 +730,7 @@ document.addEventListener('click', (event) => {
   }
 });
 
-query('#pattern-play').addEventListener('click', playPattern);
+query('#pattern-play').addEventListener('click', (event) => playPattern(event.detail >= 2));
 query('#pattern-stop').addEventListener('click', stopPlayback);
 query('#detail-stop').addEventListener('click', stopPlayback);
 query('#previous-pattern').addEventListener('click', () => auditionAdjacent(-1));
@@ -739,14 +767,14 @@ query('#reset-mix').addEventListener('click', () => {
 });
 query('#pattern-loop').addEventListener('change', () => {
   if (transport?.playing) {
-    playPattern();
+    playPattern(true);
   }
 
   updateSequenceLabel();
 });
 query('#connect-pattern').addEventListener('change', () => {
   if (transport?.playing) {
-    playPattern();
+    playPattern(true);
   }
 
   updateSequenceLabel();

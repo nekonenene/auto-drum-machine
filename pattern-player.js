@@ -17,6 +17,28 @@ export function voiceTiming(event, bpm, sourceDuration = soundByKey.get(event.so
 }
 
 /**
+ * フレーズ列を連続した拍位置へ変換する
+ *
+ * @param {object[]} sequence 保存パターン列
+ * @returns {{events: object[], lengthBeats: number}} 発音列と総拍数
+ */
+function sequenceTimeline(sequence) {
+  const events = [];
+  let lengthBeats = 0;
+
+  // 各フレーズの開始拍を加算し、同時打ちを保って並べる
+  for (const pattern of sequence) {
+    const offset = lengthBeats;
+    events.push(...pattern.events.map((event) => ({ ...event, beat: offset + event.tick / TICKS_PER_BEAT, patternId: pattern.id })));
+    lengthBeats += pattern.meter * pattern.bars;
+  }
+
+  events.sort((first, second) => first.beat - second.beat);
+
+  return { events, lengthBeats };
+}
+
+/**
  * 拍を基準に先読み予約し、停止とテンポ変更時に未来の予約を取り消す
  */
 export class PatternTransport {
@@ -37,6 +59,7 @@ export class PatternTransport {
     this.sequence = [];
     this.events = [];
     this.onNext = null;
+    this.pending = null;
   }
 
   /**
@@ -64,18 +87,45 @@ export class PatternTransport {
     this.anchorBeat = 0;
     this.anchorTime = this.audio.now() + .06;
     this.nextIndex = 0;
-    this.events = [];
-    this.lengthBeats = 0;
+    Object.assign(this, sequenceTimeline(sequence));
+    this.playing = true;
+    this.pump();
+  }
 
-    // パターン列を連続した拍位置へ変換し、境界で1拍目が重複しないようにする
-    for (const pattern of sequence) {
-      const offset = this.lengthBeats;
-      this.events.push(...pattern.events.map((event) => ({ ...event, beat: offset + event.tick / TICKS_PER_BEAT, patternId: pattern.id })));
-      this.lengthBeats += pattern.meter * pattern.bars;
+  /**
+   * 現在のフレーズの直後に切り替える。選び直した場合は予約を置き換える
+   *
+   * @param {object[]} sequence 次に演奏する保存パターン列
+   * @param {boolean} [loop=false] 切り替え後にループするか
+   * @returns {void}
+   */
+  queue(sequence, loop = false) {
+    this.onNext = null;
+    this.pump();
+
+    if (!this.playing) {
+      this.start(sequence, loop);
+
+      return;
     }
 
-    this.events.sort((first, second) => first.beat - second.beat);
-    this.playing = true;
+    const currentBeat = Math.max(0, this.beatAt());
+    const cycle = this.loop ? Math.floor(currentBeat / this.lengthBeats) : 0;
+    let boundaryBeat = cycle * this.lengthBeats;
+
+    // 接続列全体ではなく、今鳴っているフレーズの末尾を探す
+    for (const pattern of this.sequence) {
+      boundaryBeat += pattern.meter * pattern.bars;
+
+      if (boundaryBeat > currentBeat) {
+        break;
+      }
+    }
+
+    boundaryBeat = Math.max(currentBeat, boundaryBeat);
+    const boundaryTime = this.anchorTime + (boundaryBeat - this.anchorBeat) * 60 / this.bpm;
+    this.audio.cancel(boundaryTime, true);
+    this.pending = { sequence, loop, boundaryBeat, nextIndex: 0, ...sequenceTimeline(sequence) };
     this.pump();
   }
 
@@ -86,6 +136,7 @@ export class PatternTransport {
    * @returns {void}
    */
   setBpm(bpm) {
+    this.pump();
     const time = this.audio.now();
     const currentBeat = this.playing ? this.beatAt(time) : 0;
     this.anchorBeat = currentBeat;
@@ -98,6 +149,11 @@ export class PatternTransport {
       const localBeat = currentBeat - cycle * this.lengthBeats;
       const index = this.events.findIndex((event) => event.beat > localBeat + 1e-7);
       this.nextIndex = cycle * this.events.length + (index < 0 ? this.events.length : index);
+
+      if (this.pending) {
+        this.pending.nextIndex = 0;
+      }
+
       this.pump();
     }
   }
@@ -114,6 +170,14 @@ export class PatternTransport {
     }
 
     const now = this.audio.now();
+    const pendingTime = this.pending
+      ? this.anchorTime + (this.pending.boundaryBeat - this.anchorBeat) * 60 / this.bpm : null;
+
+    if (this.pending && now >= pendingTime) {
+      const { sequence, loop, events, lengthBeats, nextIndex } = this.pending;
+      Object.assign(this, { sequence, loop, events, lengthBeats, nextIndex, anchorTime: pendingTime, anchorBeat: 0 });
+      this.pending = null;
+    }
 
     // 同時打ち・三連符・細かな連打をAudioContextの時刻で予約する
     while (this.loop || this.nextIndex < this.events.length) {
@@ -140,7 +204,7 @@ export class PatternTransport {
       const beat = event.beat + cycle * this.lengthBeats;
       const time = this.anchorTime + (beat - this.anchorBeat) * 60 / this.bpm;
 
-      if (time > now + .12) {
+      if (time > now + .12 || (this.pending && beat >= this.pending.boundaryBeat)) {
         break;
       }
 
@@ -149,6 +213,29 @@ export class PatternTransport {
       }
 
       this.nextIndex++;
+    }
+
+    if (this.pending) {
+      const pending = this.pending;
+
+      // 切り替え先も先読みし、冒頭の休符と境界の同時打ちを正確に保つ
+      while (pending.loop || pending.nextIndex < pending.events.length) {
+        const cycle = Math.floor(pending.nextIndex / pending.events.length);
+        const event = pending.events[pending.nextIndex % pending.events.length];
+        const time = pendingTime + (event.beat + cycle * pending.lengthBeats) * 60 / this.bpm;
+
+        if (time > now + .12) {
+          break;
+        }
+
+        if (time >= now - .04) {
+          this.audio.schedule(event, Math.max(now, time), this.bpm);
+        }
+
+        pending.nextIndex++;
+      }
+
+      return;
     }
 
     const endingBeat = this.beatAt(now);
@@ -168,6 +255,7 @@ export class PatternTransport {
   stop() {
     this.audio.cancel(this.audio.now(), false);
     this.playing = false;
+    this.pending = null;
   }
 
   /**
