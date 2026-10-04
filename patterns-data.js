@@ -2419,70 +2419,123 @@ export const patterns = [
     "fillRange": null,
     "groove": "straight",
     "tags": [
-      "space",
       "two-bar"
     ],
-    "intent": "ライドベルとFMベルを離して配置する。余韻の重なりが拍をつなぎ、足元の打撃は少なく小さくする",
-    "tagReason": "ライドベルとFMベルを離して配置する。余韻の重なりが拍をつなぎ、足元の打撃は少なく小さくする。ノリはフレーズ全体の均等な刻みで分類",
+    "intent": "毎拍のライドベルに、1・3拍のキックと2・4拍のリムを合わせる。FMベルは3拍目に添え、2小節目の最後だけ弱い裏拍のキックで返す",
+    "tagReason": "毎拍のライドベルに、1・3拍のキックと2・4拍のリムを合わせる。FMベルは3拍目に添え、2小節目の最後だけ弱い裏拍のキックで返す。ノリはフレーズ全体の均等な刻みで分類",
     "events": [
       {
         "tick": 0,
         "soundKey": 18,
-        "velocity": 0.72,
-        "gateTicks": 192
+        "velocity": 0.62,
+        "gateTicks": 62
       },
       {
         "tick": 0,
         "soundKey": 71,
-        "velocity": 0.35,
+        "velocity": 0.65,
         "gateTicks": 48
       },
       {
-        "tick": 144,
-        "soundKey": 47,
-        "velocity": 0.65,
-        "gateTicks": 192
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.46,
+        "gateTicks": 62
       },
       {
-        "tick": 240,
+        "tick": 96,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
         "soundKey": 18,
-        "velocity": 0.6,
-        "gateTicks": 192
+        "velocity": 0.62,
+        "gateTicks": 62
+      },
+      {
+        "tick": 192,
+        "soundKey": 47,
+        "velocity": 0.4,
+        "gateTicks": 96
+      },
+      {
+        "tick": 192,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.46,
+        "gateTicks": 62
       },
       {
         "tick": 288,
         "soundKey": 25,
-        "velocity": 0.28,
+        "velocity": 0.58,
         "gateTicks": 48
       },
       {
         "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.62,
+        "gateTicks": 62
+      },
+      {
+        "tick": 384,
         "soundKey": 71,
-        "velocity": 0.35,
+        "velocity": 0.65,
         "gateTicks": 48
       },
       {
-        "tick": 432,
+        "tick": 480,
         "soundKey": 18,
-        "velocity": 0.72,
-        "gateTicks": 192
+        "velocity": 0.46,
+        "gateTicks": 62
+      },
+      {
+        "tick": 480,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.62,
+        "gateTicks": 62
       },
       {
         "tick": 576,
         "soundKey": 47,
+        "velocity": 0.4,
+        "gateTicks": 96
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
         "velocity": 0.65,
-        "gateTicks": 192
+        "gateTicks": 48
       },
       {
         "tick": 672,
         "soundKey": 18,
-        "velocity": 0.6,
-        "gateTicks": 192
+        "velocity": 0.46,
+        "gateTicks": 62
       },
       {
         "tick": 672,
         "soundKey": 25,
-        "velocity": 0.28,
+        "velocity": 0.58,
+        "gateTicks": 48
+      },
+      {
+        "tick": 720,
+        "soundKey": 71,
+        "velocity": 0.42,
         "gateTicks": 48
       }
     ],
@@ -2493,21 +2546,21 @@ export const patterns = [
       25,
       47
     ],
-    "intensity": 1,
-    "metallic": 5,
+    "intensity": 2,
+    "metallic": 4,
     "center": "drums",
     "metrics": {
-      "density": 1.25,
+      "density": 2.375,
       "repeatRatio": 0,
-      "accentRatio": 0.4,
-      "thickness": 0.25,
-      "metalRatio": 0.8662271940338259,
-      "metalPresence": 0.6273630401234568,
-      "metalSustain": 0.8962329144620812,
-      "intensityIndex": 0.14229166666666665,
-      "metallicIndex": 0.7990688059249534
+      "accentRatio": 0.631578947368421,
+      "thickness": 1.25,
+      "metalRatio": 0.4570655848546315,
+      "metalPresence": 0.7053254437869821,
+      "metalSustain": 0.35242321780783326,
+      "intensityIndex": 0.2936787280701754,
+      "metallicIndex": 0.515847187477317
     },
-    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.3打/拍。メタリックさ5：相対強度で金属87%、金属の目立ち63%、余韻指標90%"
+    "scoreReason": "激しさ2：1拍あたり2.4打、連打0%、重なり1.3打/拍。メタリックさ4：相対強度で金属46%、金属の目立ち71%、余韻指標35%"
   },
   {
     "id": "p4-b-014",
@@ -5535,7 +5588,6 @@ export const patterns = [
     },
     "groove": "straight",
     "tags": [
-      "space",
       "opening"
     ],
     "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「宙に浮くベル」の1拍目へつなぐ",
@@ -5543,19 +5595,25 @@ export const patterns = [
     "events": [
       {
         "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.235,
+        "gateTicks": 62
+      },
+      {
+        "tick": 192,
         "soundKey": 47,
         "velocity": 0.45,
         "gateTicks": 34
       },
       {
-        "tick": 240,
-        "soundKey": 18,
+        "tick": 288,
+        "soundKey": 25,
         "velocity": 0.65,
         "gateTicks": 34
       },
       {
         "tick": 336,
-        "soundKey": 25,
+        "soundKey": 18,
         "velocity": 0.8500000000000001,
         "gateTicks": 34
       }
@@ -5567,20 +5625,20 @@ export const patterns = [
       47
     ],
     "intensity": 1,
-    "metallic": 3,
+    "metallic": 4,
     "center": "mixed",
     "metrics": {
-      "density": 0.75,
+      "density": 1,
       "repeatRatio": 0,
-      "accentRatio": 0.3333333333333333,
+      "accentRatio": 0.25,
       "thickness": 0,
-      "metalRatio": 0.46382189239332094,
-      "metalPresence": 0.2162629757785467,
-      "metalSustain": 0.05470938375350141,
-      "intensityIndex": 0.08770833333333333,
-      "metallicIndex": 0.32818734111291575
+      "metalRatio": 0.698800548931544,
+      "metalPresence": 0.3391782006920415,
+      "metalSustain": 0.08978505004943155,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0.4995615196273764
     },
-    "scoreReason": "激しさ1：1拍あたり0.8打、連打0%、重なり0.0打/拍。メタリックさ3：相対強度で金属46%、金属の目立ち22%、余韻指標5%"
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ4：相対強度で金属70%、金属の目立ち34%、余韻指標9%"
   },
   {
     "id": "p4-i-014",
@@ -8913,95 +8971,148 @@ export const patterns = [
     "purpose": "fill",
     "derivedFrom": "p4-b-013",
     "fillRange": {
-      "startTick": 624,
+      "startTick": 672,
       "endTick": 768
     },
     "groove": "straight",
     "tags": [
-      "space",
       "two-bar",
       "build-up"
     ],
-    "intent": "「宙に浮くベル」の前半と拍の足場を保つ。長いベルの下でリムを近づけ、最後の裏でライドベルを返す。最終拍の返しから次の1拍目へつなぐ",
-    "tagReason": "全体の基調はストレートを継承。長いベルの下でリムを近づけ、最後の裏でライドベルを返す。最終拍のアクセントを次の頭へ渡す",
+    "intent": "「宙に浮くベル」の前半と拍の足場を保つ。最後の1拍だけリムを8分から16分で返し、最後の16分にライドベルを合わせる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。最後の1拍だけリムを8分から16分で返し、最後の16分にライドベルを合わせる。最終拍のアクセントを次の頭へ渡す",
     "events": [
       {
         "tick": 0,
         "soundKey": 18,
-        "velocity": 0.72,
-        "gateTicks": 192
+        "velocity": 0.62,
+        "gateTicks": 62
       },
       {
         "tick": 0,
         "soundKey": 71,
-        "velocity": 0.35,
+        "velocity": 0.65,
         "gateTicks": 48
       },
       {
-        "tick": 144,
-        "soundKey": 47,
-        "velocity": 0.65,
-        "gateTicks": 192
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.46,
+        "gateTicks": 62
       },
       {
-        "tick": 240,
+        "tick": 96,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
         "soundKey": 18,
-        "velocity": 0.6,
-        "gateTicks": 192
+        "velocity": 0.62,
+        "gateTicks": 62
+      },
+      {
+        "tick": 192,
+        "soundKey": 47,
+        "velocity": 0.4,
+        "gateTicks": 96
+      },
+      {
+        "tick": 192,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.46,
+        "gateTicks": 62
       },
       {
         "tick": 288,
         "soundKey": 25,
-        "velocity": 0.28,
+        "velocity": 0.58,
         "gateTicks": 48
       },
       {
         "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.62,
+        "gateTicks": 62
+      },
+      {
+        "tick": 384,
         "soundKey": 71,
-        "velocity": 0.35,
+        "velocity": 0.65,
         "gateTicks": 48
       },
       {
-        "tick": 432,
+        "tick": 480,
         "soundKey": 18,
-        "velocity": 0.72,
-        "gateTicks": 192
+        "velocity": 0.46,
+        "gateTicks": 62
+      },
+      {
+        "tick": 480,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.62,
+        "gateTicks": 62
       },
       {
         "tick": 576,
         "soundKey": 47,
-        "velocity": 0.65,
-        "gateTicks": 192
+        "velocity": 0.4,
+        "gateTicks": 96
       },
       {
-        "tick": 624,
-        "soundKey": 47,
+        "tick": 576,
+        "soundKey": 71,
         "velocity": 0.65,
-        "gateTicks": 144
+        "gateTicks": 48
       },
       {
         "tick": 672,
         "soundKey": 25,
-        "velocity": 0.3,
-        "gateTicks": 19
+        "velocity": 0.6,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 47,
+        "velocity": 0.4,
+        "gateTicks": 96
       },
       {
         "tick": 720,
         "soundKey": 25,
-        "velocity": 0.4,
-        "gateTicks": 19
+        "velocity": 0.72,
+        "gateTicks": 24
+      },
+      {
+        "tick": 720,
+        "soundKey": 71,
+        "velocity": 0.42,
+        "gateTicks": 48
       },
       {
         "tick": 744,
         "soundKey": 18,
         "velocity": 0.86,
-        "gateTicks": 77
+        "gateTicks": 62
       },
       {
         "tick": 744,
         "soundKey": 25,
-        "velocity": 0.52,
-        "gateTicks": 19
+        "velocity": 0.9,
+        "gateTicks": 24
       }
     ],
     "classificationVersion": 1,
@@ -9011,21 +9122,21 @@ export const patterns = [
       25,
       47
     ],
-    "intensity": 1,
-    "metallic": 5,
+    "intensity": 2,
+    "metallic": 3,
     "center": "mixed",
     "metrics": {
-      "density": 1.625,
-      "repeatRatio": 0.07692307692307693,
-      "accentRatio": 0.07692307692307693,
-      "thickness": 0.25,
-      "metalRatio": 0.8013513195376322,
-      "metalPresence": 0.5038872363439697,
-      "metalSustain": 0.6893893940418244,
-      "intensityIndex": 0.15101762820512818,
-      "metallicIndex": 0.6953178057551623
+      "density": 2.75,
+      "repeatRatio": 0.045454545454545456,
+      "accentRatio": 0.09090909090909091,
+      "thickness": 1.5,
+      "metalRatio": 0.4263448969331321,
+      "metalPresence": 0.4493827160493827,
+      "metalSustain": 0.22846854791299237,
+      "intensityIndex": 0.28664772727272725,
+      "metallicIndex": 0.40357479031498633
     },
-    "scoreReason": "激しさ1：1拍あたり1.6打、連打8%、重なり0.3打/拍。メタリックさ5：相対強度で金属80%、金属の目立ち50%、余韻指標69%"
+    "scoreReason": "激しさ2：1拍あたり2.8打、連打5%、重なり1.5打/拍。メタリックさ3：相対強度で金属43%、金属の目立ち45%、余韻指標23%"
   },
   {
     "id": "p4-o-014",
