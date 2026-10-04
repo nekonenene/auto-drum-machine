@@ -117,9 +117,8 @@ test('sparse grooves keep a two-beat or four-beat kick foundation through their 
   }
 });
 
-test('intros establish the downbeat; transition fills keep the pulse and push into the next downbeat', () => {
-
-  // 出だしの拍頭と展開フィルの最終拍の勢いを、演奏イベントから確認する
+test('intros form continuous pickups into their bases; transition fills keep the pulse', () => {
+  // 出だしの流れと展開フィルの最終拍の勢いを、演奏イベントから確認する
   for (const pattern of patterns.filter((pattern) => pattern.purpose !== 'basic')) {
     const totalTicks = pattern.bars * pattern.meter * TICKS_PER_BEAT;
     assert.ok(patterns.some((base) => base.id === pattern.derivedFrom && base.purpose === 'basic'));
@@ -128,20 +127,19 @@ test('intros establish the downbeat; transition fills keep the pulse and push in
       assert.equal(totalTicks, 384);
       assert.equal(pattern.fillRange.endTick, totalTicks);
       assert.ok(!pattern.tags.includes('two-bar'));
-      assert.equal(pattern.events[0].tick, 0, pattern.id);
-      assert.ok([0, TICKS_PER_BEAT].every((tick) => pattern.events.some((event) => event.tick === tick
-        && soundByKey.get(event.soundKey).tags.role === 'kick' && event.velocity <= .5)), pattern.id);
+      const entryTick = pattern.events[0].tick;
+      assert.equal(entryTick, pattern.fillRange.startTick, pattern.id);
+      assert.equal(pattern.groove, patterns.find((base) => base.id === pattern.derivedFrom).groove);
       assert.ok(pattern.events.every((event) => event.tick >= pattern.fillRange.startTick));
-      const early = pattern.events.filter((event) => event.tick < totalTicks / 2);
-      const late = pattern.events.filter((event) => event.tick >= totalTicks / 2);
-      assert.ok(late.length >= early.length, pattern.id);
-      assert.ok(Math.max(...late.map((event) => event.velocity)) >= Math.max(0, ...early.map((event) => event.velocity)), pattern.id);
-      assert.ok(new Set(late.map((event) => event.tick)).size >= 6, pattern.id);
-      const finalTick = Math.max(...late.map((event) => event.tick));
-      const finalHits = late.filter((event) => event.tick === finalTick);
-      assert.ok(finalTick >= totalTicks - 32, pattern.id);
-      assert.ok(finalHits.length >= 2 && finalHits.some((event) => event.velocity >= .9), pattern.id);
-      assert.ok(pattern.tags.includes('roll') && pattern.tags.includes('layered'), pattern.id);
+      const mainTicks = [...new Set(pattern.events.filter((event) => soundByKey.get(event.soundKey).tags.attack !== 'swell')
+        .map((event) => event.tick))];
+      assert.ok(mainTicks.length >= 4, pattern.id);
+      assert.ok(mainTicks.slice(1).every((tick, position) => tick - mainTicks[position] <= TICKS_PER_BEAT), pattern.id);
+      assert.ok(mainTicks.at(-1) >= totalTicks - TICKS_PER_BEAT / 2, pattern.id);
+      assert.ok(new Set(pattern.events.map((event) => event.soundKey)).size >= 2, pattern.id);
+      assert.ok(Math.max(...pattern.events.map((event) => event.velocity)) >= .75, pattern.id);
+      assert.ok(!pattern.events.some((event) => event.soundKey === 64), pattern.id);
+      assert.ok(pattern.tags.includes('opening') && pattern.tags.includes('build-up'), pattern.id);
     } else {
       const base = patterns.find((item) => item.id === pattern.derivedFrom);
       assert.deepEqual(pattern.events.filter((event) => event.tick < pattern.fillRange.startTick), base.events.filter((event) => event.tick < pattern.fillRange.startTick));
@@ -241,7 +239,8 @@ test('reverse and swell pickups fit the full sound to the next downbeat at slow 
   const pickups = patterns.flatMap((pattern) => pattern.events
     .filter((event) => soundByKey.get(event.soundKey).tags.attack === 'swell')
     .map((event) => ({ pattern, event })));
-  assert.ok(pickups.length >= 200);
+  assert.ok(pickups.some(({ pattern }) => pattern.purpose === 'intro'));
+  assert.ok(pickups.some(({ pattern }) => pattern.purpose === 'fill'));
 
   // 助走のピークを途中で切らず、40〜240BPMの各境界へPCM全体を収める
   for (const { pattern, event } of pickups) {
@@ -339,21 +338,40 @@ test('connection audition returns to the base after a transition fill; automatic
   opening.transport.setBpm(120);
   opening.transport.start(auditionSequence(intro, patterns, true), true);
 
-  // 出だしの拍頭から4拍後に基本へ入り、基本の頭が3小節周期で正確につながることを確認する
+  // 冒頭の休符を含めた4拍後に基本へ入り、基本の頭が3小節周期で正確につながることを確認する
   for (let tick = 0; tick < 830; tick++) {
     opening.setTime(tick * .01);
     opening.transport.pump();
   }
 
   const openingBaseStarts = opening.hits.filter((hit) => hit.event.patternId === intro.derivedFrom && hit.event.tick === 0 && hit.event.soundKey === 101);
-  const openingStart = opening.hits.find((hit) => hit.event.patternId === intro.id && hit.event.tick === 0);
-  assert.ok(Math.abs(openingStart.start - .06) < 1e-9);
-  assert.ok(Math.abs(openingBaseStarts[0].start - openingStart.start - 2) < 1e-9);
+  const openingStart = opening.hits.find((hit) => hit.event.patternId === intro.id);
+  assert.ok(Math.abs(openingStart.start - (.06 + intro.events[0].tick / TICKS_PER_BEAT * .5)) < 1e-9);
+  assert.ok(Math.abs(openingBaseStarts[0].start - 2.06) < 1e-9);
   assert.deepEqual(openingBaseStarts.map((hit) => Number(hit.start.toFixed(2))), [2.06, 8.06]);
   opening.setTime(1.9);
   assert.equal(opening.transport.position().pattern.id, intro.id);
   opening.setTime(2.1);
   assert.equal(opening.transport.position().pattern.id, intro.derivedFrom);
+
+  // すべての出だしで休符を詰めず、開始から4拍後の基本へつなぐ
+  for (const delayedIntro of patterns.filter((pattern) => pattern.purpose === 'intro')) {
+    const entryTick = delayedIntro.events[0].tick;
+    const delayed = transportFixture();
+    delayed.transport.setBpm(120);
+    delayed.transport.start(auditionSequence(delayedIntro, patterns, true));
+
+    // 無音の入口から基本の頭まで先読み予約する
+    for (let tick = 0; tick < 220; tick++) {
+      delayed.setTime(tick * .01);
+      delayed.transport.pump();
+    }
+
+    assert.ok(Math.abs(delayed.hits[0].start - (.06 + entryTick / TICKS_PER_BEAT * .5)) < 1e-9);
+    const baseStart = delayed.hits.find((hit) => hit.event.patternId === delayedIntro.derivedFrom && hit.event.tick === 0);
+    assert.ok(Math.abs(baseStart.start - 2.06) < 1e-9);
+  }
+
   assert.deepEqual(auditionSequence(fill, patterns, true).map((pattern) => pattern.id), [fill.derivedFrom, fill.id, fill.derivedFrom]);
   assert.deepEqual(auditionSequence(fill, patterns, false), [fill]);
   const connected = transportFixture();
