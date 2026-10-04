@@ -117,9 +117,9 @@ test('sparse grooves keep a two-beat or four-beat kick foundation through their 
   }
 });
 
-test('intros enter from silence; transition fills keep the pulse and push into the next downbeat', () => {
+test('intros establish the downbeat; transition fills keep the pulse and push into the next downbeat', () => {
 
-  // 出だしの無音と展開フィルの最終拍の勢いを、演奏イベントから確認する
+  // 出だしの拍頭と展開フィルの最終拍の勢いを、演奏イベントから確認する
   for (const pattern of patterns.filter((pattern) => pattern.purpose !== 'basic')) {
     const totalTicks = pattern.bars * pattern.meter * TICKS_PER_BEAT;
     assert.ok(patterns.some((base) => base.id === pattern.derivedFrom && base.purpose === 'basic'));
@@ -128,7 +128,9 @@ test('intros enter from silence; transition fills keep the pulse and push into t
       assert.equal(totalTicks, 384);
       assert.equal(pattern.fillRange.endTick, totalTicks);
       assert.ok(!pattern.tags.includes('two-bar'));
-      assert.ok(pattern.events[0].tick >= 48);
+      assert.equal(pattern.events[0].tick, 0, pattern.id);
+      assert.ok([0, TICKS_PER_BEAT].every((tick) => pattern.events.some((event) => event.tick === tick
+        && soundByKey.get(event.soundKey).tags.role === 'kick' && event.velocity <= .5)), pattern.id);
       assert.ok(pattern.events.every((event) => event.tick >= pattern.fillRange.startTick));
       const early = pattern.events.filter((event) => event.tick < totalTicks / 2);
       const late = pattern.events.filter((event) => event.tick >= totalTicks / 2);
@@ -154,6 +156,27 @@ test('intros enter from silence; transition fills keep the pulse and push into t
         assert.ok(pattern.events.filter((event) => event.tick === finalTick).length >= 2, pattern.id);
       }
     }
+  }
+});
+
+test('each additional quartet has different prominent voices and phrase density', () => {
+  const basics = patterns.filter((pattern) => pattern.purpose === 'basic');
+
+  // 追加80件は4件内の全組み合わせで、聴き分けの主役となる音色を複数持つ
+  for (let start = 20; start < 100; start += 4) {
+    const quartet = basics.slice(start, start + 4);
+    const voices = quartet.map((pattern) => new Set(pattern.events.filter((event) => event.velocity >= .5).map((event) => event.soundKey)));
+
+    // 弱い飾りを1音差しただけの差ではなく、互いに3音色以上の主役が異なることを確認する
+    for (const [index, keys] of voices.entries()) {
+      voices.slice(index + 1).forEach((other) => {
+        assert.ok([...keys].filter((key) => !other.has(key)).length >= 3, quartet[index].id);
+        assert.ok([...other].filter((key) => !keys.has(key)).length >= 3, quartet[index].id);
+      });
+    }
+
+    const densities = quartet.map((pattern) => pattern.metrics.density);
+    assert.ok(Math.max(...densities) - Math.min(...densities) >= .5, quartet[0].id);
   }
 });
 
@@ -316,13 +339,16 @@ test('connection audition returns to the base after a transition fill; automatic
   opening.transport.setBpm(120);
   opening.transport.start(auditionSequence(intro, patterns, true), true);
 
-  // 出だし1小節→基本2小節を繰り返し、基本の頭が3小節周期で正確につながることを確認する
+  // 出だしの拍頭から4拍後に基本へ入り、基本の頭が3小節周期で正確につながることを確認する
   for (let tick = 0; tick < 830; tick++) {
     opening.setTime(tick * .01);
     opening.transport.pump();
   }
 
   const openingBaseStarts = opening.hits.filter((hit) => hit.event.patternId === intro.derivedFrom && hit.event.tick === 0 && hit.event.soundKey === 101);
+  const openingStart = opening.hits.find((hit) => hit.event.patternId === intro.id && hit.event.tick === 0);
+  assert.ok(Math.abs(openingStart.start - .06) < 1e-9);
+  assert.ok(Math.abs(openingBaseStarts[0].start - openingStart.start - 2) < 1e-9);
   assert.deepEqual(openingBaseStarts.map((hit) => Number(hit.start.toFixed(2))), [2.06, 8.06]);
   opening.setTime(1.9);
   assert.equal(opening.transport.position().pattern.id, intro.id);

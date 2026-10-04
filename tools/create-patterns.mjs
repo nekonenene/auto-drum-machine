@@ -112,20 +112,19 @@ export function buildPatterns() {
   const intros = [];
   const fills = [];
 
-  // 各骨格に無音からの出だしと、次の頭へ向かう展開フィルを組み合わせる
+  // 各骨格に拍頭から入る出だしと、次の頭へ向かう展開フィルを組み合わせる
   for (const [index, base] of basics.entries()) {
     const totalBeats = base.bars * 4;
     const totalTicks = totalBeats * TICKS_PER_BEAT;
     const introTicks = base.meter * TICKS_PER_BEAT;
-    const startBeat = [1, .5, 1.5][index % 3];
-    const addition = additions[index - foundations.length];
+    const addition = index >= foundations.length ? allFoundations[index] : null;
     const introEvents = openingEvents(base, index, lane);
 
     intros.push(finalizePattern({ ...base, id: base.id.replace('-b-', '-i-'), name: `${base.name}への出だし`, bars: 1, purpose: 'intro', derivedFrom: base.id,
-      events: introEvents, fillRange: { startTick: Math.round(startBeat * TICKS_PER_BEAT), endTick: introTicks },
+      events: introEvents, fillRange: { startTick: 0, endTick: introTicks },
       tags: [...new Set([...base.tags, 'opening', 'roll', 'layered', 'triplet-fill', 'flam'])],
-      intent: `最初の${startBeat}拍を無音にし、弱い拍の足場から入り、後半2拍の高低の連打・同時打ち・助走音を強め、最後の返しで「${base.name}」の1拍目へつなぐ`,
-      tagReason: `全体の基調は${grooves[base.groove]}を継承。無音の後に音数とアクセントを増やし、基本と共通の音色の連打から強い最終打撃へ進む出だし` }));
+      intent: `1拍目から弱いキックで4拍の足場を示し、後半2拍の高低の連打・同時打ち・助走音を強め、最後の返しで「${base.name}」の1拍目へつなぐ`,
+      tagReason: `全体の基調は${grooves[base.groove]}を継承。最初の2拍は弱いキックで拍を示し、基本と共通の音色の連打から強い最終打撃へ進む出だし` }));
 
     const transition = transitionParts[index] || addition.transition;
     const transitionStart = Math.round((totalBeats - transition.length) * TICKS_PER_BEAT);

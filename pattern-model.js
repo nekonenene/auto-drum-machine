@@ -9,7 +9,7 @@ export const grooves = { straight: 'ストレート', swing: 'スウィング', 
 export const tagLabels = {
   syncopated: 'シンコペーション', ghost: 'ゴースト', layered: '同時打ち', space: '休符を活かす',
   roll: '細かな連打', flam: 'フラム', 'triplet-fill': '部分的な三連符', 'two-bar': '2小節の展開',
-  opening: '無音から入る', 'build-up': '次へ盛り上げる', 'half-time': 'ハーフタイム',
+  opening: '拍頭から入る', 'build-up': '次へ盛り上げる', 'half-time': 'ハーフタイム',
 };
 export const scoreCriteria = {
   intensity: ['間が広く、連打・重なりが少ない', '控えめな密度で、小さなアクセント', '安定した密度に、連打や重なりが少しある', '高い密度・強いアクセント・重なりが続く', '密な連打と厚い同時打ちが多い'],
