@@ -1,6 +1,7 @@
 import { writeFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { TICKS_PER_BEAT, grooves, finalizePattern, validatePatterns } from '../pattern-model.js';
+import { additionalPatternParts } from './additional-patterns.mjs';
 
 /**
  * 拍位置と強弱から1レーンの演奏部品を作る
@@ -108,12 +109,14 @@ const transitionParts = [
 ];
 
 /**
- * 手で用意した20個の骨格と部品から、4拍子60種類を構成する
+ * 手で用意した100個の骨格と部品から、4拍子300種類を構成する
  *
  * @returns {object[]} 完成した保存データ
  */
 export function buildPatterns() {
-  const basics = foundations.map((foundation, index) => finalizePattern({
+  const additions = additionalPatternParts(lane, grid);
+  const allFoundations = [...foundations, ...additions];
+  const basics = allFoundations.map((foundation, index) => finalizePattern({
     id: `p4-b-${String(index + 1).padStart(3, '0')}`, name: foundation.name, meter: 4, bars: foundation.bars,
     purpose: 'basic', derivedFrom: null, fillRange: null, groove: foundation.groove, tags: [...new Set([...foundation.tags, 'two-bar'])],
     intent: foundation.intent, tagReason: `${foundation.intent}。ノリはフレーズ全体の${foundation.groove === 'straight' ? '均等な刻み' : '継続する跳ね方'}で分類`,
@@ -128,7 +131,8 @@ export function buildPatterns() {
     const totalTicks = totalBeats * TICKS_PER_BEAT;
     const introTicks = base.meter * TICKS_PER_BEAT;
     const startBeat = [1, .5, 1.5][index % 3];
-    const part = introParts[index];
+    const addition = additions[index - foundations.length];
+    const part = introParts[index] || addition.intro;
     const fillStart = part[0][0] * TICKS_PER_BEAT;
     const earlyTicks = new Set();
     const introEvents = base.events.filter((event) => event.tick >= startBeat * TICKS_PER_BEAT && event.tick < fillStart)
@@ -160,13 +164,13 @@ export function buildPatterns() {
 
     intros.push(finalizePattern({ ...base, id: base.id.replace('-b-', '-i-'), name: `${base.name}への出だし`, bars: 1, purpose: 'intro', derivedFrom: base.id,
       events: introEvents, fillRange: { startTick: Math.round(startBeat * TICKS_PER_BEAT), endTick: introTicks },
-      tags: [...new Set([...base.tags, 'opening', ...([5, 19].includes(index) ? ['triplet-fill'] : []), ...([7, 13, 15].includes(index) ? ['flam'] : [])])],
+      tags: [...new Set([...base.tags, 'opening', ...(addition?.introTags || []), ...([5, 19].includes(index) ? ['triplet-fill'] : []), ...([7, 13, 15].includes(index) ? ['flam'] : [])])],
       intent: `最初の${startBeat}拍を無音にし、弱い部品から入り、最後の返しで「${base.name}」の1拍目へつなぐ`,
       tagReason: `全体の基調は${grooves[base.groove]}を継承。無音の後に音数とアクセントを増やす出だし${[5, 19].includes(index) ? '。最後の部分だけ三連符を使う' : ''}` }));
 
-    const transition = transitionParts[index];
+    const transition = transitionParts[index] || addition.transition;
     const transitionStart = Math.round((totalBeats - transition.length) * TICKS_PER_BEAT);
-    const pulseKeys = [1, 2, 3, 4, 71, 101, 86, 87, 12, 13, 14, 15, 92];
+    const pulseKeys = [1, 2, 3, 4, 71, 101, 86, 87, 12, 13, 14, 15, 92, ...(addition ? [addition.pulseKey] : [])];
     const fillEvents = new Map(base.events.filter((event) => event.tick < transitionStart || pulseKeys.includes(event.soundKey))
       .map((event) => [`${event.tick}/${event.soundKey}`, { ...event }]));
 
@@ -178,7 +182,7 @@ export function buildPatterns() {
 
     fills.push(finalizePattern({ ...base, id: base.id.replace('-b-', '-o-'), name: transition.name, purpose: 'fill', derivedFrom: base.id,
       events: [...fillEvents.values()], fillRange: { startTick: transitionStart, endTick: totalTicks },
-      tags: [...new Set([...base.tags, 'build-up', ...([19].includes(index) ? ['triplet-fill'] : []), ...(index === 6 ? ['flam'] : [])])],
+      tags: [...new Set([...base.tags, 'build-up', ...(transition.tags || []), ...([19].includes(index) ? ['triplet-fill'] : []), ...(index === 6 ? ['flam'] : [])])],
       intent: `「${base.name}」の前半と拍の足場を保つ。${transition.description}。最終拍の返しから次の1拍目へつなぐ`,
       tagReason: `全体の基調は${grooves[base.groove]}を継承。${transition.description}。最終拍のアクセントを次の頭へ渡す${index === 19 ? '。終盤だけの三連符は全体の跳ねと区別する' : ''}` }));
   }
@@ -192,6 +196,6 @@ export function buildPatterns() {
 if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
   const patterns = buildPatterns();
   await writeFile(new URL('../patterns-data.js', import.meta.url), `// 保存済みの演奏データ。tools/create-patterns.mjsで共通基準から再生成\nexport const patterns = ${JSON.stringify(patterns, null, 2)};\n`);
-  console.log(`Saved ${patterns.length} patterns (4/4: basic 20, intro 20, fill 20)`);
+  console.log(`Saved ${patterns.length} patterns (4/4: basic 100, intro 100, fill 100)`);
   console.log('Score distribution', patterns.reduce((counts, pattern) => ({ ...counts, [`${pattern.intensity}/${pattern.metallic}`]: (counts[`${pattern.intensity}/${pattern.metallic}`] || 0) + 1 }), {}));
 }

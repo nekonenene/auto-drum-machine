@@ -144,7 +144,7 @@ function miniRhythm(pattern) {
  */
 function renderList() {
   const visible = visiblePatterns();
-  query('#pattern-count').textContent = `${visible.length} / 60 phrases`;
+  query('#pattern-count').textContent = `${visible.length} / ${patterns.length} phrases`;
   query('#empty-patterns').hidden = visible.length > 0;
   query('#filter-indicator').textContent = ['intensity', 'metallic', 'center', 'groove'].some((field) => query(`#filter-${field}`).value !== 'all') ? '●' : '';
   query('#pattern-list').innerHTML = visible.map((pattern) => `<button class="pattern-card" type="button" data-audition="${pattern.id}" aria-label="${escapeHtml(pattern.name)}を試聴" aria-pressed="${pattern.id === selectedPattern.id}" ${ready ? '' : 'disabled'}>
@@ -588,7 +588,7 @@ async function startAutoGeneration() {
  * @returns {void}
  */
 function renderGenerated() {
-  query('#generated-summary').textContent = `生成した案 ${generated.length}件（試作60種類とは別）`;
+  query('#generated-summary').textContent = `生成した案 ${generated.length}件（保存${patterns.length}種類とは別）`;
   query('#generated-list').innerHTML = [...generated].reverse().map((pattern) => `<div class="similar-item"><span>${escapeHtml(pattern.name)}<br><small>${escapeHtml(pattern.id)}</small></span><button type="button" data-audition="${escapeHtml(pattern.id)}" aria-label="${escapeHtml(pattern.name)}を再試聴">再試聴</button></div>`).join('');
 }
 
@@ -653,7 +653,7 @@ async function loadLibrary() {
   try {
     sampleSources = await loadSampleSources(sounds);
     ready = true;
-    query('#audio-status').textContent = '60種類の保存済み演奏 · 共通の初期値 110 BPM / 音量65% · 実音素材の準備完了';
+    query('#audio-status').textContent = `全${patterns.length}種類の保存済み演奏 · 共通の初期値 110 BPM / 音量65% · 実音素材の準備完了`;
     query('#pattern-play').disabled = false;
     query('#auto-generate').disabled = false;
     renderList();
@@ -751,7 +751,7 @@ query('#connect-pattern').addEventListener('change', () => {
   updateSequenceLabel();
 });
 query('#export-pattern').addEventListener('click', () => exportData(selectedPattern, `${selectedPattern.id}.json`));
-query('#export-library').addEventListener('click', () => exportData(patterns, 'auto-drum-60-patterns.json'));
+query('#export-library').addEventListener('click', () => exportData(patterns, `auto-drum-${patterns.length}-patterns.json`));
 query('#export-generated').addEventListener('click', () => exportData(generated, 'auto-drum-generated-patterns.json'));
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {

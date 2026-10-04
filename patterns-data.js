@@ -4685,6 +4685,17972 @@ export const patterns = [
     "scoreReason": "激しさ2：1拍あたり2.6打、連打0%、重なり0.5打/拍。メタリックさ2：相対強度で金属11%、金属の目立ち11%、余韻指標6%"
   },
   {
+    "id": "p4-b-021",
+    "name": "一拍の灯り",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar"
+    ],
+    "intent": "間を置いたキックとリムの応答。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "間を置いたキックとリムの応答。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.11699999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 0.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.5714285714285714,
+      "thickness": 0.25,
+      "metalRatio": 0.001704638234248906,
+      "metalPresence": 0.0009568650519031141,
+      "metalSustain": 0.00013527110108749383,
+      "intensityIndex": 0.1322470238095238,
+      "metallicIndex": 0.0012449012095709566
+    },
+    "scoreReason": "激しさ1：1拍あたり0.9打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-022",
+    "name": "遠い二つの足音",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar"
+    ],
+    "intent": "間を置いたキックとリムの応答。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "間を置いたキックとリムの応答。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.11699999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0.25,
+      "metalRatio": 0.002874274960183271,
+      "metalPresence": 0.0016295294117647057,
+      "metalSustain": 0.00023036502100840336,
+      "intensityIndex": 0.13416666666666666,
+      "metallicIndex": 0.0021042648047814713
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-023",
+    "name": "空いた椅子の返事",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar"
+    ],
+    "intent": "間を置いたキックとリムの応答。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "間を置いたキックとリムの応答。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.11699999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 0.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.5714285714285714,
+      "thickness": 0,
+      "metalRatio": 0.001704638234248906,
+      "metalPresence": 0.0009568650519031141,
+      "metalSustain": 0.00013527110108749383,
+      "intensityIndex": 0.12058035714285714,
+      "metallicIndex": 0.0012449012095709566
+    },
+    "scoreReason": "激しさ1：1拍あたり0.9打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-024",
+    "name": "息継ぎの輪",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar"
+    ],
+    "intent": "間を置いたキックとリムの応答。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "間を置いたキックとリムの応答。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.11699999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0.125,
+      "metalRatio": 0.002874274960183271,
+      "metalPresence": 0.0016295294117647057,
+      "metalSustain": 0.00023036502100840336,
+      "intensityIndex": 0.12833333333333333,
+      "metallicIndex": 0.0021042648047814713
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.1打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-025",
+    "name": "小さな裏窓",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "薄いハットの表と裏に間を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "薄いハットの表と裏に間を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      12,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0.375,
+      "metalRatio": 0.057210758437878484,
+      "metalPresence": 0.04331487889273357,
+      "metalSustain": 0.006123383176800134,
+      "intensityIndex": 0.15812500000000002,
+      "metallicIndex": 0.04537888828517325
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.4打/拍。メタリックさ1：相対強度で金属6%、金属の目立ち4%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-026",
+    "name": "半拍の散歩",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "薄いハットの表と裏に間を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "薄いハットの表と裏に間を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      12,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 1.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.4444444444444444,
+      "thickness": 0.25,
+      "metalRatio": 0.06852419531421065,
+      "metalPresence": 0.04331487889273357,
+      "metalSustain": 0.006123383176800134,
+      "intensityIndex": 0.1376736111111111,
+      "metallicIndex": 0.05160127856715595
+    },
+    "scoreReason": "激しさ1：1拍あたり1.1打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属7%、金属の目立ち4%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-027",
+    "name": "ひとつ飛ばしの影",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "薄いハットの表と裏に間を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "薄いハットの表と裏に間を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      12,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0.25,
+      "metalRatio": 0.05721075843787848,
+      "metalPresence": 0.04331487889273357,
+      "metalSustain": 0.006123383176800134,
+      "intensityIndex": 0.15229166666666666,
+      "metallicIndex": 0.04537888828517325
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属6%、金属の目立ち4%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-028",
+    "name": "砂時計の隙間",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "薄いハットの表と裏に間を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "薄いハットの表と裏に間を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      12,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.5555555555555556,
+      "thickness": 0.25,
+      "metalRatio": 0.049478936985029594,
+      "metalPresence": 0.03688235294117648,
+      "metalSustain": 0.005214023109243699,
+      "intensityIndex": 0.14878472222222222,
+      "metallicIndex": 0.039060224690505775
+    },
+    "scoreReason": "激しさ1：1拍あたり1.1打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属5%、金属の目立ち4%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-029",
+    "name": "六つの水面",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar"
+    ],
+    "intent": "強めのライドを広い休符で受ける。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "強めのライドを広い休符で受ける。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.533,
+        "gateTicks": 120
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 648,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 0.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.7142857142857143,
+      "thickness": 0.125,
+      "metalRatio": 0.3860943011299895,
+      "metalPresence": 0.28181470588235297,
+      "metalSustain": 0.25162027310924373,
+      "intensityIndex": 0.14069940476190476,
+      "metallicIndex": 0.33463931835258665
+    },
+    "scoreReason": "激しさ1：1拍あたり0.9打、連打0%、重なり0.1打/拍。メタリックさ3：相対強度で金属39%、金属の目立ち28%、余韻指標25%"
+  },
+  {
+    "id": "p4-b-030",
+    "name": "鐘の渡り石",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar"
+    ],
+    "intent": "強めのライドを広い休符で受ける。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "強めのライドを広い休符で受ける。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 17,
+        "velocity": 0.533,
+        "gateTicks": 120
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 672,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 0.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.7142857142857143,
+      "thickness": 0.125,
+      "metalRatio": 0.3860943011299895,
+      "metalPresence": 0.28181470588235297,
+      "metalSustain": 0.25162027310924373,
+      "intensityIndex": 0.14069940476190476,
+      "metallicIndex": 0.33463931835258665
+    },
+    "scoreReason": "激しさ1：1拍あたり0.9打、連打0%、重なり0.1打/拍。メタリックさ3：相対強度で金属39%、金属の目立ち28%、余韻指標25%"
+  },
+  {
+    "id": "p4-b-031",
+    "name": "余韻の踊り場",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar"
+    ],
+    "intent": "強めのライドを広い休符で受ける。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "強めのライドを広い休符で受ける。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 144,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.533,
+        "gateTicks": 120
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 480,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.75,
+      "thickness": 0.125,
+      "metalRatio": 0.3374334952806845,
+      "metalPresence": 0.28181470588235297,
+      "metalSustain": 0.25162027310924373,
+      "intensityIndex": 0.15333333333333335,
+      "metallicIndex": 0.3078758751354689
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.1打/拍。メタリックさ3：相対強度で金属34%、金属の目立ち28%、余韻指標25%"
+  },
+  {
+    "id": "p4-b-032",
+    "name": "銀の呼吸線",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar"
+    ],
+    "intent": "強めのライドを広い休符で受ける。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "強めのライドを広い休符で受ける。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.533,
+        "gateTicks": 120
+      },
+      {
+        "tick": 312,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 624,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.75,
+      "thickness": 0.125,
+      "metalRatio": 0.3374334952806845,
+      "metalPresence": 0.28181470588235297,
+      "metalSustain": 0.25162027310924373,
+      "intensityIndex": 0.15333333333333335,
+      "metallicIndex": 0.3078758751354689
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.1打/拍。メタリックさ3：相対強度で金属34%、金属の目立ち28%、余韻指標25%"
+  },
+  {
+    "id": "p4-b-033",
+    "name": "夜半のベル",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "ベルと薄いリムが異なる長さで応答する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ベルと薄いリムが異なる長さで応答する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.2676470588235294,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 480,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 624,
+        "soundKey": 71,
+        "velocity": 0.3211764705882353,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      18,
+      25
+    ],
+    "intensity": 2,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 2.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.35294117647058826,
+      "thickness": 0.5,
+      "metalRatio": 0.9272645505672016,
+      "metalPresence": 0.855625,
+      "metalSustain": 0.61123046875,
+      "intensityIndex": 0.21268995098039217,
+      "metallicIndex": 0.8583675731244609
+    },
+    "scoreReason": "激しさ2：1拍あたり2.1打、連打0%、重なり0.5打/拍。メタリックさ5：相対強度で金属93%、金属の目立ち86%、余韻指標61%"
+  },
+  {
+    "id": "p4-b-034",
+    "name": "鐘と木のあいだ",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "ベルと薄いリムが異なる長さで応答する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ベルと薄いリムが異なる長さで応答する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 264,
+        "soundKey": 71,
+        "velocity": 0.2676470588235294,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 432,
+        "soundKey": 71,
+        "velocity": 0.3211764705882353,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      18,
+      25
+    ],
+    "intensity": 2,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 2.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.3888888888888889,
+      "thickness": 0.5,
+      "metalRatio": 0.934392337310869,
+      "metalPresence": 0.9278125,
+      "metalSustain": 0.6828450520833333,
+      "intensityIndex": 0.22534722222222223,
+      "metallicIndex": 0.894686293333478
+    },
+    "scoreReason": "激しさ2：1拍あたり2.3打、連打0%、重なり0.5打/拍。メタリックさ5：相対強度で金属93%、金属の目立ち93%、余韻指標68%"
+  },
+  {
+    "id": "p4-b-035",
+    "name": "丸い金属の点",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "ベルと薄いリムが異なる長さで応答する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ベルと薄いリムが異なる長さで応答する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 336,
+        "soundKey": 71,
+        "velocity": 0.2676470588235294,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.3211764705882353,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 696,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      18,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 2.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.35294117647058826,
+      "thickness": 0.375,
+      "metalRatio": 0.9272645505672016,
+      "metalPresence": 0.855625,
+      "metalSustain": 0.61123046875,
+      "intensityIndex": 0.20685661764705882,
+      "metallicIndex": 0.8583675731244609
+    },
+    "scoreReason": "激しさ1：1拍あたり2.1打、連打0%、重なり0.4打/拍。メタリックさ5：相対強度で金属93%、金属の目立ち86%、余韻指標61%"
+  },
+  {
+    "id": "p4-b-036",
+    "name": "ひかりの折り返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "ベルと薄いリムが異なる長さで応答する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ベルと薄いリムが異なる長さで応答する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 168,
+        "soundKey": 71,
+        "velocity": 0.2676470588235294,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.3211764705882353,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 672,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      18,
+      25
+    ],
+    "intensity": 2,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 2.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.3684210526315789,
+      "thickness": 0.375,
+      "metalRatio": 0.9207465146092653,
+      "metalPresence": 0.9278125,
+      "metalSustain": 0.6828450520833333,
+      "intensityIndex": 0.2265296052631579,
+      "metallicIndex": 0.8871810908475959
+    },
+    "scoreReason": "激しさ2：1拍あたり2.4打、連打0%、重なり0.4打/拍。メタリックさ5：相対強度で金属92%、金属の目立ち93%、余韻指標68%"
+  },
+  {
+    "id": "p4-b-037",
+    "name": "まっすぐな靴底",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "四分の拍を保ちキックとバックビートで展開する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "四分の拍を保ちキックとバックビートで展開する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.4375,
+      "thickness": 0.875,
+      "metalRatio": 0.022710270300480243,
+      "metalPresence": 0.02460596885813149,
+      "metalSustain": 0.0034785223832179937,
+      "intensityIndex": 0.22958333333333333,
+      "metallicIndex": 0.020394217680186278
+    },
+    "scoreReason": "激しさ2：1拍あたり2.0打、連打0%、重なり0.9打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-038",
+    "name": "重い扉のノック",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "四分の拍を保ちキックとバックビートで展開する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "四分の拍を保ちキックとバックビートで展開する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0.75,
+      "metalRatio": 0.01699227607056611,
+      "metalPresence": 0.019934688581314877,
+      "metalSustain": 0.0028181479393227884,
+      "intensityIndex": 0.23,
+      "metallicIndex": 0.015748880604104242
+    },
+    "scoreReason": "激しさ2：1拍あたり2.0打、連打0%、重なり0.8打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-039",
+    "name": "片足の踏み込み",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "四分の拍を保ちキックとバックビートで展開する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "四分の拍を保ちキックとバックビートで展開する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 168,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0.5,
+      "metalRatio": 0.01699227607056611,
+      "metalPresence": 0.019934688581314877,
+      "metalSustain": 0.0028181479393227884,
+      "intensityIndex": 0.21833333333333335,
+      "metallicIndex": 0.015748880604104242
+    },
+    "scoreReason": "激しさ2：1拍あたり2.0打、連打0%、重なり0.5打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-040",
+    "name": "角を曲がるロック",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "四分の拍を保ちキックとバックビートで展開する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "四分の拍を保ちキックとバックビートで展開する。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0.5,
+      "metalRatio": 0.01671108307136719,
+      "metalPresence": 0.019934688581314877,
+      "metalSustain": 0.0028181479393227884,
+      "intensityIndex": 0.21833333333333335,
+      "metallicIndex": 0.015594224454544838
+    },
+    "scoreReason": "激しさ2：1拍あたり2.0打、連打0%、重なり0.5打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-041",
+    "name": "紙のエイト",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "シェイカーの8分を土台にスネアの返答を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "シェイカーの8分を土台にスネアの返答を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      92
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 1,
+      "metalRatio": 0.019217941090792716,
+      "metalPresence": 0.01887729238754325,
+      "metalSustain": 0.0035800916414359856,
+      "intensityIndex": 0.2975,
+      "metallicIndex": 0.016770069062414367
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり1.0打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-042",
+    "name": "坂道のポップ",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "シェイカーの8分を土台にスネアの返答を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "シェイカーの8分を土台にスネアの返答を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      92
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 1.125,
+      "metalRatio": 0.019217941090792716,
+      "metalPresence": 0.01887729238754325,
+      "metalSustain": 0.0035800916414359856,
+      "intensityIndex": 0.3033333333333333,
+      "metallicIndex": 0.016770069062414367
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-043",
+    "name": "スネアの寄り道",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "シェイカーの8分を土台にスネアの返答を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "シェイカーの8分を土台にスネアの返答を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      92
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0.875,
+      "metalRatio": 0.019217941090792712,
+      "metalPresence": 0.01887729238754325,
+      "metalSustain": 0.0035800916414359856,
+      "intensityIndex": 0.29166666666666663,
+      "metallicIndex": 0.016770069062414367
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり0.9打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-044",
+    "name": "裏の階段",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "シェイカーの8分を土台にスネアの返答を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "シェイカーの8分を土台にスネアの返答を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      92
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0.041666666666666664,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0.875,
+      "metalRatio": 0.019217941090792716,
+      "metalPresence": 0.01887729238754325,
+      "metalSustain": 0.0035800916414359856,
+      "intensityIndex": 0.29916666666666664,
+      "metallicIndex": 0.016770069062414367
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打4%、重なり0.9打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-045",
+    "name": "鉄橋のエイト",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "8分の硬いハットに強い裏拍と休符を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "8分の硬いハットに強い裏拍と休符を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.625,
+      "thickness": 1,
+      "metalRatio": 0.5156958645497954,
+      "metalPresence": 0.7785467128027682,
+      "metalSustain": 0.1507511035204523,
+      "intensityIndex": 0.32666666666666666,
+      "metallicIndex": 0.5398094048712858
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり1.0打/拍。メタリックさ4：相対強度で金属52%、金属の目立ち78%、余韻指標15%"
+  },
+  {
+    "id": "p4-b-046",
+    "name": "鋼の裏拍",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "8分の硬いハットに強い裏拍と休符を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "8分の硬いハットに強い裏拍と休符を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.625,
+      "thickness": 1,
+      "metalRatio": 0.46683975260240995,
+      "metalPresence": 0.7223453719723184,
+      "metalSustain": 0.13699330260596887,
+      "intensityIndex": 0.32666666666666666,
+      "metallicIndex": 0.4940144709139163
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり1.0打/拍。メタリックさ4：相対強度で金属47%、金属の目立ち72%、余韻指標14%"
+  },
+  {
+    "id": "p4-b-047",
+    "name": "ハットの切り返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "8分の硬いハットに強い裏拍と休符を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "8分の硬いハットに強い裏拍と休符を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 2.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.6521739130434783,
+      "thickness": 1,
+      "metalRatio": 0.4560654068423364,
+      "metalPresence": 0.7223453719723184,
+      "metalSustain": 0.1311806317195996,
+      "intensityIndex": 0.3203215579710145,
+      "metallicIndex": 0.48721668011292046
+    },
+    "scoreReason": "激しさ2：1拍あたり2.9打、連打0%、重なり1.0打/拍。メタリックさ4：相対強度で金属46%、金属の目立ち72%、余韻指標13%"
+  },
+  {
+    "id": "p4-b-048",
+    "name": "走る留め金",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "8分の硬いハットに強い裏拍と休符を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "8分の硬いハットに強い裏拍と休符を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 408,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 2.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.6521739130434783,
+      "thickness": 0.75,
+      "metalRatio": 0.4560654068423364,
+      "metalPresence": 0.7223453719723184,
+      "metalSustain": 0.1311806317195996,
+      "intensityIndex": 0.30865489130434787,
+      "metallicIndex": 0.48721668011292046
+    },
+    "scoreReason": "激しさ2：1拍あたり2.9打、連打0%、重なり0.8打/拍。メタリックさ4：相対強度で金属46%、金属の目立ち72%、余韻指標13%"
+  },
+  {
+    "id": "p4-b-049",
+    "name": "四つの角と裏",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "四つ打ちを軸にスネアとハットの休符を入れ替える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "四つ打ちを軸にスネアとハットの休符を入れ替える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14
+    ],
+    "intensity": 2,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0.04,
+      "accentRatio": 0.4,
+      "thickness": 1,
+      "metalRatio": 0.18235673700937824,
+      "metalPresence": 0.278868615916955,
+      "metalSustain": 0.049156850129757776,
+      "intensityIndex": 0.3204291666666667,
+      "metallicIndex": 0.19133031764970818
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打4%、重なり1.0打/拍。メタリックさ2：相対強度で金属18%、金属の目立ち28%、余韻指標5%"
+  },
+  {
+    "id": "p4-b-050",
+    "name": "半開きのフロア",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "四つ打ちを軸にスネアとハットの休符を入れ替える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "四つ打ちを軸にスネアとハットの休符を入れ替える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 504,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14
+    ],
+    "intensity": 2,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 3.25,
+      "repeatRatio": 0.038461538461538464,
+      "accentRatio": 0.4230769230769231,
+      "thickness": 1,
+      "metalRatio": 0.17113788857067092,
+      "metalPresence": 0.278868615916955,
+      "metalSustain": 0.049156850129757776,
+      "intensityIndex": 0.3315224358974359,
+      "metallicIndex": 0.18515995100841917
+    },
+    "scoreReason": "激しさ2：1拍あたり3.3打、連打4%、重なり1.0打/拍。メタリックさ2：相対強度で金属17%、金属の目立ち28%、余韻指標5%"
+  },
+  {
+    "id": "p4-b-051",
+    "name": "踊る空白",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "四つ打ちを軸にスネアとハットの休符を入れ替える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "四つ打ちを軸にスネアとハットの休符を入れ替える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14
+    ],
+    "intensity": 2,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 2.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.391304347826087,
+      "thickness": 1.125,
+      "metalRatio": 0.2011738181791974,
+      "metalPresence": 0.278868615916955,
+      "metalSustain": 0.049156850129757776,
+      "intensityIndex": 0.3000679347826087,
+      "metallicIndex": 0.20167971229310874
+    },
+    "scoreReason": "激しさ2：1拍あたり2.9打、連打0%、重なり1.1打/拍。メタリックさ2：相対強度で金属20%、金属の目立ち28%、余韻指標5%"
+  },
+  {
+    "id": "p4-b-052",
+    "name": "裏口の二連",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "四つ打ちを軸にスネアとハットの休符を入れ替える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "四つ打ちを軸にスネアとハットの休符を入れ替える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14
+    ],
+    "intensity": 3,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 3.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.4074074074074074,
+      "thickness": 1.625,
+      "metalRatio": 0.1858651384894084,
+      "metalPresence": 0.3023962456747405,
+      "metalSustain": 0.054916293613033434,
+      "intensityIndex": 0.361261574074074,
+      "metallicIndex": 0.20118214391355177
+    },
+    "scoreReason": "激しさ3：1拍あたり3.4打、連打0%、重なり1.6打/拍。メタリックさ2：相対強度で金属19%、金属の目立ち30%、余韻指標5%"
+  },
+  {
+    "id": "p4-b-053",
+    "name": "砂のファンク",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "two-bar"
+    ],
+    "intent": "16分のシェイカーに食い込むキックとゴースト。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "16分のシェイカーに食い込むキックとゴースト。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.24,
+        "gateTicks": 14
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.3,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.22,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      5,
+      79,
+      92
+    ],
+    "intensity": 4,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 5.25,
+      "repeatRatio": 0.5714285714285714,
+      "accentRatio": 0.21428571428571427,
+      "thickness": 1.625,
+      "metalRatio": 0.03641010503061411,
+      "metalPresence": 0.026574394463667824,
+      "metalSustain": 0.009352076124567473,
+      "intensityIndex": 0.5807440476190476,
+      "metallicIndex": 0.02940068752462323
+    },
+    "scoreReason": "激しさ4：1拍あたり5.3打、連打57%、重なり1.6打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-054",
+    "name": "短いゴーストの鎖",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "two-bar"
+    ],
+    "intent": "16分のシェイカーに食い込むキックとゴースト。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "16分のシェイカーに食い込むキックとゴースト。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.24,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.3,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.22,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      5,
+      79,
+      92
+    ],
+    "intensity": 4,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 5.25,
+      "repeatRatio": 0.5476190476190477,
+      "accentRatio": 0.21428571428571427,
+      "thickness": 1.75,
+      "metalRatio": 0.03641010503061411,
+      "metalPresence": 0.026574394463667824,
+      "metalSustain": 0.009352076124567473,
+      "intensityIndex": 0.5822916666666667,
+      "metallicIndex": 0.02940068752462323
+    },
+    "scoreReason": "激しさ4：1拍あたり5.3打、連打55%、重なり1.8打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-055",
+    "name": "十六分のすれ違い",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "two-bar"
+    ],
+    "intent": "16分のシェイカーに食い込むキックとゴースト。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "16分のシェイカーに食い込むキックとゴースト。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.24,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.3,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 5,
+        "velocity": 0.22,
+        "gateTicks": 14
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      5,
+      79,
+      92
+    ],
+    "intensity": 4,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 5.125,
+      "repeatRatio": 0.5609756097560976,
+      "accentRatio": 0.1951219512195122,
+      "thickness": 1.625,
+      "metalRatio": 0.039100130890052376,
+      "metalPresence": 0.026574394463667824,
+      "metalSustain": 0.009352076124567473,
+      "intensityIndex": 0.5678836382113821,
+      "metallicIndex": 0.03088020174731428
+    },
+    "scoreReason": "激しさ4：1拍あたり5.1打、連打56%、重なり1.6打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-056",
+    "name": "休符を縫うキック",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "two-bar"
+    ],
+    "intent": "16分のシェイカーに食い込むキックとゴースト。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "16分のシェイカーに食い込むキックとゴースト。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.24,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.3,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 5,
+        "velocity": 0.22,
+        "gateTicks": 14
+      },
+      {
+        "tick": 600,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      5,
+      79,
+      92
+    ],
+    "intensity": 4,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 5.375,
+      "repeatRatio": 0.5348837209302325,
+      "accentRatio": 0.20930232558139536,
+      "thickness": 1.875,
+      "metalRatio": 0.03500192233756249,
+      "metalPresence": 0.026574394463667824,
+      "metalSustain": 0.009352076124567473,
+      "intensityIndex": 0.5943968023255813,
+      "metallicIndex": 0.02862618704344484
+    },
+    "scoreReason": "激しさ4：1拍あたり5.4打、連打53%、重なり1.9打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-057",
+    "name": "切り抜いた四角",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "two-bar"
+    ],
+    "intent": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12
+    ],
+    "intensity": 3,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 4.25,
+      "repeatRatio": 0.47058823529411764,
+      "accentRatio": 0.23529411764705882,
+      "thickness": 1.25,
+      "metalRatio": 0.23052385428668146,
+      "metalPresence": 0.20584083044982698,
+      "metalSustain": 0.062091105412753374,
+      "intensityIndex": 0.4746936274509804,
+      "metallicIndex": 0.19785403480453592
+    },
+    "scoreReason": "激しさ3：1拍あたり4.3打、連打47%、重なり1.3打/拍。メタリックさ2：相対強度で金属23%、金属の目立ち21%、余韻指標6%"
+  },
+  {
+    "id": "p4-b-058",
+    "name": "折れ線のブレイク",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "two-bar"
+    ],
+    "intent": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 408,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 552,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12
+    ],
+    "intensity": 3,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 4.5,
+      "repeatRatio": 0.5277777777777778,
+      "accentRatio": 0.2222222222222222,
+      "thickness": 1.25,
+      "metalRatio": 0.24130587833543266,
+      "metalPresence": 0.20584083044982698,
+      "metalSustain": 0.06726536419714949,
+      "intensityIndex": 0.5018055555555555,
+      "metallicIndex": 0.20456028684900848
+    },
+    "scoreReason": "激しさ3：1拍あたり4.5打、連打53%、重なり1.3打/拍。メタリックさ2：相対強度で金属24%、金属の目立ち21%、余韻指標7%"
+  },
+  {
+    "id": "p4-b-059",
+    "name": "拍をまたぐ刃",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "two-bar"
+    ],
+    "intent": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 168,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12
+    ],
+    "intensity": 4,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 4.625,
+      "repeatRatio": 0.5405405405405406,
+      "accentRatio": 0.24324324324324326,
+      "thickness": 1.375,
+      "metalRatio": 0.2269207120456725,
+      "metalPresence": 0.20584083044982698,
+      "metalSustain": 0.06726536419714949,
+      "intensityIndex": 0.5211007882882883,
+      "metallicIndex": 0.19664844538964038
+    },
+    "scoreReason": "激しさ4：1拍あたり4.6打、連打54%、重なり1.4打/拍。メタリックさ2：相対強度で金属23%、金属の目立ち21%、余韻指標7%"
+  },
+  {
+    "id": "p4-b-060",
+    "name": "途切れた輪郭",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "two-bar"
+    ],
+    "intent": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 360,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12
+    ],
+    "intensity": 3,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 4.375,
+      "repeatRatio": 0.4857142857142857,
+      "accentRatio": 0.22857142857142856,
+      "thickness": 1.25,
+      "metalRatio": 0.23818023123075852,
+      "metalPresence": 0.20584083044982698,
+      "metalSustain": 0.06572854568297912,
+      "intensityIndex": 0.48580654761904757,
+      "metallicIndex": 0.20261065816431215
+    },
+    "scoreReason": "激しさ3：1拍あたり4.4打、連打49%、重なり1.3打/拍。メタリックさ2：相対強度で金属24%、金属の目立ち21%、余韻指標7%"
+  },
+  {
+    "id": "p4-b-061",
+    "name": "深い底の反射",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "two-bar"
+    ],
+    "intent": "3拍目のスネアを保ち周囲の空白を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "3拍目のスネアを保ち周囲の空白を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      6,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.3157894736842105,
+      "thickness": 0.75,
+      "metalRatio": 0.05254115318880994,
+      "metalPresence": 0.04604387543252595,
+      "metalSustain": 0.007714494253583787,
+      "intensityIndex": 0.23876644736842104,
+      "metallicIndex": 0.04386797102164083
+    },
+    "scoreReason": "激しさ2：1拍あたり2.4打、連打0%、重なり0.8打/拍。メタリックさ1：相対強度で金属5%、金属の目立ち5%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-062",
+    "name": "半分の歩幅",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "two-bar"
+    ],
+    "intent": "3拍目のスネアを保ち周囲の空白を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "3拍目のスネアを保ち周囲の空白を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      6,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.3157894736842105,
+      "thickness": 0.625,
+      "metalRatio": 0.05254115318880995,
+      "metalPresence": 0.04604387543252595,
+      "metalSustain": 0.007714494253583787,
+      "intensityIndex": 0.2329331140350877,
+      "metallicIndex": 0.04386797102164083
+    },
+    "scoreReason": "激しさ2：1拍あたり2.4打、連打0%、重なり0.6打/拍。メタリックさ1：相対強度で金属5%、金属の目立ち5%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-063",
+    "name": "遅い鼓動の裏",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "two-bar"
+    ],
+    "intent": "3拍目のスネアを保ち周囲の空白を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "3拍目のスネアを保ち周囲の空白を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 408,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      6,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0.5,
+      "metalRatio": 0.04894092356302751,
+      "metalPresence": 0.04604387543252595,
+      "metalSustain": 0.00811626606524963,
+      "intensityIndex": 0.24697916666666667,
+      "metallicIndex": 0.041948110499210364
+    },
+    "scoreReason": "激しさ2：1拍あたり2.6打、連打0%、重なり0.5打/拍。メタリックさ1：相対強度で金属5%、金属の目立ち5%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-064",
+    "name": "大きなポケット",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "two-bar"
+    ],
+    "intent": "3拍目のスネアを保ち周囲の空白を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "3拍目のスネアを保ち周囲の空白を変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      6,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0.5,
+      "metalRatio": 0.04708099659832675,
+      "metalPresence": 0.04215923875432526,
+      "metalSustain": 0.006763555054374692,
+      "intensityIndex": 0.21979166666666666,
+      "metallicIndex": 0.0395568530135335
+    },
+    "scoreReason": "激しさ2：1拍あたり2.3打、連打0%、重なり0.5打/拍。メタリックさ1：相対強度で金属5%、金属の目立ち4%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-065",
+    "name": "曲がる街灯",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "拍の2/3に置くハットとキックのスウィング。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "拍の2/3に置くハットとキックのスウィング。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.2916666666666667,
+      "thickness": 1.125,
+      "metalRatio": 0.0963689238986723,
+      "metalPresence": 0.10380622837370244,
+      "metalSustain": 0.02010014713606031,
+      "intensityIndex": 0.29916666666666664,
+      "metallicIndex": 0.08715979872678956
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属10%、金属の目立ち10%、余韻指標2%"
+  },
+  {
+    "id": "p4-b-066",
+    "name": "裏三連の坂",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "拍の2/3に置くハットとキックのスウィング。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "拍の2/3に置くハットとキックのスウィング。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 736,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 1.25,
+      "metalRatio": 0.08404206534307508,
+      "metalPresence": 0.0963127162629758,
+      "metalSustain": 0.018265773680795853,
+      "intensityIndex": 0.30916666666666665,
+      "metallicIndex": 0.07785681686970342
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり1.3打/拍。メタリックさ1：相対強度で金属8%、金属の目立ち10%、余韻指標2%"
+  },
+  {
+    "id": "p4-b-067",
+    "name": "揺れるリムの影",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "拍の2/3に置くハットとキックのスウィング。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "拍の2/3に置くハットとキックのスウィング。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.30434782608695654,
+      "thickness": 1.125,
+      "metalRatio": 0.09021899000637251,
+      "metalPresence": 0.0963127162629758,
+      "metalSustain": 0.018265773680795853,
+      "intensityIndex": 0.29137228260869563,
+      "metallicIndex": 0.08125412543451699
+    },
+    "scoreReason": "激しさ2：1拍あたり2.9打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属9%、金属の目立ち10%、余韻指標2%"
+  },
+  {
+    "id": "p4-b-068",
+    "name": "三連裏の会釈",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "two-bar"
+    ],
+    "intent": "拍の2/3に置くハットとキックのスウィング。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "拍の2/3に置くハットとキックのスウィング。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      13
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 1.25,
+      "metalRatio": 0.08404206534307508,
+      "metalPresence": 0.0963127162629758,
+      "metalSustain": 0.018265773680795853,
+      "intensityIndex": 0.30916666666666665,
+      "metallicIndex": 0.07785681686970342
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり1.3打/拍。メタリックさ1：相対強度で金属8%、金属の目立ち10%、余韻指標2%"
+  },
+  {
+    "id": "p4-b-069",
+    "name": "車輪のシャッフル",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "ライドの三連裏とスネアで跳ねるシャッフル。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ライドの三連裏とスネアで跳ねるシャッフル。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 352,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.64,
+      "thickness": 1.125,
+      "metalRatio": 0.4907166027338913,
+      "metalPresence": 0.7785467128027682,
+      "metalSustain": 0.1507511035204523,
+      "intensityIndex": 0.34306249999999994,
+      "metallicIndex": 0.5260708108725385
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打0%、重なり1.1打/拍。メタリックさ4：相対強度で金属49%、金属の目立ち78%、余韻指標15%"
+  },
+  {
+    "id": "p4-b-070",
+    "name": "銀の三連裏",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "ライドの三連裏とスネアで跳ねるシャッフル。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ライドの三連裏とスネアで跳ねるシャッフル。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 352,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.64,
+      "thickness": 1.125,
+      "metalRatio": 0.4907166027338912,
+      "metalPresence": 0.7785467128027682,
+      "metalSustain": 0.1507511035204523,
+      "intensityIndex": 0.34306249999999994,
+      "metallicIndex": 0.5260708108725385
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打0%、重なり1.1打/拍。メタリックさ4：相対強度で金属49%、金属の目立ち78%、余韻指標15%"
+  },
+  {
+    "id": "p4-b-071",
+    "name": "跳ねた低音の道",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "ライドの三連裏とスネアで跳ねるシャッフル。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ライドの三連裏とスネアで跳ねるシャッフル。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 352,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 704,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 2.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.6086956521739131,
+      "thickness": 0.75,
+      "metalRatio": 0.49177723548950547,
+      "metalPresence": 0.7223453719723184,
+      "metalSustain": 0.13699330260596887,
+      "intensityIndex": 0.30430706521739137,
+      "metallicIndex": 0.5077300865018188
+    },
+    "scoreReason": "激しさ2：1拍あたり2.9打、連打0%、重なり0.8打/拍。メタリックさ4：相対強度で金属49%、金属の目立ち72%、余韻指標14%"
+  },
+  {
+    "id": "p4-b-072",
+    "name": "ライドの追い風",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "ライドの三連裏とスネアで跳ねるシャッフル。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ライドの三連裏とスネアで跳ねるシャッフル。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 736,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.64,
+      "thickness": 1.125,
+      "metalRatio": 0.4403239286519729,
+      "metalPresence": 0.7223453719723184,
+      "metalSustain": 0.13699330260596887,
+      "intensityIndex": 0.34306249999999994,
+      "metallicIndex": 0.47943076774117593
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打0%、重なり1.1打/拍。メタリックさ4：相対強度で金属44%、金属の目立ち72%、余韻指標14%"
+  },
+  {
+    "id": "p4-b-073",
+    "name": "三粒の砂",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "全体をシェイカーの三連で刻み皮の応答を置く。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "全体をシェイカーの三連で刻み皮の応答を置く。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 32,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 512,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      92
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.21212121212121213,
+      "thickness": 1.125,
+      "metalRatio": 0.041063218247119046,
+      "metalPresence": 0.029298269896193774,
+      "metalSustain": 0.008837711937716267,
+      "intensityIndex": 0.3727746212121212,
+      "metallicIndex": 0.03269990779543104
+    },
+    "scoreReason": "激しさ3：1拍あたり4.1打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-074",
+    "name": "皮と三つの波",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "全体をシェイカーの三連で刻み皮の応答を置く。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "全体をシェイカーの三連で刻み皮の応答を置く。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 32,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 160,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 704,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      92
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.24242424242424243,
+      "thickness": 1.25,
+      "metalRatio": 0.037756183452173304,
+      "metalPresence": 0.029298269896193774,
+      "metalSustain": 0.00861896950692042,
+      "intensityIndex": 0.38163825757575753,
+      "metallicIndex": 0.030848227293591515
+    },
+    "scoreReason": "激しさ3：1拍あたり4.1打、連打0%、重なり1.3打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-075",
+    "name": "三連の遠回り",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "全体をシェイカーの三連で刻み皮の応答を置く。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "全体をシェイカーの三連で刻み皮の応答を置く。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 32,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 736,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      92
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.22580645161290322,
+      "thickness": 1.125,
+      "metalRatio": 0.0387461740896395,
+      "metalPresence": 0.029298269896193774,
+      "metalSustain": 0.008101235942906578,
+      "intensityIndex": 0.3560181451612903,
+      "metallicIndex": 0.031315062109595844
+    },
+    "scoreReason": "激しさ2：1拍あたり3.9打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-076",
+    "name": "三拍粒の交差",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "全体をシェイカーの三連で刻み皮の応答を置く。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "全体をシェイカーの三連で刻み皮の応答を置く。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 32,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 128,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 544,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      92
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.23529411764705882,
+      "thickness": 1.25,
+      "metalRatio": 0.03840771228752539,
+      "metalPresence": 0.029298269896193774,
+      "metalSustain": 0.008837711937716267,
+      "intensityIndex": 0.38998774509803924,
+      "metallicIndex": 0.03123937951765454
+    },
+    "scoreReason": "激しさ3：1拍あたり4.3打、連打0%、重なり1.3打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-b-077",
+    "name": "三連の鉄骨",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "硬いハットの三連にキックとタムを重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "硬いハットの三連にキックとタムを重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.5,
+        "gateTicks": 34
+      },
+      {
+        "tick": 32,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.52,
+        "gateTicks": 29
+      },
+      {
+        "tick": 128,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 86,
+        "velocity": 0.3823529411764706,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.45882352941176474,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 20,
+        "velocity": 0.45,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.52,
+        "gateTicks": 29
+      },
+      {
+        "tick": 320,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.5,
+        "gateTicks": 34
+      },
+      {
+        "tick": 416,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.52,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 20,
+        "velocity": 0.54,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 86,
+        "velocity": 0.3823529411764706,
+        "gateTicks": 34
+      },
+      {
+        "tick": 544,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.45882352941176474,
+        "gateTicks": 34
+      },
+      {
+        "tick": 608,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.52,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20
+    ],
+    "intensity": 3,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 4.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 1.5,
+      "metalRatio": 0.810676853423535,
+      "metalPresence": 1,
+      "metalSustain": 0.2941801525297619,
+      "intensityIndex": 0.4295833333333333,
+      "metallicIndex": 0.7899992922624085
+    },
+    "scoreReason": "激しさ3：1拍あたり4.5打、連打0%、重なり1.5打/拍。メタリックさ5：相対強度で金属81%、金属の目立ち100%、余韻指標29%"
+  },
+  {
+    "id": "p4-b-078",
+    "name": "三つ刻みの歯車",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "硬いハットの三連にキックとタムを重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "硬いハットの三連にキックとタムを重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 32,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 320,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 416,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 448,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.7999999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20
+    ],
+    "intensity": 3,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 4.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.23529411764705882,
+      "thickness": 1.5,
+      "metalRatio": 0.5120366366536833,
+      "metalPresence": 0.6782006920415223,
+      "metalSustain": 0.18752860978950409,
+      "intensityIndex": 0.4016544117647059,
+      "metallicIndex": 0.5132096492404081
+    },
+    "scoreReason": "激しさ3：1拍あたり4.3打、連打0%、重なり1.5打/拍。メタリックさ4：相対強度で金属51%、金属の目立ち68%、余韻指標19%"
+  },
+  {
+    "id": "p4-b-079",
+    "name": "タムの三連橋",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "硬いハットの三連にキックとタムを重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "硬いハットの三連にキックとタムを重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 32,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 128,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 160,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 256,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 320,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 416,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 704,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 20,
+        "velocity": 0.7999999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20
+    ],
+    "intensity": 3,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 4.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 1.625,
+      "metalRatio": 0.5075307318879017,
+      "metalPresence": 0.6782006920415223,
+      "metalSustain": 0.1995131830305652,
+      "intensityIndex": 0.42708333333333337,
+      "metallicIndex": 0.5125290876053874
+    },
+    "scoreReason": "激しさ3：1拍あたり4.5打、連打0%、重なり1.6打/拍。メタリックさ4：相対強度で金属51%、金属の目立ち68%、余韻指標20%"
+  },
+  {
+    "id": "p4-b-080",
+    "name": "三粒の加速線",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar"
+    ],
+    "intent": "硬いハットの三連にキックとタムを重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "硬いハットの三連にキックとタムを重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の継続する跳ね方で分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 32,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 128,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 320,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 448,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 608,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.7999999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20
+    ],
+    "intensity": 3,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 4.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.2571428571428571,
+      "thickness": 1.5,
+      "metalRatio": 0.4920447489888482,
+      "metalPresence": 0.6782006920415223,
+      "metalSustain": 0.18752860978950409,
+      "intensityIndex": 0.41290178571428565,
+      "metallicIndex": 0.5022141110247489
+    },
+    "scoreReason": "激しさ3：1拍あたり4.4打、連打0%、重なり1.5打/拍。メタリックさ4：相対強度で金属49%、金属の目立ち68%、余韻指標19%"
+  },
+  {
+    "id": "p4-b-081",
+    "name": "木陰の呼び声",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "木の刻みを土台に高低のハンドドラムを掛け合わせる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "木の刻みを土台に高低のハンドドラムを掛け合わせる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 99,
+        "velocity": 0.48,
+        "gateTicks": 38
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 96,
+        "velocity": 0.62,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 360,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 99,
+        "velocity": 0.6,
+        "gateTicks": 38
+      },
+      {
+        "tick": 528,
+        "soundKey": 96,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 99,
+        "velocity": 0.55,
+        "gateTicks": 38
+      },
+      {
+        "tick": 696,
+        "soundKey": 96,
+        "velocity": 0.7,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      99
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.2916666666666667,
+      "thickness": 0.75,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.2816666666666666,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり0.8打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-082",
+    "name": "高低の井戸端",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "木の刻みを土台に高低のハンドドラムを掛け合わせる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "木の刻みを土台に高低のハンドドラムを掛け合わせる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 99,
+        "velocity": 0.48,
+        "gateTicks": 38
+      },
+      {
+        "tick": 168,
+        "soundKey": 96,
+        "velocity": 0.62,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 99,
+        "velocity": 0.6,
+        "gateTicks": 38
+      },
+      {
+        "tick": 432,
+        "soundKey": 96,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 99,
+        "velocity": 0.55,
+        "gateTicks": 38
+      },
+      {
+        "tick": 648,
+        "soundKey": 96,
+        "velocity": 0.7,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      99
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.32,
+      "thickness": 0.5,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.2818958333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打0%、重なり0.5打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-083",
+    "name": "皮と木の回廊",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "木の刻みを土台に高低のハンドドラムを掛け合わせる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "木の刻みを土台に高低のハンドドラムを掛け合わせる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 99,
+        "velocity": 0.48,
+        "gateTicks": 38
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 96,
+        "velocity": 0.62,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 360,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 99,
+        "velocity": 0.6,
+        "gateTicks": 38
+      },
+      {
+        "tick": 552,
+        "soundKey": 96,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 99,
+        "velocity": 0.55,
+        "gateTicks": 38
+      },
+      {
+        "tick": 720,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 96,
+        "velocity": 0.7,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      99
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.2916666666666667,
+      "thickness": 0.875,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.2875,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり0.9打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-084",
+    "name": "低い返事の踊り",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "木の刻みを土台に高低のハンドドラムを掛け合わせる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "木の刻みを土台に高低のハンドドラムを掛け合わせる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 99,
+        "velocity": 0.48,
+        "gateTicks": 38
+      },
+      {
+        "tick": 336,
+        "soundKey": 96,
+        "velocity": 0.62,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 99,
+        "velocity": 0.6,
+        "gateTicks": 38
+      },
+      {
+        "tick": 456,
+        "soundKey": 96,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 99,
+        "velocity": 0.55,
+        "gateTicks": 38
+      },
+      {
+        "tick": 600,
+        "soundKey": 96,
+        "velocity": 0.7,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      99
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0.04,
+      "accentRatio": 0.32,
+      "thickness": 0.625,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.2949291666666667,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打4%、重なり0.6打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-085",
+    "name": "二枚の皮の行進",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "ハットを使わずタムの掛け合いで刻みと厚みを作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ハットを使わずタムの掛け合いで刻みと厚みを作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.7999999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.35714285714285715,
+      "thickness": 1.5,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.3594642857142857,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.5打、連打0%、重なり1.5打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-086",
+    "name": "低いタムの渦",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "ハットを使わずタムの掛け合いで刻みと厚みを作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ハットを使わずタムの掛け合いで刻みと厚みを作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 432,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.7999999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 1.125,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.3305208333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.4打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-087",
+    "name": "皮の壁の切れ目",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "ハットを使わずタムの掛け合いで刻みと厚みを作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ハットを使わずタムの掛け合いで刻みと厚みを作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 216,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.7999999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.36,
+      "thickness": 1,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.30922916666666667,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打0%、重なり1.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-088",
+    "name": "タムの折り返し坂",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "ハットを使わずタムの掛け合いで刻みと厚みを作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "ハットを使わずタムの掛け合いで刻みと厚みを作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 456,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 20,
+        "velocity": 0.7999999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.35714285714285715,
+      "thickness": 1.125,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.34196428571428567,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.5打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-089",
+    "name": "土煙の連打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "two-bar"
+    ],
+    "intent": "短いドラムの16分とスネアを厚く重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "短いドラムの16分とスネアを厚く重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 576,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 624,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 720,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 720,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      82,
+      84
+    ],
+    "intensity": 5,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 10.375,
+      "repeatRatio": 0.4939759036144578,
+      "accentRatio": 0.3132530120481928,
+      "thickness": 6.625,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.8402409638554216,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ5：1拍あたり10.4打、連打49%、重なり6.6打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-090",
+    "name": "皮のダブルライン",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "two-bar"
+    ],
+    "intent": "短いドラムの16分とスネアを厚く重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "短いドラムの16分とスネアを厚く重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 600,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      12,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 10.375,
+      "repeatRatio": 0.4939759036144578,
+      "accentRatio": 0.13253012048192772,
+      "thickness": 6.625,
+      "metalRatio": 0.1828922269814603,
+      "metalPresence": 0.3730103806228374,
+      "metalSustain": 0.14064645734212808,
+      "intensityIndex": 0.8221686746987951,
+      "metallicIndex": 0.2335908076279736
+    },
+    "scoreReason": "激しさ5：1拍あたり10.4打、連打49%、重なり6.6打/拍。メタリックさ2：相対強度で金属18%、金属の目立ち37%、余韻指標14%"
+  },
+  {
+    "id": "p4-b-091",
+    "name": "低音の急流",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "two-bar"
+    ],
+    "intent": "短いドラムの16分とスネアを厚く重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "短いドラムの16分とスネアを厚く重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 576,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 600,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 624,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      82,
+      84
+    ],
+    "intensity": 5,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 10,
+      "repeatRatio": 0.4875,
+      "accentRatio": 0.325,
+      "thickness": 6.375,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.8402499999999999,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ5：1拍あたり10.0打、連打49%、重なり6.4打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-092",
+    "name": "乾いた嵐の間",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "two-bar"
+    ],
+    "intent": "短いドラムの16分とスネアを厚く重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "短いドラムの16分とスネアを厚く重ねる。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 576,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 600,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 624,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 720,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 720,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      82,
+      84
+    ],
+    "intensity": 5,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 10.5,
+      "repeatRatio": 0.4880952380952381,
+      "accentRatio": 0.32142857142857145,
+      "thickness": 6.75,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.84,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ5：1拍あたり10.5打、連打49%、重なり6.8打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-b-093",
+    "name": "鉄のスプリント",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "16分の硬いハットと食い込むキックで密度を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "16分の硬いハットと食い込むキックで密度を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 600,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      15,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 10.625,
+      "repeatRatio": 0.5176470588235295,
+      "accentRatio": 0.3176470588235294,
+      "thickness": 6.75,
+      "metalRatio": 0.4277145215730525,
+      "metalPresence": 0.9766089965397925,
+      "metalSustain": 0.38549578287197234,
+      "intensityIndex": 0.8449411764705882,
+      "metallicIndex": 0.5860500532579125
+    },
+    "scoreReason": "激しさ5：1拍あたり10.6打、連打52%、重なり6.8打/拍。メタリックさ4：相対強度で金属43%、金属の目立ち98%、余韻指標39%"
+  },
+  {
+    "id": "p4-b-094",
+    "name": "ハットの千鳥足",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "16分の硬いハットと食い込むキックで密度を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "16分の硬いハットと食い込むキックで密度を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15
+    ],
+    "intensity": 4,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 5.5,
+      "repeatRatio": 0.6363636363636364,
+      "accentRatio": 0.5909090909090909,
+      "thickness": 1.75,
+      "metalRatio": 0.6291985603741825,
+      "metalPresence": 0.9766089965397925,
+      "metalSustain": 0.3682379974048443,
+      "intensityIndex": 0.6540530303030303,
+      "metallicIndex": 0.6942776067784648
+    },
+    "scoreReason": "激しさ4：1拍あたり5.5打、連打64%、重なり1.8打/拍。メタリックさ5：相対強度で金属63%、金属の目立ち98%、余韻指標37%"
+  },
+  {
+    "id": "p4-b-095",
+    "name": "銀色の乱反射",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "16分の硬いハットと食い込むキックで密度を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "16分の硬いハットと食い込むキックで密度を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15
+    ],
+    "intensity": 4,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 5.625,
+      "repeatRatio": 0.6,
+      "accentRatio": 0.24444444444444444,
+      "thickness": 1.875,
+      "metalRatio": 0.4524730954779198,
+      "metalPresence": 0.4982698961937717,
+      "metalSustain": 0.1878765292881859,
+      "intensityIndex": 0.6277569444444445,
+      "metallicIndex": 0.42652265076421536
+    },
+    "scoreReason": "激しさ4：1拍あたり5.6打、連打60%、重なり1.9打/拍。メタリックさ3：相対強度で金属45%、金属の目立ち50%、余韻指標19%"
+  },
+  {
+    "id": "p4-b-096",
+    "name": "金属の折れた矢",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "16分の硬いハットと食い込むキックで密度を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "16分の硬いハットと食い込むキックで密度を作る。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15
+    ],
+    "intensity": 4,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 5.75,
+      "repeatRatio": 0.5869565217391305,
+      "accentRatio": 0.2608695652173913,
+      "thickness": 2,
+      "metalRatio": 0.5106890391404323,
+      "metalPresence": 0.6782006920415223,
+      "metalSustain": 0.25572083153114195,
+      "intensityIndex": 0.641947463768116,
+      "metallicIndex": 0.5226973038693657
+    },
+    "scoreReason": "激しさ4：1拍あたり5.8打、連打59%、重なり2.0打/拍。メタリックさ4：相対強度で金属51%、金属の目立ち68%、余韻指標26%"
+  },
+  {
+    "id": "p4-b-097",
+    "name": "鐘楼のラッシュ",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "強いベルの16分とドラムを重ね金属の存在感を保つ。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "強いベルの16分とドラムを重ね金属の存在感を保つ。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 216,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 456,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 600,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 720,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 720,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 10.5,
+      "repeatRatio": 0.5238095238095238,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 6.625,
+      "metalRatio": 0.4777645026528348,
+      "metalPresence": 1,
+      "metalSustain": 0.9972098214285713,
+      "intensityIndex": 0.8428571428571429,
+      "metallicIndex": 0.7123519496733448
+    },
+    "scoreReason": "激しさ5：1拍あたり10.5打、連打52%、重なり6.6打/拍。メタリックさ5：相対強度で金属48%、金属の目立ち100%、余韻指標100%"
+  },
+  {
+    "id": "p4-b-098",
+    "name": "ベルの二重らせん",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "強いベルの16分とドラムを重ね金属の存在感を保つ。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "強いベルの16分とドラムを重ね金属の存在感を保つ。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 312,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 408,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 552,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 720,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 720,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 10.25,
+      "repeatRatio": 0.5,
+      "accentRatio": 0.2804878048780488,
+      "thickness": 6.5,
+      "metalRatio": 0.4675869589757238,
+      "metalPresence": 1,
+      "metalSustain": 0.9525669642857141,
+      "intensityIndex": 0.8380487804878048,
+      "metallicIndex": 0.7000578720795052
+    },
+    "scoreReason": "激しさ5：1拍あたり10.3打、連打50%、重なり6.5打/拍。メタリックさ5：相対強度で金属47%、金属の目立ち100%、余韻指標95%"
+  },
+  {
+    "id": "p4-b-099",
+    "name": "硬い光の連鎖",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "強いベルの16分とドラムを重ね金属の存在感を保つ。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "強いベルの16分とドラムを重ね金属の存在感を保つ。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 168,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 312,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 504,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 600,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 648,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 720,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 10.25,
+      "repeatRatio": 0.5,
+      "accentRatio": 0.2804878048780488,
+      "thickness": 6.5,
+      "metalRatio": 0.4675869589757238,
+      "metalPresence": 1,
+      "metalSustain": 0.9525669642857141,
+      "intensityIndex": 0.8380487804878048,
+      "metallicIndex": 0.7000578720795052
+    },
+    "scoreReason": "激しさ5：1拍あたり10.3打、連打50%、重なり6.5打/拍。メタリックさ5：相対強度で金属47%、金属の目立ち100%、余韻指標95%"
+  },
+  {
+    "id": "p4-b-100",
+    "name": "鐘の波と裂け目",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "basic",
+    "derivedFrom": null,
+    "fillRange": null,
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar"
+    ],
+    "intent": "強いベルの16分とドラムを重ね金属の存在感を保つ。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る",
+    "tagReason": "強いベルの16分とドラムを重ね金属の存在感を保つ。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。ノリはフレーズ全体の均等な刻みで分類",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 120,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 504,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 600,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 648,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 648,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 672,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 696,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 696,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 696,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 10,
+      "repeatRatio": 0.45,
+      "accentRatio": 0.3,
+      "thickness": 6.375,
+      "metalRatio": 0.46154767115541623,
+      "metalPresence": 1,
+      "metalSustain": 0.933705357142857,
+      "intensityIndex": 0.831,
+      "metallicIndex": 0.6939070227069075
+    },
+    "scoreReason": "激しさ5：1拍あたり10.0打、連打45%、重なり6.4打/拍。メタリックさ5：相対強度で金属46%、金属の目立ち100%、余韻指標93%"
+  },
+  {
     "id": "p4-i-001",
     "name": "余白のエイトへの出だし",
     "meter": 4,
@@ -6286,6 +24252,6330 @@ export const patterns = [
       "metallicIndex": 0
     },
     "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-021",
+    "name": "一拍の灯りへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-021",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「一拍の灯り」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.51,
+        "gateTicks": 29
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 0.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.08770833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり0.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-022",
+    "name": "遠い二つの足音への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-022",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「遠い二つの足音」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 0.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.08625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり0.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-023",
+    "name": "空いた椅子の返事への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-023",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「空いた椅子の返事」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.092,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 25,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      20,
+      22,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0.0007490464348611022,
+      "metalPresence": 0.0003514463667820068,
+      "metalSustain": 0.000049683638161146796,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0.0005248619949323804
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-024",
+    "name": "息継ぎの輪への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-024",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「息継ぎの輪」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 144,
+        "soundKey": 25,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 25,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-025",
+    "name": "小さな裏窓への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-025",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「小さな裏窓」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.133,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 22,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      12,
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0.007126449158321669,
+      "metalPresence": 0.0033664186851211073,
+      "metalSustain": 0.00047590740340253747,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0.0050008587531236316
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-026",
+    "name": "半拍の散歩への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-026",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「半拍の散歩」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.156,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.51,
+        "gateTicks": 29
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      12,
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 0.25,
+      "metalRatio": 0.00820179222714616,
+      "metalPresence": 0.0046314186851211065,
+      "metalSustain": 0.0006547392486406327,
+      "intensityIndex": 0.12229166666666667,
+      "metallicIndex": 0.005998622217762815
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-027",
+    "name": "ひとつ飛ばしの影への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-027",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「ひとつ飛ばしの影」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 168,
+        "soundKey": 25,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 0.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.08770833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり0.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-028",
+    "name": "砂時計の隙間への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-028",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「砂時計の隙間」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 216,
+        "soundKey": 25,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 25,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-029",
+    "name": "六つの水面への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-029",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「六つの水面」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 240,
+        "soundKey": 17,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 25,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 2,
+    "center": "percussion",
+    "metrics": {
+      "density": 0.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.5,
+      "thickness": 0,
+      "metalRatio": 0.21891891891891893,
+      "metalPresence": 0.07006920415224914,
+      "metalSustain": 0.017725840336134457,
+      "intensityIndex": 0.08625,
+      "metallicIndex": 0.14408504270150033
+    },
+    "scoreReason": "激しさ1：1拍あたり0.5打、連打0%、重なり0.0打/拍。メタリックさ2：相対強度で金属22%、金属の目立ち7%、余韻指標2%"
+  },
+  {
+    "id": "p4-i-030",
+    "name": "鐘の渡り石への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-030",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「鐘の渡り石」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 17,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 25,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 17,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 0.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0.6864564007421151,
+      "metalPresence": 0.32006920415224915,
+      "metalSustain": 0.08096988795518209,
+      "intensityIndex": 0.08770833333333333,
+      "metallicIndex": 0.48571726484711536
+    },
+    "scoreReason": "激しさ1：1拍あたり0.8打、連打0%、重なり0.0打/拍。メタリックさ4：相対強度で金属69%、金属の目立ち32%、余韻指標8%"
+  },
+  {
+    "id": "p4-i-031",
+    "name": "余韻の踊り場への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-031",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「余韻の踊り場」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 144,
+        "soundKey": 17,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 17,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 0.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0.6864564007421151,
+      "metalPresence": 0.32006920415224915,
+      "metalSustain": 0.08096988795518209,
+      "intensityIndex": 0.08770833333333333,
+      "metallicIndex": 0.48571726484711536
+    },
+    "scoreReason": "激しさ1：1拍あたり0.8打、連打0%、重なり0.0打/拍。メタリックさ4：相対強度で金属69%、金属の目立ち32%、余韻指標8%"
+  },
+  {
+    "id": "p4-i-032",
+    "name": "銀の呼吸線への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-032",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「銀の呼吸線」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.51,
+        "gateTicks": 29
+      },
+      {
+        "tick": 216,
+        "soundKey": 17,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 25,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 17,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 3,
+    "center": "mixed",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0.5753918885294851,
+      "metalPresence": 0.32006920415224915,
+      "metalSustain": 0.08096988795518209,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0.42463178313016886
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ3：相対強度で金属58%、金属の目立ち32%、余韻指標8%"
+  },
+  {
+    "id": "p4-i-033",
+    "name": "夜半のベルへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-033",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「夜半のベル」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 25,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 18,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      18,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 0.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0.6864564007421151,
+      "metalPresence": 0.32006920415224915,
+      "metalSustain": 0.08096988795518209,
+      "intensityIndex": 0.08770833333333333,
+      "metallicIndex": 0.48571726484711536
+    },
+    "scoreReason": "激しさ1：1拍あたり0.8打、連打0%、重なり0.0打/拍。メタリックさ4：相対強度で金属69%、金属の目立ち32%、余韻指標8%"
+  },
+  {
+    "id": "p4-i-034",
+    "name": "鐘と木のあいだへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-034",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「鐘と木のあいだ」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.459,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 25,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      18,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0.7288504993964117,
+      "metalPresence": 0.3929692041522491,
+      "metalSustain": 0.12273551295518208,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0.5371688628569784
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ4：相対強度で金属73%、金属の目立ち39%、余韻指標12%"
+  },
+  {
+    "id": "p4-i-035",
+    "name": "丸い金属の点への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-035",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「丸い金属の点」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.298,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 25,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 18,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      18,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0.7058422172464882,
+      "metalPresence": 0.32006920415224915,
+      "metalSustain": 0.0985744871478003,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0.4990201538034133
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ4：相対強度で金属71%、金属の目立ち32%、余韻指標10%"
+  },
+  {
+    "id": "p4-i-036",
+    "name": "ひかりの折り返しへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-036",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「ひかりの折り返し」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.351,
+        "gateTicks": 77
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 25,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      18,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0.25,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0.7127220284748566,
+      "metalPresence": 0.32006920415224915,
+      "metalSustain": 0.10539338492750042,
+      "intensityIndex": 0.1425,
+      "metallicIndex": 0.5038268846459709
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打25%、重なり0.0打/拍。メタリックさ4：相対強度で金属71%、金属の目立ち32%、余韻指標11%"
+  },
+  {
+    "id": "p4-i-037",
+    "name": "まっすぐな靴底への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-037",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「まっすぐな靴底」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.099,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 79,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      13,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 0,
+      "metalRatio": 0.0016438288259271574,
+      "metalPresence": 0.0010174048442906573,
+      "metalSustain": 0.00014382955388037567,
+      "intensityIndex": 0.110625,
+      "metallicIndex": 0.0012309017406291903
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-038",
+    "name": "重い扉のノックへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-038",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「重い扉のノック」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.099,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.468,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 79,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.16666666666666666,
+      "thickness": 0,
+      "metalRatio": 0.0014645014990792456,
+      "metalPresence": 0.0010174048442906573,
+      "metalSustain": 0.00014382955388037567,
+      "intensityIndex": 0.12541666666666665,
+      "metallicIndex": 0.0011322717108628387
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-039",
+    "name": "片足の踏み込みへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-039",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「片足の踏み込み」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.117,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 79,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      13,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 0,
+      "metalRatio": 0.00229094647739156,
+      "metalPresence": 0.0014210034602076121,
+      "metalSustain": 0.00020088590583292138,
+      "intensityIndex": 0.110625,
+      "metallicIndex": 0.00171645448650258
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-040",
+    "name": "角を曲がるロックへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-040",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「角を曲がるロック」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.099,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 79,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      13,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 0,
+      "metalRatio": 0.0016438288259271574,
+      "metalPresence": 0.0010174048442906573,
+      "metalSustain": 0.00014382955388037567,
+      "intensityIndex": 0.110625,
+      "metallicIndex": 0.0012309017406291903
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-041",
+    "name": "紙のエイトへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-041",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「紙のエイト」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 79,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-042",
+    "name": "坂道のポップへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-042",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「坂道のポップ」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.136,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.39,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 79,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.16666666666666666,
+      "thickness": 0.25,
+      "metalRatio": 0.0011385161345184975,
+      "metalPresence": 0.000768,
+      "metalSustain": 0.00010857142857142859,
+      "intensityIndex": 0.1370833333333333,
+      "metallicIndex": 0.0008728695882708878
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-043",
+    "name": "スネアの寄り道への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-043",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「スネアの寄り道」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 168,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 79,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-044",
+    "name": "裏の階段への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-044",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「裏の階段」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.136,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 79,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.16666666666666666,
+      "thickness": 0,
+      "metalRatio": 0.0011182171383404432,
+      "metalPresence": 0.000768,
+      "metalSustain": 0.00010857142857142859,
+      "intensityIndex": 0.12541666666666665,
+      "metallicIndex": 0.000861705140372958
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-045",
+    "name": "鉄橋のエイトへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-045",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「鉄橋のエイト」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 88,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.130625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-046",
+    "name": "鋼の裏拍への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-046",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「鋼の裏拍」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.293,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 88,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.16666666666666666,
+      "thickness": 0,
+      "metalRatio": 0.04183211927725989,
+      "metalPresence": 0.029705536332179924,
+      "metalSustain": 0.004199443380293293,
+      "intensityIndex": 0.12541666666666665,
+      "metallicIndex": 0.03254924300919091
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-047",
+    "name": "ハットの切り返しへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-047",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「ハットの切り返し」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.383,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 88,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0.06217772293784008,
+      "metalPresence": 0.05075743944636678,
+      "metalSustain": 0.0071755308741143515,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0.05050130908083923
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属6%、金属の目立ち5%、余韻指標1%"
+  },
+  {
+    "id": "p4-i-048",
+    "name": "走る留め金への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-048",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「走る留め金」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.293,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 88,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0.03735246474752093,
+      "metalPresence": 0.029705536332179924,
+      "metalSustain": 0.004199443380293293,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0.030085433017834482
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-049",
+    "name": "四つの角と裏への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-049",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「四つの角と裏」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.332,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 9,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 9,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.110625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-050",
+    "name": "半開きのフロアへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-050",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「半開きのフロア」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.332,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.468,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 14,
+        "velocity": 0.226,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 9,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 9,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.14285714285714285,
+      "thickness": 0.25,
+      "metalRatio": 0.01655844135795163,
+      "metalPresence": 0.012371349480968855,
+      "metalSustain": 0.001748925893886966,
+      "intensityIndex": 0.15282738095238094,
+      "metallicIndex": 0.013080886475247099
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち1%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-051",
+    "name": "踊る空白への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-051",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「踊る空白」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 144,
+        "soundKey": 9,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 9,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      9,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.130625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-052",
+    "name": "裏口の二連への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-052",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「裏口の二連」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.332,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.468,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 14,
+        "velocity": 0.226,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 9,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 324,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 9,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.14285714285714285,
+      "thickness": 0.25,
+      "metalRatio": 0.01655844135795163,
+      "metalPresence": 0.012371349480968855,
+      "metalSustain": 0.001748925893886966,
+      "intensityIndex": 0.15282738095238094,
+      "metallicIndex": 0.013080886475247099
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち1%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-053",
+    "name": "砂のファンクへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-053",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「砂のファンク」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-054",
+    "name": "短いゴーストの鎖への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-054",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「短いゴーストの鎖」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.156,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0.0010932057966500654,
+      "metalPresence": 0.0010104913494809686,
+      "metalSustain": 0.00014285219970341072,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0.0009258384229573383
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-055",
+    "name": "十六分のすれ違いへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-055",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「十六分のすれ違い」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.149,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.162,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2222222222222222,
+      "thickness": 0.25,
+      "metalRatio": 0.0010923871306106905,
+      "metalPresence": 0.0010897162629757784,
+      "metalSustain": 0.00015405215027187346,
+      "intensityIndex": 0.19701388888888888,
+      "metallicIndex": 0.0009508356232693943
+    },
+    "scoreReason": "激しさ1：1拍あたり2.3打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-056",
+    "name": "休符を縫うキックへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-056",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「休符を縫うキック」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 168,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 79,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-057",
+    "name": "切り抜いた四角への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-057",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「切り抜いた四角」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 80,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 80,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      80,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.130625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-058",
+    "name": "折れ線のブレイクへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-058",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「折れ線のブレイク」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.172,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.312,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 80,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 80,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      80,
+      12,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0.02984079869096206,
+      "metalPresence": 0.024155847750865045,
+      "metalSustain": 0.003414889190970505,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0.02417142698393422
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-059",
+    "name": "拍をまたぐ刃への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-059",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "opening",
+      "flam"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「拍をまたぐ刃」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.265,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.203,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.468,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 12,
+        "velocity": 0.324,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 80,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 294,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 80,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.25,
+      "repeatRatio": 0.1111111111111111,
+      "accentRatio": 0.2222222222222222,
+      "thickness": 0.25,
+      "metalRatio": 0.04495032731178345,
+      "metalPresence": 0.0333427508650519,
+      "metalSustain": 0.005822325805322128,
+      "intensityIndex": 0.21701388888888887,
+      "metallicIndex": 0.03559885415179479
+    },
+    "scoreReason": "激しさ2：1拍あたり2.3打、連打11%、重なり0.3打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-i-060",
+    "name": "途切れた輪郭への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-060",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「途切れた輪郭」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 144,
+        "soundKey": 80,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 80,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      80,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.130625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-061",
+    "name": "深い底の反射への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-061",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「深い底の反射」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.51,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.14,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 6,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 6,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      6,
+      13,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.16666666666666666,
+      "thickness": 0.25,
+      "metalRatio": 0.0028563255304334683,
+      "metalPresence": 0.0020346020761245675,
+      "metalSustain": 0.00028762975778546715,
+      "intensityIndex": 0.1370833333333333,
+      "metallicIndex": 0.002224504128243598
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-062",
+    "name": "半分の歩幅への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-062",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「半分の歩幅」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.119,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 324,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 6,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      6,
+      13,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 0,
+      "metalRatio": 0.0023693150013982998,
+      "metalPresence": 0.0014699999999999997,
+      "metalSustain": 0.00020781249999999994,
+      "intensityIndex": 0.110625,
+      "metallicIndex": 0.001775295125769065
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-063",
+    "name": "遅い鼓動の裏への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-063",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「遅い鼓動の裏」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 168,
+        "soundKey": 6,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 6,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      6,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.130625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-064",
+    "name": "大きなポケットへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-064",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「大きなポケット」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.119,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.51,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.14,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 6,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 6,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      6,
+      13,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0.14285714285714285,
+      "accentRatio": 0.14285714285714285,
+      "thickness": 0.25,
+      "metalRatio": 0.00488640720923128,
+      "metalPresence": 0.0035046020761245675,
+      "metalSustain": 0.000495442257785467,
+      "intensityIndex": 0.17854166666666665,
+      "metallicIndex": 0.003813220926582394
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打14%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-065",
+    "name": "曲がる街灯への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-065",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「曲がる街灯」の1拍目へつなぐ",
+    "tagReason": "全体の基調はスウィングを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 5,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 5,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.110625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-066",
+    "name": "裏三連の坂への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-066",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「裏三連の坂」の1拍目へつなぐ",
+    "tagReason": "全体の基調はスウィングを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 5,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 5,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      13,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 0,
+      "metalRatio": 0.014447086801426869,
+      "metalPresence": 0.009342560553633215,
+      "metalSustain": 0.00132074888779041,
+      "intensityIndex": 0.110625,
+      "metallicIndex": 0.010946778240043304
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち1%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-067",
+    "name": "揺れるリムの影への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-067",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「揺れるリムの影」の1拍目へつなぐ",
+    "tagReason": "全体の基調はスウィングを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 5,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 5,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-068",
+    "name": "三連裏の会釈への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-068",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「三連裏の会釈」の1拍目へつなぐ",
+    "tagReason": "全体の基調はスウィングを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 5,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 304,
+        "soundKey": 5,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-069",
+    "name": "車輪のシャッフルへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-069",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "shuffle",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「車輪のシャッフル」の1拍目へつなぐ",
+    "tagReason": "全体の基調はシャッフルを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 80,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 80,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      80,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.0975,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-070",
+    "name": "銀の三連裏への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-070",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「銀の三連裏」の1拍目へつなぐ",
+    "tagReason": "全体の基調はシャッフルを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 17,
+        "velocity": 0.383,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 17,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.468,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 80,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 80,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.14285714285714285,
+      "thickness": 0.25,
+      "metalRatio": 0.1487745383585819,
+      "metalPresence": 0.12082664359861592,
+      "metalSustain": 0.017081147532542428,
+      "intensityIndex": 0.15282738095238094,
+      "metallicIndex": 0.1206361613066862
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.3打/拍。メタリックさ2：相対強度で金属15%、金属の目立ち12%、余韻指標2%"
+  },
+  {
+    "id": "p4-i-071",
+    "name": "跳ねた低音の道への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-071",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "shuffle",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「跳ねた低音の道」の1拍目へつなぐ",
+    "tagReason": "全体の基調はシャッフルを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 80,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      80,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-072",
+    "name": "ライドの追い風への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-072",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "shuffle",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「ライドの追い風」の1拍目へつなぐ",
+    "tagReason": "全体の基調はシャッフルを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 80,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 304,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 80,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      80,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.130625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-073",
+    "name": "三粒の砂への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-073",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "triplet",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「三粒の砂」の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 5,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 5,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-074",
+    "name": "皮と三つの波への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-074",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "triplet",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「皮と三つの波」の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.252,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 5,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 22,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 20,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 5,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      20,
+      22,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.16666666666666666,
+      "thickness": 0,
+      "metalRatio": 0.0037541494614601826,
+      "metalPresence": 0.0026368442906574393,
+      "metalSustain": 0.00037276816608996534,
+      "intensityIndex": 0.12541666666666665,
+      "metallicIndex": 0.0029117507159138268
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-075",
+    "name": "三連の遠回りへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-075",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "triplet",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「三連の遠回り」の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 160,
+        "soundKey": 5,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.130625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-076",
+    "name": "三拍粒の交差への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-076",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "triplet",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「三拍粒の交差」の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 5,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 304,
+        "soundKey": 5,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-077",
+    "name": "三連の鉄骨への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-077",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "triplet",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「三連の鉄骨」の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.298,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 208,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0.03858855674869551,
+      "metalPresence": 0.03072802768166089,
+      "metalSustain": 0.004343992008568132,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0.03109371331756602
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-078",
+    "name": "三つ刻みの歯車への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-078",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "triplet",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「三つ刻みの歯車」の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 20,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 88,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 22,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0.032587693466064487,
+      "metalPresence": 0.02578858131487889,
+      "metalSustain": 0.0036457071799307957,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0.026206661877788754
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-079",
+    "name": "タムの三連橋への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-079",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "triplet",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「タムの三連橋」の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.232,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 304,
+        "soundKey": 88,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0.019928732860786193,
+      "metalPresence": 0.0186242214532872,
+      "metalSustain": 0.0026328884494974465,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0.016943002776843186
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-080",
+    "name": "三粒の加速線への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-080",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "triplet",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「三粒の加速線」の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.232,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 304,
+        "soundKey": 88,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 320,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0.019928732860786193,
+      "metalPresence": 0.0186242214532872,
+      "metalSustain": 0.0026328884494974465,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0.016943002776843186
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-081",
+    "name": "木陰の呼び声への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-081",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「木陰の呼び声」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 99,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 96,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 79,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 99,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 96,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      96,
+      99
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "percussion",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.130625,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-082",
+    "name": "高低の井戸端への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-082",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「高低の井戸端」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 216,
+        "soundKey": 99,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 96,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 79,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 99,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 96,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      96,
+      99
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "percussion",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-083",
+    "name": "皮と木の回廊への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-083",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「皮と木の回廊」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.433,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 99,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 96,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 79,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 324,
+        "soundKey": 99,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 96,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      96,
+      99
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "percussion",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.1420833333333333,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-084",
+    "name": "低い返事の踊りへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-084",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「低い返事の踊り」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 216,
+        "soundKey": 28,
+        "velocity": 0.182,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 101,
+        "velocity": 0.405,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 99,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 96,
+        "velocity": 0.55,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 99,
+        "velocity": 0.75,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 96,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      99
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "percussion",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0.25,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.16711309523809523,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-085",
+    "name": "二枚の皮の行進への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-085",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「二枚の皮の行進」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.296,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-086",
+    "name": "低いタムの渦への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-086",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「低いタムの渦」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.192,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.226,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 79,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.16999999999999998,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり2.0打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-087",
+    "name": "皮の壁の切れ目への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-087",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "opening",
+      "flam"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「皮の壁の切れ目」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.226,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 20,
+        "velocity": 0.373,
+        "gateTicks": 29
+      },
+      {
+        "tick": 216,
+        "soundKey": 101,
+        "velocity": 0.486,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 246,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2222222222222222,
+      "thickness": 0.25,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.19701388888888888,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり2.3打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-088",
+    "name": "タムの折り返し坂への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-088",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「タムの折り返し坂」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.296,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 79,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 22,
+        "velocity": 0.53,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 20,
+        "velocity": 0.61,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.6900000000000001,
+        "gateTicks": 34
+      },
+      {
+        "tick": 324,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 20,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      79,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-089",
+    "name": "土煙の連打への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-089",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「土煙の連打」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.357,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 89,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 22,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 20,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 89,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 89,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      89,
+      20,
+      22,
+      82
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.16999999999999998,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり2.0打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-090",
+    "name": "皮のダブルラインへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-090",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「皮のダブルライン」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.42,
+        "gateTicks": 24
+      },
+      {
+        "tick": 216,
+        "soundKey": 89,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 22,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 20,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 89,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 22,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 20,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 89,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      89,
+      12,
+      20,
+      22,
+      82
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2222222222222222,
+      "thickness": 0.25,
+      "metalRatio": 0.02824664296551255,
+      "metalPresence": 0.033570934256055354,
+      "metalSustain": 0.004745891003460206,
+      "intensityIndex": 0.19701388888888888,
+      "metallicIndex": 0.02631881755836754
+    },
+    "scoreReason": "激しさ1：1拍あたり2.3打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-091",
+    "name": "低音の急流への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-091",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「低音の急流」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.357,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.42,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 84,
+        "velocity": 0.293,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.51,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.373,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 84,
+        "velocity": 0.467,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 89,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 22,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 89,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 22,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 89,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      20,
+      22,
+      82,
+      84
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.25,
+      "repeatRatio": 0.07692307692307693,
+      "accentRatio": 0.15384615384615385,
+      "thickness": 0.75,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.2998557692307692,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.3打、連打8%、重なり0.8打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-092",
+    "name": "乾いた嵐の間への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-092",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「乾いた嵐の間」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.357,
+        "gateTicks": 24
+      },
+      {
+        "tick": 168,
+        "soundKey": 89,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 22,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 20,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 89,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 22,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 89,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      89,
+      20,
+      22,
+      82
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.16999999999999998,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり2.0打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-093",
+    "name": "鉄のスプリントへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-093",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「鉄のスプリント」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 22,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 20,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 88,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 22,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 88,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-094",
+    "name": "ハットの千鳥足への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-094",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「ハットの千鳥足」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.278,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.328,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 22,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 324,
+        "soundKey": 22,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 88,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2222222222222222,
+      "thickness": 0,
+      "metalRatio": 0.056589719533604484,
+      "metalPresence": 0.06396816608996539,
+      "metalSustain": 0.009043118718075463,
+      "intensityIndex": 0.18534722222222222,
+      "metallicIndex": 0.0516712633781834
+    },
+    "scoreReason": "激しさ1：1拍あたり2.3打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属6%、金属の目立ち6%、余韻指標1%"
+  },
+  {
+    "id": "p4-i-095",
+    "name": "銀色の乱反射への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-095",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「銀色の乱反射」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.306,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.51,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.243,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 22,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 20,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 88,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 324,
+        "soundKey": 22,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 20,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 88,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.75,
+      "repeatRatio": 0.09090909090909091,
+      "accentRatio": 0.18181818181818182,
+      "thickness": 0.25,
+      "metalRatio": 0.07788613158020186,
+      "metalPresence": 0.07724429065743942,
+      "metalSustain": 0.013808429621848735,
+      "intensityIndex": 0.2455871212121212,
+      "metallicIndex": 0.06808192400962015
+    },
+    "scoreReason": "激しさ2：1拍あたり2.8打、連打9%、重なり0.3打/拍。メタリックさ1：相対強度で金属8%、金属の目立ち8%、余韻指標1%"
+  },
+  {
+    "id": "p4-i-096",
+    "name": "金属の折れた矢への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-096",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「金属の折れた矢」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 168,
+        "soundKey": 88,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 22,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 20,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 88,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 88,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      20,
+      22
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.15544642857142857,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-i-097",
+    "name": "鐘楼のラッシュへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-097",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「鐘楼のラッシュ」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.469,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 88,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 18,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 18,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 88,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 324,
+        "soundKey": 18,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      18
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0.125,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0.7636045099750317,
+      "metalPresence": 0.4723048442906574,
+      "metalSustain": 0.22863463457278335,
+      "intensityIndex": 0.19249999999999998,
+      "metallicIndex": 0.5959691289593821
+    },
+    "scoreReason": "激しさ1：1拍あたり2.0打、連打13%、重なり0.0打/拍。メタリックさ4：相対強度で金属76%、金属の目立ち47%、余韻指標23%"
+  },
+  {
+    "id": "p4-i-098",
+    "name": "ベルの二重らせんへの出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-098",
+    "fillRange": {
+      "startTick": 48,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "opening"
+    ],
+    "intent": "最初の0.5拍を無音にし、弱い部品から入り、最後の返しで「ベルの二重らせん」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.305,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.359,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.42,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.51,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 88,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 18,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 18,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 88,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 18,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      18,
+      82
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 2.75,
+      "repeatRatio": 0.2727272727272727,
+      "accentRatio": 0.18181818181818182,
+      "thickness": 0.5,
+      "metalRatio": 0.6746145652305783,
+      "metalPresence": 0.42838235294117644,
+      "metalSustain": 0.2288749954230058,
+      "intensityIndex": 0.2899810606060606,
+      "metallicIndex": 0.5338839660726219
+    },
+    "scoreReason": "激しさ2：1拍あたり2.8打、連打27%、重なり0.5打/拍。メタリックさ4：相対強度で金属67%、金属の目立ち43%、余韻指標23%"
+  },
+  {
+    "id": "p4-i-099",
+    "name": "硬い光の連鎖への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-099",
+    "fillRange": {
+      "startTick": 144,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "opening"
+    ],
+    "intent": "最初の1.5拍を無音にし、弱い部品から入り、最後の返しで「硬い光の連鎖」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.552,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.42,
+        "gateTicks": 24
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.299,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.372,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 88,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 276,
+        "soundKey": 18,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 300,
+        "soundKey": 18,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 312,
+        "soundKey": 88,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 348,
+        "soundKey": 18,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 2,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 2.75,
+      "repeatRatio": 0.36363636363636365,
+      "accentRatio": 0.18181818181818182,
+      "thickness": 0.5,
+      "metalRatio": 0.723977175233321,
+      "metalPresence": 0.3677431757016532,
+      "metalSustain": 0.2562084111422347,
+      "intensityIndex": 0.30634469696969696,
+      "metallicIndex": 0.5469416607601576
+    },
+    "scoreReason": "激しさ2：1拍あたり2.8打、連打36%、重なり0.5打/拍。メタリックさ4：相対強度で金属72%、金属の目立ち37%、余韻指標26%"
+  },
+  {
+    "id": "p4-i-100",
+    "name": "鐘の波と裂け目への出だし",
+    "meter": 4,
+    "bars": 1,
+    "purpose": "intro",
+    "derivedFrom": "p4-b-100",
+    "fillRange": {
+      "startTick": 96,
+      "endTick": 384
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "opening"
+    ],
+    "intent": "最初の1拍を無音にし、弱い部品から入り、最後の返しで「鐘の波と裂け目」の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。無音の後に音数とアクセントを増やす出だし",
+    "events": [
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.469,
+        "gateTicks": 48
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 204,
+        "soundKey": 88,
+        "velocity": 0.5166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 228,
+        "soundKey": 18,
+        "velocity": 0.5833333333333334,
+        "gateTicks": 34
+      },
+      {
+        "tick": 252,
+        "soundKey": 18,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.7166666666666667,
+        "gateTicks": 34
+      },
+      {
+        "tick": 324,
+        "soundKey": 18,
+        "velocity": 0.7833333333333333,
+        "gateTicks": 34
+      },
+      {
+        "tick": 372,
+        "soundKey": 18,
+        "velocity": 0.8500000000000001,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      88,
+      18
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0.125,
+      "accentRatio": 0.25,
+      "thickness": 0,
+      "metalRatio": 0.7636045099750317,
+      "metalPresence": 0.4723048442906574,
+      "metalSustain": 0.22863463457278335,
+      "intensityIndex": 0.19249999999999998,
+      "metallicIndex": 0.5959691289593821
+    },
+    "scoreReason": "激しさ1：1拍あたり2.0打、連打13%、重なり0.0打/拍。メタリックさ4：相対強度で金属76%、金属の目立ち47%、余韻指標23%"
   },
   {
     "id": "p4-o-001",
@@ -11424,5 +35714,19938 @@ export const patterns = [
       "metallicIndex": 0.08190396948317505
     },
     "scoreReason": "激しさ2：1拍あたり2.9打、連打0%、重なり0.8打/拍。メタリックさ1：相対強度で金属8%、金属の目立ち10%、余韻指標5%"
+  },
+  {
+    "id": "p4-o-021",
+    "name": "一拍の灯り / 間を残す二打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-021",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「一拍の灯り」の前半と拍の足場を保つ。最初の打撃の後に長い間を取り、最後の裏だけ強く返す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。最初の打撃の後に長い間を取り、最後の裏だけ強く返す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.11699999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      22,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1,
+      "repeatRatio": 0,
+      "accentRatio": 0.375,
+      "thickness": 0.25,
+      "metalRatio": 0.0014631471149783768,
+      "metalPresence": 0.000750146484375,
+      "metalSustain": 0.00010604749407087053,
+      "intensityIndex": 0.12166666666666667,
+      "metallicIndex": 0.0010456819826612379
+    },
+    "scoreReason": "激しさ1：1拍あたり1.0打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-022",
+    "name": "遠い二つの足音 / 刻みを切る返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-022",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「遠い二つの足音」の前半と拍の足場を保つ。前半の連打を一度止めて最後の8分へ戻す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の連打を一度止めて最後の8分へ戻す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.11699999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 25,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      20,
+      22,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.3333333333333333,
+      "thickness": 0.25,
+      "metalRatio": 0.0016791668026055334,
+      "metalPresence": 0.001277490234375,
+      "metalSustain": 0.00018059757777622766,
+      "intensityIndex": 0.15374999999999997,
+      "metallicIndex": 0.0013338784484119776
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-023",
+    "name": "空いた椅子の返事 / 同時打ちの入口",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-023",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「空いた椅子の返事」の前半と拍の足場を保つ。高低の音を交互に並べ、終わりを同時打ちで厚くする。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。高低の音を交互に並べ、終わりを同時打ちで厚くする。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.11699999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 25,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 20,
+        "velocity": 0.84,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      20,
+      22,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.4166666666666667,
+      "thickness": 0.125,
+      "metalRatio": 0.0008803536389870078,
+      "metalPresence": 0.000750146484375,
+      "metalSustain": 0.00010604749407087053,
+      "intensityIndex": 0.15624999999999997,
+      "metallicIndex": 0.0007251455708659849
+    },
+    "scoreReason": "激しさ1：1拍あたり1.5打、連打0%、重なり0.1打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-024",
+    "name": "息継ぎの輪 / 短い交互連打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-024",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「息継ぎの輪」の前半と拍の足場を保つ。短い交互打ちを休符でずらし、最後のアクセントへ集める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。短い交互打ちを休符でずらし、最後のアクセントへ集める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.11699999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.18,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.6433333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 20,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 660,
+        "soundKey": 25,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8966666666666666,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 25,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 71,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      20,
+      22,
+      25,
+      92
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.4375,
+      "thickness": 0.375,
+      "metalRatio": 0.0011328834691449329,
+      "metalPresence": 0.001277490234375,
+      "metalSustain": 0.00018059757777622766,
+      "intensityIndex": 0.20625,
+      "metallicIndex": 0.0010334226150086473
+    },
+    "scoreReason": "激しさ1：1拍あたり2.0打、連打0%、重なり0.4打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-025",
+    "name": "小さな裏窓 / 裏をつなぐ三打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-025",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「小さな裏窓」の前半と拍の足場を保つ。裏拍の三打を間隔を縮めて次の頭へ渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏拍の三打を間隔を縮めて次の頭へ渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      12,
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.38461538461538464,
+      "thickness": 0.375,
+      "metalRatio": 0.04020555644772765,
+      "metalPresence": 0.0339572482638889,
+      "metalSustain": 0.004800503846829531,
+      "intensityIndex": 0.17377403846153844,
+      "metallicIndex": 0.03302030610244131
+    },
+    "scoreReason": "激しさ1：1拍あたり1.6打、連打0%、重なり0.4打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-026",
+    "name": "半拍の散歩 / 二連の折り返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-026",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「半拍の散歩」の前半と拍の足場を保つ。32分の二連を両端に置き、中央に間を取る。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。32分の二連を両端に置き、中央に間を取る。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 588,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 25,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 732,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      12,
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0.25,
+      "metalRatio": 0.0379933167212478,
+      "metalPresence": 0.0339572482638889,
+      "metalSustain": 0.004800503846829531,
+      "intensityIndex": 0.16711309523809523,
+      "metallicIndex": 0.03180357425287739
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.3打/拍。メタリックさ1：相対強度で金属4%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-027",
+    "name": "ひとつ飛ばしの影 / 十六分の階段",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-027",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「ひとつ飛ばしの影」の前半と拍の足場を保つ。16分の階段に二つの休符を残して押し上げる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。16分の階段に二つの休符を残して押し上げる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 25,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 25,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      12,
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2,
+      "repeatRatio": 0,
+      "accentRatio": 0.375,
+      "thickness": 0.5,
+      "metalRatio": 0.03116030956191862,
+      "metalPresence": 0.0339572482638889,
+      "metalSustain": 0.004800503846829531,
+      "intensityIndex": 0.20583333333333334,
+      "metallicIndex": 0.028045420315246344
+    },
+    "scoreReason": "激しさ1：1拍あたり2.0打、連打0%、重なり0.5打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-028",
+    "name": "砂時計の隙間 / 一拍目のフラムと二連",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-028",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "layered",
+      "flam"
+    ],
+    "intent": "「砂時計の隙間」の前半と拍の足場を保つ。中ほどのフラムから最後の32分二連へ広げる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。中ほどのフラムから最後の32分二連へ広げる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 618,
+        "soundKey": 25,
+        "velocity": 0.26,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 25,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      12,
+      20,
+      22,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 1.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.42857142857142855,
+      "thickness": 0.375,
+      "metalRatio": 0.029830612830325978,
+      "metalPresence": 0.02891438802083334,
+      "metalSustain": 0.004087599496992809,
+      "intensityIndex": 0.18723214285714285,
+      "metallicIndex": 0.025694293387478216
+    },
+    "scoreReason": "激しさ1：1拍あたり1.8打、連打0%、重なり0.4打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち3%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-029",
+    "name": "六つの水面 / 四分から細かな返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-029",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「六つの水面」の前半と拍の足場を保つ。四分の歩幅から8分と16分へ縮める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。四分の歩幅から8分と16分へ縮める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.533,
+        "gateTicks": 120
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 25,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 17,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 17,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 1.25,
+      "repeatRatio": 0.1,
+      "accentRatio": 0.6,
+      "thickness": 0.125,
+      "metalRatio": 0.6020857885921671,
+      "metalPresence": 0.3915593804253472,
+      "metalSustain": 0.2544015237403435,
+      "intensityIndex": 0.17445833333333333,
+      "metallicIndex": 0.48677522641434756
+    },
+    "scoreReason": "激しさ1：1拍あたり1.3打、連打10%、重なり0.1打/拍。メタリックさ4：相対強度で金属60%、金属の目立ち39%、余韻指標25%"
+  },
+  {
+    "id": "p4-o-030",
+    "name": "鐘の渡り石 / 最後のフラム",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-030",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered",
+      "flam"
+    ],
+    "intent": "「鐘の渡り石」の前半と拍の足場を保つ。ずれた三打から弱い前打ちと強いフラムへ渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。ずれた三打から弱い前打ちと強いフラムへ渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 17,
+        "velocity": 0.533,
+        "gateTicks": 120
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 600,
+        "soundKey": 17,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 25,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 17,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 738,
+        "soundKey": 17,
+        "velocity": 0.26,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 25,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 3,
+    "center": "mixed",
+    "metrics": {
+      "density": 1.375,
+      "repeatRatio": 0.09090909090909091,
+      "accentRatio": 0.45454545454545453,
+      "thickness": 0.125,
+      "metalRatio": 0.4472843434152444,
+      "metalPresence": 0.3013494194878472,
+      "metalSustain": 0.22643637278723341,
+      "intensityIndex": 0.16733901515151514,
+      "metallicIndex": 0.37037667064282365
+    },
+    "scoreReason": "激しさ1：1拍あたり1.4打、連打9%、重なり0.1打/拍。メタリックさ3：相対強度で金属45%、金属の目立ち30%、余韻指標23%"
+  },
+  {
+    "id": "p4-o-031",
+    "name": "余韻の踊り場 / 拍の中央を空ける",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-031",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「余韻の踊り場」の前半と拍の足場を保つ。2拍目の頭を空け、最後の32分二連を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。2拍目の頭を空け、最後の32分二連を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 144,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.533,
+        "gateTicks": 120
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 480,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 25,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 17,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 17,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 25,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 3,
+    "center": "mixed",
+    "metrics": {
+      "density": 1.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.5384615384615384,
+      "thickness": 0.125,
+      "metalRatio": 0.41948714031990963,
+      "metalPresence": 0.3680438910590278,
+      "metalSustain": 0.24635567740788542,
+      "intensityIndex": 0.17749198717948717,
+      "metallicIndex": 0.37808444610484143
+    },
+    "scoreReason": "激しさ1：1拍あたり1.6打、連打0%、重なり0.1打/拍。メタリックさ3：相対強度で金属42%、金属の目立ち37%、余韻指標25%"
+  },
+  {
+    "id": "p4-o-032",
+    "name": "銀の呼吸線 / 三連からダブルへ",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-032",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered",
+      "triplet-fill"
+    ],
+    "intent": "「銀の呼吸線」の前半と拍の足場を保つ。三連の流れを切り、短い二連で次の頭を呼ぶ。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。三連の流れを切り、短い二連で次の頭を呼ぶ。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.82,
+        "gateTicks": 120
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.533,
+        "gateTicks": 120
+      },
+      {
+        "tick": 312,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 25,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 17,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 17,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 708,
+        "soundKey": 25,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 17,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 71,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      17,
+      25
+    ],
+    "intensity": 1,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 1.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.46153846153846156,
+      "thickness": 0.25,
+      "metalRatio": 0.4326841205303977,
+      "metalPresence": 0.3274079047309028,
+      "metalSustain": 0.1874375035523107,
+      "intensityIndex": 0.1756330128205128,
+      "metallicIndex": 0.3643142632438362
+    },
+    "scoreReason": "激しさ1：1拍あたり1.6打、連打0%、重なり0.3打/拍。メタリックさ3：相対強度で金属43%、金属の目立ち33%、余韻指標19%"
+  },
+  {
+    "id": "p4-o-033",
+    "name": "夜半のベル / 前半の二連と空白",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-033",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「夜半のベル」の前半と拍の足場を保つ。前半の二連を休符で切り、最後の二打で押す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の二連を休符で切り、最後の二打で押す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.2676470588235294,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 480,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 25,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 624,
+        "soundKey": 71,
+        "velocity": 0.3211764705882353,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 18,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      18,
+      25
+    ],
+    "intensity": 2,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 2.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.4,
+      "thickness": 0.5,
+      "metalRatio": 0.8910986621589887,
+      "metalPresence": 0.7671508789062501,
+      "metalSustain": 0.5677616925606793,
+      "intensityIndex": 0.24458333333333335,
+      "metallicIndex": 0.8054137817434207
+    },
+    "scoreReason": "激しさ2：1拍あたり2.5打、連打0%、重なり0.5打/拍。メタリックさ5：相対強度で金属89%、金属の目立ち77%、余韻指標57%"
+  },
+  {
+    "id": "p4-o-034",
+    "name": "鐘と木のあいだ / 途中の三連波",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-034",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered",
+      "triplet-fill"
+    ],
+    "intent": "「鐘と木のあいだ」の前半と拍の足場を保つ。最初の1拍だけ三連を使い、最後は16分の裏へ戻す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。最初の1拍だけ三連を使い、最後は16分の裏へ戻す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 264,
+        "soundKey": 71,
+        "velocity": 0.2676470588235294,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 288,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 432,
+        "soundKey": 71,
+        "velocity": 0.3211764705882353,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 25,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 640,
+        "soundKey": 18,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 25,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      18,
+      25
+    ],
+    "intensity": 2,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 2.5,
+      "repeatRatio": 0.05,
+      "accentRatio": 0.35,
+      "thickness": 0.375,
+      "metalRatio": 0.8123788841080778,
+      "metalPresence": 0.7776353624131946,
+      "metalSustain": 0.523366549658397,
+      "intensityIndex": 0.24275000000000002,
+      "metallicIndex": 0.7586039774321608
+    },
+    "scoreReason": "激しさ2：1拍あたり2.5打、連打5%、重なり0.4打/拍。メタリックさ5：相対強度で金属81%、金属の目立ち78%、余韻指標52%"
+  },
+  {
+    "id": "p4-o-035",
+    "name": "丸い金属の点 / ダブルの受け渡し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-035",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「丸い金属の点」の前半と拍の足場を保つ。高低の二連を受け渡し、最後は8分でまとめる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。高低の二連を受け渡し、最後は8分でまとめる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 192,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 336,
+        "soundKey": 71,
+        "velocity": 0.2676470588235294,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.3211764705882353,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 588,
+        "soundKey": 18,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 25,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 660,
+        "soundKey": 18,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 720,
+        "soundKey": 25,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      18,
+      25
+    ],
+    "intensity": 2,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 2.75,
+      "repeatRatio": 0.18181818181818182,
+      "accentRatio": 0.36363636363636365,
+      "thickness": 0.5,
+      "metalRatio": 0.8515613366165855,
+      "metalPresence": 0.8305969238281251,
+      "metalSustain": 0.6088195296191666,
+      "intensityIndex": 0.29179924242424243,
+      "metallicIndex": 0.8088607417304345
+    },
+    "scoreReason": "激しさ2：1拍あたり2.8打、連打18%、重なり0.5打/拍。メタリックさ5：相対強度で金属85%、金属の目立ち83%、余韻指標61%"
+  },
+  {
+    "id": "p4-o-036",
+    "name": "ひかりの折り返し / 細かい波の切れ目",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-036",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "space",
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「ひかりの折り返し」の前半と拍の足場を保つ。細かな前半から広い間を経て最後の拍を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。細かな前半から広い間を経て最後の拍を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 168,
+        "soundKey": 71,
+        "velocity": 0.2676470588235294,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 240,
+        "soundKey": 25,
+        "velocity": 0.35,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.3211764705882353,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 588,
+        "soundKey": 25,
+        "velocity": 0.6433333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 612,
+        "soundKey": 18,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.9,
+        "gateTicks": 77
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 77
+      },
+      {
+        "tick": 672,
+        "soundKey": 25,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 71,
+        "velocity": 0.35,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.8966666666666666,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 71,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      18,
+      25
+    ],
+    "intensity": 2,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0.16,
+      "accentRatio": 0.4,
+      "thickness": 0.625,
+      "metalRatio": 0.8058849466728283,
+      "metalPresence": 0.8305969238281251,
+      "metalSustain": 0.6295283158900528,
+      "intensityIndex": 0.32452916666666665,
+      "metallicIndex": 0.7868450452020009
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打16%、重なり0.6打/拍。メタリックさ5：相対強度で金属81%、金属の目立ち83%、余韻指標63%"
+  },
+  {
+    "id": "p4-o-037",
+    "name": "まっすぐな靴底 / 低い音の応答",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-037",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「まっすぐな靴底」の前半と拍の足場を保つ。裏の高低の応答を最後の拍で詰める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏の高低の応答を最後の拍で詰める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 79,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.35,
+      "thickness": 0.75,
+      "metalRatio": 0.01654764986663332,
+      "metalPresence": 0.019290161132812504,
+      "metalSustain": 0.0027270317077636723,
+      "intensityIndex": 0.25125,
+      "metallicIndex": 0.015297310522656628
+    },
+    "scoreReason": "激しさ2：1拍あたり2.5打、連打0%、重なり0.8打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-038",
+    "name": "重い扉のノック / 後半の三連返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-038",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "layered",
+      "triplet-fill"
+    ],
+    "intent": "「重い扉のノック」の前半と拍の足場を保つ。前半の裏拍から最後の1拍の三連へ切り替える。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の裏拍から最後の1拍の三連へ切り替える。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 79,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.35,
+      "thickness": 0.75,
+      "metalRatio": 0.012643577258075583,
+      "metalPresence": 0.015628051757812504,
+      "metalSustain": 0.0022093227931431363,
+      "intensityIndex": 0.25125,
+      "metallicIndex": 0.011973781438256793
+    },
+    "scoreReason": "激しさ2：1拍あたり2.5打、連打0%、重なり0.8打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-039",
+    "name": "片足の踏み込み / 三連と休符の橋",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-039",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered",
+      "triplet-fill"
+    ],
+    "intent": "「片足の踏み込み」の前半と拍の足場を保つ。三連の中央を空けた呼び掛けから最後の二打へ進む。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。三連の中央を空けた呼び掛けから最後の二打へ進む。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 168,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 20,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 736,
+        "soundKey": 79,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.3684210526315789,
+      "thickness": 0.5,
+      "metalRatio": 0.013539345445382357,
+      "metalPresence": 0.015628051757812504,
+      "metalSustain": 0.0022093227931431363,
+      "intensityIndex": 0.23236293859649124,
+      "metallicIndex": 0.012466453941275518
+    },
+    "scoreReason": "激しさ2：1拍あたり2.4打、連打0%、重なり0.5打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-040",
+    "name": "角を曲がるロック / 裏から厚い着地",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-040",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「角を曲がるロック」の前半と拍の足場を保つ。裏の位置をずらしながら密度を上げ、同時打ちで渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏の位置をずらしながら密度を上げ、同時打ちで渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.3,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.195,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 636,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 708,
+        "soundKey": 79,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 732,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.84,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.75,
+      "repeatRatio": 0.045454545454545456,
+      "accentRatio": 0.4090909090909091,
+      "thickness": 0.75,
+      "metalRatio": 0.010881899200591592,
+      "metalPresence": 0.015628051757812504,
+      "metalSustain": 0.0022093227931431363,
+      "intensityIndex": 0.2834659090909091,
+      "metallicIndex": 0.011004858506640599
+    },
+    "scoreReason": "激しさ2：1拍あたり2.8打、連打5%、重なり0.8打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち2%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-041",
+    "name": "紙のエイト / 刻みを切る返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-041",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「紙のエイト」の前半と拍の足場を保つ。前半の連打を一度止めて最後の8分へ戻す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の連打を一度止めて最後の8分へ戻す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 79,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 1.125,
+      "metalRatio": 0.014712790116941982,
+      "metalPresence": 0.01479909261067708,
+      "metalSustain": 0.0028066582149929463,
+      "intensityIndex": 0.33125,
+      "metallicIndex": 0.012952761079770158
+    },
+    "scoreReason": "激しさ2：1拍あたり3.5打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち1%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-042",
+    "name": "坂道のポップ / 同時打ちの入口",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-042",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「坂道のポップ」の前半と拍の足場を保つ。高低の音を交互に並べ、終わりを同時打ちで厚くする。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。高低の音を交互に並べ、終わりを同時打ちで厚くする。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 79,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 756,
+        "soundKey": 20,
+        "velocity": 0.84,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.27586206896551724,
+      "thickness": 1.5,
+      "metalRatio": 0.01373842252440443,
+      "metalPresence": 0.01479909261067708,
+      "metalSustain": 0.0028066582149929463,
+      "intensityIndex": 0.36039870689655173,
+      "metallicIndex": 0.012416858903874504
+    },
+    "scoreReason": "激しさ3：1拍あたり3.6打、連打0%、重なり1.5打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち1%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-043",
+    "name": "スネアの寄り道 / 短い交互連打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-043",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「スネアの寄り道」の前半と拍の足場を保つ。短い交互打ちを休符でずらし、最後のアクセントへ集める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。短い交互打ちを休符でずらし、最後のアクセントへ集める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.6433333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 20,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 660,
+        "soundKey": 79,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8966666666666666,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 79,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.26666666666666666,
+      "thickness": 1.125,
+      "metalRatio": 0.013119935663998763,
+      "metalPresence": 0.01479909261067708,
+      "metalSustain": 0.0028066582149929463,
+      "intensityIndex": 0.35104166666666664,
+      "metallicIndex": 0.012076691130651388
+    },
+    "scoreReason": "激しさ2：1拍あたり3.8打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属1%、金属の目立ち1%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-044",
+    "name": "裏の階段 / 間を残す二打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-044",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「裏の階段」の前半と拍の足場を保つ。最初の打撃の後に長い間を取り、最後の裏だけ強く返す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。最初の打撃の後に長い間を取り、最後の裏だけ強く返す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.35,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.22749999999999998,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      22,
+      92
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.25,
+      "repeatRatio": 0.038461538461538464,
+      "accentRatio": 0.2692307692307692,
+      "thickness": 1,
+      "metalRatio": 0.0163978437782472,
+      "metalPresence": 0.01479909261067708,
+      "metalSustain": 0.0028066582149929463,
+      "intensityIndex": 0.3161378205128205,
+      "metallicIndex": 0.013879540593488027
+    },
+    "scoreReason": "激しさ2：1拍あたり3.3打、連打4%、重なり1.0打/拍。メタリックさ1：相対強度で金属2%、金属の目立ち1%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-045",
+    "name": "鉄橋のエイト / 二連の折り返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-045",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「鉄橋のエイト」の前半と拍の足場を保つ。32分の二連を両端に置き、中央に間を取る。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。32分の二連を両端に置き、中央に間を取る。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 588,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 88,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 732,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.2413793103448276,
+      "thickness": 1.25,
+      "metalRatio": 0.41399816076381796,
+      "metalPresence": 0.6103515625,
+      "metalSustain": 0.11818323816571917,
+      "intensityIndex": 0.3452837643678161,
+      "metallicIndex": 0.4285319428949578
+    },
+    "scoreReason": "激しさ2：1拍あたり3.6打、連打0%、重なり1.3打/拍。メタリックさ3：相対強度で金属41%、金属の目立ち61%、余韻指標12%"
+  },
+  {
+    "id": "p4-o-046",
+    "name": "鋼の裏拍 / 十六分の階段",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-046",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「鋼の裏拍」の前半と拍の足場を保つ。16分の階段に二つの休符を残して押し上げる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。16分の階段に二つの休符を残して押し上げる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 88,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.2413793103448276,
+      "thickness": 1.25,
+      "metalRatio": 0.37505966929712403,
+      "metalPresence": 0.5662918090820312,
+      "metalSustain": 0.10739763577779134,
+      "intensityIndex": 0.3452837643678161,
+      "metallicIndex": 0.3922800062046963
+    },
+    "scoreReason": "激しさ2：1拍あたり3.6打、連打0%、重なり1.3打/拍。メタリックさ3：相対強度で金属38%、金属の目立ち57%、余韻指標11%"
+  },
+  {
+    "id": "p4-o-047",
+    "name": "ハットの切り返し / 一拍目のフラムと二連",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-047",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered",
+      "flam"
+    ],
+    "intent": "「ハットの切り返し」の前半と拍の足場を保つ。中ほどのフラムから最後の32分二連へ広げる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。中ほどのフラムから最後の32分二連へ広げる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 618,
+        "soundKey": 88,
+        "velocity": 0.26,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 88,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 3.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.25925925925925924,
+      "thickness": 1,
+      "metalRatio": 0.38798891395656915,
+      "metalPresence": 0.5662918090820312,
+      "metalSustain": 0.10284071876889182,
+      "intensityIndex": 0.3172800925925926,
+      "metallicIndex": 0.39870755321605617
+    },
+    "scoreReason": "激しさ2：1拍あたり3.4打、連打0%、重なり1.0打/拍。メタリックさ3：相対強度で金属39%、金属の目立ち57%、余韻指標10%"
+  },
+  {
+    "id": "p4-o-048",
+    "name": "走る留め金 / 裏をつなぐ三打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-048",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「走る留め金」の前半と拍の足場を保つ。裏拍の三打を間隔を縮めて次の頭へ渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏拍の三打を間隔を縮めて次の頭へ渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 408,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 3.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2692307692307692,
+      "thickness": 0.875,
+      "metalRatio": 0.3925508877509851,
+      "metalPresence": 0.5662918090820312,
+      "metalSustain": 0.10284071876889182,
+      "intensityIndex": 0.30338141025641024,
+      "metallicIndex": 0.40121663880298497
+    },
+    "scoreReason": "激しさ2：1拍あたり3.3打、連打0%、重なり0.9打/拍。メタリックさ3：相対強度で金属39%、金属の目立ち57%、余韻指標10%"
+  },
+  {
+    "id": "p4-o-049",
+    "name": "四つの角と裏 / 最後のフラム",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-049",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered",
+      "flam"
+    ],
+    "intent": "「四つの角と裏」の前半と拍の足場を保つ。ずれた三打から弱い前打ちと強いフラムへ渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。ずれた三打から弱い前打ちと強いフラムへ渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 9,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 738,
+        "soundKey": 9,
+        "velocity": 0.26,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0.034482758620689655,
+      "accentRatio": 0.2413793103448276,
+      "thickness": 1,
+      "metalRatio": 0.15859085919599616,
+      "metalPresence": 0.21862258572048607,
+      "metalSustain": 0.0385371356540256,
+      "intensityIndex": 0.3398239942528736,
+      "metallicIndex": 0.15859231862204756
+    },
+    "scoreReason": "激しさ2：1拍あたり3.6打、連打3%、重なり1.0打/拍。メタリックさ2：相対強度で金属16%、金属の目立ち22%、余韻指標4%"
+  },
+  {
+    "id": "p4-o-050",
+    "name": "半開きのフロア / 拍の中央を空ける",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-050",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「半開きのフロア」の前半と拍の足場を保つ。2拍目の頭を空け、最後の32分二連を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。2拍目の頭を空け、最後の32分二連を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 504,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 9,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 9,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 3.75,
+      "repeatRatio": 0.03333333333333333,
+      "accentRatio": 0.3,
+      "thickness": 1.125,
+      "metalRatio": 0.14278233127244405,
+      "metalPresence": 0.21862258572048607,
+      "metalSustain": 0.0385371356540256,
+      "intensityIndex": 0.360375,
+      "metallicIndex": 0.1498976282640939
+    },
+    "scoreReason": "激しさ3：1拍あたり3.8打、連打3%、重なり1.1打/拍。メタリックさ2：相対強度で金属14%、金属の目立ち22%、余韻指標4%"
+  },
+  {
+    "id": "p4-o-051",
+    "name": "踊る空白 / 三連からダブルへ",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-051",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered",
+      "triplet-fill"
+    ],
+    "intent": "「踊る空白」の前半と拍の足場を保つ。三連の流れを切り、短い二連で次の頭を呼ぶ。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。三連の流れを切り、短い二連で次の頭を呼ぶ。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 9,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 9,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 708,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 3.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 1.25,
+      "metalRatio": 0.15548129440602973,
+      "metalPresence": 0.21862258572048607,
+      "metalSustain": 0.0385371356540256,
+      "intensityIndex": 0.3406547619047619,
+      "metallicIndex": 0.15688205798756602
+    },
+    "scoreReason": "激しさ2：1拍あたり3.5打、連打0%、重なり1.3打/拍。メタリックさ2：相対強度で金属16%、金属の目立ち22%、余韻指標4%"
+  },
+  {
+    "id": "p4-o-052",
+    "name": "裏口の二連 / 四分から細かな返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-052",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「裏口の二連」の前半と拍の足場を保つ。四分の歩幅から8分と16分へ縮める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。四分の歩幅から8分と16分へ縮める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 9,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 2,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 2,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 9,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 14,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 2,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 14,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 2,
+        "velocity": 0.88,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 9,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      2,
+      9,
+      14,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 3.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.3,
+      "thickness": 1.875,
+      "metalRatio": 0.16198120058644305,
+      "metalPresence": 0.2370673692491319,
+      "metalSustain": 0.04305232436568648,
+      "intensityIndex": 0.389375,
+      "metallicIndex": 0.1666677197521362
+    },
+    "scoreReason": "激しさ3：1拍あたり3.8打、連打0%、重なり1.9打/拍。メタリックさ2：相対強度で金属16%、金属の目立ち24%、余韻指標4%"
+  },
+  {
+    "id": "p4-o-053",
+    "name": "砂のファンク / 途中の三連波",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-053",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "two-bar",
+      "build-up",
+      "layered",
+      "triplet-fill"
+    ],
+    "intent": "「砂のファンク」の前半と拍の足場を保つ。最初の1拍だけ三連を使い、最後は16分の裏へ戻す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。最初の1拍だけ三連を使い、最後は16分の裏へ戻す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.24,
+        "gateTicks": 14
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.3,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 79,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      5,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 4,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 5.625,
+      "repeatRatio": 0.5333333333333333,
+      "accentRatio": 0.17777777777777778,
+      "thickness": 1.625,
+      "metalRatio": 0.0299062613653695,
+      "metalPresence": 0.02083333333333334,
+      "metalSustain": 0.00733167860243056,
+      "intensityIndex": 0.5974236111111111,
+      "metallicIndex": 0.02379819554131781
+    },
+    "scoreReason": "激しさ4：1拍あたり5.6打、連打53%、重なり1.6打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-054",
+    "name": "短いゴーストの鎖 / ダブルの受け渡し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-054",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「短いゴーストの鎖」の前半と拍の足場を保つ。高低の二連を受け渡し、最後は8分でまとめる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。高低の二連を受け渡し、最後は8分でまとめる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.24,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.3,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 588,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 660,
+        "soundKey": 79,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      5,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 4,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 5.75,
+      "repeatRatio": 0.5,
+      "accentRatio": 0.17391304347826086,
+      "thickness": 1.875,
+      "metalRatio": 0.028557771590406653,
+      "metalPresence": 0.02083333333333334,
+      "metalSustain": 0.00733167860243056,
+      "intensityIndex": 0.6117663043478261,
+      "metallicIndex": 0.023056526165088246
+    },
+    "scoreReason": "激しさ4：1拍あたり5.8打、連打50%、重なり1.9打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-055",
+    "name": "十六分のすれ違い / 細かい波の切れ目",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-055",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「十六分のすれ違い」の前半と拍の足場を保つ。細かな前半から広い間を経て最後の拍を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。細かな前半から広い間を経て最後の拍を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.24,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.3,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 588,
+        "soundKey": 22,
+        "velocity": 0.6433333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 612,
+        "soundKey": 20,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 79,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8966666666666666,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 79,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      5,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 4,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 5.75,
+      "repeatRatio": 0.5,
+      "accentRatio": 0.17391304347826086,
+      "thickness": 2,
+      "metalRatio": 0.028812490476246292,
+      "metalPresence": 0.02083333333333334,
+      "metalSustain": 0.00733167860243056,
+      "intensityIndex": 0.6175996376811594,
+      "metallicIndex": 0.023196621552300047
+    },
+    "scoreReason": "激しさ4：1拍あたり5.8打、連打50%、重なり2.0打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-056",
+    "name": "休符を縫うキック / 前半の二連と空白",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-056",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "ghost",
+      "roll",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「休符を縫うキック」の前半と拍の足場を保つ。前半の二連を休符で切り、最後の二打で押す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の二連を休符で切り、最後の二打で押す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.24,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.3,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 92,
+        "velocity": 0.4,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 92,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 756,
+        "soundKey": 79,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      5,
+      79,
+      20,
+      22,
+      92
+    ],
+    "intensity": 4,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 5.75,
+      "repeatRatio": 0.5217391304347826,
+      "accentRatio": 0.1956521739130435,
+      "thickness": 2,
+      "metalRatio": 0.028578598970067853,
+      "metalPresence": 0.02083333333333334,
+      "metalSustain": 0.00733167860243056,
+      "intensityIndex": 0.6236865942028986,
+      "metallicIndex": 0.023067981223901905
+    },
+    "scoreReason": "激しさ4：1拍あたり5.8打、連打52%、重なり2.0打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-057",
+    "name": "切り抜いた四角 / 後半の三連返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-057",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "two-bar",
+      "build-up",
+      "layered",
+      "triplet-fill"
+    ],
+    "intent": "「切り抜いた四角」の前半と拍の足場を保つ。前半の裏拍から最後の1拍の三連へ切り替える。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の裏拍から最後の1拍の三連へ切り替える。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 80,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 704,
+        "soundKey": 80,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 4.75,
+      "repeatRatio": 0.42105263157894735,
+      "accentRatio": 0.18421052631578946,
+      "thickness": 1.375,
+      "metalRatio": 0.19023549136598605,
+      "metalPresence": 0.16137152777777783,
+      "metalSustain": 0.04867710900685142,
+      "intensityIndex": 0.5027521929824561,
+      "metallicIndex": 0.1603425449356534
+    },
+    "scoreReason": "激しさ3：1拍あたり4.8打、連打42%、重なり1.4打/拍。メタリックさ2：相対強度で金属19%、金属の目立ち16%、余韻指標5%"
+  },
+  {
+    "id": "p4-o-058",
+    "name": "折れ線のブレイク / 三連と休符の橋",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-058",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "two-bar",
+      "build-up",
+      "layered",
+      "triplet-fill"
+    ],
+    "intent": "「折れ線のブレイク」の前半と拍の足場を保つ。三連の中央を空けた呼び掛けから最後の二打へ進む。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。三連の中央を空けた呼び掛けから最後の二打へ進む。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 408,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 552,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 80,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 20,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 80,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 4.875,
+      "repeatRatio": 0.48717948717948717,
+      "accentRatio": 0.1794871794871795,
+      "thickness": 1.25,
+      "metalRatio": 0.20951554569262676,
+      "metalPresence": 0.16137152777777783,
+      "metalSustain": 0.05273353475742237,
+      "intensityIndex": 0.5174118589743589,
+      "metallicIndex": 0.17155503867789143
+    },
+    "scoreReason": "激しさ3：1拍あたり4.9打、連打49%、重なり1.3打/拍。メタリックさ2：相対強度で金属21%、金属の目立ち16%、余韻指標5%"
+  },
+  {
+    "id": "p4-o-059",
+    "name": "拍をまたぐ刃 / 裏から厚い着地",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-059",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「拍をまたぐ刃」の前半と拍の足場を保つ。裏の位置をずらしながら密度を上げ、同時打ちで渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏の位置をずらしながら密度を上げ、同時打ちで渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 168,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 80,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 636,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 708,
+        "soundKey": 80,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 732,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 756,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.84,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12,
+      20,
+      22
+    ],
+    "intensity": 4,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 5.375,
+      "repeatRatio": 0.4883720930232558,
+      "accentRatio": 0.20930232558139536,
+      "thickness": 1.625,
+      "metalRatio": 0.17449150613161957,
+      "metalPresence": 0.16137152777777783,
+      "metalSustain": 0.05273353475742237,
+      "intensityIndex": 0.5743580426356588,
+      "metallicIndex": 0.15229181691933746
+    },
+    "scoreReason": "激しさ4：1拍あたり5.4打、連打49%、重なり1.6打/拍。メタリックさ2：相対強度で金属17%、金属の目立ち16%、余韻指標5%"
+  },
+  {
+    "id": "p4-o-060",
+    "name": "途切れた輪郭 / 低い音の応答",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-060",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "roll",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「途切れた輪郭」の前半と拍の足場を保つ。裏の高低の応答を最後の拍で詰める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏の高低の応答を最後の拍で詰める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 360,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 80,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.338,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 80,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.52,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      80,
+      12,
+      20,
+      22
+    ],
+    "intensity": 4,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 4.875,
+      "repeatRatio": 0.4358974358974359,
+      "accentRatio": 0.20512820512820512,
+      "thickness": 1.75,
+      "metalRatio": 0.19500295257778405,
+      "metalPresence": 0.16137152777777783,
+      "metalSustain": 0.05152872640619831,
+      "intensityIndex": 0.5340785256410256,
+      "metallicIndex": 0.16339239121204432
+    },
+    "scoreReason": "激しさ4：1拍あたり4.9打、連打44%、重なり1.8打/拍。メタリックさ2：相対強度で金属20%、金属の目立ち16%、余韻指標5%"
+  },
+  {
+    "id": "p4-o-061",
+    "name": "深い底の反射 / 同時打ちの入口",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-061",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「深い底の反射」の前半と拍の足場を保つ。高低の音を交互に並べ、終わりを同時打ちで厚くする。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。高低の音を交互に並べ、終わりを同時打ちで厚くする。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 6,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 6,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 756,
+        "soundKey": 20,
+        "velocity": 0.84,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      6,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 1.125,
+      "metalRatio": 0.034886954251893865,
+      "metalPresence": 0.036096679687499994,
+      "metalSustain": 0.006047875540597099,
+      "intensityIndex": 0.295,
+      "metallicIndex": 0.030924010075881192
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち4%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-062",
+    "name": "半分の歩幅 / 短い交互連打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-062",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「半分の歩幅」の前半と拍の足場を保つ。短い交互打ちを休符でずらし、最後のアクセントへ集める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。短い交互打ちを休符でずらし、最後のアクセントへ集める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 6,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.6433333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 20,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 660,
+        "soundKey": 6,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8966666666666666,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 6,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      6,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.125,
+      "repeatRatio": 0,
+      "accentRatio": 0.24,
+      "thickness": 0.875,
+      "metalRatio": 0.03305086225786073,
+      "metalPresence": 0.036096679687499994,
+      "metalSustain": 0.006047875540597099,
+      "intensityIndex": 0.2913958333333333,
+      "metallicIndex": 0.02991415947916297
+    },
+    "scoreReason": "激しさ2：1拍あたり3.1打、連打0%、重なり0.9打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち4%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-063",
+    "name": "遅い鼓動の裏 / 間を残す二打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-063",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「遅い鼓動の裏」の前半と拍の足場を保つ。最初の打撃の後に長い間を取り、最後の裏だけ強く返す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。最初の打撃の後に長い間を取り、最後の裏だけ強く返す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 408,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 6,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      6,
+      13,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.19047619047619047,
+      "thickness": 0.5,
+      "metalRatio": 0.050328963532822645,
+      "metalPresence": 0.0360966796875,
+      "metalSustain": 0.006362849644252233,
+      "intensityIndex": 0.23269345238095238,
+      "metallicIndex": 0.03946436129594029
+    },
+    "scoreReason": "激しさ2：1拍あたり2.6打、連打0%、重なり0.5打/拍。メタリックさ1：相対強度で金属5%、金属の目立ち4%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-064",
+    "name": "大きなポケット / 刻みを切る返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-064",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "half-time",
+      "space",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「大きなポケット」の前半と拍の足場を保つ。前半の連打を一度止めて最後の8分へ戻す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の連打を一度止めて最後の8分へ戻す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 6,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 6,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.36,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.23399999999999999,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 6,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 71,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      6,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 2.875,
+      "repeatRatio": 0.043478260869565216,
+      "accentRatio": 0.2608695652173913,
+      "thickness": 0.75,
+      "metalRatio": 0.03079364336993596,
+      "metalPresence": 0.03305126953125,
+      "metalSustain": 0.005302374703543527,
+      "intensityIndex": 0.2773505434782608,
+      "metallicIndex": 0.02764724091837131
+    },
+    "scoreReason": "激しさ2：1拍あたり2.9打、連打4%、重なり0.8打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち3%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-065",
+    "name": "曲がる街灯 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-065",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「曲がる街灯」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はスウィングを継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 5,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 5,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 1.5,
+      "metalRatio": 0.07567316833985191,
+      "metalPresence": 0.08138020833333336,
+      "metalSustain": 0.015757765088762556,
+      "intensityIndex": 0.34875,
+      "metallicIndex": 0.06839796985023294
+    },
+    "scoreReason": "激しさ2：1拍あたり3.5打、連打0%、重なり1.5打/拍。メタリックさ1：相対強度で金属8%、金属の目立ち8%、余韻指標2%"
+  },
+  {
+    "id": "p4-o-066",
+    "name": "裏三連の坂 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-066",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "roll",
+      "layered"
+    ],
+    "intent": "「裏三連の坂」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はスウィングを継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 608,
+        "soundKey": 5,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 688,
+        "soundKey": 5,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 1.5,
+      "metalRatio": 0.06657017362062859,
+      "metalPresence": 0.07550557454427086,
+      "metalSustain": 0.01431968477037218,
+      "intensityIndex": 0.34875,
+      "metallicIndex": 0.06141322057018281
+    },
+    "scoreReason": "激しさ2：1拍あたり3.5打、連打0%、重なり1.5打/拍。メタリックさ1：相対強度で金属7%、金属の目立ち8%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-067",
+    "name": "揺れるリムの影 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-067",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「揺れるリムの影」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はスウィングを継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 5,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 608,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 5,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.25925925925925924,
+      "thickness": 1.25,
+      "metalRatio": 0.07038744018039544,
+      "metalPresence": 0.07550557454427086,
+      "metalSustain": 0.01431968477037218,
+      "intensityIndex": 0.32894675925925926,
+      "metallicIndex": 0.06351271717805458
+    },
+    "scoreReason": "激しさ2：1拍あたり3.4打、連打0%、重なり1.3打/拍。メタリックさ1：相対強度で金属7%、金属の目立ち8%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-068",
+    "name": "三連裏の会釈 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-068",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "swing",
+    "tags": [
+      "syncopated",
+      "two-bar",
+      "build-up",
+      "layered"
+    ],
+    "intent": "「三連裏の会釈」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はスウィングを継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 5,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 592,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 13,
+        "velocity": 0.5,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 5,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 13,
+        "velocity": 0.325,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 71,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      13,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 1.5,
+      "metalRatio": 0.06559949228880688,
+      "metalPresence": 0.07550557454427084,
+      "metalSustain": 0.01431968477037218,
+      "intensityIndex": 0.35232142857142856,
+      "metallicIndex": 0.060879345837680864
+    },
+    "scoreReason": "激しさ2：1拍あたり3.5打、連打0%、重なり1.5打/拍。メタリックさ1：相対強度で金属7%、金属の目立ち8%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-069",
+    "name": "車輪のシャッフル / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-069",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「車輪のシャッフル」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はシャッフルを継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 352,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 80,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 80,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.2413793103448276,
+      "thickness": 1.5,
+      "metalRatio": 0.4138683401998386,
+      "metalPresence": 0.6103515625,
+      "metalSustain": 0.11818323816571917,
+      "intensityIndex": 0.35695043103448276,
+      "metallicIndex": 0.42846054158476915
+    },
+    "scoreReason": "激しさ2：1拍あたり3.6打、連打0%、重なり1.5打/拍。メタリックさ3：相対強度で金属41%、金属の目立ち61%、余韻指標12%"
+  },
+  {
+    "id": "p4-o-070",
+    "name": "銀の三連裏 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-070",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「銀の三連裏」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はシャッフルを継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 352,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 80,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 688,
+        "soundKey": 80,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.2413793103448276,
+      "thickness": 1.375,
+      "metalRatio": 0.4138683401998386,
+      "metalPresence": 0.6103515625,
+      "metalSustain": 0.11818323816571917,
+      "intensityIndex": 0.3511170977011494,
+      "metallicIndex": 0.42846054158476915
+    },
+    "scoreReason": "激しさ2：1拍あたり3.6打、連打0%、重なり1.4打/拍。メタリックさ3：相対強度で金属41%、金属の目立ち61%、余韻指標12%"
+  },
+  {
+    "id": "p4-o-071",
+    "name": "跳ねた低音の道 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-071",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「跳ねた低音の道」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はシャッフルを継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 352,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 80,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 704,
+        "soundKey": 80,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 3.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.25925925925925924,
+      "thickness": 1.125,
+      "metalRatio": 0.4081911054489704,
+      "metalPresence": 0.5662918090820312,
+      "metalSustain": 0.10739763577779134,
+      "intensityIndex": 0.3231134259259259,
+      "metallicIndex": 0.4105022960882118
+    },
+    "scoreReason": "激しさ2：1拍あたり3.4打、連打0%、重なり1.1打/拍。メタリックさ3：相対強度で金属41%、金属の目立ち57%、余韻指標11%"
+  },
+  {
+    "id": "p4-o-072",
+    "name": "ライドの追い風 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-072",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "shuffle",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「ライドの追い風」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はシャッフルを継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 64,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 80,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 80,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 592,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 17,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 80,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 736,
+        "soundKey": 17,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      80,
+      17,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.27586206896551724,
+      "thickness": 1.5,
+      "metalRatio": 0.37082177672529837,
+      "metalPresence": 0.5662918090820312,
+      "metalSustain": 0.10739763577779134,
+      "intensityIndex": 0.36039870689655173,
+      "metallicIndex": 0.3899491652901922
+    },
+    "scoreReason": "激しさ3：1拍あたり3.6打、連打0%、重なり1.5打/拍。メタリックさ3：相対強度で金属37%、金属の目立ち57%、余韻指標11%"
+  },
+  {
+    "id": "p4-o-073",
+    "name": "三粒の砂 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-073",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「三粒の砂」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 32,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 512,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 5,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 5,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      20,
+      22,
+      92
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.1891891891891892,
+      "thickness": 1.625,
+      "metalRatio": 0.0324599637902161,
+      "metalPresence": 0.022968750000000003,
+      "metalSustain": 0.006928436279296875,
+      "intensityIndex": 0.43006475225225216,
+      "metallicIndex": 0.02578287052651339
+    },
+    "scoreReason": "激しさ3：1拍あたり4.6打、連打0%、重なり1.6打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-074",
+    "name": "皮と三つの波 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-074",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「皮と三つの波」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 32,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 160,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 5,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 688,
+        "soundKey": 5,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 704,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      20,
+      22,
+      92
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4.625,
+      "repeatRatio": 0,
+      "accentRatio": 0.1891891891891892,
+      "thickness": 1.5,
+      "metalRatio": 0.030207807199055622,
+      "metalPresence": 0.022968750000000003,
+      "metalSustain": 0.006756950378417969,
+      "intensityIndex": 0.42423141891891886,
+      "metallicIndex": 0.02451846151624329
+    },
+    "scoreReason": "激しさ3：1拍あたり4.6打、連打0%、重なり1.5打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-075",
+    "name": "三連の遠回り / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-075",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「三連の遠回り」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 32,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 448,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 5,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 5,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 736,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      20,
+      22,
+      92
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4.375,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 1.625,
+      "metalRatio": 0.03044116053598293,
+      "metalPresence": 0.022968750000000003,
+      "metalSustain": 0.006351066589355469,
+      "intensityIndex": 0.4130208333333333,
+      "metallicIndex": 0.024585923283193933
+    },
+    "scoreReason": "激しさ3：1拍あたり4.4打、連打0%、重なり1.6打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-076",
+    "name": "三拍粒の交差 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-076",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「三拍粒の交差」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 0,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 32,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 96,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 128,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 71,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 5,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 480,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 71,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 544,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 5,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 592,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 71,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 5,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 92,
+        "velocity": 0.42,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 71,
+        "velocity": 0.88,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 92,
+        "velocity": 0.273,
+        "gateTicks": 19
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      71,
+      5,
+      20,
+      22,
+      92
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4.875,
+      "repeatRatio": 0,
+      "accentRatio": 0.20512820512820512,
+      "thickness": 1.75,
+      "metalRatio": 0.02887330140368872,
+      "metalPresence": 0.022968750000000003,
+      "metalSustain": 0.006928436279296875,
+      "intensityIndex": 0.4556169871794871,
+      "metallicIndex": 0.02381020621392333
+    },
+    "scoreReason": "激しさ3：1拍あたり4.9打、連打0%、重なり1.8打/拍。メタリックさ1：相対強度で金属3%、金属の目立ち2%、余韻指標1%"
+  },
+  {
+    "id": "p4-o-077",
+    "name": "三連の鉄骨 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-077",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「三連の鉄骨」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.5,
+        "gateTicks": 34
+      },
+      {
+        "tick": 32,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.52,
+        "gateTicks": 29
+      },
+      {
+        "tick": 128,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 86,
+        "velocity": 0.3823529411764706,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.45882352941176474,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 20,
+        "velocity": 0.45,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.52,
+        "gateTicks": 29
+      },
+      {
+        "tick": 320,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.5,
+        "gateTicks": 34
+      },
+      {
+        "tick": 416,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.52,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 512,
+        "soundKey": 20,
+        "velocity": 0.54,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 86,
+        "velocity": 0.3823529411764706,
+        "gateTicks": 34
+      },
+      {
+        "tick": 544,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.45882352941176474,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 15,
+        "velocity": 0.5850000000000001,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 88,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 15,
+        "velocity": 0.9,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 5,
+      "repeatRatio": 0,
+      "accentRatio": 0.375,
+      "thickness": 2,
+      "metalRatio": 0.6799231855166842,
+      "metalPresence": 0.8789062500000001,
+      "metalSustain": 0.2585567746843611,
+      "intensityIndex": 0.49333333333333335,
+      "metallicIndex": 0.6764131432368305
+    },
+    "scoreReason": "激しさ3：1拍あたり5.0打、連打0%、重なり2.0打/拍。メタリックさ5：相対強度で金属68%、金属の目立ち88%、余韻指標26%"
+  },
+  {
+    "id": "p4-o-078",
+    "name": "三つ刻みの歯車 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-078",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「三つ刻みの歯車」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 32,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 160,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 256,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 320,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 416,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 448,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 688,
+        "soundKey": 88,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 704,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 4.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.21052631578947367,
+      "thickness": 1.75,
+      "metalRatio": 0.43961905253365313,
+      "metalPresence": 0.5316840277777777,
+      "metalSustain": 0.14701543030915432,
+      "intensityIndex": 0.44709429824561403,
+      "metallicIndex": 0.42334800177321563
+    },
+    "scoreReason": "激しさ3：1拍あたり4.8打、連打0%、重なり1.8打/拍。メタリックさ3：相対強度で金属44%、金属の目立ち53%、余韻指標15%"
+  },
+  {
+    "id": "p4-o-079",
+    "name": "タムの三連橋 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-079",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「タムの三連橋」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 32,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 128,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 128,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 160,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 224,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 256,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 320,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 416,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 544,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 608,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 640,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 704,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 88,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 5,
+      "repeatRatio": 0,
+      "accentRatio": 0.2,
+      "thickness": 2.125,
+      "metalRatio": 0.44000323639869726,
+      "metalPresence": 0.5316840277777777,
+      "metalSustain": 0.15641088838930478,
+      "intensityIndex": 0.4816666666666667,
+      "metallicIndex": 0.4249686216110125
+    },
+    "scoreReason": "激しさ3：1拍あたり5.0打、連打0%、重なり2.1打/拍。メタリックさ3：相対強度で金属44%、金属の目立ち53%、余韻指標16%"
+  },
+  {
+    "id": "p4-o-080",
+    "name": "三粒の加速線 / 跳ねる返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-080",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "triplet",
+    "tags": [
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「三粒の加速線」の前半と拍の足場を保つ。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調は三連基調を継承。全体の三連の刻みを保ち、高低の応答と休符から最後の三連裏を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 32,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 64,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 128,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 160,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 224,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 256,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 320,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 320,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 352,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 352,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 416,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 448,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 448,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 512,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 544,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 592,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 704,
+        "soundKey": 88,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 736,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 4.75,
+      "repeatRatio": 0,
+      "accentRatio": 0.21052631578947367,
+      "thickness": 1.625,
+      "metalRatio": 0.43961905253365313,
+      "metalPresence": 0.5316840277777777,
+      "metalSustain": 0.14701543030915432,
+      "intensityIndex": 0.44126096491228073,
+      "metallicIndex": 0.42334800177321563
+    },
+    "scoreReason": "激しさ3：1拍あたり4.8打、連打0%、重なり1.6打/拍。メタリックさ3：相対強度で金属44%、金属の目立ち53%、余韻指標15%"
+  },
+  {
+    "id": "p4-o-081",
+    "name": "木陰の呼び声 / 短い交互連打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-081",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「木陰の呼び声」の前半と拍の足場を保つ。短い交互打ちを休符でずらし、最後のアクセントへ集める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。短い交互打ちを休符でずらし、最後のアクセントへ集める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 99,
+        "velocity": 0.48,
+        "gateTicks": 38
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 96,
+        "velocity": 0.62,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 360,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 99,
+        "velocity": 0.6,
+        "gateTicks": 38
+      },
+      {
+        "tick": 528,
+        "soundKey": 96,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 99,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 96,
+        "velocity": 0.6433333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 79,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 660,
+        "soundKey": 99,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 96,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 79,
+        "velocity": 0.8966666666666666,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 99,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      99
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 3.5,
+      "repeatRatio": 0,
+      "accentRatio": 0.2857142857142857,
+      "thickness": 0.875,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.3231547619047619,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.5打、連打0%、重なり0.9打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-082",
+    "name": "高低の井戸端 / 間を残す二打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-082",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「高低の井戸端」の前半と拍の足場を保つ。最初の打撃の後に長い間を取り、最後の裏だけ強く返す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。最初の打撃の後に長い間を取り、最後の裏だけ強く返す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 99,
+        "velocity": 0.48,
+        "gateTicks": 38
+      },
+      {
+        "tick": 168,
+        "soundKey": 96,
+        "velocity": 0.62,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 99,
+        "velocity": 0.6,
+        "gateTicks": 38
+      },
+      {
+        "tick": 432,
+        "soundKey": 96,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 99,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 96,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      99
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 3,
+      "repeatRatio": 0,
+      "accentRatio": 0.25,
+      "thickness": 0.625,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.2716666666666666,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.0打、連打0%、重なり0.6打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-083",
+    "name": "皮と木の回廊 / 刻みを切る返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-083",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「皮と木の回廊」の前半と拍の足場を保つ。前半の連打を一度止めて最後の8分へ戻す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の連打を一度止めて最後の8分へ戻す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 99,
+        "velocity": 0.48,
+        "gateTicks": 38
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 96,
+        "velocity": 0.62,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 360,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 99,
+        "velocity": 0.6,
+        "gateTicks": 38
+      },
+      {
+        "tick": 552,
+        "soundKey": 96,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 99,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 96,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 79,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 99,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 96,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      99
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 3.25,
+      "repeatRatio": 0,
+      "accentRatio": 0.2692307692307692,
+      "thickness": 1.125,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.3150480769230769,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.3打、連打0%、重なり1.1打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-084",
+    "name": "低い返事の踊り / 同時打ちの入口",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-084",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "syncopated",
+      "layered",
+      "two-bar",
+      "build-up",
+      "roll"
+    ],
+    "intent": "「低い返事の踊り」の前半と拍の足場を保つ。高低の音を交互に並べ、終わりを同時打ちで厚くする。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。高低の音を交互に並べ、終わりを同時打ちで厚くする。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 99,
+        "velocity": 0.48,
+        "gateTicks": 38
+      },
+      {
+        "tick": 336,
+        "soundKey": 96,
+        "velocity": 0.62,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 99,
+        "velocity": 0.6,
+        "gateTicks": 38
+      },
+      {
+        "tick": 456,
+        "soundKey": 96,
+        "velocity": 0.45,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 28,
+        "velocity": 0.29250000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 99,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 28,
+        "velocity": 0.45,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 96,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 99,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 756,
+        "soundKey": 96,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 97,
+        "velocity": 0.84,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      28,
+      96,
+      97,
+      99
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0.034482758620689655,
+      "accentRatio": 0.3103448275862069,
+      "thickness": 1.125,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.3525538793103448,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.6打、連打3%、重なり1.1打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-085",
+    "name": "二枚の皮の行進 / 一拍目のフラムと二連",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-085",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up",
+      "flam"
+    ],
+    "intent": "「二枚の皮の行進」の前半と拍の足場を保つ。中ほどのフラムから最後の32分二連へ広げる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。中ほどのフラムから最後の32分二連へ広げる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 618,
+        "soundKey": 79,
+        "velocity": 0.26,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 79,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4,
+      "repeatRatio": 0,
+      "accentRatio": 0.28125,
+      "thickness": 1.5,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.388125,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ3：1拍あたり4.0打、連打0%、重なり1.5打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-086",
+    "name": "低いタムの渦 / 裏をつなぐ三打",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-086",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「低いタムの渦」の前半と拍の足場を保つ。裏拍の三打を間隔を縮めて次の頭へ渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏拍の三打を間隔を縮めて次の頭へ渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 432,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 2,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.625,
+      "repeatRatio": 0.06896551724137931,
+      "accentRatio": 0.2413793103448276,
+      "thickness": 1.125,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.351864224137931,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ2：1拍あたり3.6打、連打7%、重なり1.1打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-087",
+    "name": "皮の壁の切れ目 / 二連の折り返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-087",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「皮の壁の切れ目」の前半と拍の足場を保つ。32分の二連を両端に置き、中央に間を取る。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。32分の二連を両端に置き、中央に間を取る。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 192,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 216,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 588,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 79,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 732,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 3.75,
+      "repeatRatio": 0.06666666666666667,
+      "accentRatio": 0.26666666666666666,
+      "thickness": 1.125,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.36304166666666665,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ3：1拍あたり3.8打、連打7%、重なり1.1打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-088",
+    "name": "タムの折り返し坂 / 十六分の階段",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-088",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「タムの折り返し坂」の前半と拍の足場を保つ。16分の階段に二つの休符を残して押し上げる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。16分の階段に二つの休符を残して押し上げる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 20,
+        "velocity": 0.6,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 101,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 20,
+        "velocity": 0.72,
+        "gateTicks": 29
+      },
+      {
+        "tick": 456,
+        "soundKey": 101,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 79,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 79,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 101,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.58,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 79,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.377,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 101,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      101,
+      79,
+      20,
+      22
+    ],
+    "intensity": 3,
+    "metallic": 1,
+    "center": "drums",
+    "metrics": {
+      "density": 4,
+      "repeatRatio": 0.125,
+      "accentRatio": 0.25,
+      "thickness": 1.375,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.40166666666666667,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ3：1拍あたり4.0打、連打13%、重なり1.4打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-089",
+    "name": "土煙の連打 / 三連からダブルへ",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-089",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "two-bar",
+      "build-up",
+      "triplet-fill"
+    ],
+    "intent": "「土煙の連打」の前半と拍の足場を保つ。三連の流れを切り、短い二連で次の頭を呼ぶ。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。三連の流れを切り、短い二連で次の頭を呼ぶ。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 89,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 608,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 89,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 708,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      20,
+      22,
+      82,
+      84
+    ],
+    "intensity": 5,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 10,
+      "repeatRatio": 0.4875,
+      "accentRatio": 0.125,
+      "thickness": 5.875,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.8202499999999999,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ5：1拍あたり10.0打、連打49%、重なり5.9打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-090",
+    "name": "皮のダブルライン / 四分から細かな返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-090",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「皮のダブルライン」の前半と拍の足場を保つ。四分の歩幅から8分と16分へ縮める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。四分の歩幅から8分と16分へ縮める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 89,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 672,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 12,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 89,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      12,
+      20,
+      22,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 2,
+    "center": "drums",
+    "metrics": {
+      "density": 9.5,
+      "repeatRatio": 0.4868421052631579,
+      "accentRatio": 0.13157894736842105,
+      "thickness": 5.75,
+      "metalRatio": 0.18863481147810976,
+      "metalPresence": 0.29242621527777773,
+      "metalSustain": 0.11026157273186578,
+      "intensityIndex": 0.8207894736842105,
+      "metallicIndex": 0.20801624680607358
+    },
+    "scoreReason": "激しさ5：1拍あたり9.5打、連打49%、重なり5.8打/拍。メタリックさ2：相対強度で金属19%、金属の目立ち29%、余韻指標11%"
+  },
+  {
+    "id": "p4-o-091",
+    "name": "低音の急流 / 最後のフラム",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-091",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "two-bar",
+      "build-up",
+      "flam"
+    ],
+    "intent": "「低音の急流」の前半と拍の足場を保つ。ずれた三打から弱い前打ちと強いフラムへ渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。ずれた三打から弱い前打ちと強いフラムへ渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 89,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 738,
+        "soundKey": 89,
+        "velocity": 0.26,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      20,
+      22,
+      82,
+      84
+    ],
+    "intensity": 5,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 9.625,
+      "repeatRatio": 0.4805194805194805,
+      "accentRatio": 0.11688311688311688,
+      "thickness": 5.875,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.8181818181818181,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ5：1拍あたり9.6打、連打48%、重なり5.9打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-092",
+    "name": "乾いた嵐の間 / 拍の中央を空ける",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-092",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "ghost",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「乾いた嵐の間」の前半と拍の足場を保つ。2拍目の頭を空け、最後の32分二連を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。2拍目の頭を空け、最後の32分二連を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 89,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 89,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 624,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 696,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 84,
+        "velocity": 0.75,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 84,
+        "velocity": 0.48750000000000004,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 89,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      89,
+      20,
+      22,
+      82,
+      84
+    ],
+    "intensity": 5,
+    "metallic": 1,
+    "center": "mixed",
+    "metrics": {
+      "density": 9.875,
+      "repeatRatio": 0.4810126582278481,
+      "accentRatio": 0.12658227848101267,
+      "thickness": 6,
+      "metalRatio": 0,
+      "metalPresence": 0,
+      "metalSustain": 0,
+      "intensityIndex": 0.8192405063291138,
+      "metallicIndex": 0
+    },
+    "scoreReason": "激しさ5：1拍あたり9.9打、連打48%、重なり6.0打/拍。メタリックさ1：相対強度で金属0%、金属の目立ち0%、余韻指標0%"
+  },
+  {
+    "id": "p4-o-093",
+    "name": "鉄のスプリント / 細かい波の切れ目",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-093",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「鉄のスプリント」の前半と拍の足場を保つ。細かな前半から広い間を経て最後の拍を強める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。細かな前半から広い間を経て最後の拍を強める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 588,
+        "soundKey": 22,
+        "velocity": 0.6433333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 612,
+        "soundKey": 20,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 88,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 22,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8966666666666666,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 88,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      15,
+      20,
+      22,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 10.25,
+      "repeatRatio": 0.4878048780487805,
+      "accentRatio": 0.32926829268292684,
+      "thickness": 6.125,
+      "metalRatio": 0.41339863061980103,
+      "metalPresence": 0.765625,
+      "metalSustain": 0.3022143046061197,
+      "intensityIndex": 0.8407317073170731,
+      "metallicIndex": 0.5023888925318085
+    },
+    "scoreReason": "激しさ5：1拍あたり10.3打、連打49%、重なり6.1打/拍。メタリックさ4：相対強度で金属41%、金属の目立ち77%、余韻指標30%"
+  },
+  {
+    "id": "p4-o-094",
+    "name": "ハットの千鳥足 / 前半の二連と空白",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-094",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「ハットの千鳥足」の前半と拍の足場を保つ。前半の二連を休符で切り、最後の二打で押す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の二連を休符で切り、最後の二打で押す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.84,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 20,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 15,
+        "velocity": 0.546,
+        "gateTicks": 19
+      },
+      {
+        "tick": 756,
+        "soundKey": 88,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 4,
+    "metallic": 4,
+    "center": "drums",
+    "metrics": {
+      "density": 5.875,
+      "repeatRatio": 0.5957446808510638,
+      "accentRatio": 0.5106382978723404,
+      "thickness": 2,
+      "metalRatio": 0.5867908459670813,
+      "metalPresence": 0.765625,
+      "metalSustain": 0.28868484497070307,
+      "intensityIndex": 0.6775687056737588,
+      "metallicIndex": 0.5957251920275002
+    },
+    "scoreReason": "激しさ4：1拍あたり5.9打、連打60%、重なり2.0打/拍。メタリックさ4：相対強度で金属59%、金属の目立ち77%、余韻指標29%"
+  },
+  {
+    "id": "p4-o-095",
+    "name": "銀色の乱反射 / 途中の三連波",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-095",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up",
+      "triplet-fill"
+    ],
+    "intent": "「銀色の乱反射」の前半と拍の足場を保つ。最初の1拍だけ三連を使い、最後は16分の裏へ戻す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。最初の1拍だけ三連を使い、最後は16分の裏へ戻す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 120,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 144,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 456,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 608,
+        "soundKey": 22,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 640,
+        "soundKey": 20,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 672,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 696,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.6,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 88,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 15,
+        "velocity": 0.39,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 22,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 4,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 6.125,
+      "repeatRatio": 0.5510204081632653,
+      "accentRatio": 0.1836734693877551,
+      "thickness": 2.125,
+      "metalRatio": 0.39782069972732853,
+      "metalPresence": 0.390625,
+      "metalSustain": 0.14728818620954248,
+      "intensityIndex": 0.66078018707483,
+      "metallicIndex": 0.35808211278146207
+    },
+    "scoreReason": "激しさ4：1拍あたり6.1打、連打55%、重なり2.1打/拍。メタリックさ3：相対強度で金属40%、金属の目立ち39%、余韻指標15%"
+  },
+  {
+    "id": "p4-o-096",
+    "name": "金属の折れた矢 / ダブルの受け渡し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-096",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「金属の折れた矢」の前半と拍の足場を保つ。高低の二連を受け渡し、最後は8分でまとめる。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。高低の二連を受け渡し、最後は8分でまとめる。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 48,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 168,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 216,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 312,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 360,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 432,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 504,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 552,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 588,
+        "soundKey": 88,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 600,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 600,
+        "soundKey": 22,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 648,
+        "soundKey": 20,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 660,
+        "soundKey": 88,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 696,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 15,
+        "velocity": 0.7,
+        "gateTicks": 19
+      },
+      {
+        "tick": 720,
+        "soundKey": 22,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 744,
+        "soundKey": 15,
+        "velocity": 0.45499999999999996,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 20,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      88,
+      15,
+      20,
+      22
+    ],
+    "intensity": 5,
+    "metallic": 3,
+    "center": "drums",
+    "metrics": {
+      "density": 6.375,
+      "repeatRatio": 0.5490196078431373,
+      "accentRatio": 0.19607843137254902,
+      "thickness": 2.375,
+      "metalRatio": 0.44565001723075626,
+      "metalPresence": 0.5316840277777777,
+      "metalSustain": 0.20047558678521046,
+      "intensityIndex": 0.691452205882353,
+      "metallicIndex": 0.43468405582803077
+    },
+    "scoreReason": "激しさ5：1拍あたり6.4打、連打55%、重なり2.4打/拍。メタリックさ3：相対強度で金属45%、金属の目立ち53%、余韻指標20%"
+  },
+  {
+    "id": "p4-o-097",
+    "name": "鐘楼のラッシュ / 裏から厚い着地",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-097",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「鐘楼のラッシュ」の前半と拍の足場を保つ。裏の位置をずらしながら密度を上げ、同時打ちで渡す。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏の位置をずらしながら密度を上げ、同時打ちで渡す。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 216,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 456,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 18,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 636,
+        "soundKey": 88,
+        "velocity": 0.6559999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.732,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 708,
+        "soundKey": 18,
+        "velocity": 0.808,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 720,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 732,
+        "soundKey": 88,
+        "velocity": 0.8839999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 756,
+        "soundKey": 18,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 756,
+        "soundKey": 86,
+        "velocity": 0.84,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 9.75,
+      "repeatRatio": 0.5384615384615384,
+      "accentRatio": 0.32051282051282054,
+      "thickness": 5.375,
+      "metalRatio": 0.5170167579049705,
+      "metalPresence": 0.9286024305555556,
+      "metalSustain": 0.9291228440703545,
+      "intensityIndex": 0.8489743589743589,
+      "metallicIndex": 0.7023083726249536
+    },
+    "scoreReason": "激しさ5：1拍あたり9.8打、連打54%、重なり5.4打/拍。メタリックさ5：相対強度で金属52%、金属の目立ち93%、余韻指標93%"
+  },
+  {
+    "id": "p4-o-098",
+    "name": "ベルの二重らせん / 低い音の応答",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-098",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up"
+    ],
+    "intent": "「ベルの二重らせん」の前半と拍の足場を保つ。裏の高低の応答を最後の拍で詰める。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。裏の高低の応答を最後の拍で詰める。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 144,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 312,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 408,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 552,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 600,
+        "soundKey": 18,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 648,
+        "soundKey": 88,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 696,
+        "soundKey": 18,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 88,
+        "velocity": 0.96,
+        "gateTicks": 29
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 9.375,
+      "repeatRatio": 0.5333333333333333,
+      "accentRatio": 0.30666666666666664,
+      "thickness": 5.5,
+      "metalRatio": 0.5026995691072387,
+      "metalPresence": 0.9184027777777778,
+      "metalSustain": 0.8656122449844608,
+      "intensityIndex": 0.8466666666666666,
+      "metallicIndex": 0.6818474330899837
+    },
+    "scoreReason": "激しさ5：1拍あたり9.4打、連打53%、重なり5.5打/拍。メタリックさ5：相対強度で金属50%、金属の目立ち92%、余韻指標87%"
+  },
+  {
+    "id": "p4-o-099",
+    "name": "硬い光の連鎖 / 後半の三連返し",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-099",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up",
+      "triplet-fill"
+    ],
+    "intent": "「硬い光の連鎖」の前半と拍の足場を保つ。前半の裏拍から最後の1拍の三連へ切り替える。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。前半の裏拍から最後の1拍の三連へ切り替える。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 48,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 144,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 144,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 168,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 240,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 312,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 384,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 408,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 408,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 504,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 528,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 18,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 648,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 648,
+        "soundKey": 88,
+        "velocity": 0.6749999999999999,
+        "gateTicks": 29
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.77,
+        "gateTicks": 29
+      },
+      {
+        "tick": 696,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 696,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 704,
+        "soundKey": 18,
+        "velocity": 0.865,
+        "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 736,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 88,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 9.375,
+      "repeatRatio": 0.5066666666666667,
+      "accentRatio": 0.32,
+      "thickness": 5.375,
+      "metalRatio": 0.4943843138292614,
+      "metalPresence": 0.9184027777777778,
+      "metalSustain": 0.8656122449844608,
+      "intensityIndex": 0.8432000000000001,
+      "metallicIndex": 0.6772740426870962
+    },
+    "scoreReason": "激しさ5：1拍あたり9.4打、連打51%、重なり5.4打/拍。メタリックさ5：相対強度で金属49%、金属の目立ち92%、余韻指標87%"
+  },
+  {
+    "id": "p4-o-100",
+    "name": "鐘の波と裂け目 / 三連と休符の橋",
+    "meter": 4,
+    "bars": 2,
+    "purpose": "fill",
+    "derivedFrom": "p4-b-100",
+    "fillRange": {
+      "startTick": 576,
+      "endTick": 768
+    },
+    "groove": "straight",
+    "tags": [
+      "roll",
+      "layered",
+      "two-bar",
+      "build-up",
+      "triplet-fill"
+    ],
+    "intent": "「鐘の波と裂け目」の前半と拍の足場を保つ。三連の中央を空けた呼び掛けから最後の二打へ進む。最終拍の返しから次の1拍目へつなぐ",
+    "tagReason": "全体の基調はストレートを継承。三連の中央を空けた呼び掛けから最後の二打へ進む。最終拍のアクセントを次の頭へ渡す",
+    "events": [
+      {
+        "tick": 0,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 0,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 0,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 24,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 24,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 48,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 48,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 72,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 72,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 72,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 96,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 96,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 96,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 120,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 120,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 120,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 168,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 168,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 192,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 192,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 216,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 216,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 240,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 240,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 264,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 264,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 264,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 288,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 288,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 288,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 312,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 312,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 336,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 336,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 336,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 360,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 360,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 384,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 432,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 432,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 432,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 456,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 456,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 480,
+        "soundKey": 82,
+        "velocity": 0.58,
+        "gateTicks": 24
+      },
+      {
+        "tick": 480,
+        "soundKey": 88,
+        "velocity": 0.85,
+        "gateTicks": 29
+      },
+      {
+        "tick": 504,
+        "soundKey": 5,
+        "velocity": 0.32,
+        "gateTicks": 14
+      },
+      {
+        "tick": 504,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 504,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      },
+      {
+        "tick": 528,
+        "soundKey": 5,
+        "velocity": 0.6,
+        "gateTicks": 14
+      },
+      {
+        "tick": 528,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 528,
+        "soundKey": 82,
+        "velocity": 0.7,
+        "gateTicks": 24
+      },
+      {
+        "tick": 552,
+        "soundKey": 5,
+        "velocity": 0.48,
+        "gateTicks": 14
+      },
+      {
+        "tick": 552,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 576,
+        "soundKey": 18,
+        "velocity": 0.58,
+        "gateTicks": 29
+      },
+      {
+        "tick": 576,
+        "soundKey": 86,
+        "velocity": 0.78,
+        "gateTicks": 34
+      },
+      {
+        "tick": 600,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 624,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 640,
+        "soundKey": 88,
+        "velocity": 0.7066666666666667,
+        "gateTicks": 29
+      },
+      {
+        "tick": 648,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 672,
+        "soundKey": 86,
+        "velocity": 0.85,
+        "gateTicks": 34
+      },
+      {
+        "tick": 696,
+        "soundKey": 18,
+        "velocity": 0.5980000000000001,
+        "gateTicks": 48
+      },
+      {
+        "tick": 704,
+        "soundKey": 18,
+        "velocity": 0.8333333333333333,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 18,
+        "velocity": 0.96,
+        "gateTicks": 29
+      },
+      {
+        "tick": 736,
+        "soundKey": 86,
+        "velocity": 0.88,
+        "gateTicks": 29
+      },
+      {
+        "tick": 744,
+        "soundKey": 18,
+        "velocity": 0.92,
+        "gateTicks": 48
+      },
+      {
+        "tick": 744,
+        "soundKey": 86,
+        "velocity": 0.65,
+        "gateTicks": 34
+      }
+    ],
+    "classificationVersion": 1,
+    "usedSoundKeys": [
+      86,
+      5,
+      88,
+      18,
+      82
+    ],
+    "intensity": 5,
+    "metallic": 5,
+    "center": "drums",
+    "metrics": {
+      "density": 9.25,
+      "repeatRatio": 0.5,
+      "accentRatio": 0.32432432432432434,
+      "thickness": 5.25,
+      "metalRatio": 0.5087313848943642,
+      "metalPresence": 0.9286024305555556,
+      "metalSustain": 0.873658091316919,
+      "intensityIndex": 0.8424324324324324,
+      "metallicIndex": 0.6894317045561047
+    },
+    "scoreReason": "激しさ5：1拍あたり9.3打、連打50%、重なり5.3打/拍。メタリックさ5：相対強度で金属51%、金属の目立ち93%、余韻指標87%"
   }
 ];

@@ -5,15 +5,18 @@ import { buildPatterns } from '../tools/create-patterns.mjs';
 import { TICKS_PER_BEAT, analyzePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from '../pattern-model.js';
 import { PatternTransport, auditionSequence } from '../pattern-player.js';
 
-test('saved library has exactly 20 of each 4/4 purpose, stable performances, and no trivial variants', () => {
-  assert.equal(patterns.length, 60);
+test('saved library has exactly 100 of each 4/4 purpose, stable performances, and no trivial variants', () => {
+  assert.equal(patterns.length, 300);
   validatePatterns(patterns);
   assert.deepEqual(buildPatterns(), patterns);
 
   // 音色の差し替えや強弱だけで数を水増しせず、用途ごとの保存件数を確認する
   for (const purpose of ['basic', 'intro', 'fill']) {
-    assert.equal(patterns.filter((pattern) => pattern.purpose === purpose).length, 20);
-    assert.ok(patterns.filter((pattern) => pattern.purpose === purpose).every((pattern) => pattern.meter === 4 && pattern.bars === (purpose === 'intro' ? 1 : 2)));
+    const saved = patterns.filter((pattern) => pattern.purpose === purpose);
+    const prefix = { basic: 'b', intro: 'i', fill: 'o' }[purpose];
+    assert.equal(saved.length, 100);
+    assert.deepEqual(saved.map((pattern) => pattern.id), Array.from({ length: 100 }, (_, index) => `p4-${prefix}-${String(index + 1).padStart(3, '0')}`));
+    assert.ok(saved.every((pattern) => pattern.meter === 4 && pattern.bars === (purpose === 'intro' ? 1 : 2)));
   }
 
   const base = patterns[8];
@@ -24,6 +27,22 @@ test('saved library has exactly 20 of each 4/4 purpose, stable performances, and
   assert.equal(rhythmFingerprint(base), rhythmFingerprint(quiet));
   assert.ok(trivialVariant(base, tinyChange));
   assert.throws(() => validatePatterns([base, { ...tinyChange, id: 'duplicate' }]), /重複|強弱/);
+});
+
+test('all saved patterns use the same assessment and cover every independent score combination', () => {
+  const combinations = new Set();
+
+  // 保存された評価を全件の演奏から照合し、激しさと金属感を独立に揃える
+  for (const pattern of patterns) {
+    const assessment = analyzePattern(pattern);
+    assert.equal(pattern.intensity, assessment.intensity, pattern.id);
+    assert.equal(pattern.metallic, assessment.metallic, pattern.id);
+    assert.equal(pattern.center, assessment.center, pattern.id);
+    assert.deepEqual(pattern.metrics, assessment.metrics, pattern.id);
+    combinations.add(`${pattern.intensity}/${pattern.metallic}`);
+  }
+
+  assert.equal(combinations.size, 25);
 });
 
 test('two-bar bases develop the second bar and the electronic groove keeps a clear backbeat across the loop', () => {
@@ -82,6 +101,11 @@ test('intros enter from silence; transition fills keep the pulse and push into t
       assert.ok(Math.max(...finalEvents.filter((event) => event.tick >= totalTicks - 32).map((event) => event.velocity)) >= .85, pattern.id);
       assert.notEqual(rhythmFingerprint(pattern), rhythmFingerprint(base));
       assert.ok(pattern.tags.includes('build-up'));
+
+      if (pattern.name.includes('同時打ちの入口') || pattern.name.includes('裏から厚い着地')) {
+        const finalTick = pattern.events.at(-1).tick;
+        assert.ok(pattern.events.filter((event) => event.tick === finalTick).length >= 2, pattern.id);
+      }
     }
   }
 });

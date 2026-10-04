@@ -245,8 +245,10 @@ export function validatePatterns(patterns) {
       throw new Error(`派生元またはフィル範囲が不正: ${pattern.id}`);
     }
 
-    if (patterns.some((other) => other !== pattern && trivialVariant(pattern, other))) {
-      throw new Error(`音色・音量・微小な強弱だけの違い: ${pattern.id}`);
+    const similar = patterns.find((other) => other !== pattern && trivialVariant(pattern, other));
+
+    if (similar) {
+      throw new Error(`音色・音量・微小な強弱だけの違い: ${pattern.id} / ${similar.id}`);
     }
 
     ids.add(pattern.id);
@@ -314,5 +316,5 @@ export function createVariation(base, serial) {
 
   return finalizePattern({ ...base, id: `auto-${base.id}-${String(serial).padStart(6, '0')}`, name: `${base.name} / 生成 ${serial}`,
     derivedFrom: base.id, events, intent: '保存済みの骨格から2〜4打の位置・休符・アクセントを変えた試聴用の案',
-    tags: [...new Set([...base.tags, 'syncopated'])], tagReason: `${grooves[base.groove]}の基調を土台に、2〜4打をずらして休符と大きな強弱を変える。60種類の試作数には含めない` });
+    tags: [...new Set([...base.tags, 'syncopated'])], tagReason: `${grooves[base.groove]}の基調を土台に、2〜4打をずらして休符と大きな強弱を変える。保存ライブラリの種類数には含めない` });
 }
