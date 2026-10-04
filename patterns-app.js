@@ -8,6 +8,7 @@ import { TICKS_PER_BEAT, CLASSIFICATION_VERSION, purposes, centers, grooves, tag
 import { PatternTransport, auditionSequence, voiceTiming } from './pattern-player.js';
 import { AutomaticPerformance } from './pattern-performance.js';
 import { EffectRack, effectDefaults, filterRange } from './effects.js';
+import { bindRepeatButton } from './repeat-button.js';
 
 /**
  * この画面の要素を取得する
@@ -983,6 +984,21 @@ query('#pattern-bpm').addEventListener('change', () => {
   effects?.setBpm(bpm);
   renderEffects();
   renderTimeline(selectedPattern);
+});
+document.querySelectorAll('[data-bpm-step]').forEach((button) => {
+  bindRepeatButton(button, () => {
+    const input = query('#pattern-bpm');
+    const currentBpm = Math.max(40, Math.min(240, Math.round(Number(input.value) || 120)));
+    const nextBpm = Math.max(40, Math.min(240, currentBpm + Number(button.dataset.bpmStep)));
+
+    if (input.value === String(nextBpm)) {
+
+      return;
+    }
+
+    input.value = nextBpm;
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+  });
 });
 query('#pattern-volume').addEventListener('input', () => {
   const volume = Number(query('#pattern-volume').value);

@@ -115,7 +115,17 @@
     <div class="dock-heading"><div><strong id="dock-pattern-name"></strong><span id="dock-pattern-info"></span></div><span id="play-state" role="status">停止中</span><button id="open-effects" type="button">エフェクト</button><button id="open-details" type="button">詳細・比較</button></div>
     <div class="dock-controls">
       <div class="play-controls"><button id="auto-play" class="primary-play" type="button" disabled aria-pressed="false">▶ 自動演奏</button><button id="pattern-stop" type="button">■ 停止</button><button id="previous-pattern" type="button" aria-label="前のパターンを試聴">← 前</button><button id="pattern-play" type="button" disabled>▶ 試聴</button><button id="next-pattern" type="button" aria-label="次のパターンを試聴">次 →</button><label class="loop-control"><input id="pattern-loop" type="checkbox" checked>リピート</label></div>
-      <div class="mix-controls"><label>BPM <input id="pattern-bpm" type="number" min="40" max="240" step="1" value="120"></label><label>音量 <input id="pattern-volume" type="range" min="0" max="100" value="80"><output id="pattern-volume-value">80%</output></label><button id="reset-mix" type="button" title="BPM 120・音量80%に戻す">共通値に戻す</button><label class="connect-control"><input id="connect-pattern" type="checkbox">基本との接続</label></div>
+      <div class="mix-controls">
+        <div class="bpm-control">
+          <label for="pattern-bpm">BPM</label>
+          <div class="bpm-stepper" role="group" aria-label="BPMの調整">
+            <button type="button" data-bpm-step="-1" aria-label="BPMを1下げる" title="BPMを1下げる（長押しで連続変更）">−</button>
+            <input id="pattern-bpm" type="number" min="40" max="240" step="1" value="120">
+            <button type="button" data-bpm-step="1" aria-label="BPMを1上げる" title="BPMを1上げる（長押しで連続変更）">＋</button>
+          </div>
+        </div>
+        <label>音量 <input id="pattern-volume" type="range" min="0" max="100" value="80"><output id="pattern-volume-value">80%</output></label><button id="reset-mix" type="button" title="BPM 120・音量80%に戻す">共通値に戻す</button><label class="connect-control"><input id="connect-pattern" type="checkbox">基本との接続</label>
+      </div>
     </div>
     <p class="dock-position" id="now-playing">一覧から選ぶと再生します</p>
   </section>
