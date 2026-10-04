@@ -76,6 +76,28 @@ test('two-bar bases develop the second bar and the electronic groove keeps a cle
   assert.ok(Math.abs(kicks[1].start - finalSnare.start - .5) < 1e-9);
 });
 
+test('sparse grooves keep a two-beat or four-beat kick foundation through their fills', () => {
+  const revisedNumbers = [12, ...Array.from({ length: 16 }, (_, index) => index + 21)];
+  const downbeats = [0, 2, 4, 6].map((beat) => beat * TICKS_PER_BEAT);
+
+  // 余白のあるフレーズでも1・3拍のキックを両小節に置き、フィルで拍の土台を失わない
+  for (const number of revisedNumbers) {
+    const suffix = String(number).padStart(3, '0');
+
+    // 基本と対応するフィルを同じ拍位置で確認する
+    for (const prefix of ['b', 'o']) {
+      const pattern = patterns.find((item) => item.id === `p4-${prefix}-${suffix}`);
+      const kicks = pattern.events.filter((event) => [71, 101].includes(event.soundKey));
+      assert.ok(downbeats.every((tick) => kicks.some((event) => event.tick === tick && event.velocity >= .35)), pattern.id);
+    }
+
+    if (number >= 21 && number <= 28) {
+      const base = patterns.find((item) => item.id === `p4-b-${suffix}`);
+      assert.ok([1, 3, 5, 7].every((beat) => base.events.some((event) => event.soundKey === 25 && event.tick === beat * TICKS_PER_BEAT)), base.id);
+    }
+  }
+});
+
 test('intros enter from silence; transition fills keep the pulse and push into the next downbeat', () => {
 
   // 出だしの無音と展開フィルの最終拍の勢いを、演奏イベントから確認する
