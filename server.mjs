@@ -3,16 +3,16 @@ import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, extname, resolve, sep } from 'node:path';
 
-const projectRootDir = dirname(fileURLToPath(import.meta.url));
+const publicRootDir = resolve(dirname(fileURLToPath(import.meta.url)), 'dist');
 const port = Number(process.env.PORT || 5173);
 const mimeTypes = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.wav': 'audio/wav' };
 
 createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
-    const requestedFilePath = resolve(projectRootDir, `.${pathname === '/' ? '/index.html' : pathname}`);
+    const requestedFilePath = resolve(publicRootDir, `.${pathname === '/' ? '/index.html' : pathname}`);
 
-    if (!requestedFilePath.startsWith(projectRootDir + sep) || !mimeTypes[extname(requestedFilePath)]) {
+    if (!requestedFilePath.startsWith(publicRootDir + sep) || !mimeTypes[extname(requestedFilePath)]) {
       response.writeHead(404).end('Not found');
 
       return;

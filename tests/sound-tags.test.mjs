@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { sounds } from '../sounds.js';
-import { classifySound, soundTagChoices, soundTagLabels, matchesSoundTags } from '../sound-tags.js';
-import { soundLengths } from '../sound-lengths.js';
+import { sounds } from '../dist/sounds.js';
+import { classifySound, soundTagChoices, soundTagLabels, matchesSoundTags } from '../dist/sound-tags.js';
+import { soundLengths } from '../dist/sound-lengths.js';
 
 const byKey = new Map(sounds.map((sound) => [sound.key, sound]));
 

@@ -22,7 +22,7 @@ BPM・音量は再生中も変更でき、「次の激しさ」は次の基本�
 
 ## ビルド・開発
 
-HTML・CSS・JavaScriptをそのまま配信する構成で、起動前のビルドや外部ライブラリのインストールは不要です。`npm start` でも同じローカルサーバーを起動できます。
+`dist/` 内のHTML・CSS・JavaScriptをそのまま配信する構成で、起動前のビルドや外部ライブラリのインストールは不要です。`npm start` でも同じローカルサーバーを起動できます。
 
 ```sh
 npm test                  # テストを実行
@@ -30,7 +30,15 @@ npm run patterns:build    # パターンの保存データを再生成
 npm run sounds:measure    # 音色の響きの長さを再測定
 ```
 
-`patterns:build` は `patterns-data.js`、`sounds:measure` は `sound-lengths.js` を更新します。パターンや音色の定義を変更したときに実行します。
+`patterns:build` は `dist/patterns-data.js`、`sounds:measure` は `dist/sound-lengths.js` を更新します。パターンや音色の定義を変更したときに実行します。
+
+## GitHub Pagesでの公開
+
+公開用のファイルは `dist/` にまとめ、そのままGitで管理しています。GitHubリポジトリの **Settings → Pages** で、Sourceを **GitHub Actions** に設定してください。
+
+`.github/workflows/pages.yml` が `main` へのpush時にテストを実行し、成功したら `dist/` の内容をGitHub Pagesへ公開します。Actions画面から手動実行する場合も、`main` を選んでください。公開前のビルドは不要です。
+
+設定の詳細は[GitHub公式ドキュメント](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)を参照してください。
 
 ## ドキュメント
 
@@ -39,13 +47,14 @@ npm run sounds:measure    # 音色の響きの長さを再測定
 
 ## 主な構成
 
-- `index.html` / `patterns-app.js` / `patterns.css`: 自動演奏とパターンの試聴画面
-- `pattern-performance.js` / `pattern-player.js`: 自動演奏の進行と音声の再生予約
-- `effects.js`: 演奏全体のエフェクトとフィルターのBPM同期、ステレオ残響の生成
-- `patterns-data.js` / `pattern-model.js`: 保存パターンと共通の分類・生成処理
-- `sounds.html` / `app.js` / `styles.css`: 音色ライブラリ画面
-- `sounds.js` / `synth.js` / `samples.js`: 音色の定義・PCM生成・実音素材の読み込み
-- `assets/`: 実音素材と出典・ライセンスの記録
+- `dist/index.html` / `dist/patterns-app.js` / `dist/patterns.css`: 自動演奏とパターンの試聴画面
+- `dist/pattern-performance.js` / `dist/pattern-player.js`: 自動演奏の進行と音声の再生予約
+- `dist/effects.js`: 演奏全体のエフェクトとフィルターのBPM同期、ステレオ残響の生成
+- `dist/patterns-data.js` / `dist/pattern-model.js`: 保存パターンと共通の分類・生成処理
+- `dist/sounds.html` / `dist/app.js` / `dist/styles.css`: 音色ライブラリ画面
+- `dist/sounds.js` / `dist/synth.js` / `dist/samples.js`: 音色の定義・PCM生成・実音素材の読み込み
+- `dist/assets/`: 実音素材と出典・ライセンスの記録
 - `tools/`: パターン生成・音色測定の開発用ツール
 - `tests/`: 音色・演奏データ・再生制御などのテスト
 - `server.mjs`: ローカルプレビュー用サーバー
+- `.github/workflows/pages.yml`: テスト後にGitHub Pagesへ公開するワークフロー

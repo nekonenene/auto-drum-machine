@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { patterns } from '../patterns-data.js';
+import { patterns } from '../dist/patterns-data.js';
 import { buildPatterns } from '../tools/create-patterns.mjs';
-import { TICKS_PER_BEAT, soundByKey, analyzePattern, finalizePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from '../pattern-model.js';
-import { PatternTransport, auditionSequence, voiceTiming } from '../pattern-player.js';
-import { AutomaticPerformance } from '../pattern-performance.js';
+import { TICKS_PER_BEAT, soundByKey, analyzePattern, finalizePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from '../dist/pattern-model.js';
+import { PatternTransport, auditionSequence, voiceTiming } from '../dist/pattern-player.js';
+import { AutomaticPerformance } from '../dist/pattern-performance.js';
 
 test('saved library has exactly 100 of each 4/4 purpose, stable performances, and no trivial variants', () => {
   assert.equal(patterns.length, 300);

@@ -1,11 +1,11 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { sounds } from '../sounds.js';
-import { renderSound } from '../synth.js';
-import { loadSampleSources } from '../samples.js';
+import { sounds } from '../dist/sounds.js';
+import { renderSound } from '../dist/synth.js';
+import { loadSampleSources } from '../dist/samples.js';
 
 const sampleRate = 48000;
 const sources = await loadSampleSources(sounds, async (path) => {
-  const bytes = await readFile(new URL(`../${path}`, import.meta.url));
+  const bytes = await readFile(new URL(`../dist/${path}`, import.meta.url));
 
   return { ok: true, arrayBuffer: async () => bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) };
 });
@@ -30,5 +30,5 @@ for (const sound of sounds) {
   lengths[sound.key] = Number(((end + 1) / sampleRate).toFixed(4));
 }
 
-await writeFile(new URL('../sound-lengths.js', import.meta.url), `// PCMのエネルギー99%までの時間（秒）。npm run sounds:measureで再生成\nexport const soundLengths = ${JSON.stringify(lengths, null, 2)};\n`);
+await writeFile(new URL('../dist/sound-lengths.js', import.meta.url), `// PCMのエネルギー99%までの時間（秒）。npm run sounds:measureで再生成\nexport const soundLengths = ${JSON.stringify(lengths, null, 2)};\n`);
 console.log(`Measured ${sounds.length} sound lengths`);

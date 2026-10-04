@@ -2,14 +2,14 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { sounds, categories } from '../sounds.js';
-import { renderSound, waveformPeaks, encodeWav } from '../synth.js';
-import { decodeSampleWav, loadSampleSources } from '../samples.js';
-import { soundLengths } from '../sound-lengths.js';
+import { sounds, categories } from '../dist/sounds.js';
+import { renderSound, waveformPeaks, encodeWav } from '../dist/synth.js';
+import { decodeSampleWav, loadSampleSources } from '../dist/samples.js';
+import { soundLengths } from '../dist/sound-lengths.js';
 
 const soundByKey = new Map(sounds.map((sound) => [sound.key, sound]));
 const sampleSources = await loadSampleSources(sounds, async (path) => {
-  const bytes = await readFile(new URL(`../${path}`, import.meta.url));
+  const bytes = await readFile(new URL(`../dist/${path}`, import.meta.url));
 
   return { ok: true, arrayBuffer: async () => bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) };
 });
@@ -17,7 +17,7 @@ const sampleSources = await loadSampleSources(sounds, async (path) => {
 /**
  * 合成音・実音の両方を同じ条件で生成する
  *
- * @param {import("../sounds.js").SoundDefinition} sound 音色定義
+ * @param {import("../dist/sounds.js").SoundDefinition} sound 音色定義
  * @returns {Float32Array}
  */
 const renderCatalogSound = (sound) => renderSound(sound, 48000, sampleSources.get(sound.sample));
@@ -246,14 +246,14 @@ test('all bundled CC0 samples have verified provenance and file hashes', async (
 
   // 各ライブラリの出典一覧と素材全件を照合し、欠落や取り違えを確認する
   for (const folder of sampleFolders) {
-    const manifest = JSON.parse(await readFile(new URL(`../${folder}/sources.json`, import.meta.url), 'utf8'));
+    const manifest = JSON.parse(await readFile(new URL(`../dist/${folder}/sources.json`, import.meta.url), 'utf8'));
     assert.equal(manifest.license, 'CC0-1.0');
 
     // 加工後のハッシュと固定リビジョンを確認し、使用する素材のパスを集める
     for (const entry of manifest.entries) {
       const path = `${folder}/${entry.file}`;
       assert.ok(sampleSources.has(path), path);
-      const bytes = await readFile(new URL(`../${path}`, import.meta.url));
+      const bytes = await readFile(new URL(`../dist/${path}`, import.meta.url));
       assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.sha256);
       assert.ok(entry.url.includes(manifest.revision));
       assert.ok((entry.layers || []).every((layer) => layer.url.includes(manifest.revision)));

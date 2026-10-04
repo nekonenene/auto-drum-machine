@@ -38,9 +38,9 @@
 
 同梱した22個のWAVは、CC0 1.0音源を加工したものです。
 
-- [Virtuosity Drums](https://github.com/sfzinstruments/virtuosity_drums)（Versilian Studios / Karoryfer Samples）: 11素材。[出典と加工内容](assets/drums/README.md)、[ファイルごとの出典・ハッシュ](assets/drums/sources.json)、[ライセンス全文](assets/drums/LICENSE-CC0.txt)
-- Virtuosity Drumsのパーカッション録音: シェイカー2素材、タンバリン1素材、ボンゴ2素材、コンガ2素材。[出典と加工内容](assets/percussion/README.md)、[ファイルごとの出典・ハッシュ](assets/percussion/sources.json)、[ライセンス全文](assets/percussion/LICENSE-CC0.txt)
-- [Big Rusty Drums](https://github.com/sfzinstruments/karoryfer.big-rusty-drums)（Karoryfer Samples）: スネア4録音・クラッシュ2録音・キック1録音から加工した4素材。[出典と加工内容](assets/rusty-drums/README.md)、[ファイルごとの出典・ハッシュ](assets/rusty-drums/sources.json)、[ライセンス全文](assets/rusty-drums/LICENSE-CC0.txt)
+- [Virtuosity Drums](https://github.com/sfzinstruments/virtuosity_drums)（Versilian Studios / Karoryfer Samples）: 11素材。[出典と加工内容](dist/assets/drums/README.md)、[ファイルごとの出典・ハッシュ](dist/assets/drums/sources.json)、[ライセンス全文](dist/assets/drums/LICENSE-CC0.txt)
+- Virtuosity Drumsのパーカッション録音: シェイカー2素材、タンバリン1素材、ボンゴ2素材、コンガ2素材。[出典と加工内容](dist/assets/percussion/README.md)、[ファイルごとの出典・ハッシュ](dist/assets/percussion/sources.json)、[ライセンス全文](dist/assets/percussion/LICENSE-CC0.txt)
+- [Big Rusty Drums](https://github.com/sfzinstruments/karoryfer.big-rusty-drums)（Karoryfer Samples）: スネア4録音・クラッシュ2録音・キック1録音から加工した4素材。[出典と加工内容](dist/assets/rusty-drums/README.md)、[ファイルごとの出典・ハッシュ](dist/assets/rusty-drums/sources.json)、[ライセンス全文](dist/assets/rusty-drums/LICENSE-CC0.txt)
 
 ## 操作
 
@@ -67,7 +67,7 @@
 
 長さはパターンのゲートで切る前の値で、知覚上の長さと完全に一致するものではありません。短い電子音でも細かく連続させると主張が強いため、用途がアクセントの音は間を空けて使うのが基本です。タグだけでパターンのスコアは決めません。
 
-音色を変更したら `npm run sounds:measure` で長さを更新します。固定キーで役割と高低を管理するため、表示番号の並べ替えではタグも変わりません。音色追加時は `sound-tags.js` に分類を追加してから測定します。
+音色を変更したら `npm run sounds:measure` で長さを更新します。固定キーで役割と高低を管理するため、表示番号の並べ替えではタグも変わりません。音色追加時は `dist/sound-tags.js` に分類を追加してから測定します。
 
 ## 固定キーと表示番号
 
@@ -75,11 +75,11 @@
 
 ## 関連ファイルと検証
 
-- `sounds.js`: 音色名・カテゴリー・合成パラメーター
-- `sound-tags.js` / `sound-lengths.js`: 共通の音色タグ・PCMから測定した響きの長さ
-- `synth.js`: PCM合成、波形抽出、WAVエンコード
-- `samples.js`: 同梱WAVの読み込みとPCMデコード
-- `app.js` / `sounds.html` / `styles.css`: 音色の試聴・絞り込み・保存画面
+- `dist/sounds.js`: 音色名・カテゴリー・合成パラメーター
+- `dist/sound-tags.js` / `dist/sound-lengths.js`: 共通の音色タグ・PCMから測定した響きの長さ
+- `dist/synth.js`: PCM合成、波形抽出、WAVエンコード
+- `dist/samples.js`: 同梱WAVの読み込みとPCMデコード
+- `dist/app.js` / `dist/sounds.html` / `dist/styles.css`: 音色の試聴・絞り込み・保存画面
 - `tools/measure-sound-lengths.mjs`: 全音色の長さを再測定
 
 `npm test` でカテゴリー順の連番、番号変更時のPCM保持、全音色の生成、音量の上限とスネアの音量補正、サンプル境界、短い減衰、チップノイズの停止時間、アタッククラッシュとロックキックの出だし、ファットスネアの低域、コンプによる密度の変化、実音パーカッションの出だしと余韻の差、リバースとスウェルの立ち上がり、電子タムの音程下降と高低差、実音素材のハッシュ、読み込み失敗からの復帰、WAV出力を確認できます。

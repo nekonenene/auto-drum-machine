@@ -1,6 +1,6 @@
 import { writeFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
-import { TICKS_PER_BEAT, grooves, finalizePattern, validatePatterns } from '../pattern-model.js';
+import { TICKS_PER_BEAT, grooves, finalizePattern, validatePatterns } from '../dist/pattern-model.js';
 import { additionalPatternParts } from './additional-patterns.mjs';
 import { arrangeFoundation, arrangeOpening, arrangeFill } from './pattern-arrangements.mjs';
 
@@ -154,7 +154,7 @@ export function buildPatterns() {
 
 if (import.meta.url === pathToFileURL(process.argv[1] || '').href) {
   const patterns = buildPatterns();
-  await writeFile(new URL('../patterns-data.js', import.meta.url), `// 保存済みの演奏データ。tools/create-patterns.mjsで共通基準から再生成\nexport const patterns = ${JSON.stringify(patterns, null, 2)};\n`);
+  await writeFile(new URL('../dist/patterns-data.js', import.meta.url), `// 保存済みの演奏データ。tools/create-patterns.mjsで共通基準から再生成\nexport const patterns = ${JSON.stringify(patterns, null, 2)};\n`);
   console.log(`Saved ${patterns.length} patterns (4/4: basic 100, intro 100, fill 100)`);
   console.log('Score distribution', patterns.reduce((counts, pattern) => ({ ...counts, [`${pattern.intensity}/${pattern.metallic}`]: (counts[`${pattern.intensity}/${pattern.metallic}`] || 0) + 1 }), {}));
 }

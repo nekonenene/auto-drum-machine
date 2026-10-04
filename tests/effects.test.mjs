@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { filterRange, filterResonanceQ, createReverbImpulse } from '../effects.js';
+import { filterRange, filterResonanceQ, createReverbImpulse } from '../dist/effects.js';
 
 test('filter modulation stays inside the audible range, including at a lower sample rate', () => {
   const cases = [22050, 44100, 48000].flatMap((sampleRate) => [80, 1600, 14000].flatMap((frequency) =>

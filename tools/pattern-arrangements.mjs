@@ -1,4 +1,4 @@
-import { TICKS_PER_BEAT, soundByKey, grooves } from '../pattern-model.js';
+import { TICKS_PER_BEAT, soundByKey, grooves } from '../dist/pattern-model.js';
 import { openingPatterns, referenceOpenings } from './opening-patterns.mjs';
 
 // 高低の応答、拍のアクセント、音程・質感、次の頭への助走を各骨格に割り当てる

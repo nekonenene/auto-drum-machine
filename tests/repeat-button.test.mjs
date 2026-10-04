@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { bindRepeatButton } from '../repeat-button.js';
+import { bindRepeatButton } from '../dist/repeat-button.js';
 
 /**
  * ボタン操作とタイマーを実時間の待機なしで確認する環境を用意する
