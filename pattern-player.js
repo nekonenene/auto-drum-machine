@@ -1,4 +1,20 @@
-import { TICKS_PER_BEAT } from './pattern-model.js';
+import { TICKS_PER_BEAT, soundByKey } from './pattern-model.js';
+
+/**
+ * 打撃は本来の速度を保ち、助走音は全体を拍長へ伸縮して次の頭に収める
+ *
+ * @param {object} event 保存された打撃
+ * @param {number} bpm テンポ
+ * @param {number} [sourceDuration] PCM全体の長さ（秒）
+ * @returns {{duration: number, playbackRate: number}} 発音長と再生速度
+ */
+export function voiceTiming(event, bpm, sourceDuration = soundByKey.get(event.soundKey).duration) {
+  const gateSeconds = event.gateTicks / TICKS_PER_BEAT * 60 / bpm;
+  const swell = soundByKey.get(event.soundKey).tags.attack === 'swell';
+
+  return swell ? { duration: gateSeconds, playbackRate: sourceDuration / gateSeconds }
+    : { duration: Math.min(sourceDuration, gateSeconds), playbackRate: 1 };
+}
 
 /**
  * 拍を基準に先読み予約し、停止とテンポ変更時に未来の予約を取り消す

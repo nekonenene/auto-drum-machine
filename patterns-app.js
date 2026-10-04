@@ -5,7 +5,7 @@ import { renderSound } from './synth.js';
 import { loadSampleSources } from './samples.js';
 import { TICKS_PER_BEAT, CLASSIFICATION_VERSION, purposes, centers, grooves, tagLabels, scoreCriteria,
   soundByKey, finalizePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from './pattern-model.js';
-import { PatternTransport, auditionSequence } from './pattern-player.js';
+import { PatternTransport, auditionSequence, voiceTiming } from './pattern-player.js';
 
 /**
  * この画面の要素を取得する
@@ -341,7 +341,8 @@ function scheduleVoice(event, time, bpm) {
   const gain = context.createGain();
   source.buffer = audioBuffer(event.soundKey);
   source.connect(gain).connect(masterGain);
-  const duration = Math.min(source.buffer.duration, event.gateTicks / TICKS_PER_BEAT * 60 / bpm);
+  const { duration, playbackRate } = voiceTiming(event, bpm, source.buffer.duration);
+  source.playbackRate.setValueAtTime(playbackRate, time);
   const fade = Math.min(.012, duration / 4);
   gain.gain.setValueAtTime(event.velocity, time);
   gain.gain.setValueAtTime(event.velocity, time + duration - fade);
@@ -402,7 +403,7 @@ async function initializeAudio() {
     limiter.release.value = .08;
     masterGain.connect(limiter).connect(context.destination);
     transport = new PatternTransport({ now: () => context.currentTime, schedule: scheduleVoice, cancel: cancelVoices,
-      tail: (event, bpm) => Math.min(soundByKey.get(event.soundKey).duration, event.gateTicks / TICKS_PER_BEAT * 60 / bpm) });
+      tail: (event, bpm) => voiceTiming(event, bpm).duration });
   }
 
   await context.resume();

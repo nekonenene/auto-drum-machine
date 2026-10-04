@@ -2,6 +2,7 @@ import { writeFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { TICKS_PER_BEAT, grooves, finalizePattern, validatePatterns } from '../pattern-model.js';
 import { additionalPatternParts } from './additional-patterns.mjs';
+import { arrangeFoundation, openingEvents, arrangeFill } from './pattern-arrangements.mjs';
 
 /**
  * 拍位置と強弱から1レーンの演奏部品を作る
@@ -70,20 +71,6 @@ const foundations = [
     lanes: [lane(101, [0, 1.5, 3.25, 4, 5.75, 7.5], .8), lane(6, [2, 6], .88), lane(14, [.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5], .32, .28), lane(20, [7, 7 + 1 / 3], [.55, .4]), lane(22, [7, 7 + 2 / 3], [.62, .48]), lane(18, [0, 4], .42, 1)] },
 ];
 
-const introParts = [
-  [[3, 3.5], [5, 5]], [[2, 2.75, 3.5], [22, 20, 79]], [[2.5, 3.25, 3.75], [100, 96, 9]],
-  [[2, 2 + 2 / 3, 3, 3 + 2 / 3], [5, 22, 5, 20]], [[1 + 2 / 3, 2, 2 + 2 / 3, 3, 3 + 1 / 3, 3 + 2 / 3], [101, 79, 20, 22, 20, 79]],
-  [[2, 2 + 1 / 3, 2 + 2 / 3, 3, 3 + 1 / 3, 3 + 2 / 3], [96, 97, 100, 96, 97, 5]],
-  [[2.5, 2.75, 3.25, 3.5, 3.75], [5, 5, 20, 22, 79]], [[2.25, 2.75, 3.125, 3.5, 3.75], [8, 51, 8, 80, 5]],
-  [[1.5, 2.5, 3, 3.5], [20, 22, 20, 22]], [[2, 2.5, 3.25, 3.5, 3.75], [99, 96, 100, 97, 5]],
-  [[1, 2.5, 3.25], [27, 26, 99]], [[2, 3.5], [18, 17]], [[2, 3, 3.5], [47, 25, 18]],
-  [[2, 2.125, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75], [5, 5, 79, 82, 84, 79, 82, 84, 89]],
-  [[2.5, 2.75, 3, 3.25, 3.5, 3.75], [5, 5, 18, 79, 20, 22]],
-  [[2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75], [5, 79, 5, 80, 20, 22, 20, 79]],
-  [[2.5, 3.25, 3.75], [52, 8, 2]], [[1.5, 2.75, 3.5], [51, 8, 52]],
-  [[2.25, 2.5, 3.25, 3.75], [96, 100, 97, 95]], [[2.5, 3, 3 + 1 / 3, 3 + 2 / 3], [6, 20, 22, 20]],
-];
-
 // 最終拍まで前へ押し、次の基本の頭へ渡す20種類の返し
 const transitionParts = [
   { name: 'スネアで押す', length: 1, description: '最後の1拍を8分から16分のスネアへ広げる', lanes: [lane(79, [0, .5, .75], [.65, .8, .96], .25)] },
@@ -115,7 +102,7 @@ const transitionParts = [
  */
 export function buildPatterns() {
   const additions = additionalPatternParts(lane, grid);
-  const allFoundations = [...foundations, ...additions];
+  const allFoundations = [...foundations, ...additions].map((foundation, index) => arrangeFoundation(foundation, index, lane));
   const basics = allFoundations.map((foundation, index) => finalizePattern({
     id: `p4-b-${String(index + 1).padStart(3, '0')}`, name: foundation.name, meter: 4, bars: foundation.bars,
     purpose: 'basic', derivedFrom: null, fillRange: null, groove: foundation.groove, tags: [...new Set([...foundation.tags, 'two-bar'])],
@@ -132,41 +119,13 @@ export function buildPatterns() {
     const introTicks = base.meter * TICKS_PER_BEAT;
     const startBeat = [1, .5, 1.5][index % 3];
     const addition = additions[index - foundations.length];
-    const part = introParts[index] || addition.intro;
-    const fillStart = part[0][0] * TICKS_PER_BEAT;
-    const earlyTicks = new Set();
-    const introEvents = base.events.filter((event) => event.tick >= startBeat * TICKS_PER_BEAT && event.tick < fillStart)
-      .filter((event) => {
-        if (event.tick >= introTicks / 2) {
-
-          return true;
-        }
-
-        if (event.tick % TICKS_PER_BEAT !== 0 || earlyTicks.has(event.tick)) {
-
-          return false;
-        }
-
-        earlyTicks.add(event.tick);
-
-        return true;
-      })
-      .map((event) => ({ ...event, velocity: Number((event.velocity * (.42 + .36 * event.tick / introTicks)).toFixed(3)) }));
-    part[0].forEach((beat, position) => introEvents.push(...lane(part[1][position], [beat], .45 + .40 * position / Math.max(1, part[0].length - 1), .35)));
-
-    if ([8, 13, 14, 19].includes(index)) {
-      introEvents.push(...lane(part[1].at(-1) === 22 ? 20 : 22, [part[0].at(-1)], .62, .4));
-    }
-
-    if ([7, 13, 15].includes(index)) {
-      introEvents.push(...lane(5, [part[0][0] - 1 / 16], .22, .15));
-    }
+    const introEvents = openingEvents(base, index, lane);
 
     intros.push(finalizePattern({ ...base, id: base.id.replace('-b-', '-i-'), name: `${base.name}への出だし`, bars: 1, purpose: 'intro', derivedFrom: base.id,
       events: introEvents, fillRange: { startTick: Math.round(startBeat * TICKS_PER_BEAT), endTick: introTicks },
-      tags: [...new Set([...base.tags, 'opening', ...(addition?.introTags || []), ...([5, 19].includes(index) ? ['triplet-fill'] : []), ...([7, 13, 15].includes(index) ? ['flam'] : [])])],
-      intent: `最初の${startBeat}拍を無音にし、弱い部品から入り、最後の返しで「${base.name}」の1拍目へつなぐ`,
-      tagReason: `全体の基調は${grooves[base.groove]}を継承。無音の後に音数とアクセントを増やす出だし${[5, 19].includes(index) ? '。最後の部分だけ三連符を使う' : ''}` }));
+      tags: [...new Set([...base.tags, 'opening', 'roll', 'layered', 'triplet-fill', 'flam'])],
+      intent: `最初の${startBeat}拍を無音にし、弱い拍の足場から入り、後半2拍の高低の連打・同時打ち・助走音を強め、最後の返しで「${base.name}」の1拍目へつなぐ`,
+      tagReason: `全体の基調は${grooves[base.groove]}を継承。無音の後に音数とアクセントを増やし、基本と共通の音色の連打から強い最終打撃へ進む出だし` }));
 
     const transition = transitionParts[index] || addition.transition;
     const transitionStart = Math.round((totalBeats - transition.length) * TICKS_PER_BEAT);
@@ -181,9 +140,9 @@ export function buildPatterns() {
     }
 
     fills.push(finalizePattern({ ...base, id: base.id.replace('-b-', '-o-'), name: transition.name, purpose: 'fill', derivedFrom: base.id,
-      events: [...fillEvents.values()], fillRange: { startTick: transitionStart, endTick: totalTicks },
+      events: arrangeFill([...fillEvents.values()], base, index, transitionStart, lane), fillRange: { startTick: transitionStart, endTick: totalTicks },
       tags: [...new Set([...base.tags, 'build-up', ...(transition.tags || []), ...([19].includes(index) ? ['triplet-fill'] : []), ...(index === 6 ? ['flam'] : [])])],
-      intent: `「${base.name}」の前半と拍の足場を保つ。${transition.description}。最終拍の返しから次の1拍目へつなぐ`,
+      intent: `「${base.name}」の前半と拍の足場を保つ。${transition.description}。基本と共通の高低の応答と助走音を重ね、最終拍の返しから次の1拍目へつなぐ`,
       tagReason: `全体の基調は${grooves[base.groove]}を継承。${transition.description}。最終拍のアクセントを次の頭へ渡す${index === 19 ? '。終盤だけの三連符は全体の跳ねと区別する' : ''}` }));
   }
 

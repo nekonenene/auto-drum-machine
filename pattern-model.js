@@ -80,7 +80,9 @@ export function analyzePattern(pattern) {
     totalWeight += weight;
     metalWeight += profile.metal * weight;
     metalByBeat[Math.floor(event.tick / TICKS_PER_BEAT)] = Math.max(metalByBeat[Math.floor(event.tick / TICKS_PER_BEAT)], profile.metal * weight);
-    const duration = Math.min(soundByKey.get(event.soundKey).duration, event.gateTicks / TICKS_PER_BEAT * .5);
+    const sound = soundByKey.get(event.soundKey);
+    const gateSeconds = event.gateTicks / TICKS_PER_BEAT * .5;
+    const duration = sound.tags.attack === 'swell' ? gateSeconds : Math.min(sound.duration, gateSeconds);
     metalTail += profile.metal * weight * duration;
   }
 
@@ -212,12 +214,12 @@ export function validatePatterns(patterns) {
   const ids = new Set();
   const fingerprints = new Set();
 
-  // 保存全件が共通分類と実在音色を使い、単なる音色差分を種類数に含めないことを確認する
+  // 出だしは接続先を優先してリズムの共有を認め、基本・フィルの重複を確認する
   for (const pattern of patterns) {
     const totalTicks = pattern.meter * pattern.bars * TICKS_PER_BEAT;
     const fingerprint = rhythmFingerprint(pattern);
 
-    if (ids.has(pattern.id) || fingerprints.has(fingerprint)) {
+    if (ids.has(pattern.id) || (pattern.purpose !== 'intro' && fingerprints.has(fingerprint))) {
       throw new Error(`IDまたはリズムの重複: ${pattern.id}`);
     }
 
@@ -245,14 +247,18 @@ export function validatePatterns(patterns) {
       throw new Error(`派生元またはフィル範囲が不正: ${pattern.id}`);
     }
 
-    const similar = patterns.find((other) => other !== pattern && trivialVariant(pattern, other));
+    const similar = pattern.purpose === 'intro' ? null
+      : patterns.find((other) => other !== pattern && other.purpose !== 'intro' && trivialVariant(pattern, other));
 
     if (similar) {
       throw new Error(`音色・音量・微小な強弱だけの違い: ${pattern.id} / ${similar.id}`);
     }
 
     ids.add(pattern.id);
-    fingerprints.add(fingerprint);
+
+    if (pattern.purpose !== 'intro') {
+      fingerprints.add(fingerprint);
+    }
   }
 }
 
@@ -297,24 +303,29 @@ export function trivialVariant(first, second) {
  */
 export function createVariation(base, serial) {
   const totalTicks = base.meter * base.bars * TICKS_PER_BEAT;
-  const candidates = base.events.filter((event) => event.tick > 0 && ![16, 91, 72, 73].includes(event.soundKey));
+  const candidates = base.events.filter((event) => event.tick > 0 && event.tick < totalTicks - TICKS_PER_BEAT
+    && !['kick', 'snare', 'clap', 'rim'].includes(soundByKey.get(event.soundKey).tags.role)
+    && soundByKey.get(event.soundKey).tags.attack !== 'swell'
+    && ![16, 91, 19].includes(event.soundKey));
   let seed = (serial * 2654435761) >>> 0;
   const events = base.events.map((event) => ({ ...event }));
 
-  // 元のノリを土台に、2〜4打の位置・休符・大きなアクセントを変える
-  for (let change = 0; change < 2 + serial % 3; change++) {
+  // キック・バックビート・最後の返しを保ち、ノリに合う間隔で掛け合いを変える
+  for (let change = 0; candidates.length && change < 2 + serial % 3; change++) {
     seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
     const target = candidates[seed % candidates.length];
     const index = base.events.indexOf(target);
-    const displacement = [-48, -24, -12, 12, 24, 48][(seed >>> 8) % 6];
-    const tick = Math.max(6, Math.min(totalTicks - 6, target.tick + displacement));
+    const displacements = base.groove === 'straight' ? [-48, -24, -12, 12, 24, 48] : [-64, -32, -16, 16, 32, 64];
+    const displacement = displacements[(seed >>> 8) % displacements.length];
+    const tick = target.tick + displacement;
 
-    if (!events.some((event, otherIndex) => otherIndex !== index && event.tick === tick && event.soundKey === target.soundKey)) {
+    if (tick > 0 && tick < totalTicks - TICKS_PER_BEAT
+      && !events.some((event, otherIndex) => otherIndex !== index && event.tick === tick && event.soundKey === target.soundKey)) {
       events[index] = { ...target, tick, velocity: seed % 3 ? .85 : .35 };
     }
   }
 
   return finalizePattern({ ...base, id: `auto-${base.id}-${String(serial).padStart(6, '0')}`, name: `${base.name} / 生成 ${serial}`,
-    derivedFrom: base.id, events, intent: '保存済みの骨格から2〜4打の位置・休符・アクセントを変えた試聴用の案',
-    tags: [...new Set([...base.tags, 'syncopated'])], tagReason: `${grooves[base.groove]}の基調を土台に、2〜4打をずらして休符と大きな強弱を変える。保存ライブラリの種類数には含めない` });
+    derivedFrom: base.id, events, intent: 'キック・バックビート・最後の返しを保ち、掛け合いの2〜4打の位置・休符・アクセントを変えた試聴用の案',
+    tags: [...new Set([...base.tags, 'syncopated'])], tagReason: `${grooves[base.groove]}の基調を土台に、掛け合いの2〜4打をずらす。拍の軸と次の頭への返しを保つ。保存ライブラリの種類数には含めない` });
 }

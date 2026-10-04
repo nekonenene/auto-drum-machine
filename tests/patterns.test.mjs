@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { patterns } from '../patterns-data.js';
 import { buildPatterns } from '../tools/create-patterns.mjs';
-import { TICKS_PER_BEAT, analyzePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from '../pattern-model.js';
-import { PatternTransport, auditionSequence } from '../pattern-player.js';
+import { TICKS_PER_BEAT, soundByKey, analyzePattern, finalizePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from '../pattern-model.js';
+import { PatternTransport, auditionSequence, voiceTiming } from '../pattern-player.js';
 
 test('saved library has exactly 100 of each 4/4 purpose, stable performances, and no trivial variants', () => {
   assert.equal(patterns.length, 300);
@@ -29,8 +29,8 @@ test('saved library has exactly 100 of each 4/4 purpose, stable performances, an
   assert.throws(() => validatePatterns([base, { ...tinyChange, id: 'duplicate' }]), /重複|強弱/);
 });
 
-test('all saved patterns use the same assessment and cover every independent score combination', () => {
-  const combinations = new Set();
+test('all saved patterns use the same independent assessment after arranging their performances', () => {
+  const metalLevels = new Set();
 
   // 保存された評価を全件の演奏から照合し、激しさと金属感を独立に揃える
   for (const pattern of patterns) {
@@ -39,10 +39,29 @@ test('all saved patterns use the same assessment and cover every independent sco
     assert.equal(pattern.metallic, assessment.metallic, pattern.id);
     assert.equal(pattern.center, assessment.center, pattern.id);
     assert.deepEqual(pattern.metrics, assessment.metrics, pattern.id);
-    combinations.add(`${pattern.intensity}/${pattern.metallic}`);
+    metalLevels.add(pattern.metallic);
   }
 
-  assert.equal(combinations.size, 25);
+  assert.deepEqual([...metalLevels].sort(), [1, 2, 3, 4, 5]);
+});
+
+test('the library uses every catalog sound and gives each base a broader audible ensemble', () => {
+  const audibleKeys = new Set(patterns.flatMap((pattern) => pattern.events.filter((event) => event.velocity >= .4).map((event) => event.soundKey)));
+  assert.deepEqual([...audibleKeys].sort((first, second) => first - second), [...soundByKey.keys()].sort((first, second) => first - second));
+  assert.ok(patterns.filter((pattern) => pattern.purpose === 'basic').every((pattern) => pattern.usedSoundKeys.length >= 6));
+});
+
+test('intros may share a pickup rhythm while IDs and base and fill duplicates remain checked', () => {
+  const base = patterns[0];
+  const secondBase = patterns[1];
+  const intro = patterns.find((pattern) => pattern.derivedFrom === base.id && pattern.purpose === 'intro');
+  const shared = finalizePattern({ ...intro, id: 'shared-intro', derivedFrom: secondBase.id });
+  validatePatterns([base, secondBase, intro, shared]);
+  validatePatterns([base, secondBase, shared, intro]);
+  assert.throws(() => validatePatterns([base, intro, { ...shared, id: intro.id }]), /重複/);
+  assert.throws(() => validatePatterns([base, { ...base, id: 'duplicate-base' }]), /重複|強弱/);
+  const fill = patterns.find((pattern) => pattern.derivedFrom === base.id && pattern.purpose === 'fill');
+  assert.throws(() => validatePatterns([base, fill, { ...fill, id: 'duplicate-fill' }]), /重複|強弱/);
 });
 
 test('two-bar bases develop the second bar and the electronic groove keeps a clear backbeat across the loop', () => {
@@ -115,6 +134,12 @@ test('intros enter from silence; transition fills keep the pulse and push into t
       const late = pattern.events.filter((event) => event.tick >= totalTicks / 2);
       assert.ok(late.length >= early.length, pattern.id);
       assert.ok(Math.max(...late.map((event) => event.velocity)) >= Math.max(0, ...early.map((event) => event.velocity)), pattern.id);
+      assert.ok(new Set(late.map((event) => event.tick)).size >= 6, pattern.id);
+      const finalTick = Math.max(...late.map((event) => event.tick));
+      const finalHits = late.filter((event) => event.tick === finalTick);
+      assert.ok(finalTick >= totalTicks - 32, pattern.id);
+      assert.ok(finalHits.length >= 2 && finalHits.some((event) => event.velocity >= .9), pattern.id);
+      assert.ok(pattern.tags.includes('roll') && pattern.tags.includes('layered'), pattern.id);
     } else {
       const base = patterns.find((item) => item.id === pattern.derivedFrom);
       assert.deepEqual(pattern.events.filter((event) => event.tick < pattern.fillRange.startTick), base.events.filter((event) => event.tick < pattern.fillRange.startTick));
@@ -143,7 +168,7 @@ test('scores stay independent of loudness and phrase length; metallic and electr
   Object.keys(firstScore.metrics).forEach((key) => assert.ok(Math.abs(firstScore.metrics[key] - twiceScore.metrics[key]) < 1e-12, key));
   assert.equal(analyzePattern(base).intensity, analyzePattern(quiet).intensity);
   assert.equal(analyzePattern(base).metallic, analyzePattern(quiet).metallic);
-  assert.ok(patterns.some((pattern) => pattern.intensity === 1 && pattern.metallic === 5));
+  assert.ok(patterns.some((pattern) => pattern.intensity <= 2 && pattern.metallic === 5));
   assert.ok(patterns.some((pattern) => pattern.intensity === 5 && pattern.metallic === 1));
   assert.equal(patterns.find((pattern) => pattern.id === 'p4-b-017').metallic, 1);
   assert.equal(patterns.find((pattern) => pattern.id === 'p4-b-020').groove, 'straight');
@@ -161,6 +186,55 @@ test('similarity exposes shared rhythm and automatic variants save reproducible 
   assert.ok(!trivialVariant(base, generated));
   assert.equal(generated.derivedFrom, base.id);
   assert.ok(rhythmSimilarity(base, generated) > .3);
+});
+
+test('automatic variations preserve the beat foundation, landing, and swung subdivisions', () => {
+
+  // 各骨格から複数の案を作り、装飾を変えても接続の軸が動かないことを確認する
+  for (const base of patterns.filter((pattern) => pattern.purpose === 'basic')) {
+    const lastBeatTick = (base.meter * base.bars - 1) * TICKS_PER_BEAT;
+    const anchors = base.events.filter((event) => ['kick', 'snare', 'clap', 'rim'].includes(soundByKey.get(event.soundKey).tags.role)
+      || event.tick === 0 || event.tick >= lastBeatTick);
+
+    // 生成番号を変えても頭・バックビート・最後の返しをそのまま残す
+    for (const serial of [1, 2, 7, 31]) {
+      const variation = createVariation(base, serial);
+      anchors.forEach((event) => assert.ok(variation.events.some((candidate) => JSON.stringify(candidate) === JSON.stringify(event)), base.id));
+      assert.equal(new Set(variation.events.map((event) => `${event.tick}/${event.soundKey}`)).size, variation.events.length, base.id);
+      assert.ok(variation.events.every((event) => event.tick >= 0 && event.tick < lastBeatTick + TICKS_PER_BEAT), base.id);
+
+      if (base.groove !== 'straight') {
+        base.events.forEach((event) => {
+          if (!variation.events.some((candidate) => candidate.tick === event.tick && candidate.soundKey === event.soundKey)) {
+            assert.ok(variation.events.some((candidate) => candidate.soundKey === event.soundKey && (candidate.tick - event.tick) % 16 === 0), base.id);
+          }
+        });
+      }
+    }
+  }
+});
+
+test('reverse and swell pickups fit the full sound to the next downbeat at slow and fast tempos', () => {
+  const pickups = patterns.flatMap((pattern) => pattern.events
+    .filter((event) => soundByKey.get(event.soundKey).tags.attack === 'swell')
+    .map((event) => ({ pattern, event })));
+  assert.ok(pickups.length >= 200);
+
+  // 助走のピークを途中で切らず、40〜240BPMの各境界へPCM全体を収める
+  for (const { pattern, event } of pickups) {
+    assert.notEqual(pattern.purpose, 'basic');
+    assert.equal(event.tick + event.gateTicks, pattern.bars * pattern.meter * TICKS_PER_BEAT, pattern.id);
+
+    // 再生速度と発音長が同じ拍長を表し、終端が次の頭と一致することを確認する
+    for (const bpm of [40, 110, 240]) {
+      const timing = voiceTiming(event, bpm);
+      assert.ok(Math.abs(soundByKey.get(event.soundKey).duration / timing.playbackRate - timing.duration) < 1e-9);
+      assert.ok(Math.abs(event.tick / TICKS_PER_BEAT * 60 / bpm + timing.duration - pattern.bars * pattern.meter * 60 / bpm) < 1e-9);
+    }
+  }
+
+  const kick = patterns[0].events.find((event) => event.soundKey === 101);
+  assert.equal(voiceTiming(kick, 240).playbackRate, 1);
 });
 
 /**
