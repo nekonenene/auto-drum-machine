@@ -50,7 +50,7 @@ export class PatternTransport {
    */
   constructor(audio) {
     this.audio = audio;
-    this.bpm = 110;
+    this.bpm = 120;
     this.playing = false;
     this.loop = false;
     this.nextIndex = 0;

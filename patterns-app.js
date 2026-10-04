@@ -201,7 +201,7 @@ function renderTimeline(pattern) {
   const height = 36 + keys.length * 29;
   const left = 160;
   const width = 640;
-  const bpm = Number(query('#pattern-bpm').value) || 110;
+  const bpm = Number(query('#pattern-bpm').value) || 120;
   let svg = `<svg viewBox="0 0 816 ${height}" role="img" aria-label="${escapeHtml(pattern.name)}の発音位置、強弱と余韻"><rect x="${left}" y="25" width="640" height="${height - 25}" fill="#f6f8ef"/>`;
 
   if (pattern.fillRange) {
@@ -655,7 +655,7 @@ function renderCriteria() {
  */
 function exportData(data, filename) {
   const url = URL.createObjectURL(new Blob([JSON.stringify({ classificationVersion: CLASSIFICATION_VERSION, ticksPerBeat: TICKS_PER_BEAT,
-    defaultBpm: 110, defaultVolume: 65, data }, null, 2)], { type: 'application/json' }));
+    defaultBpm: 120, defaultVolume: 80, data }, null, 2)], { type: 'application/json' }));
   const link = document.createElement('a');
   link.href = url;
   link.download = filename;
@@ -673,13 +673,15 @@ async function loadLibrary() {
   ready = false;
   query('#pattern-play').disabled = true;
   query('#auto-generate').disabled = true;
+  query('#audio-status').hidden = false;
   query('#audio-status').textContent = '実音素材を読み込んでいます…';
   renderList();
 
   try {
     sampleSources = await loadSampleSources(sounds);
     ready = true;
-    query('#audio-status').textContent = `全${patterns.length}種類の保存済み演奏 · 共通の初期値 110 BPM / 音量65% · 実音素材の準備完了`;
+    query('#audio-status').textContent = '';
+    query('#audio-status').hidden = true;
     query('#pattern-play').disabled = false;
     query('#auto-generate').disabled = false;
     renderList();
@@ -747,7 +749,7 @@ query('#reset-filters').addEventListener('click', () => {
   renderList();
 });
 query('#pattern-bpm').addEventListener('change', () => {
-  const bpm = Math.max(40, Math.min(240, Math.round(Number(query('#pattern-bpm').value) || 110)));
+  const bpm = Math.max(40, Math.min(240, Math.round(Number(query('#pattern-bpm').value) || 120)));
   query('#pattern-bpm').value = bpm;
   transport?.setBpm(bpm);
   renderTimeline(selectedPattern);
@@ -758,11 +760,11 @@ query('#pattern-volume').addEventListener('input', () => {
   masterGain?.gain.setTargetAtTime(volume / 100 * .6, context.currentTime, .015);
 });
 query('#reset-mix').addEventListener('click', () => {
-  query('#pattern-bpm').value = 110;
-  query('#pattern-volume').value = 65;
-  query('#pattern-volume-value').textContent = '65%';
-  transport?.setBpm(110);
-  masterGain?.gain.setTargetAtTime(.39, context.currentTime, .015);
+  query('#pattern-bpm').value = 120;
+  query('#pattern-volume').value = 80;
+  query('#pattern-volume-value').textContent = '80%';
+  transport?.setBpm(120);
+  masterGain?.gain.setTargetAtTime(.48, context.currentTime, .015);
   renderTimeline(selectedPattern);
 });
 query('#pattern-loop').addEventListener('change', () => {

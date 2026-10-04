@@ -8,9 +8,6 @@
 .pattern-intro .eyebrow { margin-bottom: 10px; }
 .pattern-intro h1 { font-size: 28px; margin-bottom: 8px; }
 .pattern-intro p:not(.eyebrow) { color: #68755e; font-size: 11px; line-height: 1.8; margin: 0; }
-.phrase-count strong { font-size: 48px; font-weight: 400; letter-spacing: -2px; }
-.phrase-count strong span { font-size: 19px; color: #84926c; letter-spacing: 0; }
-.phrase-count small { display: block; font-size: 10px; color: #69775f; margin-top: 4px; }
 .audio-status { color: #69775f; font-size: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
 .audio-status button { margin-left: 12px; }
 .pattern-workspace { border-top: 1px solid var(--line); padding: 16px 0; }
@@ -138,9 +135,6 @@ h3 { font-size: 13px; margin: 0; font-weight: 600; }
   .pattern-intro h1 { font-size: 22px; }
   .pattern-intro .eyebrow { font-size: 7px; letter-spacing: 1px; }
   .pattern-intro p:not(.eyebrow) { font-size: 10px; }
-  .phrase-count strong { font-size: 35px; }
-  .phrase-count strong span { font-size: 14px; }
-  .phrase-count small { max-width: 95px; font-size: 8px; line-height: 1.7; }
   .audio-status { font-size: 9px; line-height: 1.8; }
   .purpose-tabs { gap: 6px; }
   .library-controls { display: block; }
