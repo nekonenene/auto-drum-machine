@@ -81,7 +81,7 @@ const groupPalettes = [
     { phrase: '実音コンガとタンバリンにボイスの駆け上がり', pair: [98, 99], accent: 95, color: 46, swell: 76, motion: 'cascade', voices: { 79: 80, 92: 32 } },
   ],
   [
-    { phrase: '電気の破裂と途切れる連打にタムと歪み', pair: [56, 64], accent: 90, color: 63, swell: 77, kick: 4, motion: 'burst' },
+    { phrase: '電気の破裂と途切れる連打にタムと歪み、最後は短いタムとハットで次の頭へ渡す', pair: [56, 64], accent: 90, color: 63, swell: 77, kick: 4, motion: 'burst', ending: { pair: [56, 90], pulse: 12 } },
     { phrase: '高低ウッドとリムにクラップとエコーの裏拍', pair: [26, 27], accent: 10, color: 68, swell: 74, motion: 'backbeat', voices: { 80: 7, 12: 31 } },
     { phrase: '高低カウベルとスプラッシュに金属の駆け上がり', pair: [29, 30], accent: 19, color: 48, swell: 78, motion: 'cascade', voices: { 80: 88, 12: 15 } },
     { phrase: '高低ボンゴとミュートコンガに空気の応答', pair: [35, 36], accent: 100, color: 55, swell: 67, motion: 'answer', voices: { 80: 5, 12: 92 } },
@@ -199,9 +199,10 @@ function responseEvents(palette, groove, responses, lane) {
   if (palette.motion === 'burst') {
     const beats = swung ? [2 + 1/3, 2.5, 2 + 2/3, 6 + 1/3, 6.5, 6 + 2/3, 7 + 1/3, 7.5, 7 + 2/3]
       : [2.25, 2.375, 2.5, 6.25, 6.375, 6.5, 7.25, 7.375, 7.5];
+    const closingPair = palette.ending?.pair || palette.pair;
 
-    return [...beats.flatMap((beat, position) => lane(palette.pair[position % 2], [beat], [.55, .35, .82][position % 3], .2)),
-      ...lane(palette.pair[1], [beats.at(-1)], .8, .25)];
+    return [...beats.flatMap((beat, position) => lane((position >= 6 ? closingPair : palette.pair)[position % 2], [beat], [.55, .35, .82][position % 3], .2)),
+      ...lane(closingPair[1], [beats.at(-1)], .8, palette.ending ? .4 : .25)];
   }
 
   return [...lane(palette.pair[0], [responses[0], responses[2]], [.57, .72], .35),
@@ -251,6 +252,11 @@ export function arrangeFoundation(foundation, index, lane) {
 
   if (palette.kick) {
     layers.push(lane(palette.kick, [0, 4], .56, .3));
+  }
+
+  if (palette.ending) {
+    const finalBeat = foundation.groove === 'straight' ? 7.75 : 7 + 2/3;
+    layers.push(lane(palette.ending.pair[1], [finalBeat], .62, .4), lane(palette.ending.pulse, [finalBeat], .26, .2));
   }
 
   const transition = foundation.transition && { ...foundation.transition,

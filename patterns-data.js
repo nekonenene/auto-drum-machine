@@ -14406,8 +14406,8 @@ export const patterns = [
       "layered",
       "two-bar"
     ],
-    "intent": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。電気の破裂と途切れる連打にタムと歪みを加え、2小節目の返答を強める",
-    "tagReason": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。電気の破裂と途切れる連打にタムと歪みを加え、2小節目の返答を強める。ノリはフレーズ全体の均等な刻みで分類",
+    "intent": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。電気の破裂と途切れる連打にタムと歪み、最後は短いタムとハットで次の頭へ渡すを加え、2小節目の返答を強める",
+    "tagReason": "ハットの16分を切り抜きバックビートの位置も変える。キックとスネアの位置、刻みの休符を2小節で変え、最後の返しで頭へ戻る。電気の破裂と途切れる連打にタムと歪み、最後は短いタムとハットで次の頭へ渡すを加え、2小節目の返答を強める。ノリはフレーズ全体の均等な刻みで分類",
     "events": [
       {
         "tick": 0,
@@ -14681,7 +14681,7 @@ export const patterns = [
       },
       {
         "tick": 708,
-        "soundKey": 64,
+        "soundKey": 90,
         "velocity": 0.35,
         "gateTicks": 19
       },
@@ -14699,15 +14699,27 @@ export const patterns = [
       },
       {
         "tick": 720,
-        "soundKey": 64,
-        "velocity": 0.8,
-        "gateTicks": 24
-      },
-      {
-        "tick": 720,
         "soundKey": 80,
         "velocity": 0.85,
         "gateTicks": 29
+      },
+      {
+        "tick": 720,
+        "soundKey": 90,
+        "velocity": 0.8,
+        "gateTicks": 38
+      },
+      {
+        "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
+        "soundKey": 90,
+        "velocity": 0.62,
+        "gateTicks": 38
       }
     ],
     "classificationVersion": 1,
@@ -14721,21 +14733,21 @@ export const patterns = [
       63,
       64
     ],
-    "intensity": 4,
+    "intensity": 5,
     "metallic": 2,
     "center": "drums",
     "metrics": {
-      "density": 6.25,
-      "repeatRatio": 0.4,
-      "accentRatio": 0.26,
-      "thickness": 2.75,
-      "metalRatio": 0.14732504671061838,
+      "density": 6.5,
+      "repeatRatio": 0.4230769230769231,
+      "accentRatio": 0.25,
+      "thickness": 2.875,
+      "metalRatio": 0.14566187436198044,
       "metalPresence": 0.20584083044982698,
-      "metalSustain": 0.062091105412753374,
-      "intensityIndex": 0.6794583333333333,
-      "metallicIndex": 0.1520946906377012
+      "metalSustain": 0.06300046548030981,
+      "intensityIndex": 0.7065705128205128,
+      "metallicIndex": 0.1513163498560838
     },
-    "scoreReason": "激しさ4：1拍あたり6.3打、連打40%、重なり2.8打/拍。メタリックさ2：相対強度で金属15%、金属の目立ち21%、余韻指標6%"
+    "scoreReason": "激しさ5：1拍あたり6.5打、連打42%、重なり2.9打/拍。メタリックさ2：相対強度で金属15%、金属の目立ち21%、余韻指標6%"
   },
   {
     "id": "p4-b-058",
@@ -60002,6 +60014,12 @@ export const patterns = [
       },
       {
         "tick": 744,
+        "soundKey": 12,
+        "velocity": 0.26,
+        "gateTicks": 19
+      },
+      {
+        "tick": 744,
         "soundKey": 56,
         "velocity": 0.95,
         "gateTicks": 29
@@ -60027,21 +60045,21 @@ export const patterns = [
       63,
       64
     ],
-    "intensity": 4,
+    "intensity": 5,
     "metallic": 2,
     "center": "drums",
     "metrics": {
-      "density": 6.5,
-      "repeatRatio": 0.36538461538461536,
-      "accentRatio": 0.19230769230769232,
-      "thickness": 2.625,
-      "metalRatio": 0.12956278709713775,
+      "density": 6.625,
+      "repeatRatio": 0.37735849056603776,
+      "accentRatio": 0.18867924528301888,
+      "thickness": 2.75,
+      "metalRatio": 0.13100832496760947,
       "metalPresence": 0.16137152777777783,
-      "metalSustain": 0.04867710900685142,
-      "intensityIndex": 0.6787500000000001,
-      "metallicIndex": 0.12697255758778683
+      "metalSustain": 0.04939001335668815,
+      "intensityIndex": 0.695438286163522,
+      "metallicIndex": 0.12787453906902177
     },
-    "scoreReason": "激しさ4：1拍あたり6.5打、連打37%、重なり2.6打/拍。メタリックさ2：相対強度で金属13%、金属の目立ち16%、余韻指標5%"
+    "scoreReason": "激しさ5：1拍あたり6.6打、連打38%、重なり2.8打/拍。メタリックさ2：相対強度で金属13%、金属の目立ち16%、余韻指標5%"
   },
   {
     "id": "p4-o-058",
