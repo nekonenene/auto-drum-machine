@@ -125,7 +125,7 @@ export function buildPatterns() {
       events: opening.events, fillRange: { startTick: entryTick, endTick: introTicks },
       tags: ['opening', 'build-up', 'roll', 'layered', 'flam', 'syncopated'],
       intent: `「${base.name}」へつなぐ。${opening.description}`,
-      tagReason: `開始拍を固定せず、最初の打撃から一続きの助走として演奏する。${opening.description}` }));
+      tagReason: `${opening.entryDescription}。${opening.description}` }));
 
     const transition = transitionParts[index] || addition.transition;
     const transitionStart = Math.round((totalBeats - transition.length) * TICKS_PER_BEAT);

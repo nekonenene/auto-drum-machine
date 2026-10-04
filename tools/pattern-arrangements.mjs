@@ -1,4 +1,5 @@
 import { TICKS_PER_BEAT, soundByKey, grooves } from '../pattern-model.js';
+import { openingPatterns, referenceOpenings } from './opening-patterns.mjs';
 
 // 高低の応答、拍のアクセント、音程・質感、次の頭への助走を各骨格に割り当てる
 const originalPalettes = [
@@ -268,109 +269,52 @@ export function arrangeFoundation(foundation, index, lane) {
     intent: `${foundation.intent}。${palette.phrase}を加え、2小節目の返答を強める` };
 }
 
-// 音域の移動と音数の詰め方が異なる助走。H/Lは高低、Sはバックビート、A/Cはアクセントと色付け
-const openingPhrases = [
-  { name: 'バックビートの二連から高低の返し', beats: [2, 2.5, 2.75, 3, 3.25, 3.5, 3.75], voices: 'SSSHHLL' },
-  { name: '低い呼び掛けから返答を詰める', beats: [1.5, 2, 2.5, 2.75, 3, 3.5, 3.75], voices: 'LHLSHSL' },
-  { name: 'アクセントの裏拍から短い打撃へ', beats: [1.5, 2, 2.5, 3, 3.5, 3.75], voices: 'ASASHS' },
-  { name: '高低を交互に受け渡す', beats: [1, 1.5, 2, 2.5, 3, 3.25, 3.5, 3.75], voices: 'HLHLSHLS' },
-  { name: '高い打撃から低い打撃へ駆け下りる', beats: [2, 2.25, 2.5, 2.75, 3, 3.5, 3.75], voices: 'HHHLLSL' },
-  { name: '高低の裏の呼び掛け', beats: [1.25, 1.75, 2, 2.5, 2.75, 3, 3.5, 3.75], voices: 'HLHLLHSL' },
-  { name: 'バックビートと高低からフラムで押す', beats: [2, 2.5, 2.9375, 3, 3.25, 3.5, 3.75], voices: 'SLSSHLL' },
-  { name: '短い二連を音域ごとに受け渡す', beats: [2.25, 2.375, 2.75, 2.875, 3.25, 3.375, 3.75], voices: 'SSHHLLS' },
-  { name: 'バックビートと高低を交差させて詰める', beats: [1, 1.5, 2, 2.25, 2.5, 2.75, 3, 3.25, 3.5, 3.75], voices: 'SLHHSSLLHS' },
-  { name: '高低の応答を後半の連打へ育てる', beats: [1.5, 2, 2.5, 2.75, 3, 3.25, 3.5, 3.75], voices: 'HLHLSSHL' },
-  { name: '広い高低の四打で頭を呼ぶ', beats: [2, 2.5, 3, 3.5], voices: 'HLHL' },
-  { name: '短いバックビートの返しから高低へ', beats: [2.5, 3, 3.5, 3.75], voices: 'SHLS' },
-  { name: '裏拍の四打と余韻で渡す', beats: [2.25, 2.75, 3.25, 3.75], voices: 'HLHL' },
-  { name: '短い四打を一息で渡す', beats: [3, 3.25, 3.5, 3.75], voices: 'SHLS' },
-  { name: 'アクセントから二連の波へ進む', beats: [1.5, 2, 2.25, 2.5, 2.75, 3, 3.125, 3.25, 3.5, 3.75], voices: 'AHSLLSSHLS' },
-  { name: '途切れず刻みを細かくして押し上げる', beats: [0, .5, 1, 1.5, 2, 2.25, 2.5, 2.75, 3, 3.125, 3.25, 3.5, 3.75], voices: 'SHSLHHLLSSSHL' },
-  { name: '色のある一打から短い掛け合いへ', beats: [2.5, 2.75, 3, 3.25, 3.5, 3.75], voices: 'CHLSHS' },
-  { name: '低い打撃の隙間を高い返答でつなぐ', beats: [1, 1.75, 2, 2.5, 3, 3.5, 3.75], voices: 'LSHLHSL' },
-  { name: 'アクセントと高低の応答を重ねる', beats: [1.5, 2, 2.5, 3, 3.25, 3.5, 3.75], voices: 'AHALHLS' },
-  { name: '高低の流れを保って最後だけ加速する', beats: [0, .5, 1, 1.5, 2, 2.5, 2.75, 3, 3.25, 3.5, 3.75], voices: 'LHLHSSHHLHL' },
-];
-
-const tripletOpeningBeats = [
-  [2, 7/3, 8/3, 3, 10/3, 11/3],
-  [4/3, 5/3, 2, 7/3, 8/3, 3, 10/3, 11/3],
-  [1, 5/3, 2, 7/3, 3, 10/3, 11/3],
-  [2, 7/3, 8/3, 3, 19/6, 10/3, 11/3],
-  [0, 2/3, 1, 5/3, 2, 7/3, 8/3, 3, 10/3, 11/3],
-  [8/3, 3, 10/3, 11/3],
-  [5/3, 2, 8/3, 3, 10/3, 11/3],
-  [2, 13/6, 7/3, 8/3, 3, 19/6, 10/3, 11/3],
-];
-
 /**
- * 連打の前半を長く、後半を短くして接続先のスウィングへ寄せる
- *
- * @param {number} beat 均等な刻みの拍位置
- * @returns {number} 跳ねた拍位置
- */
-function swingOpeningBeat(beat) {
-  const whole = Math.floor(beat);
-  const fraction = beat - whole;
-
-  return whole + (fraction < .5 ? fraction * 4/3 : 2/3 + (fraction - .5) * 2/3);
-}
-
-/**
- * 接続先のノリ・音域・密度に合う、一続きの助走フレーズを作る
+ * 個別に用意した1小節を、接続先の音色で演奏する
  *
  * @param {object} base 派生元の基本
  * @param {number} index 骨格の位置
  * @param {Function} lane 拍位置から演奏を作る関数
- * @returns {{events: object[], description: string}} 基本の頭へ渡す演奏と狙い
+ * @returns {{events: object[], description: string, entryDescription: string}} 演奏と狙い
  */
 export function arrangeOpening(base, index, lane) {
-  const palette = arrangementPalette(index);
-  const quietPhrases = [10, 11, 12, 13, 16];
-  const drivingPhrases = [0, 4, 6, 7, 8, 14, 15, 19];
-  const answeringPhrases = [1, 2, 3, 5, 9, 17, 18];
-  const choices = base.intensity <= 2 ? quietPhrases : base.intensity >= 4 ? drivingPhrases : answeringPhrases;
-  const phraseIndex = index < 20 ? index : choices[index % choices.length];
-  const phrase = openingPhrases[phraseIndex];
-  const beats = base.groove === 'triplet' ? tripletOpeningBeats[index % tripletOpeningBeats.length]
-    : base.groove === 'straight' ? phrase.beats : phrase.beats.map(swingOpeningBeat);
-  const backbeatKey = base.events.find((event) => ['snare', 'rim', 'clap'].includes(soundByKey.get(event.soundKey).tags.role)).soundKey;
-  const voices = { H: palette.pair[0], L: palette.pair[1], S: backbeatKey, A: palette.accent, C: palette.color };
-  const finalBeat = beats.at(-1);
-  const parts = beats.flatMap((beat, position) => {
-    const role = position === beats.length - 1 ? phrase.voices.at(-1) : phrase.voices[position % phrase.voices.length];
-    let soundKey = voices[role];
+  const phrase = openingPatterns[index];
 
-    // 長い電子連打の途中切りを避け、最後の返しは通常の短い打撃にする
-    if (soundKey === 64 || (beat >= 3 && soundByKey.get(soundKey).tags.role === 'fx')) {
+  if (phrase.reference) {
+    const reference = referenceOpenings.get(phrase.reference);
+
+    return { events: reference.notes.map(([tick, soundKey, velocity, gateTicks]) => ({ tick, soundKey, velocity, gateTicks })),
+      description: reference.description, entryDescription: '開始拍を固定せず、最初の打撃から一続きの助走として演奏する' };
+  }
+
+  const palette = arrangementPalette(index);
+  const backbeatKey = base.events.filter((event) => ['snare', 'rim', 'clap'].includes(soundByKey.get(event.soundKey).tags.role))
+    .sort((first, second) => second.velocity - first.velocity)[0].soundKey;
+  const kickKey = base.events.filter((event) => soundByKey.get(event.soundKey).tags.role === 'kick')
+    .sort((first, second) => second.velocity - first.velocity)[0].soundKey;
+  const pulseKey = base.events.find((event) => ['hat', 'shaker'].includes(soundByKey.get(event.soundKey).tags.role)
+    || [15,17,18].includes(event.soundKey))?.soundKey ?? palette.pair[0];
+  const pair = phrase.pair ?? palette.pair;
+  const voices = { K: kickKey, P: pulseKey, S: backbeatKey, R: 25, H: pair[0], L: pair[1], A: palette.accent, C: palette.color, W: palette.swell };
+  const parts = [{ beats: phrase.beats, voices: phrase.voices, velocities: phrase.velocities }, ...(phrase.layers || [])];
+  const events = parts.flatMap((part) => part.beats.flatMap((beat, position) => {
+    const voice = part.voice ?? part.voices[position];
+    let soundKey = voices[voice];
+
+    // 途切れる電子連打を短い打撃へ替え、終盤の長い効果音を次の頭へ残さない
+    if (soundKey === 64 || (voice !== 'W' && beat >= 3 && soundByKey.get(soundKey).tags.role === 'fx')) {
       soundKey = backbeatKey;
     }
 
-    const progress = position / (beats.length - 1);
-    const grace = position + 1 < beats.length && beats[position + 1] - beat <= 1/12;
-    const velocity = grace ? .28 : position === beats.length - 1 ? .8 : .45 + progress * .43;
+    const sound = soundByKey.get(soundKey);
+    const gate = voice === 'W' ? 4 - beat : sound.tags.role === 'cymbal' ? Math.min(3, 4 - beat)
+      : sound.tags.role === 'bell' ? Math.min(1.5, 4 - beat) : sound.tags.role === 'fx' ? 1 : .5;
 
-    return lane(soundKey, [beat], velocity, ['bell', 'cymbal'].includes(soundByKey.get(soundKey).tags.role) ? .7 : .35);
-  });
+    return lane(soundKey, [beat], part.velocities[position], gate);
+  }));
 
-  // 密な基本には、助走の打撃と重なる位置だけキックの骨格を添える
-  if (base.intensity >= 4) {
-    const hitTicks = new Set(parts.map((event) => event.tick));
-    parts.push(...base.events.filter((event) => event.tick < 4 * TICKS_PER_BEAT && event.tick <= finalBeat * TICKS_PER_BEAT
-      && hitTicks.has(event.tick) && soundByKey.get(event.soundKey).tags.role === 'kick')
-      .map((event) => ({ ...event, velocity: Number((event.velocity * .65).toFixed(3)) })));
-  }
-
-  if (base.intensity >= 3 && index % 3 === 0) {
-    parts.push(...lane(palette.accent, [beats.at(-2)], .64, .45));
-  }
-
-  if (index % 5 === 0 || base.metallic >= 4) {
-    const swellBeat = beats[Math.max(0, beats.length - 3)];
-    parts.push(...lane(palette.swell, [swellBeat], .28, 4 - swellBeat));
-  }
-
-  return { events: layerEvents([], parts), description: `${phrase.name}。${grooves[base.groove]}の間隔と基本の高低の音色を使い、最後の返しから次の1拍目へ渡す` };
+  return { events: layerEvents([], events), description: `${phrase.name}。${grooves[base.groove]}の基本へつなぐ`,
+    entryDescription: '1拍目から基本へ向かう1小節として演奏する' };
 }
 
 /**
