@@ -2,7 +2,7 @@ export const effectDefaults = {
   compressor: { enabled: true, threshold: -20, ratio: 6.5, makeup: 7 },
   filter: { enabled: true, type: 'lowpass', frequency: 14000, resonance: 70, motion: 'off', beats: 16, depth: 2 },
   chorus: { enabled: true, mix: .3, rate: .8, depth: .004 },
-  reverb: { enabled: true, mix: .15, room: 'room' },
+  reverb: { enabled: true, mix: .05, room: 'room' },
 };
 
 /**
