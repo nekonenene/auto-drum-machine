@@ -7,6 +7,7 @@ import { TICKS_PER_BEAT, CLASSIFICATION_VERSION, purposes, centers, grooves, tag
   soundByKey, finalizePattern, rhythmFingerprint, rhythmSimilarity, trivialVariant, createVariation, validatePatterns } from './pattern-model.js';
 import { PatternTransport, auditionSequence, voiceTiming } from './pattern-player.js';
 import { AutomaticPerformance } from './pattern-performance.js';
+import { EffectRack, effectDefaults, filterRange } from './effects.js';
 
 /**
  * この画面の要素を取得する
@@ -33,6 +34,9 @@ let lastAuditionPattern;
 let purposeFilter = 'all';
 let context;
 let masterGain;
+let effects;
+let effectsBypassed = false;
+const effectSettings = structuredClone(effectDefaults);
 let transport;
 let playbackToken = 0;
 let pumpInterval;
@@ -43,6 +47,109 @@ let ready = false;
 let toastTimer;
 let generationSerial = readGenerationSerial();
 const generated = readGenerated();
+
+/**
+ * 音作りの値を短い単位付きの表示へ変換する
+ *
+ * @param {string} effect エフェクト名
+ * @param {string} parameter パラメーター名
+ * @param {number} value 設定値
+ * @returns {string} 表示する値
+ */
+function effectValueLabel(effect, parameter, value) {
+  if (parameter === 'frequency') {
+
+    return value >= 1000 ? `${(value / 1000).toFixed(2)} kHz` : `${Math.round(value)} Hz`;
+  }
+
+  if (parameter === 'resonance') {
+
+    return `${Math.round(value)}%`;
+  }
+
+  if (parameter === 'mix') {
+
+    return `${Math.round(value * 100)}%`;
+  }
+
+  if (parameter === 'threshold' || parameter === 'makeup') {
+
+    return `${value} dB`;
+  }
+
+  if (parameter === 'ratio') {
+
+    return `${value} : 1`;
+  }
+
+  if (parameter === 'rate') {
+
+    return `${value.toFixed(1)} Hz`;
+  }
+
+  if (parameter === 'depth') {
+
+    return effect === 'filter' ? `${value.toFixed(1)} oct` : `${(value * 1000).toFixed(1)} ms`;
+  }
+
+  return value.toFixed(1);
+}
+
+/**
+ * オン／オフ、比較状態、フィルターの変化範囲を表示する
+ *
+ * @returns {void}
+ */
+function renderEffects() {
+  document.querySelectorAll('[data-effect]').forEach((control) => {
+    const { effect, param } = control.dataset;
+    const value = effectSettings[effect][param];
+
+    if (control.type === 'checkbox') {
+      control.checked = value;
+    } else {
+      control.value = param === 'frequency' ? Math.log(value / 80) / Math.log(14000 / 80) * 100 : value;
+    }
+
+    const output = query(`[data-value="${effect}.${param}"]`);
+
+    if (output) {
+      output.textContent = effectValueLabel(effect, param, value);
+    }
+  });
+  const enabled = Object.entries(effectSettings).filter(([, setting]) => setting.enabled);
+  query('#effects-toggle-all').textContent = enabled.length ? 'すべて解除' : 'すべてオン';
+  document.querySelectorAll('[data-effect-card]').forEach((card) => {
+    card.classList.toggle('effect-active', effectSettings[card.dataset.effectCard].enabled);
+  });
+  query('#effects-bypass').setAttribute('aria-pressed', String(effectsBypassed));
+  query('#effects-bypass').textContent = effectsBypassed ? 'エフェクトの音に戻す' : '元の音で聴く';
+  query('#effects-status').textContent = effectsBypassed ? '元の音で比較中' : enabled.length ? `${enabled.length}種類がオン` : 'すべてオフ';
+  query('#open-effects').textContent = effectsBypassed ? 'エフェクト · 比較中' : `エフェクト${enabled.length ? ` · ${enabled.length}` : ''}`;
+  query('#open-effects').classList.toggle('effects-enabled', enabled.length > 0 && !effectsBypassed);
+  const filter = effectSettings.filter;
+  const { center, cents } = filterRange(filter, context?.sampleRate || 48000);
+  const period = filter.beats * 60 / Number(query('#pattern-bpm').value);
+  query('#filter-motion-info').textContent = filter.motion === 'off' ? 'LFOはオフ。Cutoffを手動で調整できます。'
+    : `${Math.round(center / 2 ** (cents / 1200))}〜${Math.round(center * 2 ** (cents / 1200))} Hzを、${period.toFixed(2)}秒で1周期。BPMの変更に追従します。`;
+  document.querySelectorAll('.effect-motion [data-param="beats"], .effect-motion [data-param="depth"]').forEach((control) => {
+    control.disabled = filter.motion === 'off';
+  });
+}
+
+/**
+ * 再生を止めずにエフェクトの設定を反映する
+ *
+ * @returns {void}
+ */
+function applyEffects() {
+  if (effects) {
+    effects.bypassed = effectsBypassed;
+    effects.apply();
+  }
+
+  renderEffects();
+}
 
 /**
  * 保存領域が使えない場合も、生成番号を安全に用意する
@@ -357,7 +464,7 @@ function scheduleVoice(event, time, bpm) {
   const source = context.createBufferSource();
   const gain = context.createGain();
   source.buffer = audioBuffer(event.soundKey);
-  source.connect(gain).connect(masterGain);
+  source.connect(gain).connect(effects.input);
   const { duration, playbackRate } = voiceTiming(event, bpm, source.buffer.duration);
   source.playbackRate.setValueAtTime(playbackRate, time);
   const fade = Math.min(.012, duration / 4);
@@ -424,8 +531,11 @@ async function initializeAudio() {
     limiter.attack.value = .001;
     limiter.release.value = .08;
     masterGain.connect(limiter).connect(context.destination);
+    effects = new EffectRack(context, masterGain);
+    effects.settings = effectSettings;
+    effects.bypassed = effectsBypassed;
     transport = new PatternTransport({ now: () => context.currentTime, schedule: scheduleVoice, cancel: cancelVoices,
-      tail: (event, bpm) => voiceTiming(event, bpm).duration });
+      tail: (event, bpm) => voiceTiming(event, bpm).duration + effects.tailSeconds() });
   }
 
   await context.resume();
@@ -445,6 +555,7 @@ function stopPlayback() {
   clearInterval(pumpInterval);
   cancelAnimationFrame(animationFrame);
   transport?.stop();
+  effects?.stop();
   autoMode = false;
   performance = null;
   query('#auto-play').textContent = '▶ 自動演奏';
@@ -540,6 +651,7 @@ async function playPattern(immediate = false) {
     transport.onNext = null;
     transport.setBpm(Number(query('#pattern-bpm').value));
     transport.start(auditionSequence(selectedPattern, patterns, query('#connect-pattern').checked), query('#pattern-loop').checked);
+    effects.start(transport.anchorTime, transport.bpm);
     query('#pattern-play').textContent = '▶ 次に再生';
     document.querySelectorAll('.pattern-card').forEach((card) => card.classList.toggle('is-playing', card.dataset.audition === selectedPattern.id));
     pumpInterval = setInterval(() => transport.pump(), 25);
@@ -584,6 +696,7 @@ async function startAutomaticPerformance() {
     transport.onNext = null;
     transport.setBpm(Number(query('#pattern-bpm').value));
     transport.start(sequence, false, () => arrangement.next(query('#auto-intensity').value));
+    effects.start(transport.anchorTime, transport.bpm);
     updateSequenceLabel();
     pumpInterval = setInterval(() => {
       try {
@@ -674,6 +787,7 @@ async function startAutoGeneration() {
     transport.setBpm(Number(query('#pattern-bpm').value));
     transport.onNext = () => generateNext(base);
     transport.start([first], true);
+    effects.start(transport.anchorTime, transport.bpm);
     pumpInterval = setInterval(() => {
       try {
         transport.pump();
@@ -822,6 +936,36 @@ query('#previous-pattern').addEventListener('click', () => auditionAdjacent(-1))
 query('#next-pattern').addEventListener('click', () => auditionAdjacent(1));
 query('#open-details').addEventListener('click', () => query('#pattern-details').showModal());
 query('#close-details').addEventListener('click', () => query('#pattern-details').close());
+query('#open-effects').addEventListener('click', () => query('#effects-dialog').showModal());
+query('#close-effects').addEventListener('click', () => query('#effects-dialog').close());
+query('#effects-stop').addEventListener('click', stopPlayback);
+document.querySelectorAll('[data-effect]').forEach((control) => {
+  control.addEventListener('input', () => {
+    const { effect, param } = control.dataset;
+    let value = control.type === 'checkbox' ? control.checked : control.value;
+
+    if (control.type === 'range' || param === 'beats') {
+      value = Number(value);
+    }
+
+    if (param === 'frequency') {
+      value = 80 * (14000 / 80) ** (value / 100);
+    }
+
+    effectSettings[effect][param] = value;
+    applyEffects();
+  });
+});
+query('#effects-bypass').addEventListener('click', () => {
+  effectsBypassed = !effectsBypassed;
+  applyEffects();
+});
+query('#effects-toggle-all').addEventListener('click', () => {
+  const enableAll = !Object.values(effectSettings).some((setting) => setting.enabled);
+  Object.values(effectSettings).forEach((setting) => { setting.enabled = enableAll; });
+  effectsBypassed = false;
+  applyEffects();
+});
 query('#auto-generate').addEventListener('click', startAutoGeneration);
 query('#auto-play').addEventListener('click', startAutomaticPerformance);
 query('#pattern-search').addEventListener('input', renderList);
@@ -836,6 +980,8 @@ query('#pattern-bpm').addEventListener('change', () => {
   const bpm = Math.max(40, Math.min(240, Math.round(Number(query('#pattern-bpm').value) || 120)));
   query('#pattern-bpm').value = bpm;
   transport?.setBpm(bpm);
+  effects?.setBpm(bpm);
+  renderEffects();
   renderTimeline(selectedPattern);
 });
 query('#pattern-volume').addEventListener('input', () => {
@@ -848,6 +994,8 @@ query('#reset-mix').addEventListener('click', () => {
   query('#pattern-volume').value = 80;
   query('#pattern-volume-value').textContent = '80%';
   transport?.setBpm(120);
+  effects?.setBpm(120);
+  renderEffects();
   masterGain?.gain.setTargetAtTime(.48, context.currentTime, .015);
   renderTimeline(selectedPattern);
 });
@@ -888,4 +1036,5 @@ renderList();
 renderDetail();
 renderGenerated();
 renderCriteria();
+renderEffects();
 loadLibrary();

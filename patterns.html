@@ -68,8 +68,51 @@
     </dialog>
     <footer class="pattern-footer">AUTO DRUM / PATTERN LAB <span>300 SAVED PHRASES · CLASSIFICATION V1</span></footer>
   </main>
+  <dialog id="effects-dialog" aria-labelledby="effects-title">
+    <div class="dialog-toolbar"><span id="effects-title">演奏全体のエフェクト</span><button id="effects-stop" type="button">■ 停止</button><button id="close-effects" type="button" aria-label="エフェクトを閉じる">閉じる ×</button></div>
+    <div class="effects-content">
+      <p class="effects-intro">同じリズムを、違う響きで。再生中も調整できます。</p>
+      <div class="effects-actions"><button id="effects-bypass" type="button" aria-pressed="false">元の音で聴く</button><button id="effects-toggle-all" type="button">すべて解除</button><span id="effects-status" role="status">すべてオフ</span></div>
+      <div class="effects-grid">
+        <section class="effect-card" data-effect-card="filter" aria-label="フィルター">
+          <label class="effect-toggle"><input type="checkbox" data-effect="filter" data-param="enabled">フィルター<span>明るさを動かす</span></label>
+          <label>Type<select data-effect="filter" data-param="type"><option value="lowpass">Low-pass · 高域を抑える</option><option value="highpass">High-pass · 低域を抑える</option><option value="bandpass">Band-pass · 一部の帯域を残す</option></select></label>
+          <label>Cutoff <output data-value="filter.frequency"></output><input type="range" min="0" max="100" step="1" data-effect="filter" data-param="frequency"></label>
+          <label>Resonance <output data-value="filter.resonance"></output><input type="range" min="0" max="100" step="1" data-effect="filter" data-param="resonance"></label>
+          <p class="effect-hint">Resonanceを上げるほど境目の帯域が鋭く響きます。Cutoffを動かすと、ワウのような変化が出ます。</p>
+          <div class="effect-motion">
+            <label>LFO Shape<select data-effect="filter" data-param="motion"><option value="off">Off · 手動で調整</option><option value="sine">Sine · なめらかな揺れ</option><option value="triangle">Triangle · 一定速度で往復</option><option value="sawtooth">Saw · 徐々に上げて戻す</option><option value="square">Square · 低い／高いを交互に</option></select></label>
+            <label>LFO Sync<select data-effect="filter" data-param="beats"><option value="0.5">1/8 · 半拍</option><option value="1">1/4 · 1拍</option><option value="2">1/2 · 2拍</option><option value="4">1 Bar · 4拍（4拍子）</option><option value="8">2 Bars · 8拍（4拍子）</option><option value="16">4 Bars · 16拍（4拍子）</option><option value="32">8 Bars · 32拍（4拍子）</option></select></label>
+            <label>LFO Depth <output data-value="filter.depth"></output><input type="range" min="0" max="3" step="0.1" data-effect="filter" data-param="depth"></label>
+            <p id="filter-motion-info" class="effect-hint"></p>
+          </div>
+        </section>
+        <section class="effect-card" data-effect-card="compressor" aria-label="コンプレッサー">
+          <label class="effect-toggle"><input type="checkbox" data-effect="compressor" data-param="enabled">コンプレッサー<span>打撃を密にする</span></label>
+          <label>Threshold <output data-value="compressor.threshold"></output><input type="range" min="-40" max="0" step="1" data-effect="compressor" data-param="threshold"></label>
+          <label>Ratio <output data-value="compressor.ratio"></output><input type="range" min="1" max="12" step="0.5" data-effect="compressor" data-param="ratio"></label>
+          <label>Makeup Gain <output data-value="compressor.makeup"></output><input type="range" min="0" max="9" step="0.5" data-effect="compressor" data-param="makeup"></label>
+          <p class="effect-hint">音量を抑えながら、打撃と余韻の密度を調整します。</p>
+        </section>
+        <section class="effect-card" data-effect-card="chorus" aria-label="コーラス">
+          <label class="effect-toggle"><input type="checkbox" data-effect="chorus" data-param="enabled">コーラス<span>揺れと広がり</span></label>
+          <label>Mix <output data-value="chorus.mix"></output><input type="range" min="0" max="0.8" step="0.01" data-effect="chorus" data-param="mix"></label>
+          <label>Rate <output data-value="chorus.rate"></output><input type="range" min="0.1" max="3" step="0.1" data-effect="chorus" data-param="rate"></label>
+          <label>Depth <output data-value="chorus.depth"></output><input type="range" min="0" max="0.008" step="0.0005" data-effect="chorus" data-param="depth"></label>
+          <p class="effect-hint">左右の響きを少しずつ揺らします。ヘッドホンで広がりを聴き比べられます。</p>
+        </section>
+        <section class="effect-card" data-effect-card="reverb" aria-label="リバーブ">
+          <label class="effect-toggle"><input type="checkbox" data-effect="reverb" data-param="enabled">リバーブ<span>空間を加える</span></label>
+          <label>Room Type<select data-effect="reverb" data-param="room"><option value="small">Small Room · 短い響き</option><option value="room">Room · 自然な余韻</option><option value="hall">Hall · 長い余韻</option></select></label>
+          <label>Mix <output data-value="reverb.mix"></output><input type="range" min="0" max="0.8" step="0.01" data-effect="reverb" data-param="mix"></label>
+          <p class="effect-hint">打撃の後ろに残響を足します。空間を切り替えると、前の空間の余韻は消えます。</p>
+        </section>
+      </div>
+      <p class="effect-hint">フィルター → コンプレッサー → コーラス → リバーブの順に掛かります。設定はこの画面を開いている間保持します。演奏データのJSONには含まれません。</p>
+    </div>
+  </dialog>
   <section class="transport-panel" aria-label="パターン再生操作">
-    <div class="dock-heading"><div><strong id="dock-pattern-name"></strong><span id="dock-pattern-info"></span></div><span id="play-state" role="status">停止中</span><button id="open-details" type="button">詳細・比較</button></div>
+    <div class="dock-heading"><div><strong id="dock-pattern-name"></strong><span id="dock-pattern-info"></span></div><span id="play-state" role="status">停止中</span><button id="open-effects" type="button">エフェクト</button><button id="open-details" type="button">詳細・比較</button></div>
     <div class="dock-controls">
       <div class="play-controls"><button id="auto-play" class="primary-play" type="button" disabled aria-pressed="false">▶ 自動演奏</button><button id="pattern-stop" type="button">■ 停止</button><button id="previous-pattern" type="button" aria-label="前のパターンを試聴">← 前</button><button id="pattern-play" type="button" disabled>▶ 試聴</button><button id="next-pattern" type="button" aria-label="次のパターンを試聴">次 →</button><label class="loop-control"><input id="pattern-loop" type="checkbox" checked>リピート</label></div>
       <div class="mix-controls"><label>BPM <input id="pattern-bpm" type="number" min="40" max="240" step="1" value="120"></label><label>音量 <input id="pattern-volume" type="range" min="0" max="100" value="80"><output id="pattern-volume-value">80%</output></label><button id="reset-mix" type="button" title="BPM 120・音量80%に戻す">共通値に戻す</button><label class="connect-control"><input id="connect-pattern" type="checkbox">基本との接続</label></div>
